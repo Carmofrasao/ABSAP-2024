@@ -13,6 +13,7 @@ Repositorio para o Aspect-Based Sentiment Analysis in Portuguese
 * https://huggingface.co/neuralmind/bert-large-portuguese-cased
 * https://github.com/neuralmind-ai/portuguese-bert
 * https://colab.research.google.com/drive/1oDgxmc9aYNjBbzIQcv_g7XZax8On8zma?usp=sharing
+* https://www.nltk.org/ (nao recomendo vcs usarem)
 
 # Dados
 
