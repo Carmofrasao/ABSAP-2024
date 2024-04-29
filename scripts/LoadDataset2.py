@@ -5,6 +5,7 @@ import torch.optim as optim
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from torch.utils.data import DataLoader, Dataset
+from torch.nn.utils.rnn import pad_sequence
 
 # Definição de uma classe de treinador personalizada que herda Seq2SeqTrainer
 class CustomSeq2SeqTrainer(Seq2SeqTrainer):
@@ -36,7 +37,7 @@ class Task1Dataset(Dataset):
         # Retorna um exemplo do conjunto de dados
         text = self.data.iloc[index]['texto']
         aspect = self.data.iloc[index]['aspect']
-        tokens = self.tokenizer(text, padding='max_length', truncation=True, max_length=None, return_tensors='pt')
+        tokens = self.tokenizer(text, return_tensors='pt')
         return {
             'input_ids': tokens['input_ids'].squeeze(),
             'attention_mask': tokens['attention_mask'].squeeze(),
@@ -57,7 +58,7 @@ class Task2Dataset(Dataset):
         text = self.data.iloc[index]['texto']
         aspect = self.data.iloc[index]['aspect']
         polarity = self.data.iloc[index]['polarity']
-        tokens = self.tokenizer(text, padding='max_length', truncation=True, max_length=None, return_tensors='pt')
+        tokens = self.tokenizer(text, return_tensors='pt')
         return {
             'input_ids': tokens['input_ids'].squeeze(),
             'attention_mask': tokens['attention_mask'].squeeze(),
@@ -100,14 +101,19 @@ def evaluate_model_task2(model, tokenizer, dataset):
         # Decodifica as previsões em texto
         predicted_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
         # Atribui a polaridade (positivo ou negativo) à previsão
-        polarity = "Positivo" if predicted_text == "positive" else "Negativo"
+        if predicted_text == "positive": 
+            polarity = "Positivo" 
+        elif predicted_text == "negative":
+            polarity = "Negativo"
+        else
+            polarity = "Indefinido"
         predictions.append(polarity)
 
     return predictions
 
 # Carregamento dos dados para treinamento e teste
 train = pd.read_csv('../dataset/train2024.csv', sep=';', index_col=0)
-task1_test = pd.read_csv('../dataset/task1.csv', sep=';', index_col=0)
+task1_test = pd.read_csv('../dataset/task1_test.csv', sep=';', index_col=0)
 task2_test = pd.read_csv('../dataset/task2_test.csv', sep=';', index_col=0)
 
 # Carregamento do tokenizador
@@ -128,9 +134,9 @@ training_args_task1 = Seq2SeqTrainingArguments(
 trainer_task1 = CustomSeq2SeqTrainer(
     model=model_task1,
     args=training_args_task1,
-    data_collator=lambda data: {'input_ids': torch.stack([f['input_ids'] for f in data]),
-                                'attention_mask': torch.stack([f['attention_mask'] for f in data]),
-                                'decoder_input_ids': torch.stack([f['input_ids'] for f in data])
+    data_collator=lambda data: {'input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id),
+                                'attention_mask': pad_sequence([f['attention_mask'] for f in data], batch_first=True, padding_value=0),
+                                'decoder_input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id)
                                },
     train_dataset=task1_train_dataset,
     tokenizer=tokenizer,
@@ -163,9 +169,9 @@ training_args_task2 = Seq2SeqTrainingArguments(
 trainer_task2 = CustomSeq2SeqTrainer(
     model=model_task2,
     args=training_args_task2,
-    data_collator=lambda data: {'input_ids': torch.stack([f['input_ids'] for f in data]),
-                                'attention_mask': torch.stack([f['attention_mask'] for f in data]),
-                                'decoder_input_ids': torch.stack([f['input_ids'] for f in data])
+    data_collator=lambda data: {'input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id),
+                                'attention_mask': pad_sequence([f['attention_mask'] for f in data], batch_first=True, padding_value=0),
+                                'decoder_input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id)
                                },
     train_dataset=task2_train_dataset,
     tokenizer=tokenizer,
