@@ -105,22 +105,27 @@ def evaluate_model_task2(model, tokenizer, dataset):
             polarity = "Positivo" 
         elif predicted_text == "negative":
             polarity = "Negativo"
-        else
+        else:
             polarity = "Indefinido"
         predictions.append(polarity)
 
     return predictions
 
 # Carregamento dos dados para treinamento e teste
+print("Carregando dados de treino...")
 train = pd.read_csv('../dataset/train2024.csv', sep=';', index_col=0)
+print("Carregando dados de teste...")
 task1_test = pd.read_csv('../dataset/task1_test.csv', sep=';', index_col=0)
 task2_test = pd.read_csv('../dataset/task2_test.csv', sep=';', index_col=0)
 
 # Carregamento do tokenizador
+print("Carregamento do tokenizador...")
 tokenizer = AutoTokenizer.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab", legacy=False)
 
 # Treinamento do modelo para a Task 1
+print("Formatando dados de treino para o teste 1...")
 task1_train_dataset = Task1Dataset(train, tokenizer)
+print("Carregando modelo pre treinado...")
 model_task1 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab")
 optimizer_task1 = optim.AdamW(model_task1.parameters(), lr=5e-5)
 
@@ -144,9 +149,11 @@ trainer_task1 = CustomSeq2SeqTrainer(
     optimizers=(optimizer_task1, None),
 )
 
+print("treinando modelo para o teste 1...")
 trainer_task1.train()
 
 # Avaliação do modelo na Task 1
+print("Avaliando o modelo com o teste 1...")
 task1_test_dataset = Task1Dataset(task1_test, tokenizer)
 task1_predictions = evaluate_model_task1(model_task1, tokenizer, task1_test_dataset)
 
@@ -155,7 +162,9 @@ task1_result = open("task1_result.txt", "w")
 task1_result.write(str(task1_predictions))
 
 # Treinamento do modelo para a Task 2
+print("Formatando dados de treino para o teste 2...")
 task2_train_dataset = Task2Dataset(train, tokenizer)
+print("Carregando modelo pre treinado...")
 model_task2 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab")
 optimizer_task2 = optim.AdamW(model_task2.parameters(), lr=5e-5)
 
@@ -179,9 +188,11 @@ trainer_task2 = CustomSeq2SeqTrainer(
     optimizers=(optimizer_task2, None),
 )
 
+print("treinando modelo para o teste 2...")
 trainer_task2.train()
 
 # Avaliação do modelo na Task 2
+print("Avaliando o modelo com o teste 2...")
 task2_test_dataset = Task2Dataset(task2_test, tokenizer)
 task2_predictions = evaluate_model_task2(model_task2, tokenizer, task2_test_dataset)
 
