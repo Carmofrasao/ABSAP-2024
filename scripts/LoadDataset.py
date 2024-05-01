@@ -5,6 +5,7 @@ import torch.optim as optim
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from torch.utils.data import DataLoader, Dataset
+from torch.nn.utils.rnn import pad_sequence
 
 # Definição de uma classe de treinador personalizada que herda Seq2SeqTrainer
 class CustomSeq2SeqTrainer(Seq2SeqTrainer):
@@ -23,8 +24,8 @@ class CustomSeq2SeqTrainer(Seq2SeqTrainer):
 
         return (loss, outputs) if return_outputs else loss
 
-# Definição de uma classe de conjunto de dados personalizada
-class CustomDataset(Dataset):
+# Definição de uma classe de conjunto de dados personalizada para a Task 1
+class Task1Dataset(Dataset):
     def __init__(self, dataframe, tokenizer):
         self.data = dataframe
         self.tokenizer = tokenizer
@@ -35,14 +36,38 @@ class CustomDataset(Dataset):
     def __getitem__(self, index):
         # Retorna um exemplo do conjunto de dados
         text = self.data.iloc[index]['texto']
-        tokens = self.tokenizer(text, padding='max_length', truncation=True, max_length=128, return_tensors='pt')
+        aspect = self.data.iloc[index]['aspect']
+        tokens = self.tokenizer(text, return_tensors='pt')
         return {
             'input_ids': tokens['input_ids'].squeeze(),
             'attention_mask': tokens['attention_mask'].squeeze(),
+            'aspect': aspect
         }
 
-# Função para avaliar o modelo nos conjuntos de teste
-def evaluate_model(model, tokenizer, dataset):
+# Definição de uma classe de conjunto de dados personalizada para a Task 2
+class Task2Dataset(Dataset):
+    def __init__(self, dataframe, tokenizer):
+        self.data = dataframe
+        self.tokenizer = tokenizer
+
+    def __len__(self):
+        return len(self.data)
+
+    def __getitem__(self, index):
+        # Retorna um exemplo do conjunto de dados
+        text = self.data.iloc[index]['texto']
+        aspect = self.data.iloc[index]['aspect']
+        polarity = self.data.iloc[index]['polarity']
+        tokens = self.tokenizer(text, return_tensors='pt')
+        return {
+            'input_ids': tokens['input_ids'].squeeze(),
+            'attention_mask': tokens['attention_mask'].squeeze(),
+            'aspect': aspect,
+            'polarity': polarity
+        }
+
+# Função para avaliar o modelo na tarefa 1
+def evaluate_model_task1(model, tokenizer, dataset):
     model.eval()
     predictions = []
 
@@ -60,92 +85,117 @@ def evaluate_model(model, tokenizer, dataset):
 
     return predictions
 
-# Carregamento e divisão dos dados de treinamento e teste
-trainC = pd.read_csv('../dataset/train2024.csv', sep=';', index_col=0)
-trainC = trainC.sample(frac=1)  # Embaralha os dados
+# Função para avaliar o modelo na tarefa 2
+def evaluate_model_task2(model, tokenizer, dataset):
+    model.eval()
+    predictions = []
 
-# Definição de proporções para validação e treinamento
-VP = ceil((0.02 * (len(trainC) + 1)) / 0.1)
-OP = len(trainC) + 1 - VP
+    for i in range(len(dataset)):
+        # Gera previsões para cada exemplo no conjunto de dados
+        input_ids = dataset[i]['input_ids'].unsqueeze(0)
+        attention_mask = dataset[i]['attention_mask'].unsqueeze(0)
 
-# Divisão dos dados em conjuntos de treinamento e teste
-train = trainC.iloc[:OP,]
-test = trainC.iloc[OP:,]
+        with torch.no_grad():
+            outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_length=128)
 
-# Carregamento do tokenizador e criação do conjunto de dados de treinamento
+        # Decodifica as previsões em texto
+        predicted_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Atribui a polaridade (positivo ou negativo) à previsão
+        if predicted_text == "positive": 
+            polarity = "Positivo" 
+        elif predicted_text == "negative":
+            polarity = "Negativo"
+        else:
+            polarity = "Indefinido"
+        predictions.append(polarity)
+
+    return predictions
+
+# Carregamento dos dados para treinamento e teste
+print("Carregando dados de treino...")
+train = pd.read_csv('../dataset/train2024.csv', sep=';', index_col=0)
+print("Carregando dados de teste...")
+task1_test = pd.read_csv('../dataset/task1_test.csv', sep=';', index_col=0)
+task2_test = pd.read_csv('../dataset/task2_test.csv', sep=';', index_col=0)
+
+# Carregamento do tokenizador
+print("Carregamento do tokenizador...")
 tokenizer = AutoTokenizer.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab", legacy=False)
-train_dataset = CustomDataset(train, tokenizer)
 
-# Carregamento do modelo pré-treinado
-model = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab")
+# Treinamento do modelo para a Task 1
+print("Formatando dados de treino para o teste 1...")
+task1_train_dataset = Task1Dataset(train, tokenizer)
+print("Carregando modelo pre treinado...")
+model_task1 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab")
+optimizer_task1 = optim.AdamW(model_task1.parameters(), lr=5e-5)
 
-# Definição do otimizador para o treinamento do modelo
-optimizer = optim.AdamW(model.parameters(), lr=5e-5)
-
-# Definição dos argumentos de treinamento
-training_args = Seq2SeqTrainingArguments(
-    output_dir='./results',
+training_args_task1 = Seq2SeqTrainingArguments(
+    output_dir='./results_task1',
     per_device_train_batch_size=8,
     num_train_epochs=3,
-    logging_dir='./logs',
+    logging_dir='./logs_task1',
 )
 
-# Configuração do treinador com os parâmetros definidos
-trainer = CustomSeq2SeqTrainer(
-    model=model,
-    args=training_args,
-    data_collator=lambda data: {'input_ids': torch.stack([f['input_ids'] for f in data]),
-                                'attention_mask': torch.stack([f['attention_mask'] for f in data]),
-                                'decoder_input_ids': torch.stack([f['input_ids'] for f in data])
+trainer_task1 = CustomSeq2SeqTrainer(
+    model=model_task1,
+    args=training_args_task1,
+    data_collator=lambda data: {'input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id),
+                                'attention_mask': pad_sequence([f['attention_mask'] for f in data], batch_first=True, padding_value=0),
+                                'decoder_input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id)
                                },
-    train_dataset=train_dataset,
+    train_dataset=task1_train_dataset,
     tokenizer=tokenizer,
     compute_metrics=None,
-    optimizers=(optimizer, None),
+    optimizers=(optimizer_task1, None),
 )
 
-# Treinamento do modelo
-trainer.train()
-
-# Avaliação do modelo no conjunto de teste
-test_dataset = CustomDataset(test, tokenizer)
-test_predictions = evaluate_model(model, tokenizer, test_dataset)
-
-# Salva as previsões do conjunto de teste em um arquivo
-test_result = open("test_result.txt", "w")
-test_result.write(str(test_predictions))
-
-# Carrega os dados para a Task 1
-task1 = pd.read_csv('../dataset/task1_test.csv', sep=';', index_col=0)
+print("treinando modelo para o teste 1...")
+trainer_task1.train()
 
 # Avaliação do modelo na Task 1
-task1_dataset = CustomDataset(task1, tokenizer)
-task1_predictions = evaluate_model(model, tokenizer, task1_dataset)
+print("Avaliando o modelo com o teste 1...")
+task1_test_dataset = Task1Dataset(task1_test, tokenizer)
+task1_predictions = evaluate_model_task1(model_task1, tokenizer, task1_test_dataset)
 
 # Salva as previsões da Task 1 em um arquivo
 task1_result = open("task1_result.txt", "w")
 task1_result.write(str(task1_predictions))
 
-# Carrega os dados para a Task 2
-task2 = pd.read_csv('../dataset/task2_test.csv', sep=';', index_col=0)
+# Treinamento do modelo para a Task 2
+print("Formatando dados de treino para o teste 2...")
+task2_train_dataset = Task2Dataset(train, tokenizer)
+print("Carregando modelo pre treinado...")
+model_task2 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab")
+optimizer_task2 = optim.AdamW(model_task2.parameters(), lr=5e-5)
+
+training_args_task2 = Seq2SeqTrainingArguments(
+    output_dir='./results_task2',
+    per_device_train_batch_size=8,
+    num_train_epochs=3,
+    logging_dir='./logs_task2',
+)
+
+trainer_task2 = CustomSeq2SeqTrainer(
+    model=model_task2,
+    args=training_args_task2,
+    data_collator=lambda data: {'input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id),
+                                'attention_mask': pad_sequence([f['attention_mask'] for f in data], batch_first=True, padding_value=0),
+                                'decoder_input_ids': pad_sequence([f['input_ids'] for f in data], batch_first=True, padding_value=tokenizer.pad_token_id)
+                               },
+    train_dataset=task2_train_dataset,
+    tokenizer=tokenizer,
+    compute_metrics=None,
+    optimizers=(optimizer_task2, None),
+)
+
+print("treinando modelo para o teste 2...")
+trainer_task2.train()
 
 # Avaliação do modelo na Task 2
-task2_dataset = CustomDataset(task2, tokenizer)
-task2_predictions = evaluate_model(model, tokenizer, task2_dataset)
+print("Avaliando o modelo com o teste 2...")
+task2_test_dataset = Task2Dataset(task2_test, tokenizer)
+task2_predictions = evaluate_model_task2(model_task2, tokenizer, task2_test_dataset)
 
 # Salva as previsões da Task 2 em um arquivo
 task2_result = open("task2_result.txt", "w")
 task2_result.write(str(task2_predictions))
-
-# Exibe alguns exemplos de previsões para as tarefas
-print("Exemplos de previsões para Task1:")
-for i in range(3):
-    print(f"Texto Original: {task1.iloc[i]['texto']}")
-    print(f"Previsão: {task1_predictions[i]}")
-    print("------")
-
-print("\nExemplos de previsões para Task2:")
-for i in range(3):
-    print(f"Texto Original: {task2.iloc[i]['texto']}")
-    print(f"Previsão: {task2_predictions[i]}")
-    print("------")
