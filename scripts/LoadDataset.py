@@ -36,12 +36,10 @@ class Task1Dataset(Dataset):
     def __getitem__(self, index):
         # Retorna um exemplo do conjunto de dados
         text = self.data.iloc[index]['texto']
-        aspect = self.data.iloc[index]['aspect']
         tokens = self.tokenizer(text, return_tensors='pt')
         return {
             'input_ids': tokens['input_ids'].squeeze(),
             'attention_mask': tokens['attention_mask'].squeeze(),
-            'aspect': aspect
         }
 
 # Definição de uma classe de conjunto de dados personalizada para a Task 2
