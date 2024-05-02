@@ -72,13 +72,41 @@ def evaluate_model_task1(model, tokenizer, dataset):
     for i in range(len(dataset)):
         # Gera previsões para cada exemplo no conjunto de dados
         input_ids = dataset[i]['input_ids'].unsqueeze(0)
+        """
+        input_ids: tensor([[   149,     7,   363,   155,    13,    31, 15311,  1645,  6064,     5,
+                             10437,  1878,    20,     9,    13,  2077,  6246,     5, 13369,     6,
+                              1742,     3,    69, 22026,     5,    28,  4660,    11,  3693,    21,
+                              1878,     8,     9,  6064,   141,     4,    20,  6114,  2679,  1310,
+                             18989,    25,  9816,     6,    10,  6064,    87,    16,  1071,  1079,
+                                59,    24,   470,    16,  5907,    10,   166, 10347,    36,  1310,
+                             18989,   541,    97,  1838,     3,  3794,    61,    48,  2307,     8,
+                               144,     7,  4978,    11,  2626,   895,  8325,    96,     3,  3794,
+                                61,     7,  2307,   682,     5,  8594, 11072,   287,    20,  5863,
+                               256,  1103,    37,  6064,     5,  4264,    96,  7889,  3558,    11,
+                                17,     9,  1203,    58,    19,  3420,    43, 10715,   971,  3080,
+                                 5,  1835,     7,  4480, 18989, 18989,    25,  1166,  1164,     7,
+                               199,     5,     1]])
+        """
         attention_mask = dataset[i]['attention_mask'].unsqueeze(0)
-
+        """
+        attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                 1, 1, 1]])
+        """
         with torch.no_grad():
-            outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_length=128)
+            outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask)
+            """
+            output: tensor([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+            """
 
         # Decodifica as previsões em texto
         predicted_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        """
+        predicted_text: ''
+        """
         predictions.append(predicted_text)
 
     return predictions
@@ -94,7 +122,12 @@ def evaluate_model_task2(model, tokenizer, dataset):
         attention_mask = dataset[i]['attention_mask'].unsqueeze(0)
 
         with torch.no_grad():
-            outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_length=128)
+            outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask)
+            print("Saída do modelo:", outputs)
+
+        # Verificando o conteúdo dos outputs
+        print("Tipo de outputs:", type(outputs))
+        print("Shape de outputs:", outputs.shape if hasattr(outputs, 'shape') else None)
 
         # Decodifica as previsões em texto
         predicted_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
@@ -112,19 +145,21 @@ def evaluate_model_task2(model, tokenizer, dataset):
 # Carregamento dos dados para treinamento e teste
 print("Carregando dados de treino...")
 train = pd.read_csv('../dataset/train2024.csv', sep=';', index_col=0)
+
 print("Carregando dados de teste...")
 task1_test = pd.read_csv('../dataset/task1_test.csv', sep=';', index_col=0)
 task2_test = pd.read_csv('../dataset/task2_test.csv', sep=';', index_col=0)
 
 # Carregamento do tokenizador
 print("Carregamento do tokenizador...")
-tokenizer = AutoTokenizer.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab", legacy=False)
+tokenizer = AutoTokenizer.from_pretrained("unicamp-dl/ptt5-small-portuguese-vocab", legacy=False)
 
 # Treinamento do modelo para a Task 1
 print("Formatando dados de treino para o teste 1...")
 task1_train_dataset = Task1Dataset(train, tokenizer)
+
 print("Carregando modelo pre treinado...")
-model_task1 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab")
+model_task1 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-small-portuguese-vocab")
 optimizer_task1 = optim.AdamW(model_task1.parameters(), lr=5e-5)
 
 training_args_task1 = Seq2SeqTrainingArguments(
@@ -156,14 +191,15 @@ task1_test_dataset = Task1Dataset(task1_test, tokenizer)
 task1_predictions = evaluate_model_task1(model_task1, tokenizer, task1_test_dataset)
 
 # Salva as previsões da Task 1 em um arquivo
-task1_result = open("task1_result.txt", "w")
-task1_result.write(str(task1_predictions))
+task1_predic = open("task1_predictions.txt", "w")
+task1_predic.write(str(task1_predictions))
 
 # Treinamento do modelo para a Task 2
 print("Formatando dados de treino para o teste 2...")
 task2_train_dataset = Task2Dataset(train, tokenizer)
+
 print("Carregando modelo pre treinado...")
-model_task2 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-base-portuguese-vocab")
+model_task2 = AutoModelForSeq2SeqLM.from_pretrained("unicamp-dl/ptt5-small-portuguese-vocab")
 optimizer_task2 = optim.AdamW(model_task2.parameters(), lr=5e-5)
 
 training_args_task2 = Seq2SeqTrainingArguments(
@@ -195,5 +231,5 @@ task2_test_dataset = Task2Dataset(task2_test, tokenizer)
 task2_predictions = evaluate_model_task2(model_task2, tokenizer, task2_test_dataset)
 
 # Salva as previsões da Task 2 em um arquivo
-task2_result = open("task2_result.txt", "w")
-task2_result.write(str(task2_predictions))
+task2_predic = open("task2_predictions.txt", "w")
+task2_predic.write(str(task2_predictions))
