@@ -1,3 +1,23 @@
+#!/usr/bin/python3 -u
+
+import sys
+
+class Unbuffered(object):
+   def __init__(self, stream):
+       self.stream = stream
+   def write(self, data):
+       self.stream.write(data)
+       self.stream.flush()
+   def writelines(self, datas):
+       self.stream.writelines(datas)
+       self.stream.flush()
+   def __getattr__(self, attr):
+       return getattr(self.stream, attr)
+
+# Original sys.stdout is still available as sys.__stdout__. Just in case you need it =) 
+#import sys
+#sys.stdout = Unbuffered(sys.stdout)
+
 from datasets import Dataset, load_dataset, load_metric
 from sklearn.metrics import f1_score
 from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelForSequenceClassification
@@ -161,7 +181,7 @@ tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x
 tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_final.set_format("torch")
 
-print(tokenized_datasets_train["train"].column_names)
+print(tokenized_datasets_train["train"].column_names, flush=True)
 
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
@@ -181,6 +201,8 @@ final_dataloader = DataLoader(
     tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
 )
 
+#epoch_number = 10
+#epoch_number = 4
 epoch_number = 4
 
 #model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
@@ -189,17 +211,18 @@ optimizer = AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
 
 for epoch in range(1,epoch_number+1):
-    print(f"\t Epoch: {epoch}")
+    print(f"\t Epoch: {epoch}", flush=True)
     train_loss,train_acc,train_f1 = train(model,train_dataloader,optimizer,train_pretrain=True)
     valid_loss,valid_acc,valid_f1 = evaluate(model,test_dataloader,train_pretrain=True)
 
-    print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f} | Train f1: {train_f1*100:.2f}%')
-    print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f} |  val. f1: {valid_f1*100:.2f}%')
+    print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f} | Train f1: {train_f1*100:.2f}%', flush=True)
+    print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f} |  val. f1: {valid_f1*100:.2f}%', flush=True)
     print()
+    #sys.stdout.flush()
 
 pred_BERT, probas_BERT = test(model,final_dataloader,train_pretrain=True)
 
-print(probas_BERT)
+print(probas_BERT, flush=True)
 print()
-print(pred_BERT)
+print(pred_BERT, flush=True)
 
