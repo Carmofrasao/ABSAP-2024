@@ -14,7 +14,7 @@ class Unbuffered(object):
    def __getattr__(self, attr):
        return getattr(self.stream, attr)
 
-# Original sys.stdout is still available as sys.__stdout__. Just in case you need it =) 
+# Original sys.stdout is still available as sys.__stdout__. Just in case you need it =)
 #import sys
 #sys.stdout = Unbuffered(sys.stdout)
 
@@ -203,7 +203,7 @@ final_dataloader = DataLoader(
 
 #epoch_number = 10
 #epoch_number = 4
-epoch_number = 4
+epoch_number = 10
 
 #model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
 model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
