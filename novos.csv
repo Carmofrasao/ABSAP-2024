@@ -1,0 +1,1281 @@
+id;text;aspect;polarity;start_position;end_position
+5000;Nossa estadia no Hotel Sunshine Paradise foi absolutamente incrível! Desde o momento em que entramos, fomos recebidos com sorrisos calorosos e um serviço excepcional. Os quartos eram espaçosos e impecavelmente limpos. A equipe fez de tudo para garantir que nos sentíssemos em casa. A localização também é perfeita, perto de todas as principais atrações. Definitivamente voltarei!;quartos;1;170;177
+5001;Que decepção! O Restaurante Sabor & Arte foi uma verdadeira decepção. O serviço foi lento e desorganizado, e a comida estava longe de ser saborosa. Além disso, o ambiente estava sujo e pouco convidativo. Definitivamente não recomendaria este lugar a ninguém. Uma experiência extremamente desapontadora.;serviço;-1;72;79
+5002;Que decepção! O Restaurante Sabor & Arte foi uma verdadeira decepção. O serviço foi lento e desorganizado, e a comida estava longe de ser saborosa. Além disso, o ambiente estava sujo e pouco convidativo. Definitivamente não recomendaria este lugar a ninguém. Uma experiência extremamente desapontadora.;comida;-1;111;117
+5003;A Praia do Sol é um lugar agradável para passar o dia. A areia é macia e a água é cristalina. No entanto, estava muito lotada quando visitamos, o que tirou um pouco da experiência relaxante. Ainda assim, é uma opção decente se você estiver procurando um lugar para se bronzear e nadar.;lotada;-1;119;125
+5004;A Praia do Sol é um lugar agradável para passar o dia. A areia é macia e a água é cristalina. No entanto, estava muito lotada quando visitamos, o que tirou um pouco da experiência relaxante. Ainda assim, é uma opção decente se você estiver procurando um lugar para se bronzear e nadar.;água;0;75;79
+5005;Que lugar fascinante! O Museu Histórico da Cidade é uma verdadeira jóia. A quantidade de artefatos e informações históricas é impressionante. A equipe também é muito experiente e prestativa. Aprendemos muito durante nossa visita e definitivamente recomendaríamos a todos os amantes da história.;artefatos;1;89;98
+5006;Minha estadia no Hotel Estrela do Mar foi uma verdadeira decepção. O quarto estava sujo e mal conservado, e o serviço deixou muito a desejar. Além disso, o barulho dos hóspedes nos corredores durante a noite era insuportável. Não consegui ter uma noite de sono decente durante toda a estadia. Definitivamente não voltarei e não recomendo este hotel a ninguém.;quarto;-1;69;75
+5007;Minha estadia no Hotel Estrela do Mar foi uma verdadeira decepção. O quarto estava sujo e mal conservado, e o serviço deixou muito a desejar. Além disso, o barulho dos hóspedes nos corredores durante a noite era insuportável. Não consegui ter uma noite de sono decente durante toda a estadia. Definitivamente não voltarei e não recomendo este hotel a ninguém.;serviço;-1;110;117
+5008;Minha estadia no Hotel Estrela do Mar foi uma verdadeira decepção. O quarto estava sujo e mal conservado, e o serviço deixou muito a desejar. Além disso, o barulho dos hóspedes nos corredores durante a noite era insuportável. Não consegui ter uma noite de sono decente durante toda a estadia. Definitivamente não voltarei e não recomendo este hotel a ninguém.;barulho;-1;156;163
+5009;O restaurante ao lado do hotel tinha uma comida deliciosa e um ambiente encantador. Sem dúvida, uma excelente opção para jantar!;comida;1;41;47
+5010;O restaurante ao lado do hotel tinha uma comida deliciosa e um ambiente encantador. Sem dúvida, uma excelente opção para jantar!;ambiente;1;63;71
+5011;A trilha para chegar à cachoeira foi incrível! A natureza ao redor é deslumbrante e a cachoeira em si é simplesmente magnífica. Definitivamente vale a pena visitar!;trilha;1;2;8
+5012;A trilha para chegar à cachoeira foi incrível! A natureza ao redor é deslumbrante e a cachoeira em si é simplesmente magnífica. Definitivamente vale a pena visitar!;cachoeira;1;23;32
+5013;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5014;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5015;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;vista;1;28;33
+5016;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;mar;1;54;57
+5017;O café da manhã oferecido pelo hotel era variado e delicioso. Uma ótima maneira de começar o dia!;café;1;2;6
+5018;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5019;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;59;67
+5020;O quarto do hotel era espaçoso e confortável. Tivemos uma ótima noite de sono!;quarto;1;2;8
+5021;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;piscina;1;20;27
+5022;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;relaxar;1;52;59
+5023;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5024;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;93;106
+5025;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5026;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5027;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5028;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5029;O serviço de Wi-Fi do hotel deixou a desejar. A conexão estava lenta e instável na maior parte do tempo.;Wi-Fi;-1;13;18
+5030;O serviço de Wi-Fi do hotel deixou a desejar. A conexão estava lenta e instável na maior parte do tempo.;conexão;-1;48;55
+5031;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5032;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5033;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5034;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5035;O hotel estava lotado durante o feriado, o que resultou em longas filas para o café da manhã e para usar as áreas comuns.;lotado;-1;15;21
+5036;O hotel estava lotado durante o feriado, o que resultou em longas filas para o café da manhã e para usar as áreas comuns.;feriado;-1;32;39
+5037;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;comida;-1;2;8
+5038;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;sabor;-1;51;56
+5039;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;vegetariano;-1;112;123
+5040;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;menu;-1;53;57
+5041;A piscina do hotel estava suja e mal cuidada. Não nos sentimos confortáveis em usá-la durante nossa estadia.;piscina;-1;2;9
+5042;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;café da manhã;-1;20;33
+5043;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;variedade;-1;75;84
+5044;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;internet;-1;2;10
+5045;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;inconvenientes;-1;80;94
+5046;O serviço de quarto do hotel era lento e pouco eficiente. Tivemos que esperar muito tempo para receber nossos pedidos.;serviço de quarto;-1;2;19
+5047;O hotel não oferece estacionamento próprio, o que dificultou a nossa vida, pois tivemos que procurar estacionamento na rua.;estacionamento;-1;20;34
+5048;O ar condicionado do quarto estava quebrado durante toda a nossa estadia. Passamos noites desconfortáveis devido ao calor.;ar condicionado;-1;2;17
+5049;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;lazer;-1;30;35
+5050;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;crianças;-1;41;49
+5051;O serviço de café da manhã do hotel era limitado e pouco variado. Esperávamos mais opções.;café da manhã;-1;13;26
+5052;O hotel não oferece serviço de quarto, o que foi frustrante para nós que gostamos de pedir refeições no quarto.;serviço de quarto;-1;20;37
+5053;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;entretenimento;-1;30;44
+5054;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;diversão;-1;92;100
+5055;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5056;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;experiência;-1;98;109
+5057;O serviço de check-in do hotel foi demorado e pouco organizado. Perdemos muito tempo esperando para ser atendidos.;check-in;-1;13;21
+5058;A comida no restaurante do hotel estava com um gosto estranho. Não conseguimos identificar o que estava errado, mas não nos agradou.;comida;-1;2;8
+5059;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;lavanderia;-1;31;41
+5060;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;inconveniente;-1;56;69
+5061;O serviço de transporte oferecido pelo hotel estava sempre atrasado. Tivemos que esperar muito tempo para sermos levados aos lugares.;transporte;-1;13;23
+5062;O hotel não oferece acesso para cadeirantes, o que é um problema para pessoas com mobilidade reduzida.;mobilidade;-1;82;92
+5063;O quarto do hotel era pequeno e apertado, o que nos deixou desconfortáveis durante toda a estadia.;quarto;-1;2;8
+5064;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;piscina;-1;2;9
+5065;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;lotada;-1;26;32
+5066;O hotel não oferece atividades de lazer para os hóspedes, o que tornou nossa estadia monótona e entediante.;lazer;-1;34;39
+5067;O hotel não oferece estacionamento próprio, o que nos obrigou a procurar vagas na rua, o que foi muito inconveniente.;estacionamento;-1;20;34
+5068;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;ar condicionado;-1;2;17
+5069;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;barulho;-1;43;50
+5070;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5071;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;experiência;-1;107;118
+5072;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5073;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;50;58
+5074;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;comida;-1;2;8
+5075;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;sabor;-1;51;56
+5076;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;vegetariano;-1;112;123
+5077;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;menu;-1;53;57
+5078;A piscina do hotel estava suja e mal cuidada. Não nos sentimos confortáveis em usá-la durante nossa estadia.;piscina;-1;2;9
+5079;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;café da manhã;-1;20;33
+5080;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;variedade;-1;75;84
+5081;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;internet;-1;2;10
+5082;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;inconvenientes;-1;80;94
+5083;O serviço de quarto do hotel era lento e pouco eficiente. Tivemos que esperar muito tempo para receber nossos pedidos.;serviço de quarto;-1;2;19
+5084;O hotel não oferece estacionamento próprio, o que dificultou a nossa vida, pois tivemos que procurar estacionamento na rua.;estacionamento;-1;20;34
+5085;O ar condicionado do quarto estava quebrado durante toda a nossa estadia. Passamos noites desconfortáveis devido ao calor.;ar condicionado;-1;2;17
+5086;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;lazer;-1;30;35
+5087;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;crianças;-1;41;49
+5088;O serviço de café da manhã do hotel era limitado e pouco variado. Esperávamos mais opções.;café da manhã;-1;13;26
+5089;O hotel não oferece serviço de quarto, o que foi frustrante para nós que gostamos de pedir refeições no quarto.;serviço de quarto;-1;20;37
+5090;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;entretenimento;-1;30;44
+5091;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;diversão;-1;92;100
+5092;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5093;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;experiência;-1;98;109
+5094;O serviço de check-in do hotel foi demorado e pouco organizado. Perdemos muito tempo esperando para ser atendidos.;check-in;-1;13;21
+5095;A comida no restaurante do hotel estava com um gosto estranho. Não conseguimos identificar o que estava errado, mas não nos agradou.;comida;-1;2;8
+5096;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;lavanderia;-1;31;41
+5097;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;inconveniente;-1;56;69
+5098;O serviço de transporte oferecido pelo hotel estava sempre atrasado. Tivemos que esperar muito tempo para sermos levados aos lugares.;transporte;-1;13;23
+5099;O hotel não oferece acesso para cadeirantes, o que é um problema para pessoas com mobilidade reduzida.;mobilidade;-1;82;92
+5100;O quarto do hotel era pequeno e apertado, o que nos deixou desconfortáveis durante toda a estadia.;quarto;-1;2;8
+5101;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;piscina;-1;2;9
+5102;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;lotada;-1;26;32
+5103;O hotel não oferece atividades de lazer para os hóspedes, o que tornou nossa estadia monótona e entediante.;lazer;-1;34;39
+5104;O hotel não oferece estacionamento próprio, o que nos obrigou a procurar vagas na rua, o que foi muito inconveniente.;estacionamento;-1;20;34
+5105;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;ar condicionado;-1;2;17
+5106;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;barulho;-1;43;50
+5107;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5108;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;experiência;-1;107;118
+5109;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5110;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;50;58
+5111;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;comida;-1;2;8
+5112;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;sabor;-1;51;56
+5113;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;vegetariano;-1;112;123
+5114;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;menu;-1;53;57
+5115;A piscina do hotel estava suja e mal cuidada. Não nos sentimos confortáveis em usá-la durante nossa estadia.;piscina;-1;2;9
+5116;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;café da manhã;-1;20;33
+5117;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;variedade;-1;75;84
+5118;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;internet;-1;2;10
+5119;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;inconvenientes;-1;80;94
+5120;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5121;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5122;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;vista;1;28;33
+5123;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;mar;1;54;57
+5124;O café da manhã oferecido pelo hotel era variado e delicioso. Uma ótima maneira de começar o dia!;café;1;2;6
+5125;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5126;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;59;67
+5127;O quarto do hotel era espaçoso e confortável. Tivemos uma ótima noite de sono!;quarto;1;2;8
+5128;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;piscina;1;20;27
+5129;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;relaxar;1;52;59
+5130;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5131;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;93;106
+5132;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5133;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5134;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5135;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5136;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5137;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5138;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5139;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5140;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5141;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5142;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5143;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+5144;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5145;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5146;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5147;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5148;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5149;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5150;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5151;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5152;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5153;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5154;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5155;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+5156;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5157;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5158;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5159;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5160;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5161;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5162;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5163;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5164;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5165;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5166;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5167;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+5168;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5169;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5170;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5171;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5172;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5173;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5174;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5175;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5176;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5177;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5178;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5179;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+5180;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5181;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5182;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5183;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5184;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5185;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5186;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5187;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5188;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5189;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5190;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;vista;1;28;33
+5191;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;mar;1;54;57
+5192;O café da manhã oferecido pelo hotel era variado e delicioso. Uma ótima maneira de começar o dia!;café;1;2;6
+5193;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5194;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;59;67
+5195;O quarto do hotel era espaçoso e confortável. Tivemos uma ótima noite de sono!;quarto;1;2;8
+5196;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;piscina;1;20;27
+5197;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;relaxar;1;52;59
+5198;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5199;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;93;106
+5200;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5201;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5202;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5203;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5204;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5205;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5206;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5207;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5208;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5209;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5210;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5211;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+5212;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5213;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5214;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5215;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5216;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5217;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5218;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5219;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5220;A vista do quarto do hotel era deslumbrante. Passamos várias horas admirando a paisagem.;vista;1;2;7
+5221;A vista do quarto do hotel era deslumbrante. Passamos várias horas admirando a paisagem.;paisagem;1;79;87
+5222;O café da manhã oferecido pelo hotel tinha uma grande variedade de opções. Ficamos satisfeitos com a seleção.;café;1;2;6
+5223;O café da manhã oferecido pelo hotel tinha uma grande variedade de opções. Ficamos satisfeitos com a seleção.;variedade;1;54;63
+5224;O quarto do hotel era espaçoso e bem decorado. Nos sentimos confortáveis durante toda a estadia.;quarto;1;2;8
+5225;A piscina do hotel estava limpa e bem conservada. Foi ótimo dar um mergulho depois de um dia quente.;piscina;1;2;9
+5226;O restaurante do hotel oferece uma variedade de pratos deliciosos. Recomendo experimentar a culinária local!;restaurante;1;2;13
+5227;O restaurante do hotel oferece uma variedade de pratos deliciosos. Recomendo experimentar a culinária local!;culinária;1;92;101
+5228;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;spa;1;2;5
+5229;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;tratamentos;1;23;34
+5230;A equipe do hotel foi muito prestativa e atenciosa. Eles nos ajudaram com todas as nossas solicitações.;ajuda;1;61;66
+5231;A localização do hotel é perfeita para quem deseja explorar a cidade a pé. Ficamos impressionados com a conveniência.;localização;1;2;13
+5232;A localização do hotel é perfeita para quem deseja explorar a cidade a pé. Ficamos impressionados com a conveniência.;explorar;1;51;59
+5233;O estacionamento do hotel é amplo e seguro. Ficamos tranquilos deixando nosso carro lá durante a estadia.;estacionamento;1;2;16
+5234;A academia do hotel possui equipamentos modernos e bem conservados. Foi ótimo manter minha rotina de exercícios.;academia;1;2;10
+5235;A academia do hotel possui equipamentos modernos e bem conservados. Foi ótimo manter minha rotina de exercícios.;equipamentos;1;27;39
+5236;O serviço de lavanderia do hotel é eficiente e rápido. Ficamos satisfeitos com a qualidade do serviço.;lavanderia;1;13;23
+5237;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;serviço;1;19;26
+5238;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;pontos turísticos;1;69;86
+5239;O quarto do hotel é bem iluminado e espaçoso. Ficamos confortáveis durante toda a estadia.;quarto;1;2;8
+5240;A área da piscina do hotel é muito agradável e bem cuidada. Passamos momentos relaxantes lá.;piscina;1;10;17
+5241;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;restaurante;1;2;13
+5242;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;variedade;1;35;44
+5243;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;spa;1;2;5
+5244;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;tratamentos;1;40;51
+5245;A localização do hotel é estratégica, perto de várias atrações turísticas.;localização;1;2;13
+5246;A localização do hotel é estratégica, perto de várias atrações turísticas.;atrações;1;54;62
+5247;O estacionamento do hotel é espaçoso e bem organizado. Não tivemos problemas para encontrar vaga.;estacionamento;1;2;16
+5248;A academia do hotel tem uma boa seleção de equipamentos para treino.;academia;1;2;10
+5249;A academia do hotel tem uma boa seleção de equipamentos para treino.;seleção;1;32;39
+5250;O serviço de lavanderia do hotel é eficiente e confiável. Recebemos nossas roupas de volta em perfeito estado.;lavanderia;1;13;23
+5251;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;serviço;1;19;26
+5252;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;pontos turísticos;1;69;86
+5253;O quarto do hotel é bem iluminado e espaçoso. Ficamos confortáveis durante toda a estadia.;quarto;1;2;8
+5254;A área da piscina do hotel é muito agradável e bem cuidada. Passamos momentos relaxantes lá.;piscina;1;10;17
+5255;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;restaurante;1;2;13
+5256;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;variedade;1;35;44
+5257;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;spa;1;2;5
+5258;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;tratamentos;1;40;51
+5259;A localização do hotel é estratégica, perto de várias atrações turísticas.;localização;1;2;13
+5260;A localização do hotel é estratégica, perto de várias atrações turísticas.;atrações;1;54;62
+5261;O estacionamento do hotel é espaçoso e bem organizado. Não tivemos problemas para encontrar vaga.;estacionamento;1;2;16
+5262;A academia do hotel tem uma boa seleção de equipamentos para treino.;academia;1;2;10
+5263;A academia do hotel tem uma boa seleção de equipamentos para treino.;seleção;1;32;39
+5264;O serviço de lavanderia do hotel é eficiente e confiável. Recebemos nossas roupas de volta em perfeito estado.;lavanderia;1;13;23
+5265;O hotel possui um design moderno e elegante. Gostei muito da decoração!;design;1;18;24
+5266;O hotel possui um design moderno e elegante. Gostei muito da decoração!;decoração;1;61;70
+5267;O café da manhã oferecido pelo hotel era satisfatório. Nada excepcional, mas atendeu às nossas necessidades.;café;0;2;6
+5268;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;limpeza;0;13;20
+5269;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;serviço;0;2;9
+5270;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;vista;0;28;33
+5271;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;cidade;0;49;55
+5272;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;piscina;0;2;9
+5273;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;condições;0;34;43
+5274;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;comida;0;2;8
+5275;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;restaurante;0;20;31
+5276;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;spa;0;2;5
+5277;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;tratamentos;0;49;60
+5278;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;localização;0;2;13
+5279;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;atrações;0;72;80
+5280;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;estacionamento;0;2;16
+5281;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;dificuldade;0;46;57
+5282;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;academia;0;2;10
+5283;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;equipamentos;0;39;51
+5284;O serviço de lavanderia do hotel é cobrado à parte. Seria melhor se estivesse incluído na estadia.;lavanderia;0;13;23
+5285;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;Wi-Fi;0;16;21
+5286;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;conexão;0;38;45
+5287;A vista do quarto do hotel era decente. Não era espetacular, mas não era ruim.;vista;0;2;7
+5288;A vista do quarto do hotel era decente. Não era espetacular, mas não era ruim.;quarto;0;11;17
+5289;O café da manhã oferecido pelo hotel era satisfatório. Nada excepcional, mas atendeu às nossas necessidades.;café;0;2;6
+5290;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;limpeza;0;13;20
+5291;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;serviço;0;2;9
+5292;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;vista;0;28;33
+5293;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;cidade;0;49;55
+5294;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;piscina;0;2;9
+5295;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;condições;0;34;43
+5296;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;comida;0;2;8
+5297;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;restaurante;0;20;31
+5298;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;spa;0;2;5
+5299;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;tratamentos;0;49;60
+5300;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;localização;0;2;13
+5301;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;atrações;0;72;80
+5302;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;estacionamento;0;2;16
+5303;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;dificuldade;0;46;57
+5304;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;academia;0;2;10
+5305;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;equipamentos;0;39;51
+5306;O serviço de lavanderia do hotel é cobrado à parte. Seria melhor se estivesse incluído na estadia.;lavanderia;0;13;23
+5307;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;Wi-Fi;0;16;21
+5308;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;conexão;0;38;45
+5309;O café da manhã oferecido pelo hotel era satisfatório. Nada excepcional, mas atendeu às nossas necessidades.;café;0;2;6
+5310;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;limpeza;0;13;20
+5311;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;serviço;0;2;9
+5312;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;vista;0;28;33
+5313;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;cidade;0;49;55
+5314;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;piscina;0;2;9
+5315;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;condições;0;34;43
+5316;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;comida;0;2;8
+5317;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;restaurante;0;20;31
+5318;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;spa;0;2;5
+5319;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;tratamentos;0;49;60
+5320;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;localização;0;2;13
+5321;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;atrações;0;72;80
+5322;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;estacionamento;0;2;16
+5323;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;dificuldade;0;46;57
+5324;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;academia;0;2;10
+5325;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;equipamentos;0;39;51
+5326;O serviço de lavanderia do hotel é cobrado à parte. Seria melhor se estivesse incluído na estadia.;lavanderia;0;13;23
+5327;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;Wi-Fi;0;16;21
+5328;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;conexão;0;38;45
+5329;O quarto do hotel era pequeno e apertado. Mal conseguíamos nos mover lá dentro.;quarto;-1;2;8
+5330;O café da manhã no hotel era simplesmente delicioso. Nunca comi algo tão bom!;café;1;2;6
+5331;O serviço de limpeza do hotel deixou muito a desejar. Encontramos cabelos no banheiro.;limpeza;-1;13;20
+5332;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;vista;1;18;23
+5333;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;montanhas;1;41;50
+5334;A piscina do hotel estava suja e mal cuidada. Nem ousei entrar.;piscina;-1;2;9
+5335;A comida servida no restaurante do hotel era mais ou menos. Nada excepcional, mas comível.;comida;0;2;8
+5336;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;spa;1;2;5
+5337;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;tratamentos;1;23;34
+5338;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;localização;1;2;13
+5339;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;compras;1;62;69
+5340;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;estacionamento;-1;2;16
+5341;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;dificuldade;-1;45;56
+5342;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;academia;-1;2;10
+5343;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;equipamentos;-1;26;38
+5344;O serviço de lavanderia do hotel é caro. Prefiro lavar minhas roupas em casa.;lavanderia;-1;13;23
+5345;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;Wi-Fi;-1;16;21
+5346;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;conexão;-1;38;45
+5347;O quarto do hotel era pequeno e apertado. Mal conseguíamos nos mover lá dentro.;quarto;-1;2;8
+5348;O café da manhã no hotel era simplesmente delicioso. Nunca comi algo tão bom!;café;1;2;6
+5349;O serviço de limpeza do hotel deixou muito a desejar. Encontramos cabelos no banheiro.;limpeza;-1;13;20
+5350;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;vista;1;18;23
+5351;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;montanhas;1;41;50
+5352;A piscina do hotel estava suja e mal cuidada. Nem ousei entrar.;piscina;-1;2;9
+5353;A comida servida no restaurante do hotel era mais ou menos. Nada excepcional, mas comível.;comida;0;2;8
+5354;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;spa;1;2;5
+5355;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;tratamentos;1;23;34
+5356;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;localização;1;2;13
+5357;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;compras;1;62;69
+5358;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;estacionamento;-1;2;16
+5359;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;dificuldade;-1;45;56
+5360;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;academia;-1;2;10
+5361;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;equipamentos;-1;26;38
+5362;O serviço de lavanderia do hotel é caro. Prefiro lavar minhas roupas em casa.;lavanderia;-1;13;23
+5363;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;Wi-Fi;-1;16;21
+5364;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;conexão;-1;38;45
+5365;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";experiência;1;16;27
+5366;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";decoração;1;47;56
+5367;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";atendimento;1;60;71
+5368;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";comida;1;76;82
+5369;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;estadia;-1;2;9
+5370;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;quarto;-1;44;50
+5371;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;serviço;-1;66;73
+5372;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;comida;-1;91;97
+5373;"O café da manhã no hotel era bom; tinha uma variedade decente de opções. Mas o Wi-Fi era uma piada; mal consegui me conectar.";café;0;2;6
+5374;"O café da manhã no hotel era bom; tinha uma variedade decente de opções. Mas o Wi-Fi era uma piada; mal consegui me conectar.";variedade;0;44;53
+5375;"O café da manhã no hotel era bom; tinha uma variedade decente de opções. Mas o Wi-Fi era uma piada; mal consegui me conectar.";Wi-Fi;0;79;84
+5376;O hotel tem uma vista incrível para o mar e para as montanhas. É perfeito para quem gosta de paisagens naturais.;vista;1;16;21
+5377;O hotel tem uma vista incrível para o mar e para as montanhas. É perfeito para quem gosta de paisagens naturais.;mar;1;38;41
+5378;O hotel tem uma vista incrível para o mar e para as montanhas. É perfeito para quem gosta de paisagens naturais.;montanhas;1;52;61
+5379;"A piscina do hotel era ótima para relaxar; eu passava horas lá. Mas o bar da piscina estava sempre lotado e o serviço era lento demais.";piscina;0;2;9
+5380;"A piscina do hotel era ótima para relaxar; eu passava horas lá. Mas o bar da piscina estava sempre lotado e o serviço era lento demais.";bar;0;70;73
+5381;"A piscina do hotel era ótima para relaxar; eu passava horas lá. Mas o bar da piscina estava sempre lotado e o serviço era lento demais.";serviço;0;110;117
+5382;O hotel era fantástico! A decoração era moderna e elegante, o atendimento era impecável e a comida deliciosa.;decoração;1;26;35
+5383;O hotel era fantástico! A decoração era moderna e elegante, o atendimento era impecável e a comida deliciosa.;atendimento;1;62;73
+5384;O hotel era fantástico! A decoração era moderna e elegante, o atendimento era impecável e a comida deliciosa.;comida;1;92;98
+5385;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;estadia;-1;2;9
+5386;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;quarto;-1;40;46
+5387;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;serviço;-1;62;69
+5388;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;comida;-1;84;90
+5389;"O café da manhã no hotel era incrível; tinha uma variedade enorme de opções: ovos, bacon, cereais, frutas e pães.";café;1;2;6
+5390;"O café da manhã no hotel era incrível; tinha uma variedade enorme de opções: ovos, bacon, cereais, frutas e pães.";variedade;1;49;58
+5391;"O café da manhã no hotel era incrível; tinha uma variedade enorme de opções: ovos, bacon, cereais, frutas e pães.";opções;1;69;75
+5392;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;vista;1;18;23
+5393;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;mar;1;44;47
+5394;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;montanhas;1;49;58
+5395;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;cidade;1;61;67
+5396;A piscina do hotel era relaxante e tinha uma área ampla para banho de sol. As espreguiçadeiras eram confortáveis.;piscina;1;2;9
+5397;A piscina do hotel era relaxante e tinha uma área ampla para banho de sol. As espreguiçadeiras eram confortáveis.;espreguiçadeiras;1;78;94
+5398;O restaurante do hotel oferecia uma variedade incrível de pratos: massas, saladas, carnes, peixes e sobremesas.;restaurante;1;2;13
+5399;O restaurante do hotel oferecia uma variedade incrível de pratos: massas, saladas, carnes, peixes e sobremesas.;variedade;1;36;45
+5400;O restaurante do hotel oferecia uma variedade incrível de pratos: massas, saladas, carnes, peixes e sobremesas.;pratos;1;58;64
+5401;"O serviço de lavanderia do hotel era conveniente; eles lavavam minhas roupas e as entregavam no quarto.";lavanderia;1;13;23
+5402;O hotel oferecia Wi-Fi gratuito, mas a conexão era instável e lenta. Às vezes, nem conseguia abrir meu e-mail.;Wi-Fi;-1;17;22
+5403;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;spa;1;17;20
+5404;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;tratamentos;1;54;65
+5405;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;massagens relaxantes;1;67;87
+5406;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;esfoliações;1;89;100
+5407;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;terapias;1;103;111
+5408;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;academia;1;2;10
+5409;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;pesos livres;1;62;74
+5410;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;bem equipada;1;24;36
+5411;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;modernos;1;51;59
+5412;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;bem equipada;1;24;36
+5413;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;entretenimento;1;40;54
+5414;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;passeios;1;56;64
+5415;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;aulas de culinária;1;66;84
+5416;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;shows ao vivo;1;87;100
+5417;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;recreação;1;10;19
+5418;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;playground;1;61;71
+5419;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;piscina infantil;1;73;89
+5420;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;atividades supervisionadas;1;92;118
+5421;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;perfeita para crianças;1;33;55
+5422;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;ambiente familiar;1;17;34
+5423;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;atividades para todas as idades;1;40;71
+5424;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;espaços para relaxamento;1;74;98
+5425;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;familiar;1;26;34
+5426;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;buffet;1;20;26
+5427;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;variado;1;27;34
+5428;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;café da manhã;1;60;73
+5429;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;almoço;1;75;81
+5430;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;jantar;1;84;90
+5431;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;refeições;1;49;58
+5432;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;localização;1;18;29
+5433;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;pontos turísticos;1;53;70
+5434;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;lojas;1;72;77
+5435;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;restaurantes;1;80;92
+5436;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;privilegiada;1;30;42
+5437;A comida estava deliciosa, mas o serviço foi péssimo.;comida;1;2;8
+5438;A comida estava deliciosa, mas o serviço foi péssimo.;serviço;-1;33;40
+5439;O hotel é bem localizado, mas o quarto estava sujo.;localiza;1;14;22
+5440;O atendimento foi lento e desorganizado.;atendimento;-1;2;13
+5441;Ambiente agradável, mas a comida deixou a desejar.;mbiente;1;1;8
+5442;Ambiente agradável, mas a comida deixou a desejar.;comida;-1;26;32
+5443;A cama era confortável, porém o banheiro estava sujo.;cama;1;2;6
+5444;O café da manhã era variado, mas o atendimento foi ruim.;café da manhã;1;2;15
+5445;O café da manhã era variado, mas o atendimento foi ruim.;atendimento;-1;35;46
+5446;A vista do hotel era incrível, mas o Wi-Fi não funcionava.;vista;1;2;7
+5447;A vista do hotel era incrível, mas o Wi-Fi não funcionava.;Wi-Fi;-1;37;42
+5448;O quarto era espaçoso, mas o barulho da rua atrapalhou o sono.;quarto;1;2;8
+5449;O quarto era espaçoso, mas o barulho da rua atrapalhou o sono.;barulho;-1;29;36
+5450;O restaurante do hotel tinha boa comida, mas o preço era alto demais.;restaurante;1;2;13
+5451;O restaurante do hotel tinha boa comida, mas o preço era alto demais.;preço;-1;47;52
+5452;O chuveiro era forte e quente, mas o serviço de quarto deixou a desejar.;chuveiro;1;2;10
+5453;O chuveiro era forte e quente, mas o serviço de quarto deixou a desejar.;serviço de quarto;-1;37;54
+5454;A decoração do hotel era elegante, mas o estacionamento era caro.;decoração;1;2;11
+5455;A decoração do hotel era elegante, mas o estacionamento era caro.;estacionamento;-1;41;55
+5456;O hotel estava bem limpo, mas a comida do restaurante era sem graça.;limp;1;19;23
+5457;O hotel estava bem limpo, mas a comida do restaurante era sem graça.;comida;-1;32;38
+5458;O check-in foi rápido, mas o elevador estava sempre lotado.;check-in;1;2;10
+5459;O check-in foi rápido, mas o elevador estava sempre lotado.;elevador;-1;29;37
+5460;O ambiente do hotel era tranquilo, mas o ar condicionado não funcionava.;ambiente;1;2;10
+5461;O ambiente do hotel era tranquilo, mas o ar condicionado não funcionava.;ar condicionado;-1;41;56
+5462;A piscina era grande, mas a água estava suja.;piscina;1;2;9
+5463;O serviço de concierge era útil, mas o café da manhã era fraco.;serviço de concierge;1;2;22
+5464;O serviço de concierge era útil, mas o café da manhã era fraco.;café da manhã;-1;39;52
+5465;A localização do hotel era conveniente, mas os quartos eram pequenos.;localização;1;2;13
+5466;A localização do hotel era conveniente, mas os quartos eram pequenos.;quartos;-1;47;54
+5467;O hotel oferecia bicicletas gratuitas, mas o estacionamento era caro.;bicicletas;1;17;27
+5468;O hotel oferecia bicicletas gratuitas, mas o estacionamento era caro.;estacionamento;-1;45;59
+5469;O serviço de limpeza era eficiente, mas o café da manhã era caro.;serviço de limpeza;1;2;20
+5470;O serviço de limpeza era eficiente, mas o café da manhã era caro.;café da manhã;-1;42;55
+5471;O spa do hotel era relaxante, mas o Wi-Fi era lento.;spa;1;2;5
+5472;O spa do hotel era relaxante, mas o Wi-Fi era lento.;Wi-Fi;-1;36;41
+5473;O hotel oferecia uma ótima vista da cidade, mas o serviço de quarto era demorado.;vista;1;27;32
+5474;O hotel oferecia uma ótima vista da cidade, mas o serviço de quarto era demorado.;serviço de quarto;-1;50;67
+5475;O ambiente do restaurante era acolhedor, mas a comida estava fria.;ambiente;1;2;10
+5476;O ambiente do restaurante era acolhedor, mas a comida estava fria.;comida;-1;47;53
+5477;A recepção do hotel era bonita, mas os funcionários não eram simpáticos.;recepção;1;2;10
+5478;A recepção do hotel era bonita, mas os funcionários não eram simpáticos.;funcionários;-1;39;51
+5479;O hotel oferecia academia, mas os equipamentos estavam velhos.;academia;1;17;25
+5480;O hotel oferecia academia, mas os equipamentos estavam velhos.;equipamentos;-1;34;46
+5481;O banheiro do quarto era espaçoso, mas não havia shampoo.;banheiro;1;2;10
+5482;O banheiro do quarto era espaçoso, mas não havia shampoo.;shampoo;-1;49;56
+5483;O hotel oferecia serviço de lavanderia, mas cobrava caro por isso.;serviço de lavanderia;1;17;38
+5484;O lobby do hotel era elegante, mas o estacionamento era difícil de encontrar.;lobby;1;2;7
+5485;O lobby do hotel era elegante, mas o estacionamento era difícil de encontrar.;estacionamento;-1;37;51
+5486;O hotel oferecia traslado para o aeroporto, mas o check-out foi demorado.;traslado;1;17;25
+5487;O hotel oferecia traslado para o aeroporto, mas o check-out foi demorado.;check-out;-1;50;59
+5488;A decoração do quarto era moderna, mas a cama era desconfortável.;decoração;1;2;11
+5489;A decoração do quarto era moderna, mas a cama era desconfortável.;cama;-1;41;45
+5490;O serviço de concierge era prestativo, mas o restaurante tinha poucas opções.;serviço de concierge;1;2;22
+5491;O serviço de concierge era prestativo, mas o restaurante tinha poucas opções.;restaurante;-1;45;56
+5492;A recepção do hotel era calorosa, mas o elevador estava sempre quebrado.;recepção;1;2;10
+5493;A recepção do hotel era calorosa, mas o elevador estava sempre quebrado.;elevador;-1;40;48
+5494;O hotel oferecia café da manhã gratuito, mas os quartos eram pequenos demais.;café da manhã;1;17;30
+5495;O hotel oferecia café da manhã gratuito, mas os quartos eram pequenos demais.;quartos;-1;48;55
+5496;O hotel oferecia serviço de quarto 24 horas, mas os preços eram exorbitantes.;serviço de quarto;1;17;34
+5497;O hotel oferecia serviço de quarto 24 horas, mas os preços eram exorbitantes.;preços;-1;52;58
+5498;O hotel oferecia uma bela vista da montanha, mas o Wi-Fi era instável.;vista;1;26;31
+5499;O hotel oferecia uma bela vista da montanha, mas o Wi-Fi era instável.;Wi-Fi;-1;51;56
+5500;O estacionamento do hotel era conveniente, mas o café da manhã era caro.;estacionamento;1;2;16
+5501;O estacionamento do hotel era conveniente, mas o café da manhã era caro.;café da manhã;-1;49;62
+5502;O serviço de quarto era eficiente, mas o restaurante era barulhento.;serviço de quarto;1;2;19
+5503;O serviço de quarto era eficiente, mas o restaurante era barulhento.;restaurante;-1;41;52
+5504;O hotel oferecia um belo jardim, mas os quartos eram antigos.;jardim;1;25;31
+5505;O hotel oferecia um belo jardim, mas os quartos eram antigos.;quartos;-1;40;47
+5506;A localização do hotel era privilegiada, mas o ar condicionado não funcionava.;localização;1;2;13
+5507;A localização do hotel era privilegiada, mas o ar condicionado não funcionava.;ar condicionado;-1;47;62
+5508;O hotel oferecia uma bela vista da cidade, mas o café da manhã era fraco.;vista;1;26;31
+5509;O hotel oferecia uma bela vista da cidade, mas o café da manhã era fraco.;café da manhã;-1;49;62
+5510;O hotel oferecia serviço de concierge, mas o preço dos passeios era alto demais.;serviço de concierge;1;17;37
+5511;O hotel oferecia serviço de concierge, mas o preço dos passeios era alto demais.;preço;-1;45;50
+5512;O serviço de limpeza era eficiente, mas o estacionamento era caro.;serviço de limpeza;1;2;20
+5513;O serviço de limpeza era eficiente, mas o estacionamento era caro.;estacionamento;-1;42;56
+5514;O hotel oferecia uma bela vista da praia, mas o restaurante era caro.;vista;1;26;31
+5515;O hotel oferecia uma bela vista da praia, mas o restaurante era caro.;restaurante;-1;48;59
+5516;O hotel oferecia uma ótima localização, mas os quartos eram pequenos.;localização;1;27;38
+5517;O hotel oferecia uma ótima localização, mas os quartos eram pequenos.;quartos;-1;47;54
+5518;O hotel oferecia traslado gratuito para o aeroporto, mas o check-in foi demorado.;traslado;1;17;25
+5519;O hotel oferecia traslado gratuito para o aeroporto, mas o check-in foi demorado.;check-in;-1;59;67
+5520;O serviço de quarto era rápido, mas o restaurante tinha poucas opções.;serviço de quarto;1;2;19
+5521;O serviço de quarto era rápido, mas o restaurante tinha poucas opções.;restaurante;-1;38;49
+5522;O hotel oferecia academia, mas os equipamentos estavam quebrados.;academia;1;17;25
+5523;O hotel oferecia academia, mas os equipamentos estavam quebrados.;equipamentos;-1;34;46
+5524;O banheiro do quarto era espaçoso, mas a água do chuveiro era fria.;banheiro;1;2;10
+5525;O banheiro do quarto era espaçoso, mas a água do chuveiro era fria.;água do chuveiro;-1;41;57
+5526;O hotel oferecia serviço de lavanderia, mas o preço era alto.;serviço de lavanderia;1;17;38
+5527;O hotel oferecia serviço de lavanderia, mas o preço era alto.;preço;-1;46;51
+5528;O lobby do hotel era elegante, mas o estacionamento era lotado.;lobby;1;2;7
+5529;O lobby do hotel era elegante, mas o estacionamento era lotado.;estacionamento;-1;37;51
+5530;O hotel oferecia traslado para o aeroporto, mas o check-out foi demorado.;traslado;1;17;25
+5531;O hotel oferecia traslado para o aeroporto, mas o check-out foi demorado.;check-out;-1;50;59
+5532;O restaurante do hotel tinha boa comida, mas o preço era exagerado.;restaurante;1;2;13
+5533;O restaurante do hotel tinha boa comida, mas o preço era exagerado.;preço;-1;47;52
+5534;O hotel oferecia serviço de quarto 24 horas, mas os preços eram elevados.;serviço de quarto;1;17;34
+5535;O hotel oferecia serviço de quarto 24 horas, mas os preços eram elevados.;preços;-1;52;58
+5536;O hotel oferecia uma bela vista da montanha, mas o Wi-Fi era lento.;vista;1;26;31
+5537;O hotel oferecia uma bela vista da montanha, mas o Wi-Fi era lento.;Wi-Fi;-1;51;56
+5538;O estacionamento do hotel era conveniente, mas o café da manhã era caro.;estacionamento;1;2;16
+5539;O estacionamento do hotel era conveniente, mas o café da manhã era caro.;café da manhã;-1;49;62
+5540;O serviço de quarto era eficiente, mas o restaurante era barulhento.;serviço de quarto;1;2;19
+5541;O serviço de quarto era eficiente, mas o restaurante era barulhento.;restaurante;-1;41;52
+5542;O hotel oferecia um belo jardim, mas os quartos eram antigos.;jardim;1;25;31
+5543;O hotel oferecia um belo jardim, mas os quartos eram antigos.;quartos;-1;40;47
+5544;A localização do hotel era privilegiada, mas o ar condicionado não funcionava.;localização;1;2;13
+5545;A localização do hotel era privilegiada, mas o ar condicionado não funcionava.;ar condicionado;-1;47;62
+5546;O hotel oferecia uma bela vista da cidade, mas o café da manhã era fraco.;vista;1;26;31
+5547;O hotel oferecia uma bela vista da cidade, mas o café da manhã era fraco.;café da manhã;-1;49;62
+5548;O hotel oferecia serviço de concierge, mas o preço dos passeios era alto demais.;serviço de concierge;1;17;37
+5549;A comida estava divina, uma explosão de sabor no paladar, mas o serviço foi simplesmente terrível!;comida;1;2;8
+5550;A comida estava divina, uma explosão de sabor no paladar, mas o serviço foi simplesmente terrível!;serviço;-1;64;71
+5551;O hotel tinha uma localização dos sonhos, mas o quarto estava tão sujo que me deu vontade de vomitar.;localização;1;18;29
+5552;O atendimento foi um verdadeiro pesadelo, lento, rude e totalmente desorganizado!;atendimento;-1;2;13
+5553;Ambiente incrível, mas a comida era uma verdadeira decepção, simplesmente nojenta.;mbiente;1;1;8
+5554;Ambiente incrível, mas a comida era uma verdadeira decepção, simplesmente nojenta.;comida;-1;25;31
+5555;A cama era uma nuvem de conforto, mas o banheiro era tão imundo que nem coragem de usar tive.;cama;1;2;6
+5556;O café da manhã era uma vergonha, puro lixo, e o atendimento então? Nem se fala, um completo desastre!;café da manhã;1;2;15
+5557;O café da manhã era uma vergonha, puro lixo, e o atendimento então? Nem se fala, um completo desastre!;atendimento;-1;49;60
+5558;A vista do hotel era de tirar o fôlego, mas o Wi-Fi simplesmente não funcionava, um completo absurdo!;vista;1;2;7
+5559;A vista do hotel era de tirar o fôlego, mas o Wi-Fi simplesmente não funcionava, um completo absurdo!;Wi-Fi;-1;46;51
+5560;O quarto era espaçoso, mas o barulho da rua era ensurdecedor, impossível dormir em paz!;quarto;1;2;8
+5561;O quarto era espaçoso, mas o barulho da rua era ensurdecedor, impossível dormir em paz!;barulho;-1;29;36
+5562;O restaurante do hotel tinha comida de qualidade, mas o preço era um verdadeiro roubo!;restaurante;1;2;13
+5563;O restaurante do hotel tinha comida de qualidade, mas o preço era um verdadeiro roubo!;preço;-1;56;61
+5564;O chuveiro era uma maravilha, mas o serviço de quarto era uma verdadeira piada, mais valia terem deixado quieto.;chuveiro;1;2;10
+5565;O chuveiro era uma maravilha, mas o serviço de quarto era uma verdadeira piada, mais valia terem deixado quieto.;serviço de quarto;-1;36;53
+5566;A decoração do hotel era um espetáculo à parte, mas o estacionamento era tão caro que preferi andar a pé!;decoração;1;2;11
+5567;A decoração do hotel era um espetáculo à parte, mas o estacionamento era tão caro que preferi andar a pé!;estacionamento;-1;54;68
+5568;O hotel estava tão limpo que até brilhava, mas a comida do restaurante era tão sem graça que preferi ir a pé a um fast-food.;limp;1;19;23
+5569;O hotel estava tão limpo que até brilhava, mas a comida do restaurante era tão sem graça que preferi ir a pé a um fast-food.;comida;-1;49;55
+5570;O check-in foi rápido, mas o elevador estava sempre lotado, uma verdadeira bagunça!;check-in;1;2;10
+5571;O check-in foi rápido, mas o elevador estava sempre lotado, uma verdadeira bagunça!;elevador;-1;29;37
+5572;O ambiente do hotel era tranquilo e agradável, mas o ar condicionado simplesmente não funcionava, um calor infernal!;ambiente;1;2;10
+5573;O ambiente do hotel era tranquilo e agradável, mas o ar condicionado simplesmente não funcionava, um calor infernal!;ar condicionado;-1;53;68
+5574;A piscina era um oásis de relaxamento, mas a água estava tão suja que nem me arrisquei a entrar.;piscina;1;2;9
+5575;O serviço de concierge era útil, mas o café da manhã era tão fraco que nem consegui comer direito.;serviço de concierge;1;2;22
+5576;O serviço de concierge era útil, mas o café da manhã era tão fraco que nem consegui comer direito.;café da manhã;-1;39;52
+5577;A localização do hotel era conveniente, mas os quartos eram tão pequenos que mal consegui abrir minha mala.;localização;1;2;13
+5578;A localização do hotel era conveniente, mas os quartos eram tão pequenos que mal consegui abrir minha mala.;quartos;-1;47;54
+5579;O hotel oferecia bicicletas gratuitas, mas o estacionamento era tão caro que preferi andar a pé.;bicicletas;1;17;27
+5580;O hotel oferecia bicicletas gratuitas, mas o estacionamento era tão caro que preferi andar a pé.;estacionamento;-1;45;59
+5581;O serviço de limpeza era eficiente, mas o café da manhã era tão caro que preferi tomar um café na rua.;serviço de limpeza;1;2;20
+5582;O serviço de limpeza era eficiente, mas o café da manhã era tão caro que preferi tomar um café na rua.;café da manhã;-1;42;55
+5583;O spa do hotel era relaxante, mas o Wi-Fi era tão lento que nem consegui me distrair com o celular.;spa;1;2;5
+5584;O spa do hotel era relaxante, mas o Wi-Fi era tão lento que nem consegui me distrair com o celular.;Wi-Fi;-1;36;41
+5585;O hotel oferecia uma vista deslumbrante da cidade, mas o serviço de quarto era tão demorado que desisti de pedir.;vista;1;21;26
+5586;O hotel oferecia uma vista deslumbrante da cidade, mas o serviço de quarto era tão demorado que desisti de pedir.;serviço de quarto;-1;57;74
+5587;O ambiente do restaurante era acolhedor, mas a comida estava tão fria que mal consegui engolir.;ambiente;1;2;10
+5588;O ambiente do restaurante era acolhedor, mas a comida estava tão fria que mal consegui engolir.;comida;-1;47;53
+5589;A recepção do hotel era bonita, mas os funcionários eram tão antipáticos que nem me senti bem-vindo.;recepção;1;2;10
+5590;A recepção do hotel era bonita, mas os funcionários eram tão antipáticos que nem me senti bem-vindo.;funcionários;-1;39;51
+5591;O hotel oferecia academia, mas os equipamentos estavam tão velhos que nem me arrisquei a usá-los.;academia;1;17;25
+5592;O hotel oferecia academia, mas os equipamentos estavam tão velhos que nem me arrisquei a usá-los.;equipamentos;-1;34;46
+5593;O banheiro do quarto era espaçoso, mas não havia shampoo, um verdadeiro absurdo!;banheiro;1;2;10
+5594;O banheiro do quarto era espaçoso, mas não havia shampoo, um verdadeiro absurdo!;shampoo;-1;49;56
+5595;O hotel oferecia serviço de lavanderia, mas cobrava tão caro por isso que preferi lavar minhas roupas na pia.;serviço de lavanderia;1;17;38
+5596;O lobby do hotel era elegante, mas o estacionamento era tão difícil de encontrar que quase perdi minha reserva.;lobby;1;2;7
+5597;O lobby do hotel era elegante, mas o estacionamento era tão difícil de encontrar que quase perdi minha reserva.;estacionamento;-1;37;51
+5598;O hotel oferecia traslado para o aeroporto, mas o check-out foi tão demorado que quase perdi meu voo.;traslado;1;17;25
+5599;O hotel oferecia traslado para o aeroporto, mas o check-out foi tão demorado que quase perdi meu voo.;check-out;-1;50;59
+5600;O serviço de quarto era rápido, mas o restaurante tinha tão poucas opções que nem consegui escolher.;serviço de quarto;1;2;19
+5601;O serviço de quarto era rápido, mas o restaurante tinha tão poucas opções que nem consegui escolher.;restaurante;-1;38;49
+5602;O hotel oferecia academia, mas os equipamentos estavam tão quebrados que nem me atrevi a tocá-los.;academia;1;17;25
+5603;O hotel oferecia academia, mas os equipamentos estavam tão quebrados que nem me atrevi a tocá-los.;equipamentos;-1;34;46
+5604;O banheiro do quarto era espaçoso, mas a água do chuveiro estava tão fria que nem consegui tomar banho.;banheiro;1;2;10
+5605;O banheiro do quarto era espaçoso, mas a água do chuveiro estava tão fria que nem consegui tomar banho.;água do chuveiro;-1;41;57
+5606;O hotel oferecia serviço de lavanderia, mas o preço era tão alto que preferi lavar minhas roupas na pia.;serviço de lavanderia;1;17;38
+5607;O hotel oferecia serviço de lavanderia, mas o preço era tão alto que preferi lavar minhas roupas na pia.;preço;-1;46;51
+5608;O lobby do hotel era elegante, mas o estacionamento estava tão lotado que mal consegui encontrar uma vaga.;lobby;1;2;7
+5609;O lobby do hotel era elegante, mas o estacionamento estava tão lotado que mal consegui encontrar uma vaga.;estacionamento;-1;37;51
+5610;O hotel oferecia traslado para o aeroporto, mas o check-out foi tão demorado que quase perdi meu voo.;traslado;1;17;25
+5611;O hotel oferecia traslado para o aeroporto, mas o check-out foi tão demorado que quase perdi meu voo.;check-out;-1;50;59
+5612;O restaurante do hotel tinha comida de qualidade, mas o preço era tão exagerado que nem consegui saborear.;restaurante;1;2;13
+5613;O restaurante do hotel tinha comida de qualidade, mas o preço era tão exagerado que nem consegui saborear.;preço;-1;56;61
+5614;O hotel oferecia serviço de quarto 24 horas, mas os preços eram tão elevados que nem consegui pedir.;serviço de quarto;1;17;34
+5615;O hotel oferecia serviço de quarto 24 horas, mas os preços eram tão elevados que nem consegui pedir.;preços;-1;52;58
+5616;O hotel oferecia uma bela vista da montanha, mas o Wi-Fi era tão lento que nem consegui usar.;vista;1;26;31
+5617;O hotel oferecia uma bela vista da montanha, mas o Wi-Fi era tão lento que nem consegui usar.;Wi-Fi;-1;51;56
+5618;O estacionamento do hotel era conveniente, mas o café da manhã era tão caro que nem consegui comer.;estacionamento;1;2;16
+5619;O estacionamento do hotel era conveniente, mas o café da manhã era tão caro que nem consegui comer.;café da manhã;-1;49;62
+5620;O serviço de quarto era eficiente, mas o restaurante era tão barulhento que nem consegui relaxar.;serviço de quarto;1;2;19
+5621;O serviço de quarto era eficiente, mas o restaurante era tão barulhento que nem consegui relaxar.;restaurante;-1;41;52
+5622;O hotel oferecia um belo jardim, mas os quartos eram tão antigos que nem consegui descansar direito.;jardim;1;25;31
+5623;O hotel oferecia um belo jardim, mas os quartos eram tão antigos que nem consegui descansar direito.;quartos;-1;40;47
+5624;A localização do hotel era privilegiada, mas o ar condicionado era tão ruim que nem consegui dormir direito.;localização;1;2;13
+5625;A localização do hotel era privilegiada, mas o ar condicionado era tão ruim que nem consegui dormir direito.;ar condicionado;-1;47;62
+5626;O hotel oferecia uma bela vista da cidade, mas o café da manhã era tão fraco que nem consegui comer.;vista;1;26;31
+5627;O hotel oferecia uma bela vista da cidade, mas o café da manhã era tão fraco que nem consegui comer.;café da manhã;-1;49;62
+5628;O hotel oferecia serviço de concierge, mas o preço dos passeios era tão alto que nem consegui aproveitar.;serviço de concierge;1;17;37
+5629;O hotel oferecia serviço de concierge, mas o preço dos passeios era tão alto que nem consegui aproveitar.;preço;-1;45;50
+5630;O serviço de limpeza era eficiente, mas o estacionamento era tão caro que nem consegui estacionar.;serviço de limpeza;1;2;20
+5631;A experiência gastronômica foi um verdadeiro espetáculo para os sentidos, cada prato uma obra-prima de sabor e textura!;gastron;1;14;21
+5632;A decoração do hotel era como uma viagem no tempo, um mergulho na história e na elegância.;decoração;1;2;11
+5633;Os funcionários do hotel eram tão atenciosos e prestativos que me senti verdadeiramente mimado!;aten;1;34;38
+5634;O hotel oferecia uma variedade de atividades de lazer que garantiam diversão para todas as idades.;atividades de lazer;1;34;53
+5635;O hotel oferecia uma variedade de atividades de lazer que garantiam diversão para todas as idades.;diversão;1;68;76
+5636;A vista panorâmica do hotel era de tirar o fôlego, um verdadeiro espetáculo da natureza!;vista;1;2;7
+5637;O quarto era um refúgio de conforto e tranquilidade, cada detalhe pensado para proporcionar o máximo de bem-estar.;quarto;1;2;8
+5638;O quarto era um refúgio de conforto e tranquilidade, cada detalhe pensado para proporcionar o máximo de bem-estar.;conforto;1;27;35
+5639;O café da manhã era uma festa para o paladar, com uma variedade de opções deliciosas para começar o dia com energia!;café da manhã;1;2;15
+5640;A equipe de entretenimento do hotel garantia diversão o dia todo, com atividades criativas e envolventes.;entretenimento;1;12;26
+5641;A equipe de entretenimento do hotel garantia diversão o dia todo, com atividades criativas e envolventes.;diversão;1;45;53
+5642;O spa do hotel era um verdadeiro oásis de relaxamento, com tratamentos que revigoravam corpo e alma.;spa;1;2;5
+5643;O spa do hotel era um verdadeiro oásis de relaxamento, com tratamentos que revigoravam corpo e alma.;relaxamento;1;42;53
+5644;O restaurante do hotel era um verdadeiro festival de sabores, com pratos que encantavam até os paladares mais exigentes.;ente;1;114;118
+5645;O hotel oferecia uma programação cultural rica e diversificada, com eventos que celebravam a arte e a cultura local.;programação cultural;1;21;41
+5646;O hotel oferecia uma programação cultural rica e diversificada, com eventos que celebravam a arte e a cultura local.;cultura;1;33;40
+5647;A academia do hotel era equipada com aparelhos modernos e oferecia uma experiência completa de treino.;academia;1;2;10
+5648;A localização do hotel era estratégica, permitindo fácil acesso aos principais pontos turísticos da cidade.;localização;1;2;13
+5649;A equipe de concierge do hotel estava sempre pronta para atender aos meus pedidos e garantir uma estadia perfeita.; de concierge;1;8;21
+5650;A equipe de concierge do hotel estava sempre pronta para atender aos meus pedidos e garantir uma estadia perfeita.;atend;1;57;62
+5651;O hotel oferecia uma seleção de vinhos finos que tornavam cada refeição uma experiência ainda mais especial.;vinhos;1;32;38
+5652;Os jardins do hotel eram um verdadeiro paraíso verde, proporcionando momentos de relaxamento em contato com a natureza.;jardins;1;3;10
+5653;O hotel oferecia um lounge elegante e aconchegante, perfeito para relaxar com um bom livro ou uma bebida.;lounge;1;20;26
+5654;O hotel oferecia uma piscina aquecida com vista para o mar, proporcionando momentos de lazer inesquecíveis.;piscina;1;21;28
+5655;O hotel oferecia um buffet de sobremesas irresistíveis que deixavam qualquer um com água na boca.;sobremesas;1;30;40
+5656;A equipe de recreação do hotel garantia diversão para as crianças, com atividades lúdicas e educativas.;recreação ;1;12;22
+5657;A equipe de recreação do hotel garantia diversão para as crianças, com atividades lúdicas e educativas.;diversão;1;40;48
+5658;O hotel oferecia uma área de churrasco com vista para o mar, proporcionando momentos memoráveis em família.;churrasco;1;29;38
+5659;O hotel oferecia um lounge com música ao vivo todas as noites, criando um ambiente animado e acolhedor.;música ao vivo;1;31;45
+5660;O hotel oferecia um lounge com música ao vivo todas as noites, criando um ambiente animado e acolhedor.;ambiente;1;74;82
+5661;A equipe de segurança do hotel garantia tranquilidade e conforto aos hóspedes durante toda a estadia.;segurança;1;12;21
+5662;A equipe de segurança do hotel garantia tranquilidade e conforto aos hóspedes durante toda a estadia.;conforto;1;56;64
+5663;O hotel oferecia um serviço de transporte gratuito para os principais pontos turísticos da cidade.;transporte;1;31;41
+5664;O hotel oferecia uma biblioteca bem equipada, perfeita para os hóspedes que gostam de uma boa leitura.;biblioteca;1;21;31
+5665;A área de lazer do hotel contava com salão de jogos, proporcionando momentos de diversão para toda a família.;área de lazer;1;2;15
+5666;A área de lazer do hotel contava com salão de jogos, proporcionando momentos de diversão para toda a família.;diversão;1;80;88
+5667;O hotel oferecia um serviço de bar na piscina, permitindo que os hóspedes desfrutassem de drinks refrescantes sob o sol.;bar na piscina;1;31;45
+5668;A equipe de limpeza do hotel mantinha os quartos impecavelmente arrumados, proporcionando conforto e bem-estar aos hóspedes.;limpeza;1;12;19
+5669;A equipe de limpeza do hotel mantinha os quartos impecavelmente arrumados, proporcionando conforto e bem-estar aos hóspedes.;conforto;1;90;98
+5670;O hotel oferecia uma área de descanso com espreguiçadeiras e vista para o mar, perfeita para relaxar e recarregar as energias.;área de descanso;1;21;37
+5671;O hotel oferecia um espaço de coworking equipado com computadores e internet de alta velocidade.;espaço de coworking;1;20;39
+5672;A área de eventos do hotel contava com salas modernas e versáteis, ideais para reuniões e conferências de sucesso.;área de eventos;1;2;17
+5673;A área de eventos do hotel contava com salas modernas e versáteis, ideais para reuniões e conferências de sucesso.;ência;1;96;101
+5674;O hotel oferecia um serviço de concierge personalizado, auxiliando os hóspedes em todas as suas necessidades durante a estadia.;serviço de concierge;1;20;40
+5675;O hotel oferecia um menu de travesseiros com opções para todos os gostos, garantindo uma noite de sono perfeita aos hóspedes.;menu de travesseiros;1;20;40
+5676;A equipe de manutenção do hotel estava sempre disponível para resolver qualquer problema de forma rápida e eficiente.;manutenção;1;12;22
+5677;O hotel oferecia um serviço de lavanderia expressa, garantindo roupas limpas e frescas em pouco tempo.;serviço de lavanderia;1;20;41
+5678;A equipe de recepção do hotel recebia os hóspedes com um sorriso caloroso, proporcionando uma experiência acolhedora desde o check-in.;equipe de recepção;1;2;20
+5679;O hotel oferecia um serviço de quarto 24 horas, garantindo que os hóspedes nunca ficassem sem suas refeições favoritas.;serviço de quarto;1;20;37
+5680;O hotel oferecia uma sala de cinema privativa, perfeita para sessões exclusivas de filmes e séries.;sala de cinema;1;21;35
+5681;O hotel oferecia um serviço de transfer para o aeroporto, garantindo praticidade e conforto aos hóspedes.;transfer para o aeroporto;1;31;56
+5682;O hotel oferecia um serviço de pet care, garantindo que os animais de estimação dos hóspedes fossem tratados com todo o carinho e atenção.;pet care;1;31;39
+5683;A equipe de segurança do hotel estava sempre presente, garantindo a tranquilidade e a segurança dos hóspedes durante toda a estadia.;segurança;1;12;21
+5684;O hotel oferecia um serviço de despertar personalizado, garantindo que os hóspedes nunca perdessem seus compromissos importantes.;serviço de despertar;1;20;40
+5685;A equipe de recreação do hotel oferecia atividades para todas as idades, garantindo diversão para toda a família durante a estadia.;recreação;1;12;21
+5686;A equipe de recreação do hotel oferecia atividades para todas as idades, garantindo diversão para toda a família durante a estadia.;diversão;1;84;92
+5687;O hotel oferecia um serviço de concierge 24 horas, garantindo que os hóspedes recebessem assistência a qualquer momento do dia ou da noite.;serviço de concierge;1;20;40
+5688;O hotel oferecia um serviço de concierge 24 horas, garantindo que os hóspedes recebessem assistência a qualquer momento do dia ou da noite.;ência;1;95;100
+5689;A equipe de limpeza do hotel mantinha as áreas comuns impecavelmente limpas e organizadas, garantindo conforto e bem-estar aos hóspedes.;limpeza;1;12;19
+5690;A equipe de limpeza do hotel mantinha as áreas comuns impecavelmente limpas e organizadas, garantindo conforto e bem-estar aos hóspedes.;conforto;1;102;110
+5691;O hotel oferecia um serviço de babá, permitindo que os pais desfrutassem de momentos de relaxamento enquanto os filhos estavam sob os cuidados de profissionais qualificados.;serviço de babá;1;20;35
+5692;A área de lazer do hotel contava com piscinas aquecidas, toboáguas e jacuzzis, garantindo diversão para toda a família.;área de lazer;1;2;15
+5693;A área de lazer do hotel contava com piscinas aquecidas, toboáguas e jacuzzis, garantindo diversão para toda a família.;diversão;1;90;98
+5694;O hotel oferecia um serviço de empréstimo de bicicletas, permitindo que os hóspedes explorassem a região de forma sustentável e divertida.;empréstimo de bicicletas;1;31;55
+5695;A equipe de concierge do hotel estava sempre disponível para fornecer informações e dicas sobre os melhores restaurantes e pontos turísticos da cidade.;equipe de concierge;1;2;21
+5696;O hotel oferecia um serviço de lavanderia expressa, garantindo que os hóspedes nunca ficassem sem roupas limpas durante a estadia.;serviço de lavanderia;1;20;41
+5697;A equipe de manutenção do hotel estava sempre disponível para resolver qualquer problema com rapidez e eficiência, garantindo o conforto dos hóspedes.;manutenção;1;12;22
+5698;A equipe de manutenção do hotel estava sempre disponível para resolver qualquer problema com rapidez e eficiência, garantindo o conforto dos hóspedes.;conforto;1;128;136
+5699;O hotel oferecia um serviço de room service 24 horas, permitindo que os hóspedes desfrutassem de refeições deliciosas no conforto de seus quartos a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5700;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5701;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5702;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5703;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5704;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5705;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5706;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;ência;1;100;105
+5707;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5708;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5709;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5710;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5711;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5712;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5713;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5714;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5715;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5716;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;ência;1;100;105
+5717;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5718;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5719;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5720;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5721;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5722;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5723;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5724;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5725;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5726;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;ência;1;100;105
+5727;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5728;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5729;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5730;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5731;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5732;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5733;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5734;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5735;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5736;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;ência;1;100;105
+5737;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5738;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5739;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5740;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5741;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5742;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5743;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5744;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5745;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5746;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;ência;1;100;105
+5747;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5748;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5749;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5750;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5751;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5752;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5753;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5754;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5755;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5756;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;ência;1;100;105
+5757;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5758;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5759;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5760;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5761;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5762;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5763;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5764;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5765;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5766;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5767;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5768;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5769;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5770;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5771;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5772;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5773;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5774;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5775;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5776;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5777;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5778;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5779;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5780;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5781;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5782;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5783;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5784;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5785;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5786;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5787;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5788;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5789;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5790;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5791;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5792;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5793;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5794;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5795;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5796;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5797;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5798;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5799;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5800;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5801;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5802;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5803;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5804;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5805;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5806;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5807;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5808;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5809;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5810;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5811;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5812;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;conforto;1;99;107
+5813;O hotel oferecia um serviço de room service 24 horas, garantindo que os hóspedes pudessem desfrutar de refeições deliciosas a qualquer hora do dia ou da noite.;serviço de ;1;20;31
+5814;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;recreação ;1;12;22
+5815;A equipe de recreação do hotel oferecia uma variedade de atividades para entreter as crianças, garantindo momentos de diversão e alegria durante a estadia.;diversão;1;118;126
+5816;O hotel oferecia um serviço de transporte para os principais pontos turísticos da cidade, permitindo que os hóspedes explorassem a região com facilidade e conforto.;transporte;1;31;41
+5817;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;equipe de recepção;1;2;20
+5818;A equipe de recepção do hotel estava sempre disponível para atender às necessidades dos hóspedes, proporcionando uma estadia tranquila e confortável.;confort;1;137;144
+5819;O hotel oferecia um serviço de concierge personalizado, garantindo que os hóspedes recebessem assistência em todas as suas solicitações durante a estadia.;serviço de concierge;1;20;40
+5820;A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante a estadia.;limpeza;1;12;19
+5821;"A equipe de limpeza do hotel mantinha os quartos impecavelmente limpos e organizados, garantindo o conforto e o bem-estar dos hóspedes durante 
+A estadia no hotel foi mediana. O quarto era espaçoso, mas a limpeza deixou um pouco a desejar. A equipe de recepção foi educada, mas não muito prestativa.""";limpeza;-1;12;19
+5822;Fiquei um tanto desapontado com a experiência no hotel. O serviço de quarto demorava muito e a comida estava sempre fria. Além disso, o Wi-Fi era instável.;serviço de quarto;-1;58;75
+5823;Fiquei um tanto desapontado com a experiência no hotel. O serviço de quarto demorava muito e a comida estava sempre fria. Além disso, o Wi-Fi era instável.;Wi-Fi;-1;136;141
+5824;A localização do hotel era conveniente, mas o barulho da rua incomodava durante a noite. Os funcionários eram amigáveis, mas pareciam sobrecarregados.;localização;0;2;13
+5825;A localização do hotel era conveniente, mas o barulho da rua incomodava durante a noite. Os funcionários eram amigáveis, mas pareciam sobrecarregados.;barulho;-1;46;53
+5826;O hotel tinha uma boa infraestrutura, mas a falta de manutenção era evidente. O banheiro do quarto estava com vazamentos e a pintura das paredes descascando.;manutenção;-1;53;63
+5827;O hotel tinha uma boa infraestrutura, mas a falta de manutenção era evidente. O banheiro do quarto estava com vazamentos e a pintura das paredes descascando.;infraestrutura;-1;22;36
+5828;A estadia foi razoável, mas esperava mais pelo preço que paguei. Os lençóis estavam limpos, mas o colchão era desconfortável. A equipe tentou ser atenciosa, mas parecia desorganizada.;confort;-1;113;120
+5829;A estadia foi razoável, mas esperava mais pelo preço que paguei. Os lençóis estavam limpos, mas o colchão era desconfortável. A equipe tentou ser atenciosa, mas parecia desorganizada.;preço;-1;47;52
+5830;A estadia foi razoável, mas esperava mais pelo preço que paguei. Os lençóis estavam limpos, mas o colchão era desconfortável. A equipe tentou ser atenciosa, mas parecia desorganizada.;ento;-1;136;140
+5831;Não recomendaria este hotel a ninguém. A qualidade do serviço deixou muito a desejar. Os quartos eram mal iluminados e o ar condicionado não funcionava adequadamente. Além disso, o café da manhã era limitado e de baixa qualidade.;serviço; -1;54;61
+5832;Não recomendaria este hotel a ninguém. A qualidade do serviço deixou muito a desejar. Os quartos eram mal iluminados e o ar condicionado não funcionava adequadamente. Além disso, o café da manhã era limitado e de baixa qualidade.;quartos;-1;89;96
+5833;Não recomendaria este hotel a ninguém. A qualidade do serviço deixou muito a desejar. Os quartos eram mal iluminados e o ar condicionado não funcionava adequadamente. Além disso, o café da manhã era limitado e de baixa qualidade.;ilumina;-1;106;113
+5834;A experiência no hotel foi abaixo das expectativas. O atendimento na recepção foi lento e pouco amigável. O restaurante do hotel tinha poucas opções no cardápio e os preços eram altos.;atendimento;-1;54;65
+5835;A experiência no hotel foi abaixo das expectativas. O atendimento na recepção foi lento e pouco amigável. O restaurante do hotel tinha poucas opções no cardápio e os preços eram altos.;restaurante;-1;108;119
+5836;A experiência no hotel foi abaixo das expectativas. O atendimento na recepção foi lento e pouco amigável. O restaurante do hotel tinha poucas opções no cardápio e os preços eram altos.;preço;-1;166;171
+5837;Embora a localização fosse conveniente, o hotel estava em condições precárias. O elevador estava constantemente quebrado e os corredores cheiravam a mofo. A equipe parecia desinteressada em resolver os problemas dos hóspedes.;localização;-1;9;20
+5838;Embora a localização fosse conveniente, o hotel estava em condições precárias. O elevador estava constantemente quebrado e os corredores cheiravam a mofo. A equipe parecia desinteressada em resolver os problemas dos hóspedes.;elevador;-1;81;89
+5839;A limpeza do quarto deixou a desejar. Havia poeira acumulada nos cantos e teias de aranha no teto. Além disso, o cheiro de mofo no banheiro era desagradável.;limpeza;-1;2;9
+5840;A limpeza do quarto deixou a desejar. Havia poeira acumulada nos cantos e teias de aranha no teto. Além disso, o cheiro de mofo no banheiro era desagradável.;banheiro;-1;131;139
+5841;Fiquei decepcionado com a falta de cuidado com os detalhes no hotel. As toalhas estavam desgastadas e manchadas, e os travesseiros eram desconfortáveis. O serviço de quarto era caro e a qualidade da comida era mediana.;serviço de quarto;-1;155;172
+5842;Nossa estadia no Hotel Sunshine Paradise foi absolutamente incrível! Desde o momento em que entramos, fomos recebidos com sorrisos calorosos e um serviço excepcional. Os quartos eram espaçosos e impecavelmente limpos. A equipe fez de tudo para garantir que nos sentíssemos em casa. A localização também é perfeita, perto de todas as principais atrações. Definitivamente voltarei!;quartos;1;170;177
+5843;Que decepção! O Restaurante Sabor & Arte foi uma verdadeira decepção. O serviço foi lento e desorganizado, e a comida estava longe de ser saborosa. Além disso, o ambiente estava sujo e pouco convidativo. Definitivamente não recomendaria este lugar a ninguém. Uma experiência extremamente desapontadora.;serviço;-1;72;79
+5844;Que decepção! O Restaurante Sabor & Arte foi uma verdadeira decepção. O serviço foi lento e desorganizado, e a comida estava longe de ser saborosa. Além disso, o ambiente estava sujo e pouco convidativo. Definitivamente não recomendaria este lugar a ninguém. Uma experiência extremamente desapontadora.;comida;-1;111;117
+5845;A Praia do Sol é um lugar agradável para passar o dia. A areia é macia e a água é cristalina. No entanto, estava muito lotada quando visitamos, o que tirou um pouco da experiência relaxante. Ainda assim, é uma opção decente se você estiver procurando um lugar para se bronzear e nadar.;lotada;-1;119;125
+5846;A Praia do Sol é um lugar agradável para passar o dia. A areia é macia e a água é cristalina. No entanto, estava muito lotada quando visitamos, o que tirou um pouco da experiência relaxante. Ainda assim, é uma opção decente se você estiver procurando um lugar para se bronzear e nadar.;água;0;75;79
+5847;Que lugar fascinante! O Museu Histórico da Cidade é uma verdadeira jóia. A quantidade de artefatos e informações históricas é impressionante. A equipe também é muito experiente e prestativa. Aprendemos muito durante nossa visita e definitivamente recomendaríamos a todos os amantes da história.;artefatos;1;89;98
+5848;Minha estadia no Hotel Estrela do Mar foi uma verdadeira decepção. O quarto estava sujo e mal conservado, e o serviço deixou muito a desejar. Além disso, o barulho dos hóspedes nos corredores durante a noite era insuportável. Não consegui ter uma noite de sono decente durante toda a estadia. Definitivamente não voltarei e não recomendo este hotel a ninguém.;quarto;-1;69;75
+5849;Minha estadia no Hotel Estrela do Mar foi uma verdadeira decepção. O quarto estava sujo e mal conservado, e o serviço deixou muito a desejar. Além disso, o barulho dos hóspedes nos corredores durante a noite era insuportável. Não consegui ter uma noite de sono decente durante toda a estadia. Definitivamente não voltarei e não recomendo este hotel a ninguém.;serviço;-1;110;117
+5850;Minha estadia no Hotel Estrela do Mar foi uma verdadeira decepção. O quarto estava sujo e mal conservado, e o serviço deixou muito a desejar. Além disso, o barulho dos hóspedes nos corredores durante a noite era insuportável. Não consegui ter uma noite de sono decente durante toda a estadia. Definitivamente não voltarei e não recomendo este hotel a ninguém.;barulho;-1;156;163
+5851;O restaurante ao lado do hotel tinha uma comida deliciosa e um ambiente encantador. Sem dúvida, uma excelente opção para jantar!;comida;1;41;47
+5852;O restaurante ao lado do hotel tinha uma comida deliciosa e um ambiente encantador. Sem dúvida, uma excelente opção para jantar!;ambiente;1;63;71
+5853;A trilha para chegar à cachoeira foi incrível! A natureza ao redor é deslumbrante e a cachoeira em si é simplesmente magnífica. Definitivamente vale a pena visitar!;trilha;1;2;8
+5854;A trilha para chegar à cachoeira foi incrível! A natureza ao redor é deslumbrante e a cachoeira em si é simplesmente magnífica. Definitivamente vale a pena visitar!;cachoeira;1;23;32
+5855;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5856;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5857;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;vista;1;28;33
+5858;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;mar;1;54;57
+5859;O café da manhã oferecido pelo hotel era variado e delicioso. Uma ótima maneira de começar o dia!;café;1;2;6
+5860;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5861;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;59;67
+5862;O quarto do hotel era espaçoso e confortável. Tivemos uma ótima noite de sono!;quarto;1;2;8
+5863;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;piscina;1;20;27
+5864;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;relaxar;1;52;59
+5865;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5866;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;93;106
+5867;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5868;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5869;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5870;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5871;O serviço de Wi-Fi do hotel deixou a desejar. A conexão estava lenta e instável na maior parte do tempo.;Wi-Fi;-1;13;18
+5872;O serviço de Wi-Fi do hotel deixou a desejar. A conexão estava lenta e instável na maior parte do tempo.;conexão;-1;48;55
+5873;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5874;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5875;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5876;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5877;O hotel estava lotado durante o feriado, o que resultou em longas filas para o café da manhã e para usar as áreas comuns.;lotado;-1;15;21
+5878;O hotel estava lotado durante o feriado, o que resultou em longas filas para o café da manhã e para usar as áreas comuns.;feriado;-1;32;39
+5879;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;comida;-1;2;8
+5880;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;sabor;-1;51;56
+5881;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;vegetariano;-1;112;123
+5882;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;menu;-1;53;57
+5883;A piscina do hotel estava suja e mal cuidada. Não nos sentimos confortáveis em usá-la durante nossa estadia.;piscina;-1;2;9
+5884;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;café da manhã;-1;20;33
+5885;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;variedade;-1;75;84
+5886;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;internet;-1;2;10
+5887;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;inconvenientes;-1;80;94
+5888;O serviço de quarto do hotel era lento e pouco eficiente. Tivemos que esperar muito tempo para receber nossos pedidos.;serviço de quarto;-1;2;19
+5889;O hotel não oferece estacionamento próprio, o que dificultou a nossa vida, pois tivemos que procurar estacionamento na rua.;estacionamento;-1;20;34
+5890;O ar condicionado do quarto estava quebrado durante toda a nossa estadia. Passamos noites desconfortáveis devido ao calor.;ar condicionado;-1;2;17
+5891;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;lazer;-1;30;35
+5892;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;crianças;-1;41;49
+5893;O serviço de café da manhã do hotel era limitado e pouco variado. Esperávamos mais opções.;café da manhã;-1;13;26
+5894;O hotel não oferece serviço de quarto, o que foi frustrante para nós que gostamos de pedir refeições no quarto.;serviço de quarto;-1;20;37
+5895;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;entretenimento;-1;30;44
+5896;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;diversão;-1;92;100
+5897;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5898;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;experiência;-1;98;109
+5899;O serviço de check-in do hotel foi demorado e pouco organizado. Perdemos muito tempo esperando para ser atendidos.;check-in;-1;13;21
+5900;A comida no restaurante do hotel estava com um gosto estranho. Não conseguimos identificar o que estava errado, mas não nos agradou.;comida;-1;2;8
+5901;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;lavanderia;-1;31;41
+5902;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;inconveniente;-1;56;69
+5903;O serviço de transporte oferecido pelo hotel estava sempre atrasado. Tivemos que esperar muito tempo para sermos levados aos lugares.;transporte;-1;13;23
+5904;O hotel não oferece acesso para cadeirantes, o que é um problema para pessoas com mobilidade reduzida.;mobilidade;-1;82;92
+5905;O quarto do hotel era pequeno e apertado, o que nos deixou desconfortáveis durante toda a estadia.;quarto;-1;2;8
+5906;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;piscina;-1;2;9
+5907;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;lotada;-1;26;32
+5908;O hotel não oferece atividades de lazer para os hóspedes, o que tornou nossa estadia monótona e entediante.;lazer;-1;34;39
+5909;O hotel não oferece estacionamento próprio, o que nos obrigou a procurar vagas na rua, o que foi muito inconveniente.;estacionamento;-1;20;34
+5910;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;ar condicionado;-1;2;17
+5911;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;barulho;-1;43;50
+5912;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5913;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;experiência;-1;107;118
+5914;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5915;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;50;58
+5916;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;comida;-1;2;8
+5917;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;sabor;-1;51;56
+5918;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;vegetariano;-1;112;123
+5919;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;menu;-1;53;57
+5920;A piscina do hotel estava suja e mal cuidada. Não nos sentimos confortáveis em usá-la durante nossa estadia.;piscina;-1;2;9
+5921;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;café da manhã;-1;20;33
+5922;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;variedade;-1;75;84
+5923;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;internet;-1;2;10
+5924;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;inconvenientes;-1;80;94
+5925;O serviço de quarto do hotel era lento e pouco eficiente. Tivemos que esperar muito tempo para receber nossos pedidos.;serviço de quarto;-1;2;19
+5926;O hotel não oferece estacionamento próprio, o que dificultou a nossa vida, pois tivemos que procurar estacionamento na rua.;estacionamento;-1;20;34
+5927;O ar condicionado do quarto estava quebrado durante toda a nossa estadia. Passamos noites desconfortáveis devido ao calor.;ar condicionado;-1;2;17
+5928;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;lazer;-1;30;35
+5929;O hotel não oferece opções de lazer para crianças. Ficamos entediados durante nossa estadia.;crianças;-1;41;49
+5930;O serviço de café da manhã do hotel era limitado e pouco variado. Esperávamos mais opções.;café da manhã;-1;13;26
+5931;O hotel não oferece serviço de quarto, o que foi frustrante para nós que gostamos de pedir refeições no quarto.;serviço de quarto;-1;20;37
+5932;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;entretenimento;-1;30;44
+5933;O hotel não oferece opções de entretenimento noturno para os hóspedes. Tivemos que procurar diversão em outros lugares.;diversão;-1;92;100
+5934;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5935;O hotel não oferece café da manhã incluso na diária. Isso foi decepcionante, pois esperávamos uma experiência mais completa.;experiência;-1;98;109
+5936;O serviço de check-in do hotel foi demorado e pouco organizado. Perdemos muito tempo esperando para ser atendidos.;check-in;-1;13;21
+5937;A comida no restaurante do hotel estava com um gosto estranho. Não conseguimos identificar o que estava errado, mas não nos agradou.;comida;-1;2;8
+5938;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;lavanderia;-1;31;41
+5939;O hotel não oferece serviço de lavanderia, o que foi um inconveniente para nós que estávamos viajando por um longo período.;inconveniente;-1;56;69
+5940;O serviço de transporte oferecido pelo hotel estava sempre atrasado. Tivemos que esperar muito tempo para sermos levados aos lugares.;transporte;-1;13;23
+5941;O hotel não oferece acesso para cadeirantes, o que é um problema para pessoas com mobilidade reduzida.;mobilidade;-1;82;92
+5942;O quarto do hotel era pequeno e apertado, o que nos deixou desconfortáveis durante toda a estadia.;quarto;-1;2;8
+5943;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;piscina;-1;2;9
+5944;A piscina do hotel estava lotada durante todo o dia, o que dificultou nosso acesso e nos deixou desconfortáveis.;lotada;-1;26;32
+5945;O hotel não oferece atividades de lazer para os hóspedes, o que tornou nossa estadia monótona e entediante.;lazer;-1;34;39
+5946;O hotel não oferece estacionamento próprio, o que nos obrigou a procurar vagas na rua, o que foi muito inconveniente.;estacionamento;-1;20;34
+5947;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;ar condicionado;-1;2;17
+5948;O ar condicionado do quarto estava fazendo barulhos estranhos durante a noite, o que nos atrapalhou muito para dormir.;barulho;-1;43;50
+5949;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;café da manhã;-1;20;33
+5950;O hotel não oferece café da manhã incluso na diária, o que achamos um ponto negativo, pois esperávamos uma experiência mais completa.;experiência;-1;107;118
+5951;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5952;O serviço de limpeza do hotel deixou a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;50;58
+5953;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;comida;-1;2;8
+5954;A comida no restaurante do hotel estava fria e sem sabor. Definitivamente não correspondeu às nossas expectativas.;sabor;-1;51;56
+5955;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;vegetariano;-1;112;123
+5956;O hotel não oferece opções vegetarianas adequadas no menu do restaurante. Isso foi decepcionante para mim, como vegetariano.;menu;-1;53;57
+5957;A piscina do hotel estava suja e mal cuidada. Não nos sentimos confortáveis em usá-la durante nossa estadia.;piscina;-1;2;9
+5958;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;café da manhã;-1;20;33
+5959;A comida servida no café da manhã estava fria e sem graça. Esperávamos uma variedade melhor de opções.;variedade;-1;75;84
+5960;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;internet;-1;2;10
+5961;A internet do hotel estava fora do ar durante toda a nossa estadia. Isso causou inconvenientes significativos para nós.;inconvenientes;-1;80;94
+5962;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5963;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5964;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;vista;1;28;33
+5965;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;mar;1;54;57
+5966;O café da manhã oferecido pelo hotel era variado e delicioso. Uma ótima maneira de começar o dia!;café;1;2;6
+5967;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+5968;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;59;67
+5969;O quarto do hotel era espaçoso e confortável. Tivemos uma ótima noite de sono!;quarto;1;2;8
+5970;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;piscina;1;20;27
+5971;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;relaxar;1;52;59
+5972;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5973;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;93;106
+5974;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5975;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5976;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5977;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5978;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5979;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5980;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5981;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5982;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5983;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5984;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5985;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+5986;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5987;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+5988;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+5989;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+5990;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+5991;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+5992;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+5993;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+5994;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+5995;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+5996;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+5997;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+5998;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+5999;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+6000;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+6001;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+6002;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+6003;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+6004;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+6005;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+6006;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+6007;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+6008;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+6009;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+6010;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+6011;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+6012;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+6013;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+6014;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+6015;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+6016;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+6017;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+6018;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+6019;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+6020;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+6021;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+6022;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+6023;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+6024;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+6025;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+6026;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+6027;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+6028;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+6029;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+6030;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+6031;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+6032;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;vista;1;28;33
+6033;O quarto do hotel tinha uma vista deslumbrante para o mar. Passamos horas apenas admirando a paisagem!;mar;1;54;57
+6034;O café da manhã oferecido pelo hotel era variado e delicioso. Uma ótima maneira de começar o dia!;café;1;2;6
+6035;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;limpeza;-1;13;20
+6036;O serviço de limpeza do hotel deixou um pouco a desejar. O banheiro não estava tão limpo quanto esperávamos.;banheiro;-1;59;67
+6037;O quarto do hotel era espaçoso e confortável. Tivemos uma ótima noite de sono!;quarto;1;2;8
+6038;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;piscina;1;20;27
+6039;O hotel oferece uma piscina aquecida, perfeita para relaxar após um longo dia de passeio pela cidade.;relaxar;1;52;59
+6040;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+6041;A comida servida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;93;106
+6042;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+6043;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+6044;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+6045;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+6046;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+6047;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+6048;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+6049;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+6050;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;serviço;1;19;26
+6051;O hotel oferece um serviço de transporte conveniente para os pontos turísticos locais. Isso facilitou muito o nosso passeio pela cidade.;passeio;1;116;123
+6052;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;comida;1;2;8
+6053;A comida no restaurante do hotel estava deliciosa. Recomendo experimentar o prato de frutos do mar!;frutos do mar;1;85;98
+6054;O hotel oferece um spa maravilhoso, onde pudemos desfrutar de massagens relaxantes. Foi uma experiência rejuvenescedora!;spa;1;19;22
+6055;A equipe do hotel foi extremamente atenciosa e prestativa durante toda a nossa estadia. Nos sentimos muito bem cuidados!;cuidados;1;111;119
+6056;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;localização;1;2;13
+6057;A localização do hotel é perfeita, com fácil acesso às principais atrações da cidade.;atrações;1;66;74
+6058;O hotel oferece estacionamento gratuito, o que foi muito conveniente para nós que estávamos de carro.;estacionamento;1;16;30
+6059;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;academia;1;2;10
+6060;A academia do hotel estava bem equipada e limpa. Foi ótimo poder manter minha rotina de exercícios durante a viagem.;exercícios;1;88;98
+6061;O hotel oferece um serviço de lavanderia eficiente, que nos ajudou muito durante nossa estadia prolongada.;lavanderia;1;30;40
+6062;A vista do quarto do hotel era deslumbrante. Passamos várias horas admirando a paisagem.;vista;1;2;7
+6063;A vista do quarto do hotel era deslumbrante. Passamos várias horas admirando a paisagem.;paisagem;1;79;87
+6064;O café da manhã oferecido pelo hotel tinha uma grande variedade de opções. Ficamos satisfeitos com a seleção.;café;1;2;6
+6065;O café da manhã oferecido pelo hotel tinha uma grande variedade de opções. Ficamos satisfeitos com a seleção.;variedade;1;54;63
+6066;O quarto do hotel era espaçoso e bem decorado. Nos sentimos confortáveis durante toda a estadia.;quarto;1;2;8
+6067;A piscina do hotel estava limpa e bem conservada. Foi ótimo dar um mergulho depois de um dia quente.;piscina;1;2;9
+6068;O restaurante do hotel oferece uma variedade de pratos deliciosos. Recomendo experimentar a culinária local!;restaurante;1;2;13
+6069;O restaurante do hotel oferece uma variedade de pratos deliciosos. Recomendo experimentar a culinária local!;culinária;1;92;101
+6070;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;spa;1;2;5
+6071;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;tratamentos;1;23;34
+6072;A equipe do hotel foi muito prestativa e atenciosa. Eles nos ajudaram com todas as nossas solicitações.;ajuda;1;61;66
+6073;A localização do hotel é perfeita para quem deseja explorar a cidade a pé. Ficamos impressionados com a conveniência.;localização;1;2;13
+6074;A localização do hotel é perfeita para quem deseja explorar a cidade a pé. Ficamos impressionados com a conveniência.;explorar;1;51;59
+6075;O estacionamento do hotel é amplo e seguro. Ficamos tranquilos deixando nosso carro lá durante a estadia.;estacionamento;1;2;16
+6076;A academia do hotel possui equipamentos modernos e bem conservados. Foi ótimo manter minha rotina de exercícios.;academia;1;2;10
+6077;A academia do hotel possui equipamentos modernos e bem conservados. Foi ótimo manter minha rotina de exercícios.;equipamentos;1;27;39
+6078;O serviço de lavanderia do hotel é eficiente e rápido. Ficamos satisfeitos com a qualidade do serviço.;lavanderia;1;13;23
+6079;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;serviço;1;19;26
+6080;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;pontos turísticos;1;69;86
+6081;O quarto do hotel é bem iluminado e espaçoso. Ficamos confortáveis durante toda a estadia.;quarto;1;2;8
+6082;A área da piscina do hotel é muito agradável e bem cuidada. Passamos momentos relaxantes lá.;piscina;1;10;17
+6083;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;restaurante;1;2;13
+6084;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;variedade;1;35;44
+6085;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;spa;1;2;5
+6086;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;tratamentos;1;40;51
+6087;A localização do hotel é estratégica, perto de várias atrações turísticas.;localização;1;2;13
+6088;A localização do hotel é estratégica, perto de várias atrações turísticas.;atrações;1;54;62
+6089;O estacionamento do hotel é espaçoso e bem organizado. Não tivemos problemas para encontrar vaga.;estacionamento;1;2;16
+6090;A academia do hotel tem uma boa seleção de equipamentos para treino.;academia;1;2;10
+6091;A academia do hotel tem uma boa seleção de equipamentos para treino.;seleção;1;32;39
+6092;O serviço de lavanderia do hotel é eficiente e confiável. Recebemos nossas roupas de volta em perfeito estado.;lavanderia;1;13;23
+6093;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;serviço;1;19;26
+6094;O hotel oferece um serviço de transporte gratuito para os principais pontos turísticos da cidade.;pontos turísticos;1;69;86
+6095;O quarto do hotel é bem iluminado e espaçoso. Ficamos confortáveis durante toda a estadia.;quarto;1;2;8
+6096;A área da piscina do hotel é muito agradável e bem cuidada. Passamos momentos relaxantes lá.;piscina;1;10;17
+6097;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;restaurante;1;2;13
+6098;O restaurante do hotel oferece uma variedade de opções de refeições. Há algo para todos os gostos.;variedade;1;35;44
+6099;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;spa;1;2;5
+6100;O spa do hotel oferece uma variedade de tratamentos para relaxamento e rejuvenescimento.;tratamentos;1;40;51
+6101;A localização do hotel é estratégica, perto de várias atrações turísticas.;localização;1;2;13
+6102;A localização do hotel é estratégica, perto de várias atrações turísticas.;atrações;1;54;62
+6103;O estacionamento do hotel é espaçoso e bem organizado. Não tivemos problemas para encontrar vaga.;estacionamento;1;2;16
+6104;A academia do hotel tem uma boa seleção de equipamentos para treino.;academia;1;2;10
+6105;A academia do hotel tem uma boa seleção de equipamentos para treino.;seleção;1;32;39
+6106;O serviço de lavanderia do hotel é eficiente e confiável. Recebemos nossas roupas de volta em perfeito estado.;lavanderia;1;13;23
+6107;O hotel possui um design moderno e elegante. Gostei muito da decoração!;design;1;18;24
+6108;O hotel possui um design moderno e elegante. Gostei muito da decoração!;decoração;1;61;70
+6109;O café da manhã oferecido pelo hotel era satisfatório. Nada excepcional, mas atendeu às nossas necessidades.;café;0;2;6
+6110;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;limpeza;0;13;20
+6111;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;serviço;0;2;9
+6112;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;vista;0;28;33
+6113;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;cidade;0;49;55
+6114;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;piscina;0;2;9
+6115;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;condições;0;34;43
+6116;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;comida;0;2;8
+6117;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;restaurante;0;20;31
+6118;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;spa;0;2;5
+6119;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;tratamentos;0;49;60
+6120;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;localização;0;2;13
+6121;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;atrações;0;72;80
+6122;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;estacionamento;0;2;16
+6123;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;dificuldade;0;46;57
+6124;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;academia;0;2;10
+6125;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;equipamentos;0;39;51
+6126;O serviço de lavanderia do hotel é cobrado à parte. Seria melhor se estivesse incluído na estadia.;lavanderia;0;13;23
+6127;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;Wi-Fi;0;16;21
+6128;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;conexão;0;38;45
+6129;A vista do quarto do hotel era decente. Não era espetacular, mas não era ruim.;vista;0;2;7
+6130;A vista do quarto do hotel era decente. Não era espetacular, mas não era ruim.;quarto;0;11;17
+6131;O café da manhã oferecido pelo hotel era satisfatório. Nada excepcional, mas atendeu às nossas necessidades.;café;0;2;6
+6132;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;limpeza;0;13;20
+6133;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;serviço;0;2;9
+6134;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;vista;0;28;33
+6135;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;cidade;0;49;55
+6136;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;piscina;0;2;9
+6137;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;condições;0;34;43
+6138;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;comida;0;2;8
+6139;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;restaurante;0;20;31
+6140;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;spa;0;2;5
+6141;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;tratamentos;0;49;60
+6142;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;localização;0;2;13
+6143;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;atrações;0;72;80
+6144;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;estacionamento;0;2;16
+6145;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;dificuldade;0;46;57
+6146;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;academia;0;2;10
+6147;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;equipamentos;0;39;51
+6148;O serviço de lavanderia do hotel é cobrado à parte. Seria melhor se estivesse incluído na estadia.;lavanderia;0;13;23
+6149;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;Wi-Fi;0;16;21
+6150;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;conexão;0;38;45
+6151;O café da manhã oferecido pelo hotel era satisfatório. Nada excepcional, mas atendeu às nossas necessidades.;café;0;2;6
+6152;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;limpeza;0;13;20
+6153;O serviço de limpeza do hotel foi razoável. Não estava impecável, mas também não estava sujo.;serviço;0;2;9
+6154;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;vista;0;28;33
+6155;O quarto do hotel tinha uma vista decente para a cidade. Não era espetacular, mas era agradável.;cidade;0;49;55
+6156;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;piscina;0;2;9
+6157;A piscina do hotel estava em boas condições. Não era muito grande, mas suficiente para um mergulho rápido.;condições;0;34;43
+6158;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;comida;0;2;8
+6159;A comida servida no restaurante do hotel era mediana. Não era ruim, mas também não era excepcional.;restaurante;0;20;31
+6160;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;spa;0;2;5
+6161;O spa do hotel oferece uma variedade limitada de tratamentos. Poderia ter mais opções disponíveis.;tratamentos;0;49;60
+6162;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;localização;0;2;13
+6163;A localização do hotel é conveniente, mas um pouco longe das principais atrações.;atrações;0;72;80
+6164;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;estacionamento;0;2;16
+6165;O estacionamento do hotel é limitado. Tivemos dificuldade em encontrar uma vaga disponível.;dificuldade;0;46;57
+6166;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;academia;0;2;10
+6167;A academia do hotel é pequena e possui equipamentos básicos. Não é ideal para um treino completo.;equipamentos;0;39;51
+6168;O serviço de lavanderia do hotel é cobrado à parte. Seria melhor se estivesse incluído na estadia.;lavanderia;0;13;23
+6169;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;Wi-Fi;0;16;21
+6170;O hotel oferece Wi-Fi gratuito, mas a conexão é um pouco lenta.;conexão;0;38;45
+6171;O quarto do hotel era pequeno e apertado. Mal conseguíamos nos mover lá dentro.;quarto;-1;2;8
+6172;O café da manhã no hotel era simplesmente delicioso. Nunca comi algo tão bom!;café;1;2;6
+6173;O serviço de limpeza do hotel deixou muito a desejar. Encontramos cabelos no banheiro.;limpeza;-1;13;20
+6174;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;vista;1;18;23
+6175;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;montanhas;1;41;50
+6176;A piscina do hotel estava suja e mal cuidada. Nem ousei entrar.;piscina;-1;2;9
+6177;A comida servida no restaurante do hotel era mais ou menos. Nada excepcional, mas comível.;comida;0;2;8
+6178;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;spa;1;2;5
+6179;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;tratamentos;1;23;34
+6180;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;localização;1;2;13
+6181;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;compras;1;62;69
+6182;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;estacionamento;-1;2;16
+6183;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;dificuldade;-1;45;56
+6184;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;academia;-1;2;10
+6185;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;equipamentos;-1;26;38
+6186;O serviço de lavanderia do hotel é caro. Prefiro lavar minhas roupas em casa.;lavanderia;-1;13;23
+6187;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;Wi-Fi;-1;16;21
+6188;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;conexão;-1;38;45
+6189;O quarto do hotel era pequeno e apertado. Mal conseguíamos nos mover lá dentro.;quarto;-1;2;8
+6190;O café da manhã no hotel era simplesmente delicioso. Nunca comi algo tão bom!;café;1;2;6
+6191;O serviço de limpeza do hotel deixou muito a desejar. Encontramos cabelos no banheiro.;limpeza;-1;13;20
+6192;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;vista;1;18;23
+6193;O hotel tinha uma vista incrível para as montanhas. Acordei todos os dias com um sorriso no rosto.;montanhas;1;41;50
+6194;A piscina do hotel estava suja e mal cuidada. Nem ousei entrar.;piscina;-1;2;9
+6195;A comida servida no restaurante do hotel era mais ou menos. Nada excepcional, mas comível.;comida;0;2;8
+6196;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;spa;1;2;5
+6197;O spa do hotel oferece tratamentos relaxantes e revigorantes. Foi uma experiência incrível!;tratamentos;1;23;34
+6198;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;localização;1;2;13
+6199;A localização do hotel é estratégica para quem gosta de fazer compras. Fiquei muito satisfeito.;compras;1;62;69
+6200;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;estacionamento;-1;2;16
+6201;O estacionamento do hotel era apertado. Tive dificuldade em estacionar o carro.;dificuldade;-1;45;56
+6202;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;academia;-1;2;10
+6203;A academia do hotel tinha equipamentos antigos. Precisa de uma atualização.;equipamentos;-1;26;38
+6204;O serviço de lavanderia do hotel é caro. Prefiro lavar minhas roupas em casa.;lavanderia;-1;13;23
+6205;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;Wi-Fi;-1;16;21
+6206;O hotel oferece Wi-Fi gratuito, mas a conexão é lenta. Tive dificuldade em navegar na internet.;conexão;-1;38;45
+6207;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";experiência;1;16;27
+6208;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";decoração;1;47;56
+6209;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";atendimento;1;60;71
+6210;"O hotel foi uma experiência incrível! Adorei a decoração, o atendimento e a comida; realmente me senti mimado.";comida;1;76;82
+6211;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;estadia;-1;2;9
+6212;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;quarto;-1;44;50
+6213;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;serviço;-1;66;73
+6214;A estadia no hotel foi um pesadelo total. O quarto estava sujo, o serviço era terrível e a comida era péssima.;comida;-1;91;97
+6215;"O café da manhã no hotel era bom; tinha uma variedade decente de opções. Mas o Wi-Fi era uma piada; mal consegui me conectar.";café;0;2;6
+6216;"O café da manhã no hotel era bom; tinha uma variedade decente de opções. Mas o Wi-Fi era uma piada; mal consegui me conectar.";variedade;0;44;53
+6217;"O café da manhã no hotel era bom; tinha uma variedade decente de opções. Mas o Wi-Fi era uma piada; mal consegui me conectar.";Wi-Fi;0;79;84
+6218;O hotel tem uma vista incrível para o mar e para as montanhas. É perfeito para quem gosta de paisagens naturais.;vista;1;16;21
+6219;O hotel tem uma vista incrível para o mar e para as montanhas. É perfeito para quem gosta de paisagens naturais.;mar;1;38;41
+6220;O hotel tem uma vista incrível para o mar e para as montanhas. É perfeito para quem gosta de paisagens naturais.;montanhas;1;52;61
+6221;"A piscina do hotel era ótima para relaxar; eu passava horas lá. Mas o bar da piscina estava sempre lotado e o serviço era lento demais.";piscina;0;2;9
+6222;"A piscina do hotel era ótima para relaxar; eu passava horas lá. Mas o bar da piscina estava sempre lotado e o serviço era lento demais.";bar;0;70;73
+6223;"A piscina do hotel era ótima para relaxar; eu passava horas lá. Mas o bar da piscina estava sempre lotado e o serviço era lento demais.";serviço;0;110;117
+6224;O hotel era fantástico! A decoração era moderna e elegante, o atendimento era impecável e a comida deliciosa.;decoração;1;26;35
+6225;O hotel era fantástico! A decoração era moderna e elegante, o atendimento era impecável e a comida deliciosa.;atendimento;1;62;73
+6226;O hotel era fantástico! A decoração era moderna e elegante, o atendimento era impecável e a comida deliciosa.;comida;1;92;98
+6227;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;estadia;-1;2;9
+6228;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;quarto;-1;40;46
+6229;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;serviço;-1;62;69
+6230;A estadia no hotel foi decepcionante. O quarto estava sujo, o serviço era lento e a comida sem sabor.;comida;-1;84;90
+6231;"O café da manhã no hotel era incrível; tinha uma variedade enorme de opções: ovos, bacon, cereais, frutas e pães.";café;1;2;6
+6232;"O café da manhã no hotel era incrível; tinha uma variedade enorme de opções: ovos, bacon, cereais, frutas e pães.";variedade;1;49;58
+6233;"O café da manhã no hotel era incrível; tinha uma variedade enorme de opções: ovos, bacon, cereais, frutas e pães.";opções;1;69;75
+6234;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;vista;1;18;23
+6235;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;mar;1;44;47
+6236;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;montanhas;1;49;58
+6237;O hotel tinha uma vista deslumbrante para o mar, montanhas e cidade. Era simplesmente espetacular.;cidade;1;61;67
+6238;A piscina do hotel era relaxante e tinha uma área ampla para banho de sol. As espreguiçadeiras eram confortáveis.;piscina;1;2;9
+6239;A piscina do hotel era relaxante e tinha uma área ampla para banho de sol. As espreguiçadeiras eram confortáveis.;espreguiçadeiras;1;78;94
+6240;O restaurante do hotel oferecia uma variedade incrível de pratos: massas, saladas, carnes, peixes e sobremesas.;restaurante;1;2;13
+6241;O restaurante do hotel oferecia uma variedade incrível de pratos: massas, saladas, carnes, peixes e sobremesas.;variedade;1;36;45
+6242;O restaurante do hotel oferecia uma variedade incrível de pratos: massas, saladas, carnes, peixes e sobremesas.;pratos;1;58;64
+6243;"O serviço de lavanderia do hotel era conveniente; eles lavavam minhas roupas e as entregavam no quarto.";lavanderia;1;13;23
+6244;O hotel oferecia Wi-Fi gratuito, mas a conexão era instável e lenta. Às vezes, nem conseguia abrir meu e-mail.;Wi-Fi;-1;17;22
+6245;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;spa;1;17;20
+6246;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;tratamentos;1;54;65
+6247;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;massagens relaxantes;1;67;87
+6248;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;esfoliações;1;89;100
+6249;O hotel tinha um spa maravilhoso com várias opções de tratamentos: massagens relaxantes, esfoliações e terapias.;terapias;1;103;111
+6250;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;academia;1;2;10
+6251;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;pesos livres;1;62;74
+6252;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;bem equipada;1;24;36
+6253;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;modernos;1;51;59
+6254;A academia do hotel era bem equipada com aparelhos modernos e pesos livres.;bem equipada;1;24;36
+6255;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;entretenimento;1;40;54
+6256;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;passeios;1;56;64
+6257;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;aulas de culinária;1;66;84
+6258;O hotel oferecia várias atividades para entretenimento: passeios, aulas de culinária e shows ao vivo.;shows ao vivo;1;87;100
+6259;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;recreação;1;10;19
+6260;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;playground;1;61;71
+6261;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;piscina infantil;1;73;89
+6262;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;atividades supervisionadas;1;92;118
+6263;A área de recreação do hotel era perfeita para crianças, com playground, piscina infantil e atividades supervisionadas.;perfeita para crianças;1;33;55
+6264;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;ambiente familiar;1;17;34
+6265;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;atividades para todas as idades;1;40;71
+6266;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;espaços para relaxamento;1;74;98
+6267;O hotel tinha um ambiente familiar, com atividades para todas as idades e espaços para relaxamento.;familiar;1;26;34
+6268;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;buffet;1;20;26
+6269;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;variado;1;27;34
+6270;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;café da manhã;1;60;73
+6271;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;almoço;1;75;81
+6272;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;jantar;1;84;90
+6273;O hotel oferecia um buffet variado para todas as refeições: café da manhã, almoço e jantar.;refeições;1;49;58
+6274;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;localização;1;18;29
+6275;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;pontos turísticos;1;53;70
+6276;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;lojas;1;72;77
+6277;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;restaurantes;1;80;92
+6278;O hotel tinha uma localização privilegiada, perto de pontos turísticos, lojas e restaurantes.;privilegiada;1;30;42
