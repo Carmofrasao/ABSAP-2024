@@ -154,7 +154,7 @@ tokenizer = AutoTokenizer.from_pretrained('./bert-base-portuguese-cased')
 
 #train_data_filepath = 'dataset-bert/train_full.csv'
 #test_data_filepath = 'dataset-bert/test_full.csv'
-train_data_filepath = 'dataset-bert/train-sample.csv'
+train_data_filepath = 'dataset-bert/train-sample2.csv'
 test_data_filepath = 'dataset-bert/test-sample.csv'
 
 #final_eval_filepath = '../dataset/test/test_task2.csv'
