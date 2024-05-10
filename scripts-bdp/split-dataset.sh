@@ -13,5 +13,5 @@
   sed -i "/$(head -n 1 "${dataset_dir}${dataset_file}")/d" "${dataset_dir}${temp_sample}" ;
   dataset_size="$(wc -l < "${dataset_dir}${temp_sample}")" ;
   head -n "+$(("${dataset_size}"*"${proportion}"))" "${dataset_dir}${temp_sample}" >> "${dataset_dir}${train_sample}" ;
-  tail -n "-$(("${dataset_size}"*"${proportion}"))" "${dataset_dir}${temp_sample}" >> "${dataset_dir}${test_sample}" ;
+  tail -n "-$(("${dataset_size}"-("${dataset_size}"*"${proportion}") ))" "${dataset_dir}${temp_sample}" >> "${dataset_dir}${test_sample}" ;
 )
