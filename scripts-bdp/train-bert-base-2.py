@@ -28,66 +28,36 @@ from os import sys
 
 def train(model,iterator,optimizer,train_pretrain=False):
   epoch_loss = 0.0
-  # epoch_acc = 0.0
-  # epoch_f1 = 0.0
-  epoch_acc_polarity = 0.0
-  epoch_f1_polarity = 0.0
-  epoch_acc_aspect = 0.0
-  epoch_f1_aspect = 0.0
+  epoch_acc = 0.0
+  epoch_f1 = 0.0
 
   model.train()
-  # metric = load_metric("accuracy")
-  # metric2 = load_metric("f1")
-  metric_polarity = load_metric("accuracy")
-  metric_aspect = load_metric("accuracy")
+  metric = load_metric("accuracy")
+  metric2 = load_metric("f1")
   for batch in iterator:
       optimizer.zero_grad()
 
       if train_pretrain:
         b_input_ids = batch["input_ids"]
         b_input_mask = batch["attention_mask"]
-        # b_labels = batch["target"]
-        b_labels_polarity = batch["polarity"]  
-        b_labels_aspect = batch["aspect"] 
-
+        b_labels_aspect = batch["target"]
         outputs = model(b_input_ids,token_type_ids=None,
                              attention_mask=b_input_mask,
-                             labels=b_labels_polarity)
+                             labels=b_labels_aspect)
         loss = outputs.loss
 
-        # predictions = outputs.logits
-        # predictions = torch.argmax(predictions, dim=-1)
-        # metric.add_batch(predictions=predictions, references=batch["target"])
-        # metric2.add_batch(predictions=predictions, references=batch["target"])
-        # epoch_loss += loss.cpu().detach().numpy()
+        predictions = outputs.logits
+        predictions = torch.argmax(predictions, dim=-1)
+        metric.add_batch(predictions=predictions, references=batch["target"])
+        metric2.add_batch(predictions=predictions, references=batch["target"])
+        epoch_loss += loss.cpu().detach().numpy()
 
-        # loss.backward()
-        # optimizer.step()
-        # lr_scheduler.step()
-
-        predictions_polarity = torch.argmax(outputs.logits, dim=-1)
-
-        metric_polarity.add_batch(predictions=predictions_polarity, references=b_labels_polarity)
-
-        outputs_aspect = model(b_input_ids, token_type_ids=None,
-                               attention_mask=b_input_mask)
-        
-        predictions_aspect = torch.argmax(outputs_aspect.logits, dim=-1)
-
-        metric_aspect.add_batch(predictions=predictions_aspect, references=b_labels_aspect)
-
-        epoch_loss += loss.item()
+        loss.backward()
+        optimizer.step()
+        lr_scheduler.step()
 
   if  train_pretrain:
-     # return epoch_loss / len(iterator), metric.compute()["accuracy"], metric2.compute(average="weighted")["f1"]
-     acc_polarity = metric_polarity.compute()["accuracy"]
-     acc_aspect = metric_aspect.compute()["accuracy"]
-                     
-     # Calculating F1 score for polarity and aspect
-     f1_polarity = f1_score(b_labels_polarity.cpu(), predictions_polarity.cpu(), average='weighted')
-     f1_aspect = f1_score(b_labels_aspect.cpu(), predictions_aspect.cpu(), average='weighted')
-
-     return epoch_loss / len(iterator), acc_polarity, acc_aspect, f1_polarity, f1_aspect
+     return epoch_loss / len(iterator), metric.compute()["accuracy"], metric2.compute(average="weighted")["f1"]
 
   if not train_pretrain:
     return epoch_loss / len(iterator), epoch_acc / len(iterator), epoch_f1 / len(iterator)
@@ -95,19 +65,13 @@ def train(model,iterator,optimizer,train_pretrain=False):
 def evaluate(model,iterator,train_pretrain=False):
 
     epoch_loss = 0.0
-    # epoch_acc = 0.0
-    # epoch_f1 = 0.0
-    epoch_acc_polarity = 0.0
-    epoch_f1_polarity = 0.0
-    epoch_acc_aspect = 0.0
-    epoch_f1_aspect = 0.0
+    epoch_acc = 0.0
+    epoch_f1 = 0.0
 
     # deactivate the dropouts
     model.eval()
-    # metric = load_metric("accuracy")
-    # metric2 = load_metric("f1")
-    metric_polarity = load_metric("accuracy")
-    metric_aspect = load_metric("accuracy")
+    metric = load_metric("accuracy")
+    metric2 = load_metric("f1")
 
     # Sets require_grad flat False
     with torch.no_grad():
@@ -115,48 +79,27 @@ def evaluate(model,iterator,train_pretrain=False):
             if train_pretrain:
               b_input_ids = batch["input_ids"]
               b_input_mask = batch["attention_mask"]
-              # b_labels = batch["target"]
-              b_labels_polarity = batch["polarity"]
-              b_labels_aspect = batch["aspect"]
+              b_labels_aspect = batch["target"]
               outputs = model(b_input_ids,token_type_ids=None,
                              attention_mask=b_input_mask,
-                             labels=b_labels_polarity)
+                             labels=b_labels_aspect)
 
               loss = outputs.loss
-              # predictions = outputs.logits
-              # predictions = torch.argmax(predictions, dim=-1)
-              # lr_scheduler.step()
-              # metric.add_batch(predictions=predictions, references=batch["target"])
-              # metric2.add_batch(predictions=predictions, references=batch["target"])
-              # epoch_loss += loss.cpu().detach().numpy()
-              predictions_polarity = torch.argmax(outputs.logits, dim=-1)
-
-              metric_polarity.add_batch(predictions=predictions_polarity, references=b_labels_polarity)
-
-              outputs_aspect = model(b_input_ids, token_type_ids=None,
-                                     attention_mask=b_input_mask)
-            
-              predictions_aspect = torch.argmax(outputs_aspect.logits, dim=-1)
-
-              metric_aspect.add_batch(predictions=predictions_aspect, references=b_labels_aspect)
-
-              epoch_loss += loss.item()
+              predictions = outputs.logits
+              predictions = torch.argmax(predictions, dim=-1)
+              lr_scheduler.step()
+              metric.add_batch(predictions=predictions, references=batch["target"])
+              metric2.add_batch(predictions=predictions, references=batch["target"])
+              epoch_loss += loss.cpu().detach().numpy()
 
     if  train_pretrain:
-      # return epoch_loss / len(iterator), metric.compute()["accuracy"], metric2.compute(average="weighted")["f1"]
-      acc_polarity = metric_polarity.compute()["accuracy"]
-      acc_aspect = metric_aspect.compute()["accuracy"]
-                      
-      # Calculating F1 score for polarity and aspect
-      f1_polarity = f1_score(b_labels_polarity.cpu(), predictions_polarity.cpu(), average='weighted')
-      f1_aspect = f1_score(b_labels_aspect.cpu(), predictions_aspect.cpu(), average='weighted')
-
-      return epoch_loss / len(iterator), acc_polarity, acc_aspect, f1_polarity, f1_aspect
+      return epoch_loss / len(iterator), metric.compute()["accuracy"], metric2.compute(average="weighted")["f1"]
     if not train_pretrain:
       return epoch_loss / len(iterator), epoch_acc / len(iterator), epoch_f1 / len(iterator)
 
 
-def test(model,iterator,train_pretrain=False):
+def test(model,dataloader, tokenizer, train_pretrain=False):
+    """
     preds = []
     idss = []
     probas = []
@@ -184,6 +127,15 @@ def test(model,iterator,train_pretrain=False):
         # pred2 = pred.copy()
         # pred2[""]=pred2["id"].map(mapp2)
         return mapp, mapp2
+    """
+    aspects = []
+    aspect_positions = []
+    with torch.no_grad():
+        for batch in dataloader:
+            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'])
+            aspects += tokenizer.decode(outputs[0], skip_special_tokens=True)
+            print(tokenizer.decoder(outputs[0], skip_special_tokens=True))
+    return aspects
 
 def get_aspect_phrase(review, aspect_start, aspect_end):
     padded_review = "." + review + "."
@@ -218,33 +170,33 @@ train_data_filepath = 'dataset-bert/train-sample2-fixed.csv'
 test_data_filepath = 'dataset-bert/test-sample.csv'
 
 #final_eval_filepath = '../dataset/test/test_task2.csv'
-final_eval_filepath = 'dataset-bert/task2_test.csv'
+final_eval_filepath = 'dataset-bert/task1_test.csv'
 
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
-tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=512), batched=True)
+tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto']), batched=True)
 # tokenized_datasets_train = tokenized_datasets_train.rename_column('polarity', 'target')
 # tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
-tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'start_position', 'end_position'])
+tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
+tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
 tokenized_datasets_train.set_format("torch")
 
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
-tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=512), batched=True)
+tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto']), batched=True)
 # tokenized_datasets_test = tokenized_datasets_test.rename_column('polarity', 'target')
 # tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
-tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'start_position', 'end_position'])
+tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
+tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
 tokenized_datasets_test.set_format("torch")
 
 raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
-preprocessed_datasets_final = raw_datasets_final.map(preprocess_review_final)
+preprocessed_datasets_final = raw_datasets_final
 tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=512), batched=True)
 # tokenized_datasets_final = tokenized_datasets_final.rename_column('polarity', 'target')
 # tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto', 'aspect', 'start_position', 'end_position'])
-tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto', 'start_position', 'end_position'])
+tokenized_datasets_final = tokenized_datasets_final.remove_columns(['id', 'texto'])
 tokenized_datasets_final.set_format("torch")
-
-print(tokenized_datasets_train["train"].column_names, flush=True)
 
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
@@ -265,8 +217,7 @@ final_dataloader = DataLoader(
 )
 
 #epoch_number = 10
-#epoch_number = 4
-epoch_number = 10
+epoch_number = 0
 
 model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
@@ -283,9 +234,9 @@ for epoch in range(1,epoch_number+1):
     print()
     #sys.stdout.flush()
 
-pred_BERT, probas_BERT = test(model,final_dataloader,train_pretrain=True)
+aspect = test(model,final_dataloader, tokenizer, train_pretrain=True)
 
-print(probas_BERT, flush=True)
-print()
-print(pred_BERT, flush=True)
+print("\"input id number\";\"list of aspects\"")
+for i in range(len(aspects)):
+    print(f'{i};\"{aspect}\"', flush=True)
 
