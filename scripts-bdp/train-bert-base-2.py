@@ -20,7 +20,7 @@ class Unbuffered(object):
 
 from datasets import Dataset, load_dataset, load_metric
 from sklearn.metrics import f1_score
-from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelForSequenceClassification
+from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelWithLMHead #AutoModelForSequenceClassification
 import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 import pandas as pd
@@ -132,9 +132,9 @@ def test(model,dataloader, tokenizer, train_pretrain=False):
     aspect_positions = []
     with torch.no_grad():
         for batch in dataloader:
-            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'])
-            aspects += tokenizer.decode(outputs[0], skip_special_tokens=True)
-            print(tokenizer.decoder(outputs[0], skip_special_tokens=True))
+            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'], max_length=513) #, max_new_tokens=64)
+            aspects += tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
+            print(tokenizer.decoder(outputs[0], skip_special_tokens=True, padding_side='left'))
     return aspects
 
 def get_aspect_phrase(review, aspect_start, aspect_end):
@@ -219,7 +219,7 @@ final_dataloader = DataLoader(
 #epoch_number = 10
 epoch_number = 0
 
-model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
+model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
 optimizer = AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
