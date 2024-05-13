@@ -132,7 +132,7 @@ def test(model,dataloader, tokenizer, train_pretrain=False):
     aspect_positions = []
     with torch.no_grad():
         for batch in dataloader:
-            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'], max_length=513) #, max_new_tokens=64)
+            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'],  max_length=512) #, max_length=513) #, max_new_tokens=64)
             aspects += tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
             print(tokenizer.decoder(outputs[0], skip_special_tokens=True, padding_side='left'))
     return aspects
@@ -158,7 +158,7 @@ def preprocess_review_final(row):
     # row['polarity'] = str(int(row['polarity']) + 1)
     return row
 
-tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased')
+tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512)
 # tokenizer = AutoTokenizer.from_pretrained('./bert-base-portuguese-cased')
 
 # train_data_filepath = 'dataset-bert/train.csv'
@@ -192,7 +192,7 @@ tokenized_datasets_test.set_format("torch")
 
 raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
 preprocessed_datasets_final = raw_datasets_final
-tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=512), batched=True)
+tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=256), batched=True)
 # tokenized_datasets_final = tokenized_datasets_final.rename_column('polarity', 'target')
 # tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_final = tokenized_datasets_final.remove_columns(['id', 'texto'])
