@@ -25,6 +25,7 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 import pandas as pd
 from os import sys
+from sklearn import preprocessing
 
 def train(model,iterator,optimizer,train_pretrain=False):
   epoch_loss = 0.0
@@ -34,6 +35,7 @@ def train(model,iterator,optimizer,train_pretrain=False):
   model.train()
   metric = load_metric("accuracy")
   metric2 = load_metric("f1")
+  print('train')
   for batch in iterator:
       optimizer.zero_grad()
 
@@ -74,6 +76,7 @@ def evaluate(model,iterator,train_pretrain=False):
     metric2 = load_metric("f1")
 
     # Sets require_grad flat False
+    print('evaluate')
     with torch.no_grad():
         for batch in iterator:
             if train_pretrain:
@@ -130,6 +133,7 @@ def test(model,dataloader, tokenizer, train_pretrain=False):
     """
     aspects = []
     aspect_positions = []
+    print('test')
     with torch.no_grad():
         for batch in dataloader:
             outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'],  max_length=512) #, max_length=513) #, max_new_tokens=64)
@@ -158,7 +162,7 @@ def preprocess_review_final(row):
     # row['polarity'] = str(int(row['polarity']) + 1)
     return row
 
-tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512)
+tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512, padding_side='left')
 # tokenizer = AutoTokenizer.from_pretrained('./bert-base-portuguese-cased')
 
 # train_data_filepath = 'dataset-bert/train.csv'
@@ -174,16 +178,19 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
-tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto']), batched=True)
+tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=256), batched=True)
 # tokenized_datasets_train = tokenized_datasets_train.rename_column('polarity', 'target')
 # tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
+print(tokenized_datasets_train["train"].column_names, file=sys.stderr, flush=True)
+for i in range(len(tokenized_datasets_train['train']['target'])):
+    tokenized_datasets_train['train']['target'][i]=torch.as_tensor(tokenized_datasets_train['train']['target'][i])
 tokenized_datasets_train.set_format("torch")
 
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
-tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto']), batched=True)
+tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=256), batched=True)
 # tokenized_datasets_test = tokenized_datasets_test.rename_column('polarity', 'target')
 # tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
@@ -217,13 +224,14 @@ final_dataloader = DataLoader(
 )
 
 #epoch_number = 10
-epoch_number = 0
+epoch_number = 1
 
-model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
+model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
 optimizer = AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
-
+for a in train_dataloader:
+    print(a)
 for epoch in range(1,epoch_number+1):
     print(f"\t Epoch: {epoch}", flush=True)
     train_loss,train_acc,train_f1 = train(model,train_dataloader,optimizer,train_pretrain=True)
