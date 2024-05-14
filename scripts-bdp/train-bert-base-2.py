@@ -39,14 +39,14 @@ def train(model,iterator,optimizer,train_pretrain=False):
   print('train')
   # Obter o tamanho do lote dos inputs
   batch_size = iterator.batch_size
-  vector = np.vectorize(np.int_)
   for batch in iterator:
       optimizer.zero_grad()
 
       if train_pretrain:
         b_input_ids = batch["input_ids"]
         b_input_mask = batch["attention_mask"]
-        b_labels_aspect = batch["target"][0]
+        b_labels_aspect = batch["target"]
+        print(b_input_ids, b_input_mask, b_labels_aspect)
         outputs = model(b_input_ids,token_type_ids=None,
                              attention_mask=b_input_mask,
                              labels=b_labels_aspect)
@@ -54,21 +54,10 @@ def train(model,iterator,optimizer,train_pretrain=False):
 
         predictions = outputs.logits
         predictions = torch.argmax(predictions, dim=-1)
-        # predictions = vector(predictions)
-        print(predictions)
-        # Esperado:
-        # tensor([1, 1, 0, 0, 2, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 2, 1, 0, 1, 0, 1,
-        # 1, 2, 1, 1, 2, 1, 1, 1])
-        # Recebido
-        # tensor([[  119,   177,  8527,  ..., 15280,   119,   119],
-        # [  117,  3396,  2954,  ...,   110,   119,   117],
-        # [  119, 16465, 10686,  ..., 20576,   119,   122],
-        # ...,
-        # [  122,  3703,   342,  ..., 15050,   119,   122],
-        # [  117,   231,  1305,  ...,  8527,   119,   117],
-        # [  119,   231,  9235,  ...,  5402,   119,   119]])
-        metric.add_batch(predictions=predictions, references=batch["target"])
-        metric2.add_batch(predictions=predictions, references=batch["target"])
+        predictions = predictions[0]
+        b = batch['target'][0]
+        metric.add_batch(predictions=predictions, references=b)
+        metric2.add_batch(predictions=predictions, references=b)
         epoch_loss += loss.cpu().detach().numpy()
 
         loss.backward()
@@ -166,7 +155,7 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
-tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=97), batched=True)
+tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
 # tokenized_datasets_train = tokenized_datasets_train.rename_column('polarity', 'target')
 # tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
@@ -178,10 +167,14 @@ label_encoder = preprocessing.LabelEncoder()
 
 # Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
 target_encoded = label_encoder.fit_transform(aspectos)
+d = dict()
+for i, aspecto in enumerate(aspectos):
+    if aspecto in d: assert(target_encoded[i] == d[aspecto])
+    d[aspecto] = target_encoded[i]
 
 # Definir uma função para transformar os rótulos
 def encode_labels(example):
-    example['target'] = target_encoded
+    example['target'] = d[example['target']]
     return example
 
 # Aplicar a função de transformação aos dados
@@ -191,7 +184,7 @@ tokenized_datasets_train.set_format("torch")
 
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
-tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=256), batched=True)
+tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
 # tokenized_datasets_test = tokenized_datasets_test.rename_column('polarity', 'target')
 # tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
@@ -208,7 +201,7 @@ tokenized_datasets_final.set_format("torch")
 
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
-batch_size = 53
+batch_size = 8 
 
 train_dataloader = DataLoader(
     tokenized_datasets_train["train"], shuffle=True, batch_size=batch_size, collate_fn=data_collator
