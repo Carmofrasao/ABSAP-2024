@@ -153,7 +153,7 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
-tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=512), batched=True)
+tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=97), batched=True)
 # tokenized_datasets_train = tokenized_datasets_train.rename_column('polarity', 'target')
 # tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
@@ -178,7 +178,7 @@ tokenized_datasets_train.set_format("torch")
 
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
-tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=97), batched=True)
+tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=256), batched=True)
 # tokenized_datasets_test = tokenized_datasets_test.rename_column('polarity', 'target')
 # tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
