@@ -26,6 +26,7 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler, Sequentia
 import pandas as pd
 from os import sys
 from sklearn import preprocessing
+import numpy as np
 
 def train(model,iterator,optimizer,train_pretrain=False):
   epoch_loss = 0.0
@@ -38,6 +39,7 @@ def train(model,iterator,optimizer,train_pretrain=False):
   print('train')
   # Obter o tamanho do lote dos inputs
   batch_size = iterator.batch_size
+  vector = np.vectorize(np.int_)
   for batch in iterator:
       optimizer.zero_grad()
 
@@ -45,8 +47,6 @@ def train(model,iterator,optimizer,train_pretrain=False):
         b_input_ids = batch["input_ids"]
         b_input_mask = batch["attention_mask"]
         b_labels_aspect = batch["target"][0]
-        # b_labels_aspect = batch["target"][:batch_size]
-        print(b_labels_aspect)
         outputs = model(b_input_ids,token_type_ids=None,
                              attention_mask=b_input_mask,
                              labels=b_labels_aspect)
@@ -54,6 +54,19 @@ def train(model,iterator,optimizer,train_pretrain=False):
 
         predictions = outputs.logits
         predictions = torch.argmax(predictions, dim=-1)
+        # predictions = vector(predictions)
+        print(predictions)
+        # Esperado:
+        # tensor([1, 1, 0, 0, 2, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 2, 1, 0, 1, 0, 1,
+        # 1, 2, 1, 1, 2, 1, 1, 1])
+        # Recebido
+        # tensor([[  119,   177,  8527,  ..., 15280,   119,   119],
+        # [  117,  3396,  2954,  ...,   110,   119,   117],
+        # [  119, 16465, 10686,  ..., 20576,   119,   122],
+        # ...,
+        # [  122,  3703,   342,  ..., 15050,   119,   122],
+        # [  117,   231,  1305,  ...,  8527,   119,   117],
+        # [  119,   231,  9235,  ...,  5402,   119,   119]])
         metric.add_batch(predictions=predictions, references=batch["target"])
         metric2.add_batch(predictions=predictions, references=batch["target"])
         epoch_loss += loss.cpu().detach().numpy()
