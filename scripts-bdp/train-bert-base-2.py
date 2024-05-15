@@ -37,11 +37,11 @@ def train(model,iterator,optimizer,train_pretrain=False):
   model.train()
   metric = load_metric("accuracy")
   metric2 = load_metric("f1")
-  print('train')
+  # print('train')
   # Obter o tamanho do lote dos inputs
   count=0
   for batch in iterator:
-      print(f'line: {count}')
+      # print(f'line: {count}')
       count+=1
       optimizer.zero_grad()
 
@@ -84,11 +84,11 @@ def evaluate(model,iterator,train_pretrain=False):
     metric2 = load_metric("f1")
 
     # Sets require_grad flat False
-    print('evaluate')
+    # print('evaluate')
     count=0
     with torch.no_grad():
         for batch in iterator:
-            print(f'line: {count}')
+            # print(f'line: {count}')
             count+=1
             if train_pretrain:
               b_input_ids = batch["input_ids"]
@@ -115,11 +115,11 @@ def evaluate(model,iterator,train_pretrain=False):
 
 def test(model,dataloader, tokenizer, train_pretrain=False):
     aspects = []
-    print('test')
+    # print('test')
     count=0
     with torch.no_grad():
         for batch in dataloader:
-            print(f'line: {count}')
+            # print(f'line: {count}')
             count+=1
             outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'], max_new_tokens=50)
             aspect = tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
@@ -233,7 +233,7 @@ tokenized_datasets_final.set_format("torch")
 
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
-batch_size = 1 
+batch_size = 32 
 
 train_dataloader = DataLoader(
     tokenized_datasets_train["train"], shuffle=True, batch_size=batch_size, collate_fn=data_collator
