@@ -14,10 +14,6 @@ class Unbuffered(object):
    def __getattr__(self, attr):
        return getattr(self.stream, attr)
 
-# Original sys.stdout is still available as sys.__stdout__. Just in case you need it =)
-#import sys
-#sys.stdout = Unbuffered(sys.stdout)
-
 from datasets import Dataset, load_dataset, load_metric
 from sklearn.metrics import f1_score
 from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelWithLMHead #AutoModelForSequenceClassification
@@ -29,7 +25,8 @@ from sklearn import preprocessing
 import numpy as np
 from torch.nn.utils.rnn import pad_sequence
 
-def train(model,iterator,optimizer,train_pretrain=False):
+def train(model,iterator,epoca,optimizer,train_pretrain=False):
+  print(f'Iniciando treinmanto da epoca {epoca}')
   epoch_loss = 0.0
   epoch_acc = 0.0
   epoch_f1 = 0.0
@@ -37,12 +34,7 @@ def train(model,iterator,optimizer,train_pretrain=False):
   model.train()
   metric = load_metric("accuracy")
   metric2 = load_metric("f1")
-  # print('train')
-  # Obter o tamanho do lote dos inputs
-  count=0
   for batch in iterator:
-      # print(f'line: {count}')
-      count+=1
       optimizer.zero_grad()
 
       if train_pretrain:
@@ -72,8 +64,8 @@ def train(model,iterator,optimizer,train_pretrain=False):
   if not train_pretrain:
     return epoch_loss / len(iterator), epoch_acc / len(iterator), epoch_f1 / len(iterator)
 
-def evaluate(model,iterator,train_pretrain=False):
-
+def evaluate(model,iterator,epoca,train_pretrain=False):
+    print(f'Iniciando avaliação da epoca {epoca}')
     epoch_loss = 0.0
     epoch_acc = 0.0
     epoch_f1 = 0.0
@@ -84,12 +76,8 @@ def evaluate(model,iterator,train_pretrain=False):
     metric2 = load_metric("f1")
 
     # Sets require_grad flat False
-    # print('evaluate')
-    count=0
     with torch.no_grad():
         for batch in iterator:
-            # print(f'line: {count}')
-            count+=1
             if train_pretrain:
               b_input_ids = batch["input_ids"]
               b_input_mask = batch["attention_mask"]
@@ -113,14 +101,11 @@ def evaluate(model,iterator,train_pretrain=False):
       return epoch_loss / len(iterator), epoch_acc / len(iterator), epoch_f1 / len(iterator)
 
 
-def test(model,dataloader, tokenizer, train_pretrain=False):
+def test(model,dataloader, tokenizer,epoca, train_pretrain=False):
+    print(f'Iniciando teste')
     aspects = []
-    # print('test')
-    count=0
     with torch.no_grad():
         for batch in dataloader:
-            # print(f'line: {count}')
-            count+=1
             outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'], max_new_tokens=50)
             aspect = tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
             aspects.append(aspect)
@@ -144,7 +129,6 @@ def preprocess_review(row):
 
 def preprocess_review_final(row):
     row['texto'] = get_aspect_phrase(row['texto'], int(row['start_position']), int(row['end_position']))
-    # row['polarity'] = str(int(row['polarity']) + 1)
     return row
 
 tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512, padding_side='left')
@@ -194,8 +178,6 @@ tokenized_datasets_train.set_format("torch")
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
 tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
-# tokenized_datasets_test = tokenized_datasets_test.rename_column('polarity', 'target')
-# tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
 tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
 aspectos = tokenized_datasets_test['train']['target']
@@ -226,31 +208,25 @@ tokenized_datasets_test.set_format("torch")
 raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
 preprocessed_datasets_final = raw_datasets_final
 tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
-# tokenized_datasets_final = tokenized_datasets_final.rename_column('polarity', 'target')
-# tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_final = tokenized_datasets_final.remove_columns(['id', 'texto'])
 tokenized_datasets_final.set_format("torch")
 
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
-batch_size = 32 
+batch_size = 1 
 
 train_dataloader = DataLoader(
     tokenized_datasets_train["train"], shuffle=True, batch_size=batch_size, collate_fn=data_collator
 )
-# eval_dataloader = DataLoader(
-#     tokenized_datasets_train["test"], batch_size=batch_size, collate_fn=data_collator
-# )
 test_dataloader = DataLoader(
     tokenized_datasets_test["train"], batch_size=batch_size, collate_fn=data_collator
 )
-
 final_dataloader = DataLoader(
     tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
 )
 
-#epoch_number = 10
-epoch_number = 1
+epoch_number = 10
+# epoch_number = 0
 
 model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
@@ -258,13 +234,12 @@ optimizer = AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
 for epoch in range(1,epoch_number+1):
     print(f"\t Epoch: {epoch}", flush=True)
-    train_loss,train_acc,train_f1 = train(model,train_dataloader,optimizer,train_pretrain=True)
-    valid_loss,valid_acc,valid_f1 = evaluate(model,test_dataloader,train_pretrain=True)
+    train_loss,train_acc,train_f1 = train(model,train_dataloader,epoch,optimizer,train_pretrain=True)
+    valid_loss,valid_acc,valid_f1 = evaluate(model,test_dataloader,epoch,train_pretrain=True)
 
     print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f} | Train f1: {train_f1*100:.2f}%', flush=True)
     print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f} |  val. f1: {valid_f1*100:.2f}%', flush=True)
     print()
-    #sys.stdout.flush()
 
 aspects = test(model,final_dataloader, tokenizer, train_pretrain=True)
 i = 0
