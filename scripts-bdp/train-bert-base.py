@@ -47,6 +47,7 @@ def train(model,iterator,optimizer,train_pretrain=False):
         loss = outputs.loss
         predictions = outputs.logits
         predictions = torch.argmax(predictions, dim=-1)
+        print(batch['target'])
         metric.add_batch(predictions=predictions, references=batch["target"])
         metric2.add_batch(predictions=predictions, references=batch["target"])
         epoch_loss += loss.cpu().detach().numpy()
@@ -146,8 +147,8 @@ def preprocess_review_final(row):
     # row['polarity'] = str(int(row['polarity']) + 1)
     return row
 
-#tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased')
-tokenizer = AutoTokenizer.from_pretrained('./bert-base-portuguese-cased')
+tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased')
+# tokenizer = AutoTokenizer.from_pretrained('./bert-base-portuguese-cased')
 
 # train_data_filepath = 'dataset-bert/train.csv'
 # test_data_filepath = 'dataset-bert/test.csv'
@@ -205,8 +206,8 @@ final_dataloader = DataLoader(
 #epoch_number = 4
 epoch_number = 10
 
-#model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
-model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
+model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=3)
+# model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
 optimizer = AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
 

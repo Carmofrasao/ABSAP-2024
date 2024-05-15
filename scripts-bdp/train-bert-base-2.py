@@ -252,7 +252,7 @@ final_dataloader = DataLoader(
 )
 
 #epoch_number = 10
-epoch_number = 0
+epoch_number = 1
 
 model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
