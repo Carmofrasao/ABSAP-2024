@@ -27,6 +27,7 @@ import pandas as pd
 from os import sys
 from sklearn import preprocessing
 import numpy as np
+from torch.nn.utils.rnn import pad_sequence
 
 def train(model,iterator,optimizer,train_pretrain=False):
   epoch_loss = 0.0
@@ -38,15 +39,16 @@ def train(model,iterator,optimizer,train_pretrain=False):
   metric2 = load_metric("f1")
   print('train')
   # Obter o tamanho do lote dos inputs
-  batch_size = iterator.batch_size
+  count=0
   for batch in iterator:
+      print(f'line: {count}')
+      count+=1
       optimizer.zero_grad()
 
       if train_pretrain:
         b_input_ids = batch["input_ids"]
         b_input_mask = batch["attention_mask"]
         b_labels_aspect = batch["target"]
-        print(b_input_ids, b_input_mask, b_labels_aspect)
         outputs = model(b_input_ids,token_type_ids=None,
                              attention_mask=b_input_mask,
                              labels=b_labels_aspect)
@@ -83,8 +85,11 @@ def evaluate(model,iterator,train_pretrain=False):
 
     # Sets require_grad flat False
     print('evaluate')
+    count=0
     with torch.no_grad():
         for batch in iterator:
+            print(f'line: {count}')
+            count+=1
             if train_pretrain:
               b_input_ids = batch["input_ids"]
               b_input_mask = batch["attention_mask"]
@@ -96,9 +101,10 @@ def evaluate(model,iterator,train_pretrain=False):
               loss = outputs.loss
               predictions = outputs.logits
               predictions = torch.argmax(predictions, dim=-1)
+              predictions = predictions[0]
               lr_scheduler.step()
-              metric.add_batch(predictions=predictions, references=batch["target"])
-              metric2.add_batch(predictions=predictions, references=batch["target"])
+              metric.add_batch(predictions=predictions, references=batch["target"][0])
+              metric2.add_batch(predictions=predictions, references=batch["target"][0])
               epoch_loss += loss.cpu().detach().numpy()
 
     if  train_pretrain:
@@ -111,11 +117,15 @@ def test(model,dataloader, tokenizer, train_pretrain=False):
     aspects = []
     aspect_positions = []
     print('test')
+    count=0
     with torch.no_grad():
         for batch in dataloader:
-            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'],  max_length=512) #, max_length=513) #, max_new_tokens=64)
-            aspects += tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
-            print(tokenizer.decoder(outputs[0], skip_special_tokens=True, padding_side='left'))
+            print(f'line: {count}')
+            count+=1
+            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'], max_new_tokens=50)
+            aspect = tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
+            aspects += aspect
+            print(aspect)
     return aspects
 
 def get_aspect_phrase(review, aspect_start, aspect_end):
@@ -156,8 +166,6 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
 tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
-# tokenized_datasets_train = tokenized_datasets_train.rename_column('polarity', 'target')
-# tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
 aspectos = tokenized_datasets_train['train']['target']
@@ -172,13 +180,16 @@ for i, aspecto in enumerate(aspectos):
     if aspecto in d: assert(target_encoded[i] == d[aspecto])
     d[aspecto] = target_encoded[i]
 
-# Definir uma função para transformar os rótulos
-def encode_labels(example):
-    example['target'] = d[example['target']]
+# Função para transformar os rótulos com padding
+def encode_labels_with_padding(example, max_length):
+    aspect_tensor = torch.tensor([d[example['target']]], dtype=torch.long)
+    padded_tensor = torch.nn.functional.pad(aspect_tensor, (0, max_length - len(aspect_tensor)))
+    example['target'] = padded_tensor
     return example
 
-# Aplicar a função de transformação aos dados
-tokenized_datasets_train = tokenized_datasets_train.map(encode_labels)
+# Aplicar a função de transformação com padding aos dados
+max_length = 50  # Defina o comprimento máximo desejado
+tokenized_datasets_train = tokenized_datasets_train.map(lambda example: encode_labels_with_padding(example, max_length))
 
 tokenized_datasets_train.set_format("torch")
 
@@ -189,11 +200,34 @@ tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['
 # tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
 tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
+aspectos = tokenized_datasets_test['train']['target']
+
+# Inicializar o codificador de rótulos
+label_encoder = preprocessing.LabelEncoder()
+
+# Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
+target_encoded = label_encoder.fit_transform(aspectos)
+d = dict()
+for i, aspecto in enumerate(aspectos):
+    if aspecto in d: assert(target_encoded[i] == d[aspecto])
+    d[aspecto] = target_encoded[i]
+
+# Função para transformar os rótulos com padding
+def encode_labels_with_padding(example, max_length):
+    aspect_tensor = torch.tensor([d[example['target']]], dtype=torch.long)
+    padded_tensor = torch.nn.functional.pad(aspect_tensor, (0, max_length - len(aspect_tensor)))
+    example['target'] = padded_tensor
+    return example
+
+# Aplicar a função de transformação com padding aos dados
+max_length = 50  # Defina o comprimento máximo desejado
+tokenized_datasets_test = tokenized_datasets_test.map(lambda example: encode_labels_with_padding(example, max_length))
+
 tokenized_datasets_test.set_format("torch")
 
 raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
 preprocessed_datasets_final = raw_datasets_final
-tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=256), batched=True)
+tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
 # tokenized_datasets_final = tokenized_datasets_final.rename_column('polarity', 'target')
 # tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto', 'aspect', 'start_position', 'end_position'])
 tokenized_datasets_final = tokenized_datasets_final.remove_columns(['id', 'texto'])
@@ -201,7 +235,7 @@ tokenized_datasets_final.set_format("torch")
 
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
-batch_size = 8 
+batch_size = 1 
 
 train_dataloader = DataLoader(
     tokenized_datasets_train["train"], shuffle=True, batch_size=batch_size, collate_fn=data_collator
@@ -218,7 +252,7 @@ final_dataloader = DataLoader(
 )
 
 #epoch_number = 10
-epoch_number = 1
+epoch_number = 0
 
 model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
