@@ -115,7 +115,6 @@ def evaluate(model,iterator,train_pretrain=False):
 
 def test(model,dataloader, tokenizer, train_pretrain=False):
     aspects = []
-    aspect_positions = []
     print('test')
     count=0
     with torch.no_grad():
@@ -124,8 +123,7 @@ def test(model,dataloader, tokenizer, train_pretrain=False):
             count+=1
             outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'], max_new_tokens=50)
             aspect = tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
-            aspects += aspect
-            print(aspect)
+            aspects.append(aspect)
     return aspects
 
 def get_aspect_phrase(review, aspect_start, aspect_end):
@@ -268,9 +266,10 @@ for epoch in range(1,epoch_number+1):
     print()
     #sys.stdout.flush()
 
-aspect = test(model,final_dataloader, tokenizer, train_pretrain=True)
-
+aspects = test(model,final_dataloader, tokenizer, train_pretrain=True)
+i = 0
 print("\"input id number\";\"list of aspects\"")
-for i in range(len(aspects)):
+for aspect in aspects:
     print(f'{i};\"{aspect}\"', flush=True)
+    i+=1
 
