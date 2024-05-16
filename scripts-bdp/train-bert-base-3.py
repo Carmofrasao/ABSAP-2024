@@ -16,7 +16,7 @@ class Unbuffered(object):
 
 from datasets import Dataset, load_dataset, load_metric
 from sklearn.metrics import f1_score
-from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelWithLMHead, BertForSequenceClassification
+from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelWithLMHead, BertForSequenceClassification, BertForPreTraining
 import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 import pandas as pd
@@ -24,12 +24,13 @@ from os import sys
 from sklearn import preprocessing
 import numpy as np
 from torch.nn.utils.rnn import pad_sequence
+from evaluate import load
 
 def train(model,iterator,epoca,optimizer):
-    print(f'Iniciando treinmanto da epoca {epoca}')
+    print(f'Iniciando treinamento da epoca {epoca}')
     epoch_loss = 0.0
-    metric = load_metric("accuracy")
-    metric2 = load_metric("f1")
+    metric = load("accuracy")
+    metric2 = load("f1")
 
     model.train()
 
@@ -41,27 +42,27 @@ def train(model,iterator,epoca,optimizer):
         labels = batch["target"].to(model.device)
 
         outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-        loss = outputs.loss
-        logits = outputs.logits
+        loss = outputs[0]
+        logits = outputs[1]
 
-        loss.backward()
+        loss.mean().backward()
         optimizer.step()
 
         predictions = torch.argmax(logits, dim=-1)
         metric.add_batch(predictions=predictions, references=labels)
         metric2.add_batch(predictions=predictions, references=labels)
 
-        epoch_loss += loss.item()
+        epoch_loss += loss.mean().item()
 
     accuracy = metric.compute()["accuracy"]
     f1 = metric2.compute(average="weighted")["f1"]
     return epoch_loss / len(iterator), accuracy, f1
 
-def evaluate(model,iterator,epoca):
+def analize(model,iterator,epoca):
     print(f'Iniciando avaliação da epoca {epoca}')
     epoch_loss = 0.0
-    metric = load_metric("accuracy")
-    metric2 = load_metric("f1")
+    metric = load("accuracy")
+    metric2 = load("f1")
 
     model.eval()
 
@@ -72,14 +73,14 @@ def evaluate(model,iterator,epoca):
             labels = batch["target"].to(model.device)
 
             outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss
-            logits = outputs.logits
+            loss = outputs[0]
+            logits = outputs[1]
 
             predictions = torch.argmax(logits, dim=-1)
             metric.add_batch(predictions=predictions, references=labels)
             metric2.add_batch(predictions=predictions, references=labels)
 
-            epoch_loss += loss.item()
+            epoch_loss += loss.mean().item()
 
     accuracy = metric.compute()["accuracy"]
     f1 = metric2.compute(average="weighted")["f1"]
@@ -94,9 +95,9 @@ def test(model,dataloader, tokenizer):
             input_ids = batch["input_ids"].to(model.device)
             attention_mask = batch["attention_mask"].to(model.device)
             outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-            predictions = torch.argmax(outputs.logits, dim=-1)
+            predictions = torch.argmax(outputs[1], dim=-1)
             decoded_aspects = label_encoder.inverse_transform(predictions.cpu().numpy())
-            aspects.extend(decoded_aspects)
+            aspects.append(decoded_aspects)
     return aspects
 
 def get_aspect_phrase(review, aspect_start, aspect_end):
@@ -134,15 +135,29 @@ preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
 tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
-aspectos = tokenized_datasets_train['train']['target']
+aspectos_train = tokenized_datasets_train['train']['target']
+
+# Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
+# target_encoded = label_encoder.fit_transform(aspectos_train)
+# d = dict()
+# for i, aspecto in enumerate(aspectos):
+#     if aspecto in d: assert(target_encoded[i] == d[aspecto])
+#     d[aspecto] = target_encoded[i]
+
+raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
+preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
+tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
+tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
+tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
+aspectos_test = tokenized_datasets_test['train']['target']
 
 # Inicializar o codificador de rótulos
 label_encoder = preprocessing.LabelEncoder()
 
 # Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
-target_encoded = label_encoder.fit_transform(aspectos)
+target_encoded = label_encoder.fit_transform(aspectos_train + aspectos_test)
 d = dict()
-for i, aspecto in enumerate(aspectos):
+for i, aspecto in enumerate(aspectos_train + aspectos_test):
     if aspecto in d: assert(target_encoded[i] == d[aspecto])
     d[aspecto] = target_encoded[i]
 
@@ -158,30 +173,6 @@ max_length = 1  # Defina o comprimento máximo desejado
 tokenized_datasets_train = tokenized_datasets_train.map(lambda example: encode_labels_with_padding(example, max_length))
 
 tokenized_datasets_train.set_format("torch")
-
-raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
-preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
-tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
-tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
-tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
-aspectos = tokenized_datasets_test['train']['target']
-
-# Inicializar o codificador de rótulos
-label_encoder = preprocessing.LabelEncoder()
-
-# Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
-target_encoded = label_encoder.fit_transform(aspectos)
-d = dict()
-for i, aspecto in enumerate(aspectos):
-    if aspecto in d: assert(target_encoded[i] == d[aspecto])
-    d[aspecto] = target_encoded[i]
-
-# Função para transformar os rótulos com padding
-def encode_labels_with_padding(example, max_length):
-    aspect_tensor = torch.tensor([d[example['target']]], dtype=torch.long)
-    padded_tensor = torch.nn.functional.pad(aspect_tensor, (0, max_length - len(aspect_tensor)))
-    example['target'] = padded_tensor
-    return example
 
 # Aplicar a função de transformação com padding aos dados
 max_length = 1  # Defina o comprimento máximo desejado
@@ -212,10 +203,10 @@ final_dataloader = DataLoader(
 # epoch_number = 10
 epoch_number = 1
 
-model = BertForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=len(tokenized_datasets_train['train']['target']))
+model = BertForPreTraining.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=len(tokenized_datasets_train['train']['target']))
 # model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
-optimizer = AdamW(model.parameters(), lr=5e-5)
+optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
 
 model.to('cuda' if torch.cuda.is_available() else 'cpu')
