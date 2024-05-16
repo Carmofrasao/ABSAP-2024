@@ -200,8 +200,8 @@ final_dataloader = DataLoader(
     tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
 )
 
-# epoch_number = 10
-epoch_number = 1
+epoch_number = 10
+# epoch_number = 1
 
 model = BertForPreTraining.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=len(tokenized_datasets_train['train']['target']))
 # model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
@@ -214,7 +214,7 @@ model.to('cuda' if torch.cuda.is_available() else 'cpu')
 for epoch in range(1, epoch_number + 1):
     print(f"\t Epoch: {epoch}", flush=True)
     train_loss, train_acc, train_f1 = train(model, train_dataloader, epoch, optimizer)
-    valid_loss, valid_acc, valid_f1 = evaluate(model, test_dataloader, epoch)
+    valid_loss, valid_acc, valid_f1 = analize(model, test_dataloader, epoch)
 
     print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f} | Train f1: {train_f1*100:.2f}%', flush=True)
     print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f} |  val. f1: {valid_f1*100:.2f}%', flush=True)
