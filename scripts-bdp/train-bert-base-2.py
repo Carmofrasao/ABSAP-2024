@@ -101,7 +101,7 @@ def evaluate(model,iterator,epoca,train_pretrain=False):
       return epoch_loss / len(iterator), epoch_acc / len(iterator), epoch_f1 / len(iterator)
 
 
-def test(model,dataloader, tokenizer,epoca, train_pretrain=False):
+def test(model,dataloader, tokenizer, train_pretrain=False):
     print(f'Iniciando teste')
     aspects = []
     with torch.no_grad():
@@ -225,8 +225,8 @@ final_dataloader = DataLoader(
     tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
 )
 
-epoch_number = 10
-# epoch_number = 0
+# epoch_number = 10
+epoch_number = 3
 
 model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
