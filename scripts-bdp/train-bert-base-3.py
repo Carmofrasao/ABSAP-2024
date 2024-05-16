@@ -16,7 +16,7 @@ class Unbuffered(object):
 
 from datasets import Dataset, load_dataset, load_metric
 from sklearn.metrics import f1_score
-from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelWithLMHead AutoModelForSequenceClassification
+from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelWithLMHead, BertForSequenceClassification
 import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 import pandas as pd
@@ -25,90 +25,78 @@ from sklearn import preprocessing
 import numpy as np
 from torch.nn.utils.rnn import pad_sequence
 
-def train(model,iterator,epoca,optimizer,train_pretrain=False):
-  print(f'Iniciando treinmanto da epoca {epoca}')
-  epoch_loss = 0.0
-  epoch_acc = 0.0
-  epoch_f1 = 0.0
-
-  model.train()
-  metric = load_metric("accuracy")
-  metric2 = load_metric("f1")
-  for batch in iterator:
-      optimizer.zero_grad()
-
-      if train_pretrain:
-        b_input_ids = batch["input_ids"]
-        b_input_mask = batch["attention_mask"]
-        b_labels_aspect = batch["target"]
-        outputs = model(b_input_ids,token_type_ids=None,
-                             attention_mask=b_input_mask,
-                             labels=b_labels_aspect)
-        loss = outputs.loss
-
-        predictions = outputs.logits
-        predictions = torch.argmax(predictions, dim=-1)
-        predictions = predictions[0]
-        b = batch['target'][0]
-        metric.add_batch(predictions=predictions, references=b)
-        metric2.add_batch(predictions=predictions, references=b)
-        epoch_loss += loss.cpu().detach().numpy()
-
-        loss.backward()
-        optimizer.step()
-        lr_scheduler.step()
-
-  if  train_pretrain:
-     return epoch_loss / len(iterator), metric.compute()["accuracy"], metric2.compute(average="weighted")["f1"]
-
-  if not train_pretrain:
-    return epoch_loss / len(iterator), epoch_acc / len(iterator), epoch_f1 / len(iterator)
-
-def evaluate(model,iterator,epoca,train_pretrain=False):
-    print(f'Iniciando avaliação da epoca {epoca}')
+def train(model,iterator,epoca,optimizer):
+    print(f'Iniciando treinmanto da epoca {epoca}')
     epoch_loss = 0.0
-    epoch_acc = 0.0
-    epoch_f1 = 0.0
-
-    # deactivate the dropouts
-    model.eval()
     metric = load_metric("accuracy")
     metric2 = load_metric("f1")
 
-    # Sets require_grad flat False
+    model.train()
+
+    for batch in iterator:
+        optimizer.zero_grad()
+
+        input_ids = batch["input_ids"].to(model.device)
+        attention_mask = batch["attention_mask"].to(model.device)
+        labels = batch["target"].to(model.device)
+
+        outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+        loss = outputs.loss
+        logits = outputs.logits
+
+        loss.backward()
+        optimizer.step()
+
+        predictions = torch.argmax(logits, dim=-1)
+        metric.add_batch(predictions=predictions, references=labels)
+        metric2.add_batch(predictions=predictions, references=labels)
+
+        epoch_loss += loss.item()
+
+    accuracy = metric.compute()["accuracy"]
+    f1 = metric2.compute(average="weighted")["f1"]
+    return epoch_loss / len(iterator), accuracy, f1
+
+def evaluate(model,iterator,epoca):
+    print(f'Iniciando avaliação da epoca {epoca}')
+    epoch_loss = 0.0
+    metric = load_metric("accuracy")
+    metric2 = load_metric("f1")
+
+    model.eval()
+
     with torch.no_grad():
         for batch in iterator:
-            if train_pretrain:
-              b_input_ids = batch["input_ids"]
-              b_input_mask = batch["attention_mask"]
-              b_labels_aspect = batch["target"]
-              outputs = model(b_input_ids,token_type_ids=None,
-                             attention_mask=b_input_mask,
-                             labels=b_labels_aspect)
+            input_ids = batch["input_ids"].to(model.device)
+            attention_mask = batch["attention_mask"].to(model.device)
+            labels = batch["target"].to(model.device)
 
-              loss = outputs.loss
-              predictions = outputs.logits
-              predictions = torch.argmax(predictions, dim=-1)
-              predictions = predictions[0]
-              lr_scheduler.step()
-              metric.add_batch(predictions=predictions, references=batch["target"][0])
-              metric2.add_batch(predictions=predictions, references=batch["target"][0])
-              epoch_loss += loss.cpu().detach().numpy()
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+            loss = outputs.loss
+            logits = outputs.logits
 
-    if  train_pretrain:
-      return epoch_loss / len(iterator), metric.compute()["accuracy"], metric2.compute(average="weighted")["f1"]
-    if not train_pretrain:
-      return epoch_loss / len(iterator), epoch_acc / len(iterator), epoch_f1 / len(iterator)
+            predictions = torch.argmax(logits, dim=-1)
+            metric.add_batch(predictions=predictions, references=labels)
+            metric2.add_batch(predictions=predictions, references=labels)
 
+            epoch_loss += loss.item()
 
-def test(model,dataloader, tokenizer, train_pretrain=False):
+    accuracy = metric.compute()["accuracy"]
+    f1 = metric2.compute(average="weighted")["f1"]
+    return epoch_loss / len(iterator), accuracy, f1
+
+def test(model,dataloader, tokenizer):
     print(f'Iniciando teste')
     aspects = []
+    model.eval()
     with torch.no_grad():
         for batch in dataloader:
-            outputs = model.generate(batch['input_ids'], attention_mask=batch['attention_mask'], max_new_tokens=50)
-            aspect = tokenizer.decode(outputs[0], skip_special_tokens=True, padding_side='left')
-            aspects.append(aspect)
+            input_ids = batch["input_ids"].to(model.device)
+            attention_mask = batch["attention_mask"].to(model.device)
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            predictions = torch.argmax(outputs.logits, dim=-1)
+            decoded_aspects = label_encoder.inverse_transform(predictions.cpu().numpy())
+            aspects.extend(decoded_aspects)
     return aspects
 
 def get_aspect_phrase(review, aspect_start, aspect_end):
@@ -166,7 +154,7 @@ def encode_labels_with_padding(example, max_length):
     return example
 
 # Aplicar a função de transformação com padding aos dados
-max_length = 50  # Defina o comprimento máximo desejado
+max_length = 1  # Defina o comprimento máximo desejado
 tokenized_datasets_train = tokenized_datasets_train.map(lambda example: encode_labels_with_padding(example, max_length))
 
 tokenized_datasets_train.set_format("torch")
@@ -196,7 +184,7 @@ def encode_labels_with_padding(example, max_length):
     return example
 
 # Aplicar a função de transformação com padding aos dados
-max_length = 50  # Defina o comprimento máximo desejado
+max_length = 1  # Defina o comprimento máximo desejado
 tokenized_datasets_test = tokenized_datasets_test.map(lambda example: encode_labels_with_padding(example, max_length))
 
 tokenized_datasets_test.set_format("torch")
@@ -222,25 +210,28 @@ final_dataloader = DataLoader(
 )
 
 # epoch_number = 10
-epoch_number = 1 
+epoch_number = 1
 
-model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
+model = BertForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=len(tokenized_datasets_train['train']['target']))
+# model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
 # model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
 optimizer = AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
-for epoch in range(1,epoch_number+1):
+
+model.to('cuda' if torch.cuda.is_available() else 'cpu')
+
+for epoch in range(1, epoch_number + 1):
     print(f"\t Epoch: {epoch}", flush=True)
-    train_loss,train_acc,train_f1 = train(model,train_dataloader,epoch,optimizer,train_pretrain=True)
-    valid_loss,valid_acc,valid_f1 = evaluate(model,test_dataloader,epoch,train_pretrain=True)
+    train_loss, train_acc, train_f1 = train(model, train_dataloader, epoch, optimizer)
+    valid_loss, valid_acc, valid_f1 = evaluate(model, test_dataloader, epoch)
 
     print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f} | Train f1: {train_f1*100:.2f}%', flush=True)
     print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f} |  val. f1: {valid_f1*100:.2f}%', flush=True)
     print()
 
-aspects = test(model,final_dataloader, tokenizer, train_pretrain=True)
+aspects = test(model, final_dataloader, tokenizer)
 i = 0
 print("\"input id number\";\"list of aspects\"")
 for aspect in aspects:
     print(f'{i};\"{aspect}\"', flush=True)
-    i+=1
-
+    i += 1
