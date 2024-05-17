@@ -16,7 +16,7 @@ class Unbuffered(object):
 
 from datasets import Dataset, load_dataset, load_metric
 from sklearn.metrics import f1_score
-from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, AutoModelWithLMHead, BertForSequenceClassification, BertForPreTraining
+from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, BertForPreTraining, AutoModelForSequenceClassification
 import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 import pandas as pd
@@ -96,7 +96,7 @@ def test(model,dataloader, tokenizer):
             input_ids = batch["input_ids"].to(model.device)
             attention_mask = batch["attention_mask"].to(model.device)
             outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-            predictions = torch.argmax(outputs[1], dim=-1)
+            predictions = torch.argmax(outputs.logits, dim=-1)
             idss+=[int(i) for i in batch["id"]]
             decoded_aspects = label_encoder.inverse_transform(predictions.cpu().numpy())
             aspects.append(decoded_aspects)
@@ -204,11 +204,13 @@ final_dataloader = DataLoader(
 )
 
 # epoch_number = 10
-epoch_number = 0
+epoch_number = 1
 
-model = BertForPreTraining.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=len(tokenized_datasets_train['train']['target']))
+num_labels = len(d)
+
+# model = BertForPreTraining.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=num_labels)
 # model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
-# model = AutoModelForSequenceClassification.from_pretrained("./bert-base-portuguese-cased", num_labels=3)
+model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=num_labels)
 optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
 
