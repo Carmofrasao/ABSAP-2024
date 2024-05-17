@@ -120,17 +120,10 @@ def preprocess_review(row):
     return row
 
 tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512, padding_side='left')
-# tokenizer = AutoTokenizer.from_pretrained('./bert-base-portuguese-cased')
 
-# train_data_filepath = 'dataset-bert/train.csv'
-# test_data_filepath = 'dataset-bert/test.csv'
-
-#train_data_filepath = 'dataset-bert/train_full.csv'
-#test_data_filepath = 'dataset-bert/test_full.csv'
-train_data_filepath = 'dataset-bert/train-sample2-fixed.csv'
+# train_data_filepath = 'dataset-bert/train-sample2-fixed.csv'
+train_data_filepath = 'dataset-bert/train-sample.csv'
 test_data_filepath = 'dataset-bert/test-sample.csv'
-
-#final_eval_filepath = '../dataset/test/test_task2.csv'
 final_eval_filepath = 'dataset-bert/task1_test.csv'
 
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
@@ -139,13 +132,6 @@ tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
 aspectos_train = tokenized_datasets_train['train']['target']
-
-# Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
-# target_encoded = label_encoder.fit_transform(aspectos_train)
-# d = dict()
-# for i, aspecto in enumerate(aspectos):
-#     if aspecto in d: assert(target_encoded[i] == d[aspecto])
-#     d[aspecto] = target_encoded[i]
 
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
@@ -202,15 +188,24 @@ test_dataloader = DataLoader(
 final_dataloader = DataLoader(
     tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
 )
-
+for data in train_dataloader:
+  for d in data['input_ids']:
+    print(d)
+    decoded = label_encoder.inverse_transform(d.cpu().numpy())
+    print(decoded)
+  print(data['target'])
+  exit(1)
 # epoch_number = 10
 epoch_number = 1
 
 num_labels = len(d)
 
-# model = BertForPreTraining.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=num_labels)
-# model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
-model = AutoModelForSequenceClassification.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=num_labels)
+model = AutoModelForSequenceClassification.from_pretrained(
+    "neuralmind/bert-base-portuguese-cased", 
+    num_labels=num_labels,
+    hidden_dropout_prob=0.3,  # Adicione dropout
+    attention_probs_dropout_prob=0.3  # Adicione dropout
+)
 optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
 
