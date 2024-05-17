@@ -89,6 +89,7 @@ def analize(model,iterator,epoca):
 def test(model,dataloader, tokenizer):
     print(f'Iniciando teste')
     aspects = []
+    idss = []
     model.eval()
     with torch.no_grad():
         for batch in dataloader:
@@ -96,9 +97,11 @@ def test(model,dataloader, tokenizer):
             attention_mask = batch["attention_mask"].to(model.device)
             outputs = model(input_ids=input_ids, attention_mask=attention_mask)
             predictions = torch.argmax(outputs[1], dim=-1)
+            idss+=[int(i) for i in batch["id"]]
             decoded_aspects = label_encoder.inverse_transform(predictions.cpu().numpy())
             aspects.append(decoded_aspects)
-    return aspects
+    mapp=dict(zip(idss,aspects))
+    return mapp
 
 def get_aspect_phrase(review, aspect_start, aspect_end):
     padded_review = "." + review + "."
@@ -183,7 +186,7 @@ tokenized_datasets_test.set_format("torch")
 raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
 preprocessed_datasets_final = raw_datasets_final
 tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
-tokenized_datasets_final = tokenized_datasets_final.remove_columns(['id', 'texto'])
+tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto'])
 tokenized_datasets_final.set_format("torch")
 
 data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
@@ -200,8 +203,8 @@ final_dataloader = DataLoader(
     tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
 )
 
-epoch_number = 10
-# epoch_number = 1
+# epoch_number = 10
+epoch_number = 0
 
 model = BertForPreTraining.from_pretrained("neuralmind/bert-base-portuguese-cased", num_labels=len(tokenized_datasets_train['train']['target']))
 # model = AutoModelWithLMHead.from_pretrained("neuralmind/bert-base-portuguese-cased")
@@ -221,8 +224,6 @@ for epoch in range(1, epoch_number + 1):
     print()
 
 aspects = test(model, final_dataloader, tokenizer)
-i = 0
 print("\"input id number\";\"list of aspects\"")
-for aspect in aspects:
-    print(f'{i};\"{aspect}\"', flush=True)
-    i += 1
+for key,value in aspects.items():
+    print(f'{key};\"{value}\"', flush=True)
