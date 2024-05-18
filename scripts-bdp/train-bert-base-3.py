@@ -44,7 +44,8 @@ def train(model,iterator,epoca,optimizer):
         loss = outputs.loss
         logits = outputs.logits
         predictions = torch.argmax(logits, dim=-1)
-        print(f'predictions: {predictions}, references: {labels}')
+        decoded_pred = num_to_word.get(int(predictions.cpu().numpy().squeeze()), "Não encontrado")
+        decoded_label = num_to_word.get(int(labels.cpu().numpy().squeeze()), "Não encontrado")
         metric.add_batch(predictions=predictions, references=labels)
         metric2.add_batch(predictions=predictions, references=labels)
 
@@ -77,7 +78,6 @@ def analize(model,iterator,epoca):
             logits = outputs[1]
 
             predictions = torch.argmax(logits, dim=-1)
-            print(f'predictions: {predictions}, references: {labels}')
             metric.add_batch(predictions=predictions, references=labels)
             metric2.add_batch(predictions=predictions, references=labels)
 
@@ -99,8 +99,7 @@ def test(model,dataloader, tokenizer):
             outputs = model(input_ids=input_ids, attention_mask=attention_mask)
             predictions = torch.argmax(outputs.logits, dim=-1)
             idss+=[int(i) for i in batch["id"]]
-            decoded_aspects = label_encoder.inverse_transform(predictions.cpu().numpy())
-            print(decoded_aspects)
+            decoded_aspects = num_to_word.get(int(predictions.cpu().numpy().squeeze()), "Não encontrado")
             aspects.append(decoded_aspects)
     mapp=dict(zip(idss,aspects))
     return mapp
@@ -151,6 +150,7 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
 tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+palavra_aspect_train = tokenized_datasets_train['train']['aspect']
 tokenized_datasets_train = tokenized_datasets_train.map(preprocess_revieww)
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
@@ -158,6 +158,7 @@ tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
 tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+palavra_aspect_test = tokenized_datasets_test['train']['aspect']
 tokenized_datasets_test = tokenized_datasets_test.map(preprocess_revieww)
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
 tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
@@ -165,13 +166,19 @@ tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto',
 aspectos_train = tokenized_datasets_train['train']['target']
 aspectos_test = tokenized_datasets_test['train']['target']
 
-# label_decoder = preprocessing.OrdinalEncoder()
+palavra_aspecto_train = list(zip(palavra_aspect_train, aspectos_train))
+palavra_aspecto_train = [list(par) for par in palavra_aspecto_train]
 
-# Inicializar o codificador de rótulos
-# label_encoder = preprocessing.LabelEncoder()
+palavra_aspecto_test = list(zip(palavra_aspect_test, aspectos_test))
+palavra_aspecto_test = [list(par) for par in palavra_aspecto_test]
 
-# Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
-# target_encoded = label_encoder.fit_transform(aspectos_train+aspectos_test)
+palavra_aspecto = palavra_aspecto_train+palavra_aspecto_test
+
+num_to_word = {}
+for item in palavra_aspecto:
+    palavra, numero = item
+    if numero not in num_to_word:
+        num_to_word[numero] = palavra
 
 tokenized_datasets_train.set_format("torch")
 tokenized_datasets_test.set_format("torch")
