@@ -44,8 +44,6 @@ def train(model,iterator,epoca,optimizer):
         loss = outputs.loss
         logits = outputs.logits
         predictions = torch.argmax(logits, dim=-1)
-        decoded_pred = num_to_word.get(int(predictions.cpu().numpy().squeeze()), "Não encontrado")
-        decoded_label = num_to_word.get(int(labels.cpu().numpy().squeeze()), "Não encontrado")
         metric.add_batch(predictions=predictions, references=labels)
         metric2.add_batch(predictions=predictions, references=labels)
 
