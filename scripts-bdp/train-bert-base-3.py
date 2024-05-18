@@ -119,6 +119,17 @@ def preprocess_review(row):
     row['aspect'] = row['aspect']
     return row
 
+def preprocess_revieww(row):
+    for i, d in enumerate(row['texto'].split()):        
+        if d.find(row['aspect']) != -1:
+            print('--------------------------------------------------------------------')
+            print(d)
+            print(row['aspect'])
+            row['aspect'] = row['input_ids'][i]
+            print('--------------------------------------------------------------------')
+            break
+    return row
+
 tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512, padding_side='left')
 
 # train_data_filepath = 'dataset-bert/train-sample2-fixed.csv'
@@ -128,17 +139,22 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
-tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
+tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+preprocessed_datasets_train = tokenized_datasets_train.map(preprocess_revieww)
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
 aspectos_train = tokenized_datasets_train['train']['target']
 
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
-tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
+tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+preprocessed_datasets_test = tokenized_datasets_test.map(preprocess_revieww)
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
 tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
 aspectos_test = tokenized_datasets_test['train']['target']
+
+label_decoder = preprocessing.OrdinalEncoder()
+
 
 # Inicializar o codificador de rótulos
 label_encoder = preprocessing.LabelEncoder()
@@ -171,7 +187,7 @@ tokenized_datasets_test.set_format("torch")
 
 raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
 preprocessed_datasets_final = raw_datasets_final
-tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=50), batched=True)
+tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
 tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto'])
 tokenized_datasets_final.set_format("torch")
 
@@ -188,13 +204,7 @@ test_dataloader = DataLoader(
 final_dataloader = DataLoader(
     tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
 )
-for data in train_dataloader:
-  for d in data['input_ids']:
-    print(d)
-    decoded = label_encoder.inverse_transform(d.cpu().numpy())
-    print(decoded)
-  print(data['target'])
-  exit(1)
+
 # epoch_number = 10
 epoch_number = 1
 
