@@ -1,7 +1,5 @@
 #!/usr/bin/python3 -u
 
-import sys
-
 class Unbuffered(object):
    def __init__(self, stream):
        self.stream = stream
@@ -14,16 +12,11 @@ class Unbuffered(object):
    def __getattr__(self, attr):
        return getattr(self.stream, attr)
 
-from datasets import Dataset, load_dataset, load_metric
-from sklearn.metrics import f1_score
-from transformers import AdamW, get_scheduler, AutoTokenizer, DataCollatorWithPadding, BertForPreTraining, AutoModelForSequenceClassification
+from datasets import load_dataset, load_metric
+from transformers import get_scheduler, DataCollatorWithPadding, AutoTokenizer, AutoModelForSequenceClassification
 import torch
-from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-import pandas as pd
-from os import sys
+from torch.utils.data import DataLoader
 from sklearn import preprocessing
-import numpy as np
-from torch.nn.utils.rnn import pad_sequence
 from evaluate import load
 
 def train(model,iterator,epoca,optimizer):
@@ -163,6 +156,8 @@ tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto',
 
 aspectos_train = tokenized_datasets_train['train']['target']
 aspectos_test = tokenized_datasets_test['train']['target']
+input_train = tokenized_datasets_train['train']['input_ids']
+input_test = tokenized_datasets_test['train']['input_ids']
 
 palavra_aspecto_train = list(zip(palavra_aspect_train, aspectos_train))
 palavra_aspecto_train = [list(par) for par in palavra_aspecto_train]
@@ -204,7 +199,7 @@ final_dataloader = DataLoader(
 # epoch_number = 10
 epoch_number = 1
 
-num_labels = max(max(aspectos_train),max(aspectos_test))
+num_labels = max(max(aspectos_train),max(aspectos_test), max([max(x) for x in input_train]), max([max(x) for x in input_test]))
 
 model = AutoModelForSequenceClassification.from_pretrained(
     "neuralmind/bert-base-portuguese-cased", 
