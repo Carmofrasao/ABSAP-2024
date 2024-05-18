@@ -40,19 +40,19 @@ def train(model,iterator,epoca,optimizer):
         input_ids = batch["input_ids"].to(model.device)
         attention_mask = batch["attention_mask"].to(model.device)
         labels = batch["target"].to(model.device)
-
         outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-        loss = outputs[0]
-        logits = outputs[1]
-
-        loss.mean().backward()
-        optimizer.step()
-
+        loss = outputs.loss
+        logits = outputs.logits
         predictions = torch.argmax(logits, dim=-1)
+        print(f'predictions: {predictions}, references: {labels}')
         metric.add_batch(predictions=predictions, references=labels)
         metric2.add_batch(predictions=predictions, references=labels)
 
-        epoch_loss += loss.mean().item()
+        epoch_loss += loss.cpu().detach().numpy()
+
+        optimizer.step()
+        lr_scheduler.step()
+        loss.backward()
 
     accuracy = metric.compute()["accuracy"]
     f1 = metric2.compute(average="weighted")["f1"]
@@ -77,6 +77,7 @@ def analize(model,iterator,epoca):
             logits = outputs[1]
 
             predictions = torch.argmax(logits, dim=-1)
+            print(f'predictions: {predictions}, references: {labels}')
             metric.add_batch(predictions=predictions, references=labels)
             metric2.add_batch(predictions=predictions, references=labels)
 
@@ -99,6 +100,7 @@ def test(model,dataloader, tokenizer):
             predictions = torch.argmax(outputs.logits, dim=-1)
             idss+=[int(i) for i in batch["id"]]
             decoded_aspects = label_encoder.inverse_transform(predictions.cpu().numpy())
+            print(decoded_aspects)
             aspects.append(decoded_aspects)
     mapp=dict(zip(idss,aspects))
     return mapp
@@ -116,18 +118,27 @@ def get_aspect_phrase(review, aspect_start, aspect_end):
 
 def preprocess_review(row):
     row['texto'] = get_aspect_phrase(row['texto'], int(row['start_position']), int(row['end_position']))
-    row['aspect'] = row['aspect']
     return row
 
 def preprocess_revieww(row):
-    for i, d in enumerate(row['texto'].split()):        
-        if d.find(row['aspect']) != -1:
-            print('--------------------------------------------------------------------')
-            print(d)
-            print(row['aspect'])
+    aspect_found = False
+    aspect_tokens = tokenizer.tokenize(row['aspect'])
+    input_tokens = tokenizer.convert_ids_to_tokens(row['input_ids'])
+    input_tokens = [token.lower() for token in input_tokens]
+    
+    for i in range(len(input_tokens) - len(aspect_tokens) + 1):
+        if input_tokens[i:i+len(aspect_tokens)] == aspect_tokens:
             row['aspect'] = row['input_ids'][i]
-            print('--------------------------------------------------------------------')
+            aspect_found = True
             break
+    
+    if not aspect_found:
+        print(input_tokens)
+        print(aspect_tokens)
+        print(row['texto'])
+        print(f"Aspect '{row['aspect']}' not found in tokens.")
+        row['aspect'] = 0
+
     return row
 
 tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512, padding_side='left')
@@ -140,49 +151,29 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
 tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
-preprocessed_datasets_train = tokenized_datasets_train.map(preprocess_revieww)
+tokenized_datasets_train = tokenized_datasets_train.map(preprocess_revieww)
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
-aspectos_train = tokenized_datasets_train['train']['target']
 
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
 tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
-preprocessed_datasets_test = tokenized_datasets_test.map(preprocess_revieww)
+tokenized_datasets_test = tokenized_datasets_test.map(preprocess_revieww)
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
 tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
+
+aspectos_train = tokenized_datasets_train['train']['target']
 aspectos_test = tokenized_datasets_test['train']['target']
 
-label_decoder = preprocessing.OrdinalEncoder()
-
+# label_decoder = preprocessing.OrdinalEncoder()
 
 # Inicializar o codificador de rótulos
-label_encoder = preprocessing.LabelEncoder()
+# label_encoder = preprocessing.LabelEncoder()
 
 # Ajustar o codificador de rótulos aos aspectos e transformar em valores numéricos
-target_encoded = label_encoder.fit_transform(aspectos_train + aspectos_test)
-d = dict()
-for i, aspecto in enumerate(aspectos_train + aspectos_test):
-    if aspecto in d: assert(target_encoded[i] == d[aspecto])
-    d[aspecto] = target_encoded[i]
-
-# Função para transformar os rótulos com padding
-def encode_labels_with_padding(example, max_length):
-    aspect_tensor = torch.tensor([d[example['target']]], dtype=torch.long)
-    padded_tensor = torch.nn.functional.pad(aspect_tensor, (0, max_length - len(aspect_tensor)))
-    example['target'] = padded_tensor
-    return example
-
-# Aplicar a função de transformação com padding aos dados
-max_length = 1  # Defina o comprimento máximo desejado
-tokenized_datasets_train = tokenized_datasets_train.map(lambda example: encode_labels_with_padding(example, max_length))
+# target_encoded = label_encoder.fit_transform(aspectos_train+aspectos_test)
 
 tokenized_datasets_train.set_format("torch")
-
-# Aplicar a função de transformação com padding aos dados
-max_length = 1  # Defina o comprimento máximo desejado
-tokenized_datasets_test = tokenized_datasets_test.map(lambda example: encode_labels_with_padding(example, max_length))
-
 tokenized_datasets_test.set_format("torch")
 
 raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
@@ -208,13 +199,11 @@ final_dataloader = DataLoader(
 # epoch_number = 10
 epoch_number = 1
 
-num_labels = len(d)
+num_labels = max(max(aspectos_train),max(aspectos_test))
 
 model = AutoModelForSequenceClassification.from_pretrained(
     "neuralmind/bert-base-portuguese-cased", 
     num_labels=num_labels,
-    hidden_dropout_prob=0.3,  # Adicione dropout
-    attention_probs_dropout_prob=0.3  # Adicione dropout
 )
 optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
 lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
