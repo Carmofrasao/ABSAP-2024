@@ -1,98 +1,0 @@
-2024-05-04 13:32:46.280791: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2024-05-04 13:32:46.308846: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2024-05-04 13:32:46.836767: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 3862 examples [00:00, 150213.31 examples/s]
-Map:   0%|          | 0/3862 [00:00<?, ? examples/s]Map:  45%|████▍     | 1737/3862 [00:00<00:00, 17290.29 examples/s]Map:  91%|█████████ | 3514/3862 [00:00<00:00, 17567.18 examples/s]Map: 100%|██████████| 3862/3862 [00:00<00:00, 17339.07 examples/s]
-Map:   0%|          | 0/3862 [00:00<?, ? examples/s]Map: 100%|██████████| 3862/3862 [00:00<00:00, 52061.29 examples/s]
-Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 966 examples [00:00, 145566.49 examples/s]
-Map:   0%|          | 0/966 [00:00<?, ? examples/s]Map: 100%|██████████| 966/966 [00:00<00:00, 16927.64 examples/s]
-Map:   0%|          | 0/966 [00:00<?, ? examples/s]Map: 100%|██████████| 966/966 [00:00<00:00, 8250.42 examples/s]Map: 100%|██████████| 966/966 [00:00<00:00, 8146.64 examples/s]
-/home/bruno/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:619: UserWarning: Can't initialize NVML
-  warnings.warn("Can't initialize NVML")
-Some weights of BertForSequenceClassification were not initialized from the model checkpoint at ./bert-base-portuguese-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
-You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-/home/bruno/.local/lib/python3.8/site-packages/transformers/optimization.py:521: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
-  warnings.warn(
-train-bert-base.py:15: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
-  metric = load_metric("accuracy")
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for accuracy contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/accuracy/accuracy.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/accuracy/9756d5fa4a0f9da966341741fc3926eafdc604b8276add51d5abbaa8958a25f9 (last modified on Fri May  3 18:47:44 2024) since it couldn't be found locally at accuracy, or remotely on the Hugging Face Hub.
-/home/bruno/.local/lib/python3.8/site-packages/datasets/load.py:759: FutureWarning: The repository for f1 contains custom code which must be executed to correctly load the metric. You can inspect the repository content at https://raw.githubusercontent.com/huggingface/datasets/2.19.0/metrics/f1/f1.py
-You can avoid this message in future by passing the argument `trust_remote_code=True`.
-Passing `trust_remote_code=True` will be mandatory to load this metric from the next major release of `datasets`.
-  warnings.warn(
-Using the latest cached version of the module from /home/bruno/.cache/huggingface/modules/datasets_modules/metrics/f1/1ae7ede7c974ce472c931da73bdb2e3f0e1044a996d2348b328773d44dd1847b (last modified on Fri May  3 18:47:45 2024) since it couldn't be found locally at f1, or remotely on the Hugging Face Hub.

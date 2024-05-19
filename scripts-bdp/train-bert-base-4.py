@@ -95,8 +95,6 @@ def test(model,dataloader, tokenizer):
             idss+=[int(i) for i in batch["id"]]
             decoded_aspects = num_to_word.get(int(predictions.cpu().numpy().squeeze()), "Não encontrado")
 
-            print(f'TOKEN: {int(predictions.cpu().numpy().squeeze())}')
-
             aspects.append(decoded_aspects)
     mapp=dict(zip(idss,aspects))
     return mapp
@@ -126,7 +124,6 @@ def preprocess_revieww(row):
     new_aspect = []
     for token in input_tokens:
         if token in ['[cls]', '[pad]', '[sep]', '[unk]']:
-            # print('skipped')
             continue
         if len(token) > 2 and (token[0] == '#' and token[1] == '#'):
             before, sep, after = token.partition('##')
@@ -161,6 +158,9 @@ def preprocess_revieww(row):
 
 tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512, padding_side='left')
 
+#print(tokenizer.all_special_tokens)
+#print(tokenizer.all_special_ids)
+
 # train_data_filepath = 'dataset-bert/train-sample2-fixed.csv'
 train_data_filepath = 'dataset-bert/train-sample.csv'
 test_data_filepath = 'dataset-bert/test-sample.csv'
@@ -169,7 +169,10 @@ final_eval_filepath = 'dataset-bert/task1_test.csv'
 raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
 preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
 tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+
 palavra_aspect_train = tokenized_datasets_train['train']['aspect']
+palavra_texto_train = tokenized_datasets_train['train']['texto']
+
 tokenized_datasets_train = tokenized_datasets_train.map(preprocess_revieww)
 tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
 tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
@@ -177,7 +180,10 @@ tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto
 raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
 preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
 tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+
 palavra_aspect_test = tokenized_datasets_test['train']['aspect']
+palavra_texto_test = tokenized_datasets_test['train']['texto']
+
 tokenized_datasets_test = tokenized_datasets_test.map(preprocess_revieww)
 tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
 tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
@@ -190,10 +196,30 @@ input_test = tokenized_datasets_test['train']['input_ids']
 palavra_aspecto_train = list(zip(palavra_aspect_train, aspectos_train))
 palavra_aspecto_train = [list(par) for par in palavra_aspecto_train]
 
+algos = []
+for i in range(0, len(input_train)):
+    ids = [j for j in input_train[i] if j not in [100, 102, 0, 101, 103, 119]]
+    palavras = []
+    for id in ids:
+        palavras.append(tokenizer.decode(id, skip_special_tokens=True))
+    algo = list(zip(palavras, ids))
+    algo = [list(par) for par in algo]
+    algos.append(algo)
+for i in range(0, len(input_test)):
+    ids = [j for j in input_test[i] if j not in [100, 102, 0, 101, 103, 119]]
+    palavras = []
+    for id in ids:
+        palavras.append(tokenizer.decode(id, skip_special_tokens=True))
+    algo = list(zip(palavras, ids))
+    algo = [list(par) for par in algo]
+    algos.append(algo)
+
 palavra_aspecto_test = list(zip(palavra_aspect_test, aspectos_test))
 palavra_aspecto_test = [list(par) for par in palavra_aspecto_test]
 
 palavra_aspecto = palavra_aspecto_train+palavra_aspecto_test
+for algo in algos:
+    palavra_aspecto += algo
 
 num_to_word = {}
 for item in palavra_aspecto:
@@ -225,7 +251,7 @@ final_dataloader = DataLoader(
 )
 
 # epoch_number = 10
-epoch_number = 10
+epoch_number = 3
 
 num_labels = max(max(aspectos_train),max(aspectos_test), max([max(x) for x in input_train]), max([max(x) for x in input_test]))
 
