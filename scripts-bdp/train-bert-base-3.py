@@ -16,13 +16,11 @@ from datasets import load_dataset, load_metric
 from transformers import get_scheduler, DataCollatorWithPadding, AutoTokenizer, AutoModelForSequenceClassification
 import torch
 from torch.utils.data import DataLoader
-# from sklearn import preprocessing
+from sklearn import preprocessing
 from evaluate import load
-from time import time
 
 def train(model,iterator,epoca,optimizer):
     print(f'Iniciando treinamento da epoca {epoca}')
-    start = time()
     epoch_loss = 0.0
     metric = load("accuracy")
     metric2 = load("f1")
@@ -50,7 +48,6 @@ def train(model,iterator,epoca,optimizer):
 
     accuracy = metric.compute()["accuracy"]
     f1 = metric2.compute(average="weighted")["f1"]
-    print(f'Treino levou: {time() - start} segundos...')
     return epoch_loss / len(iterator), accuracy, f1
 
 def analize(model,iterator,epoca):
@@ -94,9 +91,6 @@ def test(model,dataloader, tokenizer):
             predictions = torch.argmax(outputs.logits, dim=-1)
             idss+=[int(i) for i in batch["id"]]
             decoded_aspects = num_to_word.get(int(predictions.cpu().numpy().squeeze()), "Não encontrado")
-
-            print(f'TOKEN: {int(predictions.cpu().numpy().squeeze())}')
-
             aspects.append(decoded_aspects)
     mapp=dict(zip(idss,aspects))
     return mapp
@@ -121,35 +115,13 @@ def preprocess_revieww(row):
     aspect_tokens = tokenizer.tokenize(row['aspect'])
     input_tokens = tokenizer.convert_ids_to_tokens(row['input_ids'])
     input_tokens = [token.lower() for token in input_tokens]
-    # new_tokens = input_tokens.copy()
-    new_tokens = []
-    new_aspect = []
-    for token in input_tokens:
-        if token in ['[cls]', '[pad]', '[sep]', '[unk]']:
-            # print('skipped')
-            continue
-        if len(token) > 2 and (token[0] == '#' and token[1] == '#'):
-            before, sep, after = token.partition('##')
-            new_tokens[-1] += after
-        else:
-            new_tokens.append(token)
-    for token in aspect_tokens:
-        if token in ['[cls]', '[pad]', '[sep]', '[unk]']:
-            continue
-        if len(token) > 2 and (token[0] == '#' and token[1] == '#'):
-            before, sep, after = token.partition('##')
-            new_aspect[-1] += after
-        else:
-            new_aspect.append(token)
-    input_tokens = new_tokens
-    aspect_tokens = new_aspect
-
+    
     for i in range(len(input_tokens) - len(aspect_tokens) + 1):
         if input_tokens[i:i+len(aspect_tokens)] == aspect_tokens:
             row['aspect'] = row['input_ids'][i]
             aspect_found = True
             break
-
+    
     if not aspect_found:
         print(input_tokens)
         print(aspect_tokens)
@@ -225,7 +197,7 @@ final_dataloader = DataLoader(
 )
 
 # epoch_number = 10
-epoch_number = 10
+epoch_number = 1
 
 num_labels = max(max(aspectos_train),max(aspectos_test), max([max(x) for x in input_train]), max([max(x) for x in input_test]))
 
