@@ -1,0 +1,279 @@
+#!/usr/bin/python3 -u
+
+class Unbuffered(object):
+   def __init__(self, stream):
+       self.stream = stream
+   def write(self, data):
+       self.stream.write(data)
+       self.stream.flush()
+   def writelines(self, datas):
+       self.stream.writelines(datas)
+       self.stream.flush()
+   def __getattr__(self, attr):
+       return getattr(self.stream, attr)
+
+from datasets import load_dataset, load_metric
+from transformers import get_scheduler, DataCollatorWithPadding, AutoTokenizer, AutoModelForSequenceClassification
+import torch
+from torch.utils.data import DataLoader
+# from sklearn import preprocessing
+from evaluate import load
+from time import time
+
+def train(model,iterator,epoca,optimizer):
+    print(f'Iniciando treinamento da epoca {epoca}')
+    start = time()
+    epoch_loss = 0.0
+    metric = load("accuracy")
+    metric2 = load("f1")
+
+    model.train()
+
+    for batch in iterator:
+        optimizer.zero_grad()
+
+        input_ids = batch["input_ids"].to(model.device)
+        attention_mask = batch["attention_mask"].to(model.device)
+        labels = batch["target"].to(model.device)
+        outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+        loss = outputs.loss
+        logits = outputs.logits
+        predictions = torch.argmax(logits, dim=-1)
+        metric.add_batch(predictions=predictions, references=labels)
+        metric2.add_batch(predictions=predictions, references=labels)
+
+        epoch_loss += loss.cpu().detach().numpy()
+
+        optimizer.step()
+        lr_scheduler.step()
+        loss.backward()
+
+    accuracy = metric.compute()["accuracy"]
+    f1 = metric2.compute(average="weighted")["f1"]
+    print(f'Treino levou: {time() - start} segundos...')
+    return epoch_loss / len(iterator), accuracy, f1
+
+def analize(model,iterator,epoca):
+    print(f'Iniciando avaliação da epoca {epoca}')
+    epoch_loss = 0.0
+    metric = load("accuracy")
+    metric2 = load("f1")
+
+    model.eval()
+
+    with torch.no_grad():
+        for batch in iterator:
+            input_ids = batch["input_ids"].to(model.device)
+            attention_mask = batch["attention_mask"].to(model.device)
+            labels = batch["target"].to(model.device)
+
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
+            loss = outputs[0]
+            logits = outputs[1]
+
+            predictions = torch.argmax(logits, dim=-1)
+            metric.add_batch(predictions=predictions, references=labels)
+            metric2.add_batch(predictions=predictions, references=labels)
+
+            epoch_loss += loss.mean().item()
+
+    accuracy = metric.compute()["accuracy"]
+    f1 = metric2.compute(average="weighted")["f1"]
+    return epoch_loss / len(iterator), accuracy, f1
+
+def test(model,dataloader, tokenizer):
+    print(f'Iniciando teste')
+    aspects = []
+    idss = []
+    model.eval()
+    with torch.no_grad():
+        for batch in dataloader:
+            input_ids = batch["input_ids"].to(model.device)
+            attention_mask = batch["attention_mask"].to(model.device)
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            predictions = torch.argmax(outputs.logits, dim=-1)
+            idss+=[int(i) for i in batch["id"]]
+            decoded_aspects = num_to_word.get(int(predictions.cpu().numpy().squeeze()), "Não encontrado")
+
+            aspects.append(decoded_aspects)
+    mapp=dict(zip(idss,aspects))
+    return mapp
+
+def get_aspect_phrase(review, aspect_start, aspect_end):
+    padded_review = "." + review + "."
+    start = aspect_start
+    end = aspect_end
+    while padded_review[start] != '.' or padded_review[end] != '.':
+        if padded_review[start] != '.':
+            start -= 1
+        if padded_review[end] != '.':
+            end += 1
+    return padded_review[start+1:end+1]
+
+def preprocess_review(row):
+    row['texto'] = get_aspect_phrase(row['texto'], int(row['start_position']), int(row['end_position']))
+    return row
+
+def preprocess_revieww(row):
+    aspect_found = False
+    aspect_tokens = tokenizer.tokenize(row['aspect'])
+    input_tokens = tokenizer.convert_ids_to_tokens(row['input_ids'])
+    input_tokens = [token.lower() for token in input_tokens]
+    # new_tokens = input_tokens.copy()
+    new_tokens = []
+    new_aspect = []
+    for token in input_tokens:
+        if token in ['[cls]', '[pad]', '[sep]', '[unk]']:
+            continue
+        if len(token) > 2 and (token[0] == '#' and token[1] == '#'):
+            before, sep, after = token.partition('##')
+            new_tokens[-1] += after
+        else:
+            new_tokens.append(token)
+    for token in aspect_tokens:
+        if token in ['[cls]', '[pad]', '[sep]', '[unk]']:
+            continue
+        if len(token) > 2 and (token[0] == '#' and token[1] == '#'):
+            before, sep, after = token.partition('##')
+            new_aspect[-1] += after
+        else:
+            new_aspect.append(token)
+    input_tokens = new_tokens
+    aspect_tokens = new_aspect
+
+    for i in range(len(input_tokens) - len(aspect_tokens) + 1):
+        if input_tokens[i:i+len(aspect_tokens)] == aspect_tokens:
+            row['aspect'] = row['input_ids'][i]
+            aspect_found = True
+            break
+
+    if not aspect_found:
+        print(input_tokens)
+        print(aspect_tokens)
+        print(row['texto'])
+        print(f"Aspect '{row['aspect']}' not found in tokens.")
+        row['aspect'] = 0
+
+    return row
+
+tokenizer = AutoTokenizer.from_pretrained('neuralmind/bert-base-portuguese-cased', model_max_length = 512, padding_side='left')
+
+#print(tokenizer.all_special_tokens)
+#print(tokenizer.all_special_ids)
+
+# train_data_filepath = 'dataset-bert/train-sample2-fixed.csv'
+train_data_filepath = 'dataset-bert/train-sample.csv'
+test_data_filepath = 'dataset-bert/test-sample.csv'
+final_eval_filepath = 'dataset-bert/task1_test.csv'
+
+raw_datasets_train = load_dataset('csv', data_files=train_data_filepath, delimiter=';')
+preprocessed_datasets_train = raw_datasets_train.map(preprocess_review)
+tokenized_datasets_train = preprocessed_datasets_train.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+
+palavra_aspect_train = tokenized_datasets_train['train']['aspect']
+palavra_texto_train = tokenized_datasets_train['train']['texto']
+
+tokenized_datasets_train = tokenized_datasets_train.map(preprocess_revieww)
+tokenized_datasets_train = tokenized_datasets_train.rename_column('aspect', 'target')
+tokenized_datasets_train = tokenized_datasets_train.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
+
+raw_datasets_test = load_dataset('csv', data_files=test_data_filepath, delimiter=';')
+preprocessed_datasets_test = raw_datasets_test.map(preprocess_review)
+tokenized_datasets_test = preprocessed_datasets_test.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+
+palavra_aspect_test = tokenized_datasets_test['train']['aspect']
+palavra_texto_test = tokenized_datasets_test['train']['texto']
+
+tokenized_datasets_test = tokenized_datasets_test.map(preprocess_revieww)
+tokenized_datasets_test = tokenized_datasets_test.rename_column('aspect', 'target')
+tokenized_datasets_test = tokenized_datasets_test.remove_columns(['id', 'texto', 'polarity', 'start_position', 'end_position'])
+
+aspectos_train = tokenized_datasets_train['train']['target']
+aspectos_test = tokenized_datasets_test['train']['target']
+input_train = tokenized_datasets_train['train']['input_ids']
+input_test = tokenized_datasets_test['train']['input_ids']
+
+palavra_aspecto_train = list(zip(palavra_aspect_train, aspectos_train))
+palavra_aspecto_train = [list(par) for par in palavra_aspecto_train]
+
+algos = []
+for i in range(0, len(input_train)):
+    ids = [j for j in input_train[i] if j not in [100, 102, 0, 101, 103, 119]]
+    palavras = []
+    for id in ids:
+        palavras.append(tokenizer.decode(id, skip_special_tokens=True))
+    algo = list(zip(palavras, ids))
+    algo = [list(par) for par in algo]
+    algos.append(algo)
+for i in range(0, len(input_test)):
+    ids = [j for j in input_test[i] if j not in [100, 102, 0, 101, 103, 119]]
+    palavras = []
+    for id in ids:
+        palavras.append(tokenizer.decode(id, skip_special_tokens=True))
+    algo = list(zip(palavras, ids))
+    algo = [list(par) for par in algo]
+    algos.append(algo)
+
+palavra_aspecto_test = list(zip(palavra_aspect_test, aspectos_test))
+palavra_aspecto_test = [list(par) for par in palavra_aspecto_test]
+
+palavra_aspecto = palavra_aspecto_train+palavra_aspecto_test
+for algo in algos:
+    palavra_aspecto += algo
+
+num_to_word = {}
+for item in palavra_aspecto:
+    palavra, numero = item
+    if numero not in num_to_word:
+        num_to_word[numero] = palavra
+
+tokenized_datasets_train.set_format("torch")
+tokenized_datasets_test.set_format("torch")
+
+raw_datasets_final = load_dataset('csv', data_files=final_eval_filepath, delimiter=';')
+preprocessed_datasets_final = raw_datasets_final
+tokenized_datasets_final = preprocessed_datasets_final.map(lambda x: tokenizer(x['texto'], truncation=True, padding='max_length', max_length=100), batched=True)
+tokenized_datasets_final = tokenized_datasets_final.remove_columns(['texto'])
+tokenized_datasets_final.set_format("torch")
+
+data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+
+batch_size = 1 
+
+train_dataloader = DataLoader(
+    tokenized_datasets_train["train"], shuffle=True, batch_size=batch_size, collate_fn=data_collator
+)
+test_dataloader = DataLoader(
+    tokenized_datasets_test["train"], batch_size=batch_size, collate_fn=data_collator
+)
+final_dataloader = DataLoader(
+    tokenized_datasets_final["train"], batch_size=batch_size, collate_fn=data_collator
+)
+
+# epoch_number = 10
+epoch_number = 3
+
+num_labels = max(max(aspectos_train),max(aspectos_test), max([max(x) for x in input_train]), max([max(x) for x in input_test]))
+
+model = AutoModelForSequenceClassification.from_pretrained(
+    "neuralmind/bert-base-portuguese-cased", 
+    num_labels=num_labels,
+)
+optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
+lr_scheduler = get_scheduler("linear", optimizer=optimizer, num_warmup_steps=0, num_training_steps=epoch_number * len(train_dataloader),)
+
+model.to('cuda' if torch.cuda.is_available() else 'cpu')
+
+for epoch in range(1, epoch_number + 1):
+    print(f"\t Epoch: {epoch}", flush=True)
+    train_loss, train_acc, train_f1 = train(model, train_dataloader, epoch, optimizer)
+    valid_loss, valid_acc, valid_f1 = analize(model, test_dataloader, epoch)
+
+    print(f'\tTrain Loss: {train_loss:.3f} | Train Acc: {train_acc*100:.2f} | Train f1: {train_f1*100:.2f}%', flush=True)
+    print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc: {valid_acc*100:.2f} |  val. f1: {valid_f1*100:.2f}%', flush=True)
+    print()
+
+aspects = test(model, final_dataloader, tokenizer)
+print("\"input id number\";\"list of aspects\"")
+for key,value in aspects.items():
+    print(f'{key};\"{value}\"', flush=True)

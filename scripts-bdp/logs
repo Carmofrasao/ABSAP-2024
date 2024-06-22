@@ -1,0 +1,2430 @@
+['o', 'cheiro', 'estava', 'impregnado', 'no', 'colchão', ',', 'travesseiros', 'e', 'carpete', '.']
+['travesseiro']
+ O cheiro estava impregnado no colchão, travesseiros e carpete.
+Aspect 'travesseiro' not found in tokens.
+['mas', 'dah', 'para', 'descansar', 'bem', 'nas', 'camas', ',', 'confortaveis', '.']
+['cama']
+ Mas dah para descansar bem nas camas, confortaveis.
+Aspect 'cama' not found in tokens.
+['os', 'quartos', 'necessitam', 'de', 'obras', 'rugentes', ',', 'bem', 'como', 'o', 'restante', 'hotel', '(', 'incluindo', 'hall', 'dos', 'quartos', ',', 'escadas', ',', 'elevador', ')', '.']
+['escada']
+ Os quartos necessitam de obras rugentes, bem como o restante hotel (incluindo hall dos quartos, escadas, elevador).
+Aspect 'escada' not found in tokens.
+['os', 'quartos', 'necessitam', 'de', 'obras', 'rugentes', ',', 'bem', 'como', 'o', 'restante', 'hotel', '(', 'incluindo', 'hall', 'dos', 'quartos', ',', 'escadas', ',', 'elevador', ')', '.']
+['quarto']
+ Os quartos necessitam de obras rugentes, bem como o restante hotel (incluindo hall dos quartos, escadas, elevador).
+Aspect 'quarto' not found in tokens.
+['atendimento', 'sempre', 'prestativo', ',', 'tv', 'com', 'canal', 'brasileiro', ',', 'internet', ',', 'os', 'elevadores', 'que', 'são', 'muito', 'concorridos', 'mas', 'tudo', 'vale', 'à', 'pena', 'se', 'você', 'está', 'em', 'ny', '.']
+['elevador']
+ Atendimento sempre prestativo, tv com canal brasileiro, internet,os elevadores que são muito concorridos mas tudo vale à pena se você está em NY.
+Aspect 'elevador' not found in tokens.
+['o', 'hotel', 'conta', 'com', 'quartos', 'limpos', 'e', 'arrumados', ',', 'café', 'da', 'manhã', 'muito', 'bom', 'para', 'padrões', 'americanos', '.']
+['quarto']
+O hotel conta com quartos limpos e arrumados, café da manhã muito bom para padrões americanos.
+Aspect 'quarto' not found in tokens.
+['adoramos', 'a', 'localização', 'do', 'hotel', ',', 'várias', 'entradas', 'de', 'metrôs', ',', 'na', 'esquina', 'o', 'arco', 'do', 'triunfo', 'com', 'a', 'avenue', 'champs', 'elysses', ',', 'quer', 'mais', '?', 'seus', 'atendentes', 'e', 'serviços', 'são', 'bem', 'básicos', 'e', 'objetivos', '.']
+['serviço']
+Adoramos a localização do hotel, várias entradas de metrôs, na esquina o Arco do Triunfo com a Avenue Champs Elysses, quer mais? Seus atendentes e serviços são bem básicos e objetivos.
+Aspect 'serviço' not found in tokens.
+['os', 'quartos', 'eram', 'limpos', 'e', 'novos', ',', 'porém', 'um', 'pouco', 'pequenos', '.']
+['quarto']
+ Os quartos eram limpos e novos, porém um pouco pequenos.
+Aspect 'quarto' not found in tokens.
+['os', 'elevadores', 'já', 'são', 'pequenos', ',', 'quartos', 'também', '.']
+['elevador']
+ Os elevadores já são pequenos, quartos também.
+Aspect 'elevador' not found in tokens.
+['os', 'elevadores', 'já', 'são', 'pequenos', ',', 'quartos', 'também', '.']
+['quarto']
+ Os elevadores já são pequenos, quartos também.
+Aspect 'quarto' not found in tokens.
+['atendimento', 'espetacular', ',', 'quartos', 'confortáveis', 'e', 'limpos', ',', 'um', 'bom', 'café', 'da', 'manhã', ',', 'supermercado', 'em', 'frente', ',', 'metrô', 'à', '200', 'm', ',', 'elevadores', 'funcionado', 'bem', '.']
+['elevador']
+Atendimento espetacular, quartos confortáveis e limpos, um bom café da manhã, supermercado em frente, metrô à 200 m, elevadores funcionado bem.
+Aspect 'elevador' not found in tokens.
+['atendimento', 'espetacular', ',', 'quartos', 'confortáveis', 'e', 'limpos', ',', 'um', 'bom', 'café', 'da', 'manhã', ',', 'supermercado', 'em', 'frente', ',', 'metrô', 'à', '200', 'm', ',', 'elevadores', 'funcionado', 'bem', '.']
+['quarto']
+Atendimento espetacular, quartos confortáveis e limpos, um bom café da manhã, supermercado em frente, metrô à 200 m, elevadores funcionado bem.
+Aspect 'quarto' not found in tokens.
+['em', 'relação', 'aos', 'quartos', ',', 'mesmo', 'para', 'o', 'padrão', 'proposto', 'pela', 'rede', 'ibis', ',', 'não', 'são', 'minúsculos', '.']
+['quarto']
+ Em relação aos quartos, mesmo para o padrão proposto pela rede IBIS, não são minúsculos.
+Aspect 'quarto' not found in tokens.
+['bons', 'apartamentos', 'confortaveis', 'e', 'ate', 'grandes', 'para', 'o', 'padrao', 'de', 'manhattam', '.']
+['apartamento']
+Bons apartamentos confortaveis e ate grandes para o padrao de Manhattam.
+Aspect 'apartamento' not found in tokens.
+['otimas', 'camas', 'e', 'o', 'hotel', 'ao', 'lado', 'da', 'rede', 'marriot', 'tem', 'na', 'cobertura', 'um', 'dos', 'melhores', 'nights', 'clubs', 'de', 'toda', 'manhattam', 'com', 'vista', 'deslumbrante', 'da', 'city', 'room', 'tip', ':', 'apartamentos', 'double', 'tem', 'otima', 'area', 'e', 'equipamentos', 'novos', '.']
+['cama']
+otimas camas e o hotel ao lado da rede Marriot tem na cobertura um dos melhores Nights Clubs de toda Manhattam com vista deslumbrante da city Room Tip: Apartamentos double tem otima area e equipamentos novos.
+Aspect 'cama' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'de', 'andar', 'mais', 'altos', 'e', 'do', 'final', 'do', 'corredor', 'são', 'um', 'pouco', 'melhores', '.']
+['apartamento']
+ Room Tip: Os apartamentos de andar mais altos e do final do corredor são um pouco melhores.
+Aspect 'apartamento' not found in tokens.
+['é', 'aconchegante', ',', 'limpo', ',', 'mas', 'não', 'vale', 'o', 'preço', 'de', '4', 'estrelas', ',', 'pois', 'o', 'café', 'da', 'manhã', 'é', 'bastante', 'fraco', ',', 'com', 'quartos', 'muito', 'pequenos', 'e', 'banheiro', 'mínimo', '!', 'a', 'localização', ',', 'para', 'quem', 'gosta', 'de', 'estar', 'próximo', 'às', 'grandes', 'lojas', ',', 'é', 'bom', '-', 'pois', 'fica', 'a', '10', 'minutos', 'a', 'pé', 'da', 'galeries', 'lafayette', 'e', 'também', 'da', 'champs', 'elise', '.']
+['quarto']
+ É aconchegante, limpo, mas não vale o preço de 4 estrelas, pois o café da manhã é bastante fraco, com quartos muito pequenos e banheiro mínimo! A localização, para quem gosta de estar próximo às grandes lojas, é bom - pois fica a 10 minutos a pé da Galeries Lafayette e também da Champs Elise.
+Aspect 'quarto' not found in tokens.
+['a', 'conexão', 'wifi', 'deve', 'pegar', 'em', 'todos', 'os', 'quartos', '.']
+['quarto']
+ A conexão wifi deve pegar em todos os quartos.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'altos', 'virados', 'para', 'o', 'sul', 'tem', 'vista', 'espetacular', 'para', 'o', 'paris', 'e', 'o', 'show', 'de', 'águas', 'do', 'bel', '.']
+['apartamento']
+ Room Tip: Os apartamentos altos virados para o sul tem vista espetacular para o Paris e o show de águas do Bel.
+Aspect 'apartamento' not found in tokens.
+['quartos', 'enormes', 'e', 'confortáveis', '.']
+['quarto']
+ Quartos enormes e confortáveis.
+Aspect 'quarto' not found in tokens.
+['a', 'localização', 'é', 'boa', '(', 'perto', 'da', 'estação', 'grand', 'central', ')', ',', 'os', 'quartos', 'tem', 'um', 'tamanho', 'muito', 'bom', ',', 'a', 'decoração', 'é', 'clean', '.']
+['quarto']
+ A localização é boa (perto da estação Grand Central), os quartos tem um tamanho muito bom, a decoração é clean.
+Aspect 'quarto' not found in tokens.
+['este', 'hotel', 'nao', 'é', '3', 'estrelas', 'e', 'nem', 'se', 'pode', 'dizer', 'que', 'tem', 'elevador', ',', 'pois', 'o', 'mesmo', 'nao', 'para', 'no', 'seu', 'andar', ',', 'funciona', 'assim', ':', '2', '/', '3', 'ou', '3', '/', '4', ',', 'o', 'elevador', 'para', 'no', 'meio', 'entre', 'o', '2°', 'e', 'o']
+['escada']
+ESTE HOTEL NAO É 3 ESTRELAS E NEM SE PODE DIZER QUE TEM ELEVADOR, POIS O MESMO NAO PARA NO SEU ANDAR, FUNCIONA ASSIM: 2/3 OU 3/4, O ELEVADOR PARA NO MEIO ENTRE O 2° E O 3° E DEPOIS VOCE TEM QUE SUBRIR OU DESCER ESCADAS E ESTAS SÃO GRANDES.
+Aspect 'escada' not found in tokens.
+['os', 'quartos', 'são', 'excelentes', ',', 'as', 'camas', 'maravilhosas', ',', 'além', 'da', 'opção', 'de', 'escolher', 'os', 'travesseiros', '.']
+['cama']
+ Os quartos são excelentes, as camas maravilhosas, além da opção de escolher os travesseiros.
+Aspect 'cama' not found in tokens.
+['os', 'quartos', 'são', 'excelentes', ',', 'as', 'camas', 'maravilhosas', ',', 'além', 'da', 'opção', 'de', 'escolher', 'os', 'travesseiros', '.']
+['travesseiro']
+ Os quartos são excelentes, as camas maravilhosas, além da opção de escolher os travesseiros.
+Aspect 'travesseiro' not found in tokens.
+['os', 'quartos', 'são', 'excelentes', ',', 'as', 'camas', 'maravilhosas', ',', 'além', 'da', 'opção', 'de', 'escolher', 'os', 'travesseiros', '.']
+['quarto']
+ Os quartos são excelentes, as camas maravilhosas, além da opção de escolher os travesseiros.
+Aspect 'quarto' not found in tokens.
+['as', 'cortinas', 'estavam', 'empoeiradas', 'embora', 'o', 'quarto', 'e', 'o', 'banheiro', 'estivessem', 'limpos', '.']
+['cortina']
+ As cortinas estavam empoeiradas embora o quarto e o banheiro estivessem limpos.
+Aspect 'cortina' not found in tokens.
+['voltaremos', 'assim', 'que', 'tivermos', 'chance', '!', 'recomendo', '!', 'room', 'tip', ':', 'todos', 'os', 'quartos', 'são', 'bons', 'e', 'silenciosos', 'as', 'janelas', 'são', 'blindadas', 'evitando', 'som', 'externo', '.']
+['quarto']
+ Voltaremos assim que tivermos chance! Recomendo! Room Tip: Todos os quartos são bons e silenciosos as janelas são blindadas evitando som externo.
+Aspect 'quarto' not found in tokens.
+['fomos', 'muito', 'bem', 'atendidos', 'durante', 'todo', 'o', 'periodo', 'com', 'exceção', 'dos', 'serviços', 'de', 'concierge', '.']
+['serviço']
+ Fomos muito bem atendidos durante todo o periodo com exceção dos serviços de Concierge.
+Aspect 'serviço' not found in tokens.
+['toca', 'rock', 'o', 'tempo', 'todo', 'no', 'hall', ',', 'cassino', 'e', 'elevadores', ',', 'música', 'de', 'primeira', '!', 'tem', 'vários', 'quadros', 'com', 'fotos', 'e', 'artigos', 'pessoais', 'de', 'bandas', 'e', 'cantores', '.']
+['elevador']
+ Toca rock o tempo todo no hall, cassino e elevadores, música de primeira! Tem vários quadros com fotos e artigos pessoais de bandas e cantores.
+Aspect 'elevador' not found in tokens.
+['pontos', 'negativos', '-', 'por', 'ser', 'todo', 'coberto', 'de', 'carpetes', 'e', 'não', 'restringir', 'o', 'uso', 'do', 'cigarro', 'dentro', 'do', 'hotel', ',', 'não', 'sei', 'o', 'que', 'foi', 'mas', 'o', 'quarto', 'tinha', 'um', 'odor', 'muito', 'desagradável', 'de', 'cigarro', 'com', 'perfume', ',', 'não', 'sei', 'explicar', ',', '(', 'não', 'sei', 'se', 'o', 'sistema', 'de', 'calefação', 'abrangia', 'todo', 'o', 'hotel', 'e', 'assim', 'o', 'odor', 'era', 'transmitido', 'para', 'todos', 'os', 'cômodos', 'ou', 'se', 'a', 'camareira', 'fumava', 'ao', 'limpar', 'o', 'quarto', ')', 'e', 'forte', ',', 'mesmo', 'depois']
+['carpete']
+  Pontos negativos - por ser todo coberto de carpetes e não restringir o uso do cigarro dentro do hotel, não sei o que foi mas o quarto tinha um odor muito desagradável de cigarro com perfume, não sei explicar, (não sei se o sistema de calefação abrangia todo o hotel e assim o odor era transmitido para todos os cômodos ou se a camareira fumava ao limpar o quarto) e forte, mesmo depois de limpo, tinha que chegar e abrir as janelas, mesmo com o frio que estava na cidade! E o café da manhã deixa muito a desejar, pães e croissants frios e dormidos, pouca variedade de alimentos, não recomendo pagar pelo café da manhã, tome-o na rua!.
+Aspect 'carpete' not found in tokens.
+['pontos', 'negativos', '-', 'por', 'ser', 'todo', 'coberto', 'de', 'carpetes', 'e', 'não', 'restringir', 'o', 'uso', 'do', 'cigarro', 'dentro', 'do', 'hotel', ',', 'não', 'sei', 'o', 'que', 'foi', 'mas', 'o', 'quarto', 'tinha', 'um', 'odor', 'muito', 'desagradável', 'de', 'cigarro', 'com', 'perfume', ',', 'não', 'sei', 'explicar', ',', '(', 'não', 'sei', 'se', 'o', 'sistema', 'de', 'calefação', 'abrangia', 'todo', 'o', 'hotel', 'e', 'assim', 'o', 'odor', 'era', 'transmitido', 'para', 'todos', 'os', 'cômodos', 'ou', 'se', 'a', 'camareira', 'fumava', 'ao', 'limpar', 'o', 'quarto', ')', 'e', 'forte', ',', 'mesmo', 'depois']
+['café', 'da', 'manhã']
+  Pontos negativos - por ser todo coberto de carpetes e não restringir o uso do cigarro dentro do hotel, não sei o que foi mas o quarto tinha um odor muito desagradável de cigarro com perfume, não sei explicar, (não sei se o sistema de calefação abrangia todo o hotel e assim o odor era transmitido para todos os cômodos ou se a camareira fumava ao limpar o quarto) e forte, mesmo depois de limpo, tinha que chegar e abrir as janelas, mesmo com o frio que estava na cidade! E o café da manhã deixa muito a desejar, pães e croissants frios e dormidos, pouca variedade de alimentos, não recomendo pagar pelo café da manhã, tome-o na rua!.
+Aspect 'café da manhã' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'mais', 'altos', 'são', 'mais', 'claros', '.']
+['apartamento']
+ Room Tip: Os apartamentos mais altos são mais claros.
+Aspect 'apartamento' not found in tokens.
+['hotel', 'é', 'bem', 'localizado', ',', 'estrutura', 'física', 'boa', ',', 'porém', 'os', 'preços', 'são', 'acima', 'do', 'merecido', ',', 'as', 'taxas', 'não', 'coincidiram', 'com', 'as', 'da', 'reserva', '.']
+['preço']
+Hotel é bem localizado, estrutura física boa, porém os preços são acima do merecido, as taxas não coincidiram com as da reserva.
+Aspect 'preço' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', 'mas', 'acolhedores', 'e', 'o', 'pequeno', '-', 'almoço', 'mais', 'que', 'suficiente', '.']
+['quarto']
+ Os quartos são pequenos mas acolhedores e o pequeno-almoço mais que suficiente.
+Aspect 'quarto' not found in tokens.
+['opção', 'por', 'suítes', 'e', 'quartos', 'com', 'banheiro', 'coletivo', '.']
+['suíte']
+ Opção por suítes e quartos com banheiro coletivo.
+Aspect 'suíte' not found in tokens.
+['limpo', ',', 'com', 'quartos', 'renovados', ',', 'mas', 'televisão', 'com', 'oferta', 'muito', 'limitada', '.']
+['quarto']
+ Limpo, com quartos renovados, mas televisão com oferta muito limitada.
+Aspect 'quarto' not found in tokens.
+['cortinas', 'velhas', 'e', 'sujas', ',', 'papel', 'de', 'parede', 'rasgados', ',', 'quartos', 'escuros', 'e', 'com', 'pouca', 'ventilação', ',', 'cadeiras', 'da', 'sala', 'do', 'café', 'da', 'manhã', 'furadas', 'e', 'com', 'a', 'palha', 'rasgada', '.']
+['cortina']
+ Cortinas velhas e sujas, papel de parede rasgados, quartos escuros e com pouca ventilação, cadeiras da sala do café da manhã furadas e com a palha rasgada.
+Aspect 'cortina' not found in tokens.
+['ocorre', 'que', 'os', 'quartos', 'estão', 'em', 'condições', 'lastimáveis', '.']
+['quarto']
+  Ocorre que os quartos estão em condições lastimáveis.
+Aspect 'quarto' not found in tokens.
+['fui', 'em', 'quase', 'todos', 'os', 'hotéis', ',', 'cada', 'um', 'c', 'sua', 'beleza', ',', 'mas', 'confesso', 'o', 'charme', 'do', 'wynn', 'é', 'incomparável', '!', 'um', 'hotel', 'novo', ',', 'moderno', ',', 'claro', ',', 'sem', 'aquele', 'cheiro', 'de', 'cigarro', ',', 'com', 'piscinas', 'espetaculares', ',', 'tudo', 'muito', 'perfeito', ',', 'extraordinário', '!', 'ah', ',', 'a', 'localização', 'dele', 'é', 'excelente', '.']
+['piscina']
+Fui em quase todos os hotéis, cada um c sua beleza,mas confesso q o charme do Wynn é incomparável!Um hotel novo, moderno,claro,sem aquele cheiro de cigarro,com piscinas espetaculares,tudo muito perfeito, EXTRAORDINÁRIO!Ah,a localização dele é EXCELENTE.
+Aspect 'piscina' not found in tokens.
+['fica', 'perto', 'do', 'louvre', 'e', 'do', 'metrô', ',', 'mas', 'a', 'noite', 'não', 'tem', 'muito', 'movimento', ',', 'as', 'ruas', 'ficam', 'quase', 'desertas', 'e', 'os', 'restaurantes', 'próximos', 'fecham', 'cedo', '.']
+['rua']
+ Fica perto do Louvre e do metrô, mas a noite não tem muito movimento, as ruas ficam quase desertas e os restaurantes próximos fecham cedo.
+Aspect 'rua' not found in tokens.
+['muito', 'caro', 'considerando', 'o', 'tamanho', 'do', 'quarto', '(', 'são', 'muito', 'pequenos', ')', 'e', 'os', 'serviços', 'prestados', '.']
+['serviço']
+Muito caro considerando o tamanho do quarto (são muito pequenos) e os serviços prestados.
+Aspect 'serviço' not found in tokens.
+['a', 'decoração', 'egípcia', 'é', 'fantástica', ',', 'os', 'cassinos', 'excelentes', 'e', 'o', 'cheiro', '.']
+['cassino']
+ A decoração egípcia é fantástica, os cassinos excelentes e o cheiro.
+Aspect 'cassino' not found in tokens.
+['uma', 'coisa', 'interessante', 'é', 'que', 'o', 'ar', 'condicionado', 'no', 'hotel', 'e', 'nos', 'corredores', 'é', 'tão', 'forte', ',', 'que', 'as', 'vezes', 'nem', 'precisa', 'ligar', 'o', 'ar', 'condicionado', 'do', 'quarto', '.']
+['corredor']
+Uma coisa interessante é que o ar condicionado no hotel e nos corredores é tão forte, que as vezes nem precisa ligar o ar condicionado do quarto.
+Aspect 'corredor' not found in tokens.
+['nos', 'sentimos', 'lesados', 'pelo', 'fato', 'de', 'que', ',', 'durante', 'nossa', 'estadia', 'nessa', 'unidade', ':', '-', 'nunca', 'vimos', 'qualidade', 'de', 'hospedagem', 'tão', 'ruim', 'na', 'rede', 'ibis', ';', '-', 'nota', '-', 'se', 'que', 'houve', 'adapatações', 'nos', 'dois', 'prédios', 'que', 'servem', 'de', 'hotel', 'e', 'noprédio', 'que', 'nos', 'coube', ',', 'adaptações', 'que', 'deixam', 'muito', 'a', 'desejar', '.']
+['Ibis']
+Nos sentimos lesados pelo fato de que, durante nossa estadia nessa unidade: - nunca vimos qualidade de hospedagem tão ruim na rede Ibis; - nota-se que houve adapatações nos dois prédios que servem de hotel e noprédio que nos coube, adaptações que deixam muito a desejar.
+Aspect 'Ibis' not found in tokens.
+['room', 'tip', ':', 'prefiro', 'os', 'voltados', 'para', 'as', 'fontes', 'do', 'bellagio', ',', 'ou', 'as', 'voltadas', 'para', 'as', 'piscinas', '.']
+['piscina']
+ Room Tip: Prefiro os voltados para as fontes do bellagio , ou as voltadas para as piscinas.
+Aspect 'piscina' not found in tokens.
+['o', 'hotel', 'comfort', 'muffetard', 'é', 'aconchegante', ',', 'a', 'localização', 'excelente', ',', 'ruas', 'românticas', ',', 'cheias', 'de', 'restaurantes', 'e', 'cafés', ',', 'lojas', 'de', 'vinhos', ',', 'queijos', ',', 'mercados', ',', 'tudo', 'acessível', '.']
+['rua']
+O hotel Comfort Muffetard é aconchegante, a localização excelente, ruas românticas, cheias de restaurantes e cafés, lojas de vinhos, queijos, mercados, tudo acessível.
+Aspect 'rua' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'com', 'vista', 'para', 'a', 'strip', 'são', 'uma', 'boa', 'pedida', '.']
+['apartamento']
+ Room Tip: Os apartamentos com vista para a Strip são uma boa pedida.
+Aspect 'apartamento' not found in tokens.
+['roupas', 'de', 'cama', 'e', 'banho', 'surradas', 'corredores', 'estreitos', 'e', 'cheiro', 'grande', 'de', 'cigarro', 'elevador', 'nao', 'existe', ',', 'uma', 'escada', 'descascada', 'e', 'estreita', 'pelo', 'preço', 'se', 'consegue', 'coisa', 'muito', 'melhor', '.']
+['corredor']
+ Roupas de cama e banho surradas Corredores estreitos e cheiro grande de cigarro Elevador nao existe, uma escada descascada e estreita Pelo preço se consegue coisa muito melhor.
+Aspect 'corredor' not found in tokens.
+['os', 'quartos', 'são', 'razoáveis', 'pelo', 'preço', ',', 'mas', 'sinceramente', 'acho', 'que', 'não', 'compensa', 'pelo', 'ruído', '(', 'o', 'hotel', 'deveria', 'instalar', 'janelas', 'anti', '-', 'ruído', 'mas', 'creio', 'que', 'isso', 'não', 'seja', 'uma', 'prioridade', 'para', 'o', 'hotel', ')', '.']
+['quarto']
+  Os quartos são razoáveis pelo preço, mas sinceramente acho que não compensa pelo ruído (o hotel deveria instalar janelas anti-ruído mas creio que isso não seja uma prioridade para o hotel).
+Aspect 'quarto' not found in tokens.
+['vale', 'a', 'pena', 'conhecer', 'room', 'tip', ':', 'os', 'quartos', 'não', 'tem', 'cheiro', 'de', 'mofo', 'e', 'nem', 'de', 'cigarro', '.']
+['quarto']
+ Vale a pena conhecer Room Tip: Os quartos não tem cheiro de mofo e nem de cigarro.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'não', 'são', 'tão', 'pequenos', 'como', 'a', 'maioria', 'dos', 'hotéis', 'desta', 'capital', 'e', 'tem', 'decoração', 'elegante', 'combinando', 'com', 'o', 'todo', 'de', 'paris', '.']
+['quarto']
+Os quartos não são tão pequenos como a maioria dos hotéis desta capital e tem decoração elegante combinando com o todo de Paris.
+Aspect 'quarto' not found in tokens.
+['os', 'carpetes', 'dos', 'corredores', 'e', 'quartos', 'tem', 'dezenas', 'de', 'anos', ',', 'um', 'perigo', 'para', 'quem', 'tem', 'alergia', '.']
+['carpete']
+ Os carpetes dos corredores e quartos tem dezenas de anos , um perigo para quem tem alergia.
+Aspect 'carpete' not found in tokens.
+['foge', 'do', 'padrão', 'mercure', '.']
+['Mercure']
+ Foge do padrão Mercure.
+Aspect 'Mercure' not found in tokens.
+['room', 'tip', ':', 'apartamentos', 'ao', 'lado', 'do', 'elevador', 'são', 'extremamente', 'barulhentos', '.']
+['apartamento']
+ Room Tip: apartamentos ao lado do elevador são extremamente barulhentos.
+Aspect 'apartamento' not found in tokens.
+['tudo', 'é', 'apertado', '!', 'o', 'elevador', 'é', 'vellho', 'e', 'no', 'maximo', 'cabe', '2', 'pessoas', 'por', 'vez', '!', 'os', 'quartos', 'sao', 'todo', 'apertado', ',', 'fui', 'com', 'a', 'minha', 'namorada', 'e', 'se', 'abrir', 'uma', 'mala', ',', 'não', 'da', 'pra', 'abrir', 'a', 'outra', '!', 'a', 'descarga', 'do', 'banheiro', ',', 'não', 'sei', 'porque', 'as', 'vezes', 'não', 'da', 'pressão', ',', 'fica', 'algum', 'tempo', 'sem', 'sair', 'agua', ',', 'entao', 'quando', 'for', 'fazer', 'a', '2', 'alternativa', ',', 'fique', 'esperto', '!', '!', 'rs', 'o', 'cafe', 'da', 'manha', 'é', 'muito', 'simples']
+['quarto']
+Tudo é apertado ! o elevador é vellho e no maximo cabe 2 pessoas por vez ! Os quartos sao todo apertado,fui com a minha namorada e se abrir uma mala,não da pra abrir a outra ! A descarga do banheiro,não sei porque as vezes não da pressão,fica algum tempo sem sair agua,entao quando for fazer a 2 alternativa,fique esperto !! rs O cafe da manha é muito simples,pao,cafe,leite,pão mucho,manteiga,geleai,frios que,se acordar tarde ,fica sem,eles não repõe os frios !.
+Aspect 'quarto' not found in tokens.
+['internete', 'nao', 'funciona', 'nos', 'quartos', 'e', 'sim', 'so', 'na', 'recepção', '.']
+['internet']
+ Internete nao funciona nos quartos e sim so na recepção.
+Aspect 'internet' not found in tokens.
+['quartos', 'antigos', 'demais', 'escadas', 'apertadas', '.']
+['escada']
+ Quartos antigos demais Escadas apertadas.
+Aspect 'escada' not found in tokens.
+['quartos', 'antigos', 'demais', 'escadas', 'apertadas', '.']
+['quarto']
+ Quartos antigos demais Escadas apertadas.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'charmoso', ',', 'aconselho', 'ficar', 'nos', 'quartos', 'no', 'piso', 'superior', ',', 'perto', 'de', 'telhado', ',', 'típica', 'arquitetura', 'parisiense', '.']
+['quarto']
+  O Hotel é charmoso, aconselho ficar nos quartos no piso superior, perto de telhado, típica arquitetura parisiense.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'tem', 'uma', 'extrutura', 'excelente', '!', 'elevadores', 'modernos', 'e', 'rápidos', '.']
+['elevador']
+ O hotel tem uma extrutura excelente! Elevadores modernos e rápidos.
+Aspect 'elevador' not found in tokens.
+['a', 'localizacao', 'nao', 'poderia', 'ser', 'melhor', '-', 'saint', 'germain', 'de', 'pres', '!', 'perto', 'de', 'tudo', '!', 'pontos', 'negativos', ':', 'quartos', 'muito', 'pequenos', ',', 'faltam', 'duchas', ',', 'armarios', ',', 'mas', 'o', 'resto', 'compensa', '!', '.']
+['ducha']
+  A localizacao nao poderia ser melhor - Saint Germain de Pres! Perto de tudo!    Pontos negativos:   Quartos muito pequenos, faltam duchas, armarios, mas o resto compensa!.
+Aspect 'ducha' not found in tokens.
+['não', 'tem', 'o', 'que', 'falar', 'do', 'venetian', '!', 'o', 'hotel', 'é', 'lindo', ',', 'os', 'quartos', 'são', 'grandes', 'e', 'luxuosos', ',', 'a', 'piscina', 'tem', 'muito', 'espaço', 'e', 'bom', 'atendimento', '!', 'como', 'é', 'um', 'hotel', 'mega', 'grande', ',', 'achei', 'que', 'fosse', 'achar', 'um', 'pouco', 'de', 'desorganização', ',', 'mas', 'não', '!', 'para', 'chegar', 'nos', 'quartos', 'é', 'super', 'fácil', 'e', 'tudo', 'é', 'de', 'fácil', 'acesso', '!', 'hotel', 'maravilhoso', '!', '.']
+['quarto']
+Não tem o que falar do Venetian! O hotel é lindo, os quartos são grandes e luxuosos, a piscina tem muito espaço e bom atendimento!  Como é um hotel mega grande, achei que fosse achar um pouco de desorganização, mas não! Para chegar nos quartos é super fácil e tudo é de fácil acesso!  Hotel maravilhoso!.
+Aspect 'quarto' not found in tokens.
+['a', 'uma', 'quadra', 'do', 'hotel', ',', 'está', 'a', 'rue', 'du', 'faubourg', 'saint', '-', 'honore', ',', 'uma', 'das', 'ruas', 'mais', 'chiques', 'de', 'paris', '.']
+['rua']
+ A uma quadra do hotel, está a Rue du Faubourg Saint-Honore, uma das ruas mais chiques de Paris.
+Aspect 'rua' not found in tokens.
+['as', 'instalações', 'do', 'hotel', 'são', 'muito', 'boas', ',', 'os', 'quartos', 'limpos', 'e', 'bem', 'cuidados', ',', 'tudo', 'de', 'primeira', '.']
+['quarto']
+ As instalações do hotel são muito boas, os quartos limpos e bem cuidados, tudo de primeira.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'ficamos', 'no', '29', 'andar', ',', 'não', 'há', 'barulho', 'e', 'também', 'não', 'tivemos', 'problemas', 'com', 'os', 'elevadores', 'que', 'funcionavam', '.']
+['elevador']
+  Room Tip: Ficamos no 29 andar, não há barulho e também não tivemos problemas com os elevadores que funcionavam.
+Aspect 'elevador' not found in tokens.
+['room', 'tip', ':', 'todos', 'os', 'apartamentos', 'são', 'bons', '.']
+['apartamento']
+  Room Tip: Todos os apartamentos são bons.
+Aspect 'apartamento' not found in tokens.
+['foi', 'reformado', ',', 'funcionários', 'atenciosos', ',', 'quartos', 'bons', '.']
+['quarto']
+ Foi reformado, funcionários atenciosos, quartos bons.
+Aspect 'quarto' not found in tokens.
+['quartos', 'foram', 'limpos', 'todos', 'os', 'dias', '.']
+['quarto']
+ Quartos foram limpos todos os dias.
+Aspect 'quarto' not found in tokens.
+['quartos', 'e', 'banheiros', 'limpos', 'e', 'com', 'staff', 'bem', 'atensioso', '.']
+['quarto']
+ Quartos e banheiros limpos e com staff bem atensioso.
+Aspect 'quarto' not found in tokens.
+['para', 'piorar', 'as', 'coisas', ',', 'os', '2', 'únicos', 'elevadores', 'do', 'hotel', 'estavam', 'quebrados', 'e', 'não', 'havia', 'outra', 'escolha', ',', 'se', 'não', 'usar', 'as', 'escadas', '.']
+['escada']
+ Para piorar as coisas, os 2 únicos elevadores do hotel estavam quebrados e não havia outra escolha, se não usar as escadas.
+Aspect 'escada' not found in tokens.
+['independentemente', 'da', 'hora', 'a', 'que', 'saiamos', 'do', 'quarto', 'quando', 'voltávamos', 'ele', 'estava', 'limpo', 'e', 'com', 'as', 'toalhas', 'mudadas', '.']
+['toalha']
+ Independentemente da hora a que saiamos do quarto quando voltávamos ele estava limpo e com as toalhas mudadas.
+Aspect 'toalha' not found in tokens.
+['tem', 'ótimas', 'dependências', ',', 'os', 'quartos', 'são', 'maravilhosos', 'e', 'o', 'staff', 'é', 'extremamente', 'eficiente', '.']
+['quarto']
+ Tem ótimas dependências, os quartos são maravilhosos e o staff é extremamente eficiente.
+Aspect 'quarto' not found in tokens.
+['hotel', 'situado', 'na', 'zona', 'estudantil', 'de', 'paris', ',', 'servico', 'razoavel', ',', 'acomodacoes', 'modicas', ',', 'precos', 'de', 'acordo', 'com', 'as', 'limitacoes', 'familiares', 'do', 'hotel', ',', 'embora', 'simples', 'um', 'hotel', 'simpatico', ',', 'um', 'bar', 'sem', 'grandes', 'pretensoes', 'mas', 'agradavel', ',', 'o', 'local', 'e', 'bom', 'perto', 'do', 'boulevard', 'saint', 'germain', ',', 'para', 'quem', 'quiser', 'economizar', 'com', 'estadia', 'vale', 'a', 'pena', '!', 'room', 'tip', ':', 'os', 'apartamentos', 'de', 'fundo', 'sao', 'melhores', ',', 'mais', 'calmos', '.']
+['apartamento']
+Hotel situado na zona estudantil de Paris, servico razoavel,acomodacoes modicas,precos de acordo com as limitacoes familiares do hotel,embora simples um hotel simpatico,um bar sem grandes pretensoes mas agradavel,o local e bom perto do boulevard saint germain,para quem quiser economizar com estadia vale a pena !  Room Tip: os apartamentos de fundo sao melhores,mais calmos.
+Aspect 'apartamento' not found in tokens.
+['quartos', 'impecaveis', ',', 'mesmo', 'tendo', 'muitos', 'fumantes', 'no', 'hotel', ',', 'nao', 'se', 'sentia', 'cheiro', 'de', 'fumaça', 'nos', 'quartos', '.']
+['quarto']
+   Quartos impecaveis, mesmo tendo muitos fumantes no hotel, nao se sentia cheiro de fumaça nos quartos.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'esta', 'muito', 'bem', 'localizado', 'os', 'apartamentos', 'da', 'cobertura', 'acomodam', 'famílias', 'grandes', ',', 'a', 'equipe', 'é', 'muito', 'simpática', 'e', 'prestativa', ',', 'achei', 'apenas', 'que', 'a', 'limpeza', 'nos', 'quartos', 'não', 'é', 'muio', 'boa', ',', 'porém', 'acredito', 'ser', 'geral', 'nos', 'eua', 'principalmente', 'por', 'eles', 'usarem', 'carpetes', 'a', 'limpeza', 'deveria', 'ser', 'mais', 'bem', 'feita', '.']
+['quarto']
+O Hotel esta muito bem localizado os apartamentos da cobertura acomodam famílias grandes, a equipe é muito simpática e prestativa, achei apenas que a limpeza nos quartos não é muio boa, porém acredito ser geral nos EUA principalmente por eles usarem carpetes a limpeza deveria ser mais bem feita.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'sao', 'organizados', ',', 'o', 'cafe', 'da', 'manha', 'e', 'bom', 'tem', 'varias', 'opçoes', 'de', 'bolos', 'tem', 'salada', 'de', 'frutas', '.']
+['quarto']
+Os quartos sao organizados, o cafe da manha e bom tem varias opçoes de bolos tem salada de frutas.
+Aspect 'quarto' not found in tokens.
+['hotel', 'bem', 'localizado', ',', 'silencioso', ',', 'apartamentos', 'muito', 'limpos', 'e', 'pessoal', 'simpatico', 'e', 'atencioso', '.']
+['apartamento']
+ Hotel bem localizado, silencioso, apartamentos muito limpos e pessoal simpatico e atencioso.
+Aspect 'apartamento' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'são', 'um', 'pouco', 'pequenos', ',', 'portanto', 'aconselho', 'a', 'não', 'levar', 'malas', 'muito', 'grandes', '.']
+['apartamento']
+  Room Tip: os apartamentos são um pouco pequenos, portanto aconselho a não levar malas muito grandes.
+Aspect 'apartamento' not found in tokens.
+['os', 'quartos', 'são', 'bons', 'e', 'limpos', '.']
+['quarto']
+    Os quartos são bons e limpos.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'limpos', ',', 'a', 'cama', 'é', 'boa', ',', 'quarto', 'com', 'bom', 'espaço', ',', 'o', 'banheiro', 'podia', 'ter', 'uma', 'manutenção', 'melhor', ',', 'o', 'chuveiro', 'ficava', 'um', 'bom', 'tempo', 'pingando', 'e', 'as', 'toalhas', 'eram', 'velhas', 'e', 'tinham', 'cheiro', 'estranho', '.']
+['toalha']
+ Os quartos são limpos, a cama é boa, quarto com bom espaço, o banheiro podia ter uma manutenção melhor,o chuveiro ficava um bom tempo pingando e as toalhas eram velhas e tinham cheiro estranho.
+Aspect 'toalha' not found in tokens.
+['só', 'duas', 'pequenas', 'notas', 'menos', 'boas', ':', 'o', 'quarto', 'inicial', 'era', 'de', 'fumador', 'e', 'tinha', 'um', 'cheiro', 'a', 'tabaco', 'forte', '(', 'mas', 'que', 'logo', 'foi', 'trocado', 'por', 'um', 'quarto', 'melhor', 'e', 'de', 'não', 'fumador', ')', 'e', 'ausência', 'de', 'uma', 'suporte', 'de', 'toalhas', 'junto', 'ao', 'lavatório', '.']
+['toalha']
+ Só duas pequenas notas menos boas: o quarto inicial era de fumador e tinha um cheiro a tabaco forte (mas que logo foi trocado por um quarto melhor e de não fumador) e ausência de uma suporte de toalhas junto ao lavatório.
+Aspect 'toalha' not found in tokens.
+['o', 'opal', 'é', 'muito', 'bem', 'localizado', ',', 'a', 'região', 'que', 'mais', 'me', 'agrada', 'em', 'paris', ',', 'seus', 'quartos', 'são', 'ótimos', 'e', 'o', 'pessoal', 'bem', 'treinado', ',', 'eficiente', 'e', 'simpático', ',', 'além', 'do', 'custo', 'ser', 'baixo', '.']
+['quarto']
+ O Opal é muito bem localizado, a região que mais me agrada em Paris, seus quartos são ótimos e o pessoal bem treinado, eficiente e simpático, além do custo ser baixo.
+Aspect 'quarto' not found in tokens.
+['os', 'outros', 'serviços', 'são', 'bons', 'e', 'os', 'quartos', 'são', 'bem', 'equipados', '.']
+['serviço']
+ Os outros serviços são bons e os quartos são bem equipados.
+Aspect 'serviço' not found in tokens.
+['quartos', 'confortáveis', ',', 'amplo', '.']
+['quarto']
+quartos confortáveis, amplo.
+Aspect 'quarto' not found in tokens.
+['local', 'ideal', 'para', 'quem', 'vai', 'resolver', 'assuntos', 'ou', 'mesmo', 'para', 'turistas', '.']
+['turista']
+ Local ideal para quem vai resolver assuntos ou mesmo para turistas.
+Aspect 'turista' not found in tokens.
+['os', 'quartos', 'têm', 'pia', 'e', 'geladeira', ',', 'então', 'a', 'dica', 'é', 'você', 'comprar', 'seus', 'ingredientes', 'para', 'o', 'café', 'da', 'manhã', 'no', 'supermercado', 'e', 'levar', 'para', 'o', 'hotel', '.']
+['quarto']
+ Os quartos têm pia e geladeira, então a dica é você comprar seus ingredientes para o café da manhã no supermercado e levar para o hotel.
+Aspect 'quarto' not found in tokens.
+['quartos', 'amplos', 'e', 'confortáveis', '.']
+['quarto']
+ Quartos amplos e confortáveis.
+Aspect 'quarto' not found in tokens.
+['este', 'hotel', 'segue', 'o', 'estilo', 'ibis', ':', 'seguro', ',', 'limpo', 'e', 'com', 'preços', 'razoáveis', '.']
+['preço']
+Este hotel segue o estilo Ibis: seguro, limpo e com preços razoáveis.
+Aspect 'preço' not found in tokens.
+['perfeito', 'para', 'famílias', 'em', 'busca', 'de', 'conforto', 'e', 'sossego', 'no', 'coração', 'de', 'manhattan', '.']
+['família']
+ Perfeito para famílias em busca de conforto e sossego no coração de Manhattan.
+Aspect 'família' not found in tokens.
+['os', 'quartos', 'sao', 'de', 'tamanho', 'pequeno', ',', 'padrao', 'paris', 'mas', 'com', 'decoracao', 'de', 'primeira', 'linha', 'e', 'banheiros', 'de', 'luxo', ',', 'cafe', 'da', 'manha', 'muito', 'bom', '.']
+['quarto']
+ Os quartos sao de tamanho pequeno, padrao Paris mas com decoracao de primeira linha e banheiros de luxo, cafe da manha muito bom.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'prefira', 'as', 'suítes', 'deluxe', 'pois', 'a', 'cama', 'é', 'queen', '.']
+['suíte']
+  Room Tip: Prefira as suítes deluxe pois a cama é queen.
+Aspect 'suíte' not found in tokens.
+['banheiro', 'limpo', ',', 'bem', 'iluminado', 'e', 'com', 'trocas', 'de', 'toalhas', 'diárias', '.']
+['toalha']
+ Banheiro limpo, bem iluminado e com trocas de toalhas diárias.
+Aspect 'toalha' not found in tokens.
+['hotel', 'muito', 'bem', 'localizado', ',', 'perto', 'do', 'metro', 'e', 'ponto', 'de', 'onibus', ',', 'dá', 'para', 'andar', 'até', 'o', 'rio', 'sena', ',', 'atrás', 'da', 'igreja', 'notre', 'dame', ',', 'proximo', 'ao', 'pantheon', 'e', 'jardim', 'de', 'luxemburgo', ',', 'bons', 'restaurantes', 'na', 'mesma', 'rua', ',', 'com', 'várias', 'opções', 'de', 'cozinha', 'room', 'tip', ':', 'apartamentos', 'de', 'frente', 'te', 'linda', 'vista', ',', 'não', 'é', 'barulhento', ',', 'hotel', 'sem', 'luxo', 'e', 'bom', 'preço', '.']
+['apartamento']
+Hotel muito bem localizado, perto do metro e ponto de onibus,dá para andar até o Rio Sena, atrás da Igreja Notre Dame, proximo ao Pantheon e Jardim de Luxemburgo, bons restaurantes na mesma rua, com várias opções de cozinha  Room Tip: apartamentos de frente te linda vista, não é barulhento, hotel sem luxo e bom preço.
+Aspect 'apartamento' not found in tokens.
+['camas', 'enormes', ',', '2', 'de', 'casal', 'por', 'quarto', ',', 'banheiros', 'limpos', 'e', 'quando', 'tivemos', 'problemas', ',', 'a', 'torneira', 'do', 'chuveiro', 'quebrou', ',', 'fui', 'atendido', '.']
+['cama']
+ Camas enormes, 2 de casal por quarto, banheiros limpos e quando tivemos problemas, a torneira do chuveiro quebrou, fui atendido.
+Aspect 'cama' not found in tokens.
+['não', 'se', 'deixe', 'enganar', 'pelas', 'fotos', ',', 'ao', 'chegar', 'no', 'hotel', 'a', 'recepção', 'é', 'legal', 'mais', 'quando', 'chega', 'nos', 'corredores', 'escuros', 'onde', 'as', 'lâmpadas', 'não', 'acendem', 'e', 'fica', 'difícil', 'encontrar', 'seu', 'quarto', ',', 'ao', 'entrar', 'encontrará', 'um', 'quarto', 'onde', 'nem', 'tudo', 'funciona', 'lâmpadas', 'queimada', 'balheiro', 'com', 'aspecto', 'ruim', 'e', 'tudo', 'antigo', 'parq', 'os', 'alérgicos', 'o', 'carpete', 'antigo', 'em', 'geral', 'uma', 'péssima', 'opção', '.']
+['corredor']
+Não se deixe enganar pelas fotos , ao chegar no hotel a recepção é legal mais quando chega nos corredores escuros onde as lâmpadas não acendem e fica difícil encontrar seu quarto, ao entrar encontrará um quarto onde nem tudo funciona lâmpadas queimada balheiro com aspecto ruim e tudo antigo parq os alérgicos o carpete antigo em geral uma péssima opção.
+Aspect 'corredor' not found in tokens.
+['a', 'torre', 'nova', 'é', 'melhor', ',', 'pois', 'os', 'quartos', 'são', 'novos', ',', 'enquanto', 'a', 'torre', 'antiga', 'deixa', 'um', 'pouco', 'a', 'desejar', '.']
+['quarto']
+ A torre nova é melhor, pois os quartos são novos, enquanto a torre antiga deixa um pouco a desejar.
+Aspect 'quarto' not found in tokens.
+['a', 'casa', 'de', 'banho', 'era', 'minúscula', ',', 'não', 'tinha', 'gel', 'de', 'banho', 'nem', 'champô', ',', 'as', 'camas', 'estavam', 'com', 'cabelos', ',', 'inclusive', 'os', 'copos', 'da', 'casa', 'de', 'banho', '.']
+['cama']
+  A casa de banho era minúscula, não tinha gel de banho nem champô, as camas estavam com cabelos, inclusive os copos da casa de banho.
+Aspect 'cama' not found in tokens.
+['quartos', 'de', 'bom', 'tamanho', 'para', 'padrões', 'franceses', '.']
+['quarto']
+  Quartos de bom tamanho para padrões franceses.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'bem', 'arrumados', 'e', 'o', 'banheiro', 'é', 'amplo', '.']
+['quarto']
+ Os quartos são bem arrumados e o banheiro é amplo.
+Aspect 'quarto' not found in tokens.
+['ficamos', 'num', 'apartamento', 'de', '2', 'quartos', '.']
+['quarto']
+Ficamos num apartamento de 2 quartos.
+Aspect 'quarto' not found in tokens.
+['hotel', 'para', 'pernoite', ',', 'quartos', 'antigos', 'porém', 'a', 'limpeza', 'é', 'boa', '.']
+['quarto']
+Hotel para pernoite, quartos antigos porém a limpeza é boa.
+Aspect 'quarto' not found in tokens.
+['quartos', 'velhos', ',', 'cheira', 'mofo', ',', 'sujidades', 'nas', 'paredes', ',', 'trincas', ',', 'tv', 'muito', 'antiga', 'de', 'tubo', ',', 'poucos', 'canais', 'na', 'tv', ',', 'elevadores', 'antigos', '.']
+['elevador']
+Quartos velhos, cheira mofo, sujidades nas paredes, trincas, tv muito antiga de tubo, poucos canais na tv, elevadores antigos.
+Aspect 'elevador' not found in tokens.
+['café', 'da', 'manhã', 'é', 'humlide', ',', 'não', 'espere', 'muito', 'me', 'hospedei', 'só', 'para', 'um', 'pernoite', ',', 'não', 'permaneci', 'muito', 'tempo', 'por', 'isso', 'tenho', 'pouco', 'a', 'dizer', 'dos', 'serviços', 'e', 'do', 'atendimento', '.']
+['serviço']
+ Café da manhã é humlide, não espere muito Me hospedei só para um pernoite, não permaneci muito tempo por isso tenho pouco a dizer dos serviços e do atendimento.
+Aspect 'serviço' not found in tokens.
+['apesar', 'de', 'possuir', 'quartos', 'pequenos', ',', 'o', 'hotel', 'é', 'muito', 'charmoso', 'e', 'super', 'bem', 'localizado', ':', 'a', 'apenas', 'uma', 'quadra', 'do', 'arco', 'do', 'triunfo', '.']
+['quarto']
+Apesar de possuir quartos pequenos, o hotel é muito charmoso e super bem localizado: a apenas uma quadra do Arco do Triunfo.
+Aspect 'quarto' not found in tokens.
+['hotel', 'simples', ',', 'com', 'um', 'café', 'da', 'manha', 'simples', 'mas', 'muito', 'gostoso', ',', 'quartos', 'super', 'confortáveis', ',', 'limpos', ',', 'atendimento', 'da', 'recepção', 'foi', 'demais', '!', 'todos', 'muito', 'simpáticos', ',', 'eu', 'e', 'meu', 'marido', 'nao', 'falamos', 'inglês', 'e', 'eles', 'se', 'esforçavam', 'muito', 'pra', 'nos', 'ajudar', '!', 'localização', 'perfeita', 'do', 'lado', 'de', 'um', 'shooping', ',', 'buba', 'grumo', 'e', 'cheesscake', 'factory', ',', 'e', 'o', 'melhor', 'pertinho', 'dos', 'parques', 'da', 'disney', '!', 'room', 'tip', ':', 'eu', 'ped']
+['garagem']
+Hotel simples, com um café da manha simples mas muito gostoso, quartos super confortáveis,limpos,atendimento da recepção foi demais! Todos muito simpáticos, eu e meu marido nao falamos inglês e eles se esforçavam muito pra nos ajudar! Localização PERFEITA do lado de um shooping,buba grumo e cheesscake factory, e o melhor pertinho dos parques da Disney!  Room Tip: Eu pedi quarto no mesmo andar da garagem pra facilitar na hora de carregar as malas.
+Aspect 'garagem' not found in tokens.
+['adoramos', 'nossa', 'estadia', 'em', 'nyc', 'o', 'hotel', 'não', 'poderia', 'ter', 'sido', 'melhor', '!', 'room', 'tip', ':', 'as', 'camas', 'são', 'ótimas', ',', 'um', 'pouco', 'pequenas', ',', 'tamanho', 'queen', '.']
+['cama']
+ Adoramos nossa estadia em NYC o hotel não poderia ter sido melhor!  Room Tip: As camas são ótimas, um pouco pequenas, tamanho queen.
+Aspect 'cama' not found in tokens.
+['ótima', 'localização', ',', 'transporte', 'público', 'muito', 'acessível', ',', 'quartos', 'amplos', ',', 'funcionários', 'atenciosos', ',', 'solicitações', 'atendidas', 'em', '5', 'minutos', '(', 'coisa', 'rara', 'em', 'hotéis', 'de', 'grandes', 'cidades', ')', 'e', 'muito', 'limpo', '.']
+['quarto']
+Ótima localização, transporte público muito acessível, quartos amplos, funcionários atenciosos, solicitações atendidas em 5 minutos (coisa rara em hotéis de grandes cidades) e muito limpo.
+Aspect 'quarto' not found in tokens.
+['além', 'de', 'tudo', 'que', 'já', 'foi', 'dito', 'da', 'localizaçao', ',', 'conforto', ',', 'quartos', 'remodelados', 'e', 'preço', 'das', 'diárias', ',', 'o', 'paris', 'tem', 'boas', 'opções', 'de', 'restaurantes', '(', 'o', 'que', 'é', 'ótimo', 'quando', 'vc', 'chega', 'cansado', 'dos', 'passeios', 'e', 'compras', '.']
+['quarto']
+Além de tudo que já foi dito da localizaçao, conforto, quartos remodelados e preço das diárias, o Paris tem boas opções de restaurantes (o que é ótimo quando vc chega cansado dos passeios e compras.
+Aspect 'quarto' not found in tokens.
+['mas', 'eles', 'podiam', 'fazer', 'uma', 'renovação', '!', 'os', 'quartos', 'continuam', ',', 'em', 'sua', 'maioria', ',', 'muito', 'antigos', ',', 'com', 'pouco', 'espaço', ',', 'banheiros', 'estreitos', 'e', 'com', 'duchas', 'fracas', '.']
+['quarto']
+ Mas eles podiam fazer uma renovação! Os quartos continuam, em sua maioria, muito antigos, com pouco espaço, banheiros estreitos e com duchas fracas.
+Aspect 'quarto' not found in tokens.
+['o', 'regente', 'oferece', 'apartamentos', 'mobiliados', ',', 'sendo', 'que', 'fiquei', 'num', 'com', 'cozinha', ',', 'sala', ',', '1', 'dormitório', 'e', 'banheiro', '.']
+['apartamento']
+O Regente oferece apartamentos mobiliados, sendo que fiquei num com cozinha,sala, 1 dormitório e banheiro.
+Aspect 'apartamento' not found in tokens.
+['funcionarios', 'muito', 'cordiais', ',', 'limpeza', 'otima', 'dos', 'quartos', 'e', 'tudo', 'muito', 'pratico', 'e', 'conveniente', '.']
+['quarto']
+ Funcionarios muito cordiais, limpeza otima dos quartos e tudo muito pratico e conveniente.
+Aspect 'quarto' not found in tokens.
+['um', 'hotel', 'pequeno', 'com', 'quartos', 'aconchegantes', 'e', 'confortáveis', ',', 'wi', '-', 'fi', 'grátis', 'e', 'ótima', 'localização', '.']
+['quarto']
+Um hotel pequeno com quartos aconchegantes e confortáveis, wi-fi grátis e ótima localização.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'que', 'ficam', 'em', 'frente', 'a', 'avenida', 'farrapos', 'apresenta', 'um', 'pouco', 'de', 'barulho', ',', 'mas', 'nada', 'que', 'incomode', ',', 'principalmente', 'e', 'noite', '.']
+['quarto']
+ Os quartos que ficam em frente a avenida Farrapos apresenta um pouco de barulho, mas nada que incomode, principalmente e noite.
+Aspect 'quarto' not found in tokens.
+['ponto', 'ruim', ':', 'sem', 'elevador', '!', 'mas', 'amei', 'o', 'ponto', 'em', 'que', 'se', 'localiza', 'e', 'toda', 'a', 'competência', 'dos', 'profissionais', '!', 'room', 'tip', ':', 'as', 'suítes', 'de', 'final', '1', 'geralmente', 'são', 'maiores', 'e', 'deixam', 'clientes', 'com', 'família', 'nesses', '.']
+['suíte']
+  Ponto ruim: sem elevador!  Mas amei o ponto em que se localiza e toda a competência dos profissionais!  Room Tip: as suítes de final 1 geralmente são maiores e deixam clientes com família nesses.
+Aspect 'suíte' not found in tokens.
+['os', 'quartos', 'sao', 'bons', 'e', 'espaçosos', 'e', 'o', 'café', 'é', 'uma', 'delicia', '!', '.']
+['quarto']
+ Os quartos sao bons e espaçosos e o café é uma delicia!.
+Aspect 'quarto' not found in tokens.
+['tudo', 'perfeito', 'ja', 'fiquei', 'duas', 'vezes', 'la', 'e', 'ficaria', 'sempre', 'que', 'necessario', '!', '!', 'hotel', 'eh', 'bem', 'grande', 'e', 'tem', 'varios', 'elevadores', ',', 'local', 'otimo', 'e', 'agradavel', 'para', 'se', 'passear', 'com', 'a', 'familia', 'e', 'amigo', '!', '!', 'recomendo', 'a', 'boite', 'tao', 'tambem', ',', 'que', 'é', 'loucura', 'demais', '.']
+['elevador']
+ Tudo perfeito ja fiquei duas vezes la e ficaria sempre que necessario!! Hotel eh bem grande e tem varios elevadores, local otimo e agradavel para se passear com a familia e amigo!! Recomendo a boite TAO tambem, que é loucura demais.
+Aspect 'elevador' not found in tokens.
+['paul', 'e', 'próximo', 'das', 'lojinhas', 'da', 'rue', 'de', 'rivoli', '!', 'o', 'hotel', 'é', 'super', 'pequeno', ',', 'mas', 'oferece', 'quartos', 'com', 'um', 'tamanho', 'bom', ',', 'decoração', 'contemporânea', 'e', 'um', 'bom', 'café', 'da', 'manhã', '.']
+['quarto']
+ Paul e próximo das lojinhas da Rue de Rivoli! O hotel é super pequeno, mas oferece quartos com um tamanho bom, decoração contemporânea e um bom café da manhã.
+Aspect 'quarto' not found in tokens.
+['tomadas', 'nao', 'funcionavam', '.']
+['tomada']
+ Tomadas nao funcionavam.
+Aspect 'tomada' not found in tokens.
+['quartos', 'grandes', 'e', 'confortáveis', '.']
+['quarto']
+ Quartos grandes e confortáveis.
+Aspect 'quarto' not found in tokens.
+['péssimo', 'hotel', ',', 'sem', 'infra', 'estrutura', 'para', 'cadeirante', ',', 'o', 'meu', 'quarto', 'tinha', 'uma', 'espuma', 'de', 'tapete', ',', 'o', 'ar', 'condicionado', 'do', 'meu', 'quarto', 'e', 'o', 'da', 'minha', 'irmã', 'nao', 'funcionavam', ',', 'nao', 'dava', 'tambem', 'para', 'abrir', 'as', 'janelas', ',', 'com', 'teia', 'de', 'aranha', 'perto', 'da', 'cabeceira', 'da', 'cama', ',', 'o', 'room', 'service', 'foi', 'péssimo', ',', 'a', 'comida', 'veio', 'de', 'fora', ',', 'com', 'valor', 'igual', 'ao', 'dos', 'restaurantes', 'de', 'qualidade', 'boa', 'na', 'frança', ',', 'pedi', 'um', 'vinho', 'com', 'sal']
+['localização']
+Péssimo hotel, sem infra estrutura para cadeirante, o meu quarto tinha uma espuma de tapete, o ar condicionado do meu quarto e o da minha irmã nao funcionavam, nao dava tambem para abrir as janelas, com teia de aranha perto da cabeceira da cama, o room service foi péssimo, a comida veio de fora, com valor igual ao dos restaurantes de qualidade boa na França, pedi um vinho com salmão, nao veio talher, nao veio taça, a única coisa que salva e a localização!.
+Aspect 'localização' not found in tokens.
+['fantástico', '!', 'ficamos', 'na', 'hrh', 'tower', 'e', 'as', 'suítes', 'espaçosas', ',', 'modernas', 'e', 'bem', 'decoradas', 'foram', 'perfeitas', 'para', 'minha', 'família', '.']
+['suíte']
+Fantástico! Ficamos na HRH Tower e as suítes espaçosas, modernas e bem decoradas foram perfeitas para minha família.
+Aspect 'suíte' not found in tokens.
+['além', 'de', 'tudo', 'isso', ',', 'a', 'qualidade', 'da', 'recepção', ',', 'serviços', 'de', 'concierge', ',', 'e', 'amenidades', ',', 'como', 'café', 'disponível', '24', 'horas', 'na', 'recepção', ',', 'fizeram', 'da', 'minha', 'estadia', 'em', 'nyc', 'perfeita', '.']
+['serviço']
+  Além de tudo isso, a qualidade da recepção, serviços de concierge, e amenidades, como café disponível 24 horas na recepção, fizeram da minha estadia em NYC perfeita.
+Aspect 'serviço' not found in tokens.
+['pessoal', ',', 'está', 'localizado', 'numa', 'das', 'mais', 'tradicionais', 'ruas', 'de', 'porto', 'alegre', ',', 'o', 'hotel', 'açores', 'encontra', '-', 'se', 'estrategicamente', 'dentro', 'do', 'centro', 'financeiro', ',', 'turístico', ',', 'comercial', 'e', 'cultural', 'de', 'porto', 'alegre', '.']
+['rua']
+Pessoal, está Localizado numa das mais tradicionais ruas de Porto Alegre, o Hotel Açores encontra-se estrategicamente dentro do centro financeiro, turístico, comercial e cultural de Porto Alegre.
+Aspect 'rua' not found in tokens.
+['para', 'quem', 'quer', 'ir', 'as', 'principais', 'atracões', ',', 'museus', ',', 'broadway', 'e', 'as', 'compras', ',', 'o', 'cassa', 'é', 'perfeito', '.']
+['museu']
+ Para quem quer ir as principais atracões, museus, Broadway e as compras, o Cassa é perfeito.
+Aspect 'museu' not found in tokens.
+['não', 'indico', 'para', 'hospedagem', 'de', 'famílias', ',', 'principalmente', 'com', 'crianças', 'pequenas', 'em', 'função', 'da', 'higiene', 'dos', 'quartos', '.']
+['família']
+ Não indico para hospedagem de famílias, principalmente com crianças pequenas em função da higiene dos quartos.
+Aspect 'família' not found in tokens.
+['quartos', ',', 'serviços', 'e', 'pessoal', 'de', 'primeira', 'qualidaade', 'e', 'profissionalismo', '.']
+['quarto']
+Quartos , serviços e pessoal de primeira qualidaade e profissionalismo.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'simples', 'porém', ',', 'limpos', 'e', 'confortáveis', '.']
+['quarto']
+ Os quartos são simples porém, limpos e confortáveis.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'razoavelmente', 'espaçosos', ',', 'considerando', '-', 'se', 'que', 'estamos', 'em', 'paris', '.']
+['quarto']
+ Os quartos são razoavelmente espaçosos, considerando-se que estamos em Paris.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'prefira', 'os', 'quartos', 'com', 'vista', 'para', 'a', 'praça', '.']
+['quarto']
+  Room Tip: Prefira os quartos com vista para a praça.
+Aspect 'quarto' not found in tokens.
+['todos', 'sempre', 'dispostos', 'a', 'orientar', 'os', 'turistas', 'dando', 'boas', 'dicas', 'e', 'os', 'quartos', 'sempre', 'limpos', 'e', 'o', 'ambiente', 'muito', 'agradavél', 'todos', 'os', 'funcionários', 'falam', 'inglês', ',', 'não', 'é', 'um', 'hotel', 'típico', 'frances', ',', 'pois', 'é', 'novo', ',', 'e', 'fica', 'a', '5', 'minutos', 'do', 'metro', ',', 'e', 'dá', 'para', 'andar', 'até', 'o', 'centro', 'de', 'paris', '.']
+['turista']
+ todos sempre dispostos a orientar os turistas dando boas dicas e os quartos sempre limpos e o ambiente muito agradavél todos os funcionários falam inglês, não é um hotel típico frances, pois é novo, e fica a 5 minutos do metro, e dá para andar até o centro de PARIS.
+Aspect 'turista' not found in tokens.
+['como', 'o', 'hotel', 'fica', 'na', 'região', 'central', ',', 'o', 'transito', 'em', 'horários', 'de', 'pico', 'é', 'muito', 'complicado', ',', 'ficando', 'difíciu', 'a', 'locomoção', 'e', 'o', 'transporte', '.']
+['horário']
+ Como o hotel fica na região central, o transito em horários de pico é muito complicado, ficando difíciu a locomoção e o transporte.
+Aspect 'horário' not found in tokens.
+['adoramos', 'o', 'hotel', '!', 'preço', 'bom', ',', 'café', 'da', 'manhã', 'deliciosoooo', ',', 'atendimento', 'de', 'primeiraaaa', ',', 'quartos', 'perfeitamente', 'limpos', ',', 'decoração', 'impecavel', ',', 'camas', 'deliciosasss', ',', 'localização', 'fantastica', 'com', '2', 'estações', 'de', 'metro', 'pertinho', ',', 'monoprix', 'na', 'esquina', ',', 'mercadinhos', ',', 'restaurante', 'italiano', ',', 'padarias', 'maravilhosas', ',', 'ameiiiiiii', '.']
+['quarto']
+Adoramos o hotel! Preço bom, café da manhã deliciosoooo, atendimento de primeiraaaa, quartos perfeitamente limpos, decoração impecavel, camas deliciosasss, localização fantastica com 2 estações de metro pertinho, monoprix na esquina, mercadinhos, restaurante italiano, padarias maravilhosas, AMEIIIIIII.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'prefira', 'os', 'apartamentos', 'de', 'fundos', '.']
+['apartamento']
+  Room Tip: Prefira os apartamentos de fundos.
+Aspect 'apartamento' not found in tokens.
+['muito', 'simples', ',', 'apartamentos', 'pequenos', ',', 'e', 'parecem', 'ter', 'sido', 'decorados', 'por', 'são', 'francisco', 'pessoalmente', ',', '1', 'cama', ',', '1', 'cadeira', ',', '1', 'mesa', ',', '1', 'frigo', 'bar', ',', 'e', '1', 'armário', '(', 'sem', 'portas', ',', 'que', 'funciona', 'mesmo', 'como', 'cabideiro', ')', '.']
+['apartamento']
+Muito simples, apartamentos pequenos, e parecem ter sido decorados por São Francisco pessoalmente, 1 cama, 1 cadeira, 1 mesa, 1 frigo bar, e 1 armário (sem portas, que funciona mesmo como cabideiro).
+Aspect 'apartamento' not found in tokens.
+['–', 'os', 'preços', 'da', 'loja', 'de', 'conveniência', 'são', 'extremamente', 'caros', ',', 'um', 'litro', 'de', 'água', 'em', 'supermercado', 'custa', '0', ',', '58e', ',', 'no', 'hotel', 'uma', 'garrafa', 'de', '700', 'ml', 'custa', '5e', '.']
+['preço']
+ – Os preços da loja de conveniência são extremamente caros, um litro de água em supermercado custa 0,58E, no hotel uma garrafa de 700 ml custa 5E.
+Aspect 'preço' not found in tokens.
+['os', 'corredores', 'dão', 'uma', 'sensação', 'meio', 'fúnebre', ',', 'por', 'não', 'ter', 'muita', 'iluminação', '.']
+['corredor']
+ Os corredores dão uma sensação meio fúnebre, por não ter muita iluminação.
+Aspect 'corredor' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'de', 'fundos', 'são', 'mais', 'silenciosos', '(', 'os', 'sinos', 'da', 'igreja', 'incomodam', 'um', 'pouco', ')', '.']
+['apartamento']
+  Room Tip: Os apartamentos de fundos são mais silenciosos (os sinos da igreja incomodam um pouco).
+Aspect 'apartamento' not found in tokens.
+['com', 'um', 'ótimo', 'atendimento', 'e', 'novo', 'conceito', ',', 'o', 'hotel', 'boutique', 'possui', 'camas', 'extremamentes', 'confortáveis', '.']
+['cama']
+Com um ótimo atendimento e novo conceito, o hotel boutique possui camas extremamentes confortáveis.
+Aspect 'cama' not found in tokens.
+['quarto', 'de', 'bom', 'tamanho', 'e', 'chuveiro', 'sem', 'ser', 'estilo', 'americano', '(', 'sem', 'aquelas', 'banheiras', ')', '.']
+['banheira']
+ Quarto de bom tamanho e chuveiro sem ser estilo americano ( sem aquelas banheiras).
+Aspect 'banheira' not found in tokens.
+['os', 'quartos', 'são', 'meio', 'em', 'estilo', 'frances', ',', 'ficamos', 'em', 'um', 'quarto', 'quadruplo', ',', 'eram', 'duas', 'camas', 'de', 'casal', 'bem', 'confortáveis', ',', 'chuveiro', 'tipico', 'europeu', 'e', 'o', 'vaso', 'era', 'em', 'um', 'ambiente', 'separado', '.']
+['cama']
+Os quartos são meio em estilo frances, ficamos em um quarto quadruplo, eram duas camas de casal bem confortáveis, chuveiro tipico europeu e o vaso era em um ambiente separado.
+Aspect 'cama' not found in tokens.
+['os', 'preços', 'embora', 'elevados', ',', 'estão', 'nos', 'padrões', 'aceitáveis', 'para', 'a', 'cidade', 'e', 'em', 'sua', 'localização', '-', 'fantástica', '-', 'embora', 'próximo', 'a', 'tudo', ',', 'sossegado', '.']
+['preço']
+ Os preços embora elevados, estão nos padrões aceitáveis para a cidade e em sua localização - fantástica - embora próximo a tudo, sossegado.
+Aspect 'preço' not found in tokens.
+['o', 'hotel', 'é', 'um', 'pouco', 'velho', ',', 'com', 'quartos', 'um', 'pouco', 'mal', 'cuidados', ',', 'mas', 'nada', 'que', 'atrapalhe', 'tanto', '.']
+['quarto']
+O hotel é um pouco velho, com quartos um pouco mal cuidados, mas nada que atrapalhe tanto.
+Aspect 'quarto' not found in tokens.
+['foi', 'um', 'susto', '!', 'muito', 'mofo', 'nos', 'quartos', ',', 'muito', 'abafado', 'o', 'refeitório', 'do', 'café', '.']
+['quarto']
+Foi um susto! Muito mofo nos quartos, muito abafado o refeitório do café.
+Aspect 'quarto' not found in tokens.
+['conheci', 'o', 'hotelpelo', 'booking', '.']
+['hotel']
+Conheci o hotelpelo Booking.
+Aspect 'hotel' not found in tokens.
+['quartos', 'muito', 'limpos', 'e', 'em', 'excelentes', 'condições', ',', 'embora', 'pequenos', 'mas', 'o', 'normal', 'para', 'paris', '.']
+['quarto']
+ Quartos muito limpos e em excelentes condições, embora pequenos mas o normal para Paris.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'muito', 'bem', 'localizado', ',', 'limpo', ',', 'recepcionistas', 'solicitos', 'e', 'atenciosos', ';', 'os', 'quartos', 'pequenos', ',', 'porém', ',', 'nada', 'menor', 'do', 'que', 'o', 'esperado', 'em', 'paris', '.']
+['quarto']
+ O hotel é muito bem localizado, limpo, recepcionistas solicitos e atenciosos; os quartos pequenos, porém, nada menor do que o esperado em Paris.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'sao', 'bem', 'confortáveis', 'e', 'banheiro', 'limpo', '.']
+['quarto']
+  Os quartos sao bem confortáveis e banheiro limpo.
+Aspect 'quarto' not found in tokens.
+['quartos', 'básicos', 'sem', 'nenhuma', 'sofisticação', '.']
+['quarto']
+ Quartos básicos sem nenhuma sofisticação.
+Aspect 'quarto' not found in tokens.
+['uma', 'coisa', 'boa', 'é', 'que', 'fica', 'no', 'centro', 'próximo', 'a', 'bares', ',', 'hotéis', ',', 'shoppings', ',', 'e', 'perto', 'do', 'aeroporto', 'também', 'a', '10km', 'de', 'distância', '.']
+['shopping']
+ Uma coisa boa é que fica no centro próximo a bares, hotéis, shoppings, e perto do aeroporto também a 10km de distância.
+Aspect 'shopping' not found in tokens.
+['o', 'hotel', 'têm', 'alguns', 'quartos', 'novos', 'e', 'outros', 'bem', 'antigos', '.']
+['quarto']
+O hotel têm alguns quartos novos e outros bem antigos.
+Aspect 'quarto' not found in tokens.
+['quartos', 'pequenos', ',', 'mas', 'aconchegantes', '.']
+['quarto']
+ Quartos pequenos, mas aconchegantes.
+Aspect 'quarto' not found in tokens.
+['pequeno', '(', 'quase', 'um', 'ovo', ')', ',', 'banheiro', 'minúsculo', '(', 'pessoas', 'com', 'mais', 'de', '1', ',', '80m', 'de', 'altura', 'não', 'consegue', 'sentar', 'no', 'vaso', 'e', 'as', 'toalhas', 'tinham', 'um', 'cheiro', 'totalmente', 'desagradável', '.']
+['toalha']
+ pequeno (quase um ovo), banheiro minúsculo (pessoas com mais de 1,80m de altura não consegue sentar no vaso e as toalhas tinham um cheiro totalmente desagradável.
+Aspect 'toalha' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', 'porém', 'super', 'limpos', ',', 'diferentes', 'e', 'bonitos', '.']
+['quarto']
+ Os quartos são pequenos porém super limpos, diferentes e bonitos.
+Aspect 'quarto' not found in tokens.
+['gostamos', 'muito', 'do', 'hotel', ',', 'tudo', 'pertinho', ':', 'times', 'square', ',', 'teatros', 'da', 'broadway', ',', '5th', 'avenida', ',', 'fomos', 'a', 'esses', 'lugares', 'tudo', 'a', 'pé', '.']
+['teatro']
+Gostamos muito do hotel, tudo pertinho: Times Square, teatros da broadway, 5th avenida, fomos a esses lugares tudo a pé.
+Aspect 'teatro' not found in tokens.
+['os', 'quartos', 'são', 'extremamente', 'limpos', ',', 'com', 'ótimo', 'serviço', 'e', 'funcionários', 'prestativos', '.']
+['quarto']
+   Os quartos são extremamente limpos, com ótimo serviço e funcionários prestativos.
+Aspect 'quarto' not found in tokens.
+['excelente', 'para', 'se', 'hospedar', 'com', 'a', 'família', 'porque', 'nos', 'quartos', 'há', 'uma', 'cozinha', 'com', 'geladeira', ',', 'microondas', 'e', 'cafeteira', '.']
+['quarto']
+  Excelente para se hospedar com a família porque nos quartos há uma cozinha com geladeira, microondas e cafeteira.
+Aspect 'quarto' not found in tokens.
+['corredores', 'sem', 'cheiro', 'de', 'cigarro', 'e', 'quartos', 'silenciosos', '.']
+['corredor']
+ Corredores sem cheiro de cigarro e quartos silenciosos.
+Aspect 'corredor' not found in tokens.
+['gostei', 'muito', 'deste', 'hotel', 'pela', 'localização', ',', 'no', 'coração', 'de', 'nova', 'york', ',', 'na', 'times', 'square', ',', 'próximo', 'de', 'vários', 'restaurantes', ',', 'lojas', ',', 'teatros', ',', 'metrô', 'e', 'etc', '.']
+['teatro']
+Gostei muito deste hotel pela localização, no coração de Nova York, na Times Square, próximo de vários restaurantes, lojas,teatros, metrô e etc.
+Aspect 'teatro' not found in tokens.
+['o', 'trump', 'international', 'las', 'vegas', 'é', 'o', 'que', 'há', 'de', 'mais', 'luxuoso', ',', 'acompanhado', 'de', 'excelentes', 'acomodações', 'e', 'serviços', '.']
+['serviço']
+O Trump International Las Vegas é o que há de mais luxuoso, acompanhado de excelentes acomodações e serviços.
+Aspect 'serviço' not found in tokens.
+['os', 'quartos', 'são', 'imensos', 'e', 'arejados', '.']
+['quarto']
+ Os quartos são imensos e arejados.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'os', 'quartos', 'nos', 'andares', 'bem', 'superiores', ',', 'são', 'mais', 'silenciosos', '(', 'ficamos', 'no', '44o', '.']
+['quarto']
+  Room Tip: Os quartos nos andares bem superiores, são mais silenciosos (ficamos no 44o.
+Aspect 'quarto' not found in tokens.
+['apartamentos', 'pequenos', ',', 'mas', 'camas', 'super', 'confortáveis', 'e', 'chuveiro', 'muito', 'bom', '!', 'café', 'da', 'manhã', 'com', 'boa', 'variedade', '.']
+['apartamento']
+  Apartamentos pequenos, mas camas super confortáveis e chuveiro muito bom!  Café da manhã com boa variedade.
+Aspect 'apartamento' not found in tokens.
+['os', 'quartos', 'são', 'ótimos', ',', 'grandes', ',', 'confortáveis', 'e', 'a', 'cama', 'é', 'uma', 'delícia', '.']
+['quarto']
+ Os quartos são ótimos, grandes, confortáveis e a cama é uma delícia.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'single', ',', 'apesar', 'de', 'pequenos', ',', 'possuem', 'tudo', 'de', 'que', 'se', 'precisa', 'para', 'uma', 'estadia', 'agradavel', '.']
+['quarto']
+ Os quartos single, apesar de pequenos, possuem tudo de que se precisa para uma estadia agradavel.
+Aspect 'quarto' not found in tokens.
+['imperra', 'o', 'modernismo', 'e', 'o', 'futurismo', 'de', 'alta', 'tecnologia', ',', 'dispõe', 'de', 'quartos', 'modernos', ',', 'do', 'tipo', 'cabine', ',', 'e', 'de', 'um', 'terraço', 'amplo', 'na', 'cobertura', '.']
+['quarto']
+imperra o modernismo e o futurismo de alta tecnologia, dispõe de quartos modernos, do tipo cabine, e de um terraço amplo na cobertura.
+Aspect 'quarto' not found in tokens.
+['quartos', 'são', 'pequenos', 'mas', 'limpos', 'e', 'agradáveis', '.']
+['quarto']
+ Quartos são pequenos mas limpos e agradáveis.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'lindo', ',', 'os', 'quartos', 'são', 'ótimo', ',', 'super', 'limpos', ',', 'o', 'staff', 'é', 'educado', 'e', 'solicito', '.']
+['quarto']
+ o hotel é lindo, os quartos são ótimo, super limpos, o staff é educado e solicito.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'menores', ',', 'quando', 'comparados', 'aos', 'dessa', 'rede', '.']
+['quarto']
+Os quartos são menores, quando comparados aos dessa rede.
+Aspect 'quarto' not found in tokens.
+['café', 'da', 'manhã', 'bom', ',', 'porém', 'com', 'limitação', 'de', 'capacidade', 'nos', 'horários', 'de', 'pico', '.']
+['horário']
+ Café da manhã bom, porém com limitação de capacidade nos horários de pico.
+Aspect 'horário' not found in tokens.
+['hotel', 'de', 'ótima', 'localização', ',', 'perto', 'de', 'tudo', ',', 'quartos', 'limpos', 'e', 'organizados', ',', 'café', 'da', 'manhã', 'de', 'boa', 'qualidade', 'e', 'funcionários', 'muito', 'atenciosos', '.']
+['quarto']
+ Hotel de ótima localização, perto de tudo, quartos limpos e organizados, café da manhã de boa qualidade e funcionários muito atenciosos.
+Aspect 'quarto' not found in tokens.
+['hotel', 'simples', ',', 'com', 'um', 'café', 'da', 'manha', 'simples', 'mas', 'muito', 'gostoso', ',', 'quartos', 'super', 'confortáveis', ',', 'limpos', ',', 'atendimento', 'da', 'recepção', 'foi', 'demais', '!', 'todos', 'muito', 'simpáticos', ',', 'eu', 'e', 'meu', 'marido', 'nao', 'falamos', 'inglês', 'e', 'eles', 'se', 'esforçavam', 'muito', 'pra', 'nos', 'ajudar', '!', 'localização', 'perfeita', 'do', 'lado', 'de', 'um', 'shooping', ',', 'buba', 'grumo', 'e', 'cheesscake', 'factory', ',', 'e', 'o', 'melhor', 'pertinho', 'dos', 'parques', 'da', 'disney', '!', 'room', 'tip', ':', 'eu', 'ped']
+['quarto']
+Hotel simples, com um café da manha simples mas muito gostoso, quartos super confortáveis,limpos,atendimento da recepção foi demais! Todos muito simpáticos, eu e meu marido nao falamos inglês e eles se esforçavam muito pra nos ajudar! Localização PERFEITA do lado de um shooping,buba grumo e cheesscake factory, e o melhor pertinho dos parques da Disney!  Room Tip: Eu pedi quarto no mesmo andar da garagem pra facilitar na hora de carregar as malas.
+Aspect 'quarto' not found in tokens.
+['quartos', 'muito', 'bons', ',', 'todo', 'hotel', 'muito', 'bonito', '.']
+['quarto']
+Quartos muito bons,todo hotel muito bonito.
+Aspect 'quarto' not found in tokens.
+['hotel', 'excelente', '!', 'suíte', 'confortável', ',', 'limpa', ',', 'charmosa', ',', 'staff', 'educadíssimo', ',', 'a', 'janela', 'do', 'meu', 'quarto', 'dava', 'para', 'as', 'piscinas', 'do', 'caesar', ',', 'localização', 'privilegiada', '.']
+['piscina']
+Hotel excelente! Suíte confortável, limpa, charmosa, staff educadíssimo, a janela do meu quarto dava para as piscinas do Caesar, localização privilegiada.
+Aspect 'piscina' not found in tokens.
+['pelo', 'menos', 'as', 'camas', 'tinham', 'lençóis', 'e', 'toalhas', 'limpas', '.']
+['toalha']
+Pelo menos as camas tinham lençóis e toalhas limpas.
+Aspect 'toalha' not found in tokens.
+['fiz', 'uma', 'reserva', 'neste', 'hotel', 'e', 'cheguei', 'lá', 'descobri', 'quase', 'todos', 'os', 'quartos', 'estavam', 'reservados', 'para', 'uma', 'construtora', 'ou', 'seja', 'mais', 'de', '100', 'homens', 'e', 'só', 'eu', 'de', 'mulher', ',', 'meu', 'namorado', 'ficou', 'louco', 'de', 'raiva', 'por', 'causa', 'disso', 'então', 'eles', 'me', 'mudaram', 'para', 'um', 'outro', 'hotel', 'da', 'mesma', 'rede', '.']
+['quarto']
+Fiz uma reserva neste hotel e qdo cheguei lá descobri q quase todos os quartos estavam reservados para uma construtora ou seja mais de 100 homens e só eu de mulher, meu namorado ficou louco de raiva por causa disso então eles me mudaram para um outro hotel da mesma rede.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'ótimo', '!', 'é', 'totalmente', 'um', 'estilo', 'clássico', ',', 'para', 'quem', 'prefere', 'hotéis', 'modernos', ',', 'procurar', 'alguns', 'mais', 'novos', '!', 'mas', 'os', 'quartos', 'são', 'muito', 'bonitos', 'e', 'espaçosos', '.']
+['quarto']
+O hotel é ótimo! É totalmente um estilo clássico, para quem prefere hotéis modernos, procurar alguns mais novos!   Mas Os quartos são muito bonitos e espaçosos.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'novo', 'e', 'tem', 'bons', 'quartos', 'com', 'aquecimento', ',', 'bom', 'café', 'da', 'manhã', ',', 'internet', 'liberada', '.']
+['quarto']
+ O hotel é novo e tem bons quartos com aquecimento, bom café da manhã, internet liberada.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'de', 'bom', 'tamanho', ',', 'com', 'camas', 'confortáveis', '.']
+['cama']
+ Os quartos são de bom tamanho, com camas confortáveis.
+Aspect 'cama' not found in tokens.
+['acho', 'que', 'foi', 'uma', 'boa', 'escolha', 'pois', 'embora', 'os', 'móveis', 'sejam', 'antigos', 'e', 'o', 'carpete', 'um', 'pouco', 'gasto', ',', 'o', 'quarto', 'era', 'grande', ',', 'as', 'camas', 'limpas', 'e', 'confortáveis', 'e', 'o', 'chuveiro', 'bom', '.']
+['cama']
+  Acho que foi uma boa escolha pois embora os móveis sejam antigos e o carpete um pouco gasto, o quarto era grande, as camas limpas e confortáveis e o chuveiro bom.
+Aspect 'cama' not found in tokens.
+['room', 'tip', ':', 'apartamentos', 'de', 'fundo', 'são', 'sempre', 'menos', 'barulhentos', '.']
+['apartamento']
+  Room Tip: Apartamentos de fundo são sempre menos barulhentos.
+Aspect 'apartamento' not found in tokens.
+['quartos', 'excelentes', 'e', 'localização', 'fora', 'de', 'série', '.']
+['quarto']
+ Quartos excelentes e localização fora de série.
+Aspect 'quarto' not found in tokens.
+['quartos', 'com', 'banheiros', 'novos', 'e', 'bom', 'serviço', 'do', 'staff', 'do', 'hotel', '.']
+['quarto']
+ Quartos com banheiros novos e bom serviço do staff do hotel.
+Aspect 'quarto' not found in tokens.
+['localização', 'excelente', ',', 'atendimento', 'e', 'serviços', 'de', 'um', 'cinco', 'estrelas', '.']
+['serviço']
+Localização excelente, atendimento e serviços de um cinco estrelas.
+Aspect 'serviço' not found in tokens.
+['patrick', ',', 'café', 'da', 'manhã', 'ótimo', ',', 'quartos', 'enormes', ',', 'cama', 'gigante', 'e', 'super', 'confortável', ',', 'banheiro', 'grande', 'e', 'tudo', 'muito', 'limpo', '.']
+['quarto']
+ Patrick, café da manhã ótimo, quartos enormes, cama gigante e super confortável, banheiro grande e tudo muito limpo.
+Aspect 'quarto' not found in tokens.
+['quartos', 'espaçosos', ',', 'cama', 'confortável', '.']
+['quarto']
+ Quartos espaçosos, cama confortável.
+Aspect 'quarto' not found in tokens.
+['algumas', 'informações', 'como', 'estacionamentos', 'se', 'limitaram', 'a', 'apontar', 'a', 'direção', ',', 'sem', 'um', 'mapa', 'ou', 'alguma', 'dicas', 'de', 'tarifas', '.']
+['estacionamento']
+ Algumas informações como estacionamentos se limitaram a apontar a direção, sem um mapa ou alguma dicas de tarifas.
+Aspect 'estacionamento' not found in tokens.
+['aconchegante', ':', 'o', 'quarto', ',', 'as', 'camas', ',', 'travesseiros', 'e', 'edredons', 'são', 'um', 'convite', 'ao', 'descanso', '.']
+['travesseiro']
+  Aconchegante: o quarto, as camas, travesseiros e edredons são um convite ao descanso.
+Aspect 'travesseiro' not found in tokens.
+['quanto', 'à', 'aparência', 'das', 'ruas', 'e', 'dos', 'transeuntes', ',', 'é', 'a', 'mesma', 'de', 'toda', 'a', 'região', 'de', 'times', 'square', ':', 'lotada', ',', 'não', 'muito', 'limpa', 'e', 'cheia', 'de', 'personagens', 'peculiares', '.']
+['rua']
+ Quanto à aparência das ruas e dos transeuntes, é a mesma de toda a região de Times Square: Lotada, não muito limpa e cheia de personagens peculiares.
+Aspect 'rua' not found in tokens.
+['é', ',', 'como', 'os', 'bons', 'hotéis', 'provavelmente', ',', 'o', 'melhor', 'hotel', 'que', 'fiquei', 'em', 'ny', ',', 'na', 'madison', 'avenue', 'em', 'frente', 'a', 'igreja', 'st', 'patricks', ',', 'atras', 'da', 'quinta', 'avenida', 'elegante', ',', 'excelentes', 'serviços', ',', 'agradável', 'café', 'da', 'manhã', 'em', 'uma', 'ambiente', 'lindo', '.']
+['serviço']
+É, como os bons hotéis provavelmente,o melhor hotel que fiquei em ny,na madison avenue em frente a igreja st patricks,atras da quinta avenida elegante, excelentes serviços, agradável café da manhã em uma ambiente lindo.
+Aspect 'serviço' not found in tokens.
+['os', 'apartamentos', 'são', 'bons', ',', 'limpos', ',', 'embora', 'sejam', 'muito', 'escuros', '.']
+['apartamento']
+ Os apartamentos são bons, limpos, embora sejam muito escuros.
+Aspect 'apartamento' not found in tokens.
+['a', 'localizacao', 'nao', 'poderia', 'ser', 'melhor', '-', 'saint', 'germain', 'de', 'pres', '!', 'perto', 'de', 'tudo', '!', 'pontos', 'negativos', ':', 'quartos', 'muito', 'pequenos', ',', 'faltam', 'duchas', ',', 'armarios', ',', 'mas', 'o', 'resto', 'compensa', '!', '.']
+['quarto']
+  A localizacao nao poderia ser melhor - Saint Germain de Pres! Perto de tudo!    Pontos negativos:   Quartos muito pequenos, faltam duchas, armarios, mas o resto compensa!.
+Aspect 'quarto' not found in tokens.
+['um', 'bom', 'hotel', ',', 'super', 'bem', 'situado', '(', 'uns', '200', 'mt', 'da', 'times', 'square', ')', ',', 'limpo', ',', 'mas', 'com', 'quartos', 'beeeem', 'pequenos', '.']
+['quarto']
+Um bom hotel, super bem situado (uns 200 mt da Times Square), limpo, mas com quartos beeeem pequenos.
+Aspect 'quarto' not found in tokens.
+['todas', 'as', 'áreas', 'são', 'muito', 'pequenas', ',', 'inclusive', 'os', 'quartos', 'e', 'banheiros', '.']
+['quarto']
+  Todas as áreas são muito pequenas, inclusive os quartos e banheiros.
+Aspect 'quarto' not found in tokens.
+['aconchegante', ':', 'o', 'quarto', ',', 'as', 'camas', ',', 'travesseiros', 'e', 'edredons', 'são', 'um', 'convite', 'ao', 'descanso', '.']
+['cama']
+  Aconchegante: o quarto, as camas, travesseiros e edredons são um convite ao descanso.
+Aspect 'cama' not found in tokens.
+['hotel', 'muito', 'bem', 'localizado', 'proximo', 'a', 'praça', 'da', 'bastilha', 'tem', 'restaurantes', 'supermercados', 'e', 'uma', 'feira', 'bem', 'enfrente', 'ao', 'hotel', 'para', 'se', 'locomover', 'tem', 'metrô', 'a', 'poucos', 'passos', 'do', 'hotel', 'o', 'quarto', 'bem', 'espaçosos', 'tem', 'uma', 'mini', 'cozinha', 'banheiro', 'grande', 'os', 'funcionarios', 'nao', 'sao', 'la', 'muito', 'gentis', 'room', 'tip', ':', 'todos', 'os', 'apartamentos', 'seguem', 'um', 'mesmo', 'padrao', 'a', 'diferenca', 'apenas', 'no', 'tamanho', 'que', 'pode', 'ser', 'para', '2', 'ou', 'at', '.']
+['apartamento']
+hotel muito bem localizado proximo a praça da bastilha tem restaurantes supermercados e uma feira bem enfrente ao hotel para se locomover tem metrô a poucos passos do hotel o quarto bem espaçosos tem uma mini cozinha banheiro grande   os funcionarios nao sao la muito gentis  Room Tip: todos os apartamentos seguem um mesmo padrao a diferenca apenas no tamanho que pode ser para 2 ou at.
+Aspect 'apartamento' not found in tokens.
+['muito', 'conservado', 'e', 'com', 'limpeza', 'e', 'manutenção', 'nota', '10', ',', 'os', 'quartos', 'são', 'enormes', 'para', 'o', 'padrão', 'ny', '.']
+['quarto']
+ Muito conservado e com limpeza e manutenção nota 10, os quartos são enormes para o padrão NY.
+Aspect 'quarto' not found in tokens.
+['quarto', 'limpo', 'não', 'cheira', 'mofo', ',', 'banheiro', 'simples', 'mas', 'bom', ',', 'ponto', 'negativo', 'é', 'o', 'chuveiro', ',', 'é', 'aquelas', 'duchas', 'de', 'mão', 'que', 'fixa', 'na', 'parede', ',', 'nada', 'pratico', '.']
+['ducha']
+Quarto limpo não cheira mofo, banheiro simples mas bom, ponto negativo é o chuveiro, é aquelas duchas de mão que fixa na parede, nada pratico.
+Aspect 'ducha' not found in tokens.
+['estivemos', 'em', 'paris', 'em', 'outubro', 'de', '2012', 'e', 'nos', 'hospedamos', 'em', 'um', 'apartamento', 'de', '2', 'quartos', ',', 'sala', ',', '2', 'banheiros', 'e', 'cozinha', 'do', 'apart', 'hotel', '.']
+['quarto']
+Estivemos em Paris em outubro de 2012 e nos hospedamos em um apartamento de 2 quartos, sala, 2 banheiros e cozinha do apart hotel.
+Aspect 'quarto' not found in tokens.
+['tinhamos', 'que', 'arrumar', 'nossas', 'próprias', 'camas', 'e', 'precisamos', 'comprar', 'papel', 'higiênico', ',', 'pois', 'apesar', 'das', 'solicitações', 'eles', 'não', 'repuseram', '.']
+['cama']
+ Tinhamos que arrumar nossas próprias camas e precisamos comprar papel higiênico, pois apesar das solicitações eles não repuseram.
+Aspect 'cama' not found in tokens.
+['corredores', 'sem', 'cheiro', 'de', 'cigarro', 'e', 'quartos', 'silenciosos', '.']
+['quarto']
+ Corredores sem cheiro de cigarro e quartos silenciosos.
+Aspect 'quarto' not found in tokens.
+['acho', 'que', 'precisam', 'trocar', 'o', 'piso', 'dos', 'quartos', '.']
+['quarto']
+ Acho que precisam trocar o piso dos quartos.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', 'porém', 'limpos', '.']
+['quarto']
+ Os quartos são pequenos porém limpos.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'juliz', 'é', 'extremamente', 'simples', ',', 'fica', 'numa', 'casa', 'bem', 'antiga', ',', 'o', 'que', 'lhe', 'dá', 'um', 'aspecto', 'de', 'pensão', ',', 'em', 'que', 'os', 'aposentos', 'da', 'casa', 'foram', 'transformados', 'em', 'pequenos', 'quartos', 'para', 'pernoite', '.']
+['quarto']
+O Hotel Juliz é extremamente simples, fica numa casa bem antiga, o que lhe dá um aspecto de pensão, em que os aposentos da casa foram transformados em pequenos quartos para pernoite.
+Aspect 'quarto' not found in tokens.
+['atendimento', 'pessoal', 'muito', 'educado', ',', 'quartos', 'sempre', 'bem', 'limpos', '.']
+['quarto']
+ Atendimento pessoal muito educado, quartos sempre bem limpos.
+Aspect 'quarto' not found in tokens.
+['tivemos', 'problemas', 'na', 'confirmação', 'de', 'nossa', 'reserva', ',', 'contornada', 'após', '20', 'minutos', 'de', 'debate', 'com', 'os', 'gerentes', '.']
+['gerente']
+    Tivemos problemas na confirmação de nossa reserva, contornada após 20 minutos de debate com os gerentes.
+Aspect 'gerente' not found in tokens.
+['os', 'outros', 'serviços', 'são', 'bons', 'e', 'os', 'quartos', 'são', 'bem', 'equipados', '.']
+['quarto']
+ Os outros serviços são bons e os quartos são bem equipados.
+Aspect 'quarto' not found in tokens.
+['os', 'apartamentos', 'tem', 'bom', 'espaço', ',', 'bem', 'decorados', 'e', 'o', 'banheiro', ',', 'apesar', 'de', 'um', 'pouco', 'pequeno', ',', 'é', 'muito', 'bom', '.']
+['apartamento']
+ Os apartamentos tem bom espaço, bem decorados e o banheiro, apesar de um pouco pequeno, é muito bom.
+Aspect 'apartamento' not found in tokens.
+['é', 'o', 'típico', 'hotel', 'de', 'caixeiro', 'viajante', ',', 'não', 'recomendado', 'para', 'famílias', 'ou', 'quem', 'quer', 'dormir', 'num', 'ambiente', 'limpo', 'e', 'saudável', '.']
+['família']
+ É o típico hotel de caixeiro viajante, não recomendado para famílias ou quem quer dormir num ambiente limpo e saudável.
+Aspect 'família' not found in tokens.
+['excelente', 'qualidade', ',', 'boa', 'localização', 'com', 'vista', 'para', 'a', 'torre', 'eiffel', ',', 'bom', 'atendimento', 'com', 'funcionarios', 'simpaticos', 'e', 'educados', 'na', 'recepção', 'falando', 'varios', 'idiomas', ',', 'limpeza', 'de', 'primeira', 'qualidade', ',', 'café', 'da', 'manhã', 'completo', 'e', 'farto', ',', 'quartos', 'aconchegantes', 'e', 'silenciosos', '.']
+['quarto']
+Excelente qualidade, boa localização com vista para a Torre Eiffel, bom atendimento com funcionarios simpaticos e educados na recepção falando varios idiomas, limpeza de primeira qualidade, café da manhã completo e farto, quartos aconchegantes e silenciosos.
+Aspect 'quarto' not found in tokens.
+['o', 'serviço', 'também', 'é', 'excelente', ',', 'funcionários', 'simpáticos', 'e', 'quartos', 'reformados', 'no', 'estilo', 'parisiense', 'de', 'ser', '.']
+['quarto']
+ O serviço também é excelente, funcionários simpáticos e quartos reformados no estilo parisiense de ser.
+Aspect 'quarto' not found in tokens.
+['o', 'que', 'me', 'surpreeendeu', 'foi', 'o', 'pessoal', 'do', 'concierge', 'que', 'sempre', 'conseguia', 'reservar', 'jantares', 'em', 'locais', 'que', 'já', 'haviam', 'esgotado', 'as', 'reservas', '.']
+['jantar']
+ O que me surpreeendeu foi o pessoal do concierge que sempre conseguia reservar jantares em locais que já haviam esgotado as reservas.
+Aspect 'jantar' not found in tokens.
+['destaque', 'para', 'preocupação', 'com', 'pequenos', 'detalhes', ',', 'como', 'disponibilidade', 'de', 'toalhas', 'de', 'rosto', 'e', 'fraldas', 'descartáveis', 'no', 'banheiro', 'comum', 'do', 'hall', '.']
+['toalha']
+ Destaque para preocupação com pequenos detalhes, como disponibilidade de toalhas de rosto e fraldas descartáveis no banheiro comum do hall.
+Aspect 'toalha' not found in tokens.
+['recomendo', 'muito', '!', '!', '!', 'room', 'tip', ':', 'passamos', 'um', 'fim', 'de', 'semana', 'em', 'dois', 'casais', 'em', 'um', 'quarto', 'quadruplo', '(', 'duas', 'camas', 'de', 'casal', ')', '.']
+['cama']
+ recomendo muito!!!  Room Tip: Passamos um fim de semana em dois casais em um quarto quadruplo (duas camas de casal).
+Aspect 'cama' not found in tokens.
+['acesso', 'aos', 'quartos', 'por', 'escadas', '.']
+['escada']
+ Acesso aos quartos por escadas.
+Aspect 'escada' not found in tokens.
+['as', 'toalhas', 'e', 'lençóis', 'estavam', 'sempre', 'limpos', '.']
+['toalha']
+ As toalhas e lençóis estavam sempre limpos.
+Aspect 'toalha' not found in tokens.
+['as', 'crianças', 'irão', 'adorar', ',', 'pois', 'está', 'muito', 'bem', 'localizado', ',', 'perto', 'de', 'teatros', ',', 'lojas', 'de', 'brinquedos', ',', 'etc', '.']
+['teatro']
+   As crianças irão adorar, pois está muito bem localizado, perto de teatros, lojas de brinquedos, etc.
+Aspect 'teatro' not found in tokens.
+['serviços', 'de', 'primeira', 'qualidade', 'e', 'funcionários', 'excelentes', ',', 'além', 'de', 'acomodações', 'muito', 'confortáveis', '.']
+['serviço']
+ Serviços de primeira qualidade e funcionários excelentes, além de acomodações muito confortáveis.
+Aspect 'serviço' not found in tokens.
+['as', 'toalhas', 'são', 'horríveis', ',', 'cinzas', ',', 'pequenas', 'e', 'duras', '.']
+['toalha']
+ As toalhas são horríveis, cinzas, pequenas e duras.
+Aspect 'toalha' not found in tokens.
+['o', 'hotel', 'é', 'imundo', ',', 'velho', ',', 'barulhento', ',', 'os', 'quartos', 'são', 'sujos', 'e', 'não', 'ha', 'serviço', 'de', 'limpeza', '.']
+['quarto']
+ O hotel é imundo, velho, barulhento, os quartos são sujos e não ha serviço de limpeza.
+Aspect 'quarto' not found in tokens.
+['ótimos', 'quartos', ',', 'roupa', 'de', 'cama', 'impecável', 'e', 'café', 'da', 'manhã', 'excelente', '.']
+['quarto']
+ Ótimos quartos, roupa de cama impecável e café da manhã excelente.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'para', 'festa', '!', '!', 'se', 'quiser', 'sossego', ',', 'não', 'vá', '!', 'os', 'quartos', 'são', 'temáticos', ',', 'muito', 'legais', 'e', 'amplos', '!', 'o', 'hotel', 'segue', 'a', 'mesma', 'linha', ',', 'cheio', 'de', 'decoração', 'de', 'rock', '!', 'muito', 'legal', 'mesmo', '!', '!', 'várias', 'lanchonetes', 'dentro', 'do', 'hotel', ',', 'ponto', 'positivo', '!', 'a', 'academia', 'tb', 'é', 'muito', 'boa', '!', 'agora', ',', 'minha', 'dica', 'é', ',', 'quem', 'puder', 'aproveitar', 'a', 'pool', 'party', 'de', 'domingo', ',', 'rehab', ',', 'faça', '!', '!', '!', 'é', 'definitivamente', 'o', 'melhor']
+['quarto']
+O hotel é para festa!! Se quiser sossego, não vá! Os quartos são temáticos, muito legais e amplos! O hotel segue a mesma linha, cheio de decoração de rock! Muito legal mesmo!! Várias lanchonetes dentro do hotel, ponto positivo! A academia tb é muito boa! Agora, minha dica é, quem puder aproveitar a pool party de domingo, Rehab, faça!!! É definitivamente o melhor do hotel!!!!!.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'ótimo', ',', 'fica', 'na', '44', 'a', 'duas', 'ruas', 'da', 'times', 'square', '.']
+['rua']
+O hotel é ótimo, fica na 44 a duas ruas da Times Square.
+Aspect 'rua' not found in tokens.
+['hotel', 'recém', 'inaugurado', ',', 'portanto', 'tudo', 'novinho', 'em', 'folha', ',', 'atendimento', 'cordial', ',', 'apartamentos', 'amplos', ',', 'bom', 'café', 'da', 'manhã', 'e', 'o', 'melhor', 'e', 'mais', 'dfícil', 'de', 'se', 'encontrar', 'atualmente', 'no', 'brasil', ':', 'preço', 'justo', '.']
+['apartamento']
+Hotel recém inaugurado, portanto tudo novinho em folha, atendimento cordial, apartamentos amplos,bom café da manhã e o melhor e mais dfícil de se encontrar atualmente no Brasil: preço justo.
+Aspect 'apartamento' not found in tokens.
+['acho', 'impossível', 'melhor', 'localização', 'para', 'turismo', ',', 'pois', 'dos', 'quartos', 'se', 'tem', 'uma', 'visão', 'ampla', 'de', 'todo', 'central', 'park', 'além', 'de', 'estar', 'do', 'lado', 'da', 'quinta', 'avenida', '.']
+['quarto']
+  Acho impossível melhor localização para turismo , pois dos quartos se tem uma visão ampla de todo central park além de estar do lado da quinta avenida.
+Aspect 'quarto' not found in tokens.
+['tradicional', 'mas', 'um', 'pouco', 'ultrapassado', 'hotel', 'em', 'boa', 'localização', 'no', 'centro', 'financeiro', 'da', 'cidade', 'de', 'porto', 'algre', 'ótimo', 'atendimento', ',', 'mas', 'quartos', 'necessitando', 'modernização', '.']
+['quarto']
+Tradicional mas um pouco ultrapassado hotel em boa localização no centro financeiro da cidade de Porto Algre Ótimo atendimento, mas quartos necessitando modernização.
+Aspect 'quarto' not found in tokens.
+[')', 'os', 'quartos', 'sao', 'amplos', 'e', 'equipados', 'com', 'cozinha', '.']
+['quarto']
+)  Os quartos sao amplos e equipados com cozinha.
+Aspect 'quarto' not found in tokens.
+['quarto', 'grande', 'e', 'limpo', ',', 'com', 'roupas', 'de', 'cama', 'razoáveis', 'e', 'toalhas', 'de', 'banho', 'muito', 'pequenas', '.']
+['toalha']
+ Quarto grande e limpo, com roupas de cama razoáveis e toalhas de banho muito pequenas.
+Aspect 'toalha' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', ',', 'porém', 'limpos', 'e', 'muito', 'aconchegantes', '.']
+['quarto']
+ Os quartos são pequenos, porém limpos e muito aconchegantes.
+Aspect 'quarto' not found in tokens.
+['quartos', 'velhos', ',', 'cheira', 'mofo', ',', 'sujidades', 'nas', 'paredes', ',', 'trincas', ',', 'tv', 'muito', 'antiga', 'de', 'tubo', ',', 'poucos', 'canais', 'na', 'tv', ',', 'elevadores', 'antigos', '.']
+['quarto']
+Quartos velhos, cheira mofo, sujidades nas paredes, trincas, tv muito antiga de tubo, poucos canais na tv, elevadores antigos.
+Aspect 'quarto' not found in tokens.
+['a', 'piscina', 'é', 'excelente', 'e', 'os', 'quartos', 'também', '.']
+['quarto']
+ A piscina é excelente e os quartos também.
+Aspect 'quarto' not found in tokens.
+['os', 'secadores', 'de', 'cabelo', 'são', 'arcaicos', '.']
+['secador']
+ Os secadores de cabelo são arcaicos.
+Aspect 'secador' not found in tokens.
+['como', 'dica', ',', 'fica', 'a', 'de', 'que', 'virando', 'a', 'esquina', 'existe', 'um', 'hotel', 'muito', 'melhor', 'pelos', 'mesmos', 'preços', 'praticados', 'neste', '.']
+['preço']
+ Como dica, fica a de que virando a esquina existe um hotel muito melhor pelos mesmos preços praticados neste.
+Aspect 'preço' not found in tokens.
+['há', 'evidência', 'de', 'melhoramento', 'contínuo', 'com', 'escadas', 'e', 'outros', ',', 'então', 'você', 'pode', 'chegar', 'e', 'encontrar', 'tudo', 'maravilhosamente', 'pintado', '.']
+['escada']
+ Há evidência de melhoramento contínuo com escadas e outros, então você pode chegar e encontrar tudo maravilhosamente pintado.
+Aspect 'escada' not found in tokens.
+['para', 'um', 'estabelecimento', 'pífio', 'desse', 'laia', ',', 'os', 'preços', 'cobrados', 'se', 'tornam', 'uma', 'fortuna', ',', 'um', 'barato', 'que', 'sai', 'caro', '.']
+['preço']
+ Para um estabelecimento pífio desse laia, os preços cobrados se tornam uma fortuna, um barato que sai caro.
+Aspect 'preço' not found in tokens.
+['hotel', 'com', 'excelente', 'localização', ',', 'quartos', 'confortáveis', 'com', 'ar', 'condicionado', 'e', 'tv', 'a', 'cabo', ',', 'próximo', 'a', 'shoppings', ',', 'centros', 'comerciais', 'e', 'lojas', 'de', 'departamento', '.']
+['quarto']
+Hotel com excelente localização, quartos confortáveis com ar condicionado e TV a cabo, próximo a shoppings, centros comerciais e lojas de departamento.
+Aspect 'quarto' not found in tokens.
+['quartos', 'limpos', 'com', 'bom', 'tamanho', ',', 'roupa', 'de', 'cama', 'ótima', ',', 'cama', 'confortável', '.']
+['quarto']
+Quartos limpos com bom tamanho,roupa de cama ótima,cama confortável.
+Aspect 'quarto' not found in tokens.
+['a', 'localização', 'é', 'ótima', ',', 'de', 'final', 'de', 'semana', 'tem', 'uma', 'feira', 'livre', 'bem', 'próxima', 'do', 'hotel', ',', 'mas', 'os', 'quartos', 'tem', 'um', 'forte', 'cheiro', 'de', 'cigarro', '.']
+['quarto']
+A localização é ótima, de final de semana tem uma feira livre bem próxima do hotel, mas os quartos tem um forte cheiro de cigarro.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'limpos', 'e', 'bem', 'dispostos', '.']
+['quarto']
+ Os quartos são limpos e bem dispostos.
+Aspect 'quarto' not found in tokens.
+['proxima', 'a', 'disney', ',', 'quarto', 'amplo', 'com', 'duas', 'excelente', 'camas', ',', 'como', 'fui', 'com', 'a', 'minha', 'filha', 'de', '01', 'ano', ',', 'me', 'arrumaram', 'berço', 'tb', '.']
+['cama']
+Proxima a Disney,quarto amplo com duas excelente camas,como fui com a minha filha de 01 ano,me arrumaram berço tb.
+Aspect 'cama' not found in tokens.
+['o', 'os', 'chuveiros', 'e', 'trancas', 'funcionam', 'e', 'as', 'luzes', 'são', 'claras', 'o', 'suficiente', 'para', 'que', 'se', 'possa', 'fazer', 'coisas', 'no', 'quarto', 'à', 'noite', '.']
+['chuveiro']
+ O os chuveiros e trancas funcionam e as luzes são claras o suficiente para que se possa fazer coisas no quarto à noite.
+Aspect 'chuveiro' not found in tokens.
+['para', 'piorar', 'as', 'coisas', ',', 'os', '2', 'únicos', 'elevadores', 'do', 'hotel', 'estavam', 'quebrados', 'e', 'não', 'havia', 'outra', 'escolha', ',', 'se', 'não', 'usar', 'as', 'escadas', '.']
+['elevador']
+ Para piorar as coisas, os 2 únicos elevadores do hotel estavam quebrados e não havia outra escolha, se não usar as escadas.
+Aspect 'elevador' not found in tokens.
+['quando', 'cheguei', ',', 'carreguei', 'minha', '3', 'malas', 'para', 'o', 'quarto', '(', 'não', 'havia', 'ninguém', 'para', 'ajudar', ')', 'as', 'toalhas', 'eram', 'velhas', 'e', 'ásperas', '.']
+['toalha']
+Quando cheguei ,carreguei minha 3 malas para o quarto (não havia ninguém para ajudar)  As Toalhas eram velhas e ásperas.
+Aspect 'toalha' not found in tokens.
+['você', 'ainda', 'pode', 'desfrutar', 'das', 'piscinas', 'com', 'dj', ',', 'estilo', 'louge', ',', 'liquid', 'pool', ',', 'que', 'o', 'hotel', 'ofere', ',', 'super', 'animado', 'com', 'muitos', 'jovens', '.']
+['piscina']
+   Você ainda pode desfrutar das piscinas com dj , estilo louge, Liquid Pool ,que o hotel ofere,super animado com muitos jovens.
+Aspect 'piscina' not found in tokens.
+['a', 'localização', 'é', 'realmente', 'imbatível', ',', 'mas', 'os', 'quartos', 'sao', 'velhos', 'e', 'sujos', ',', 'tinha', 'nojo', 'de', 'dormir', 'naquele', 'colchão', '.']
+['quarto']
+A localização é realmente imbatível, mas os quartos sao velhos e sujos, tinha nojo de dormir naquele colchão.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'extremamente', 'pequenos', 'e', 'precisam', 'passar', 'por', 'uma', 'reforma', '.']
+['quarto']
+    Os quartos são extremamente pequenos e precisam passar por uma reforma.
+Aspect 'quarto' not found in tokens.
+['perto', 'do', 'aeroporto', ',', 'e', 'é', 'possivel', 'caminhar', 'ao', 'longo', 'da', 'avenida', 'e', 'ir', 'conhecendo', 'os', 'outros', 'cassinos', '.']
+['cassino']
+ Perto do aeroporto, e é possivel caminhar ao longo da avenida e ir conhecendo os outros cassinos.
+Aspect 'cassino' not found in tokens.
+['apesar', 'de', 'nao', 'muito', 'grandes', ',', 'os', 'quartos', 'e', 'banheiros', 'são', 'modernos', ',', 'bonitos', 'e', 'bem', 'decorados', '.']
+['quarto']
+ Apesar de nao muito grandes, os quartos e banheiros são modernos, bonitos e bem decorados.
+Aspect 'quarto' not found in tokens.
+['quartos', 'simples', 'e', 'bem', 'pequenos', 'com', 'banheiro', 'meia', 'boca', ',', 'ar', 'condicionado', 'algumas', 'vezes', 'barulhento', ',', 'café', 'da', 'manha', 'bem', 'basico', ',', 'e', 'a', 'internet', ',', 'pasmem', ',', '12', 'reais', 'por', '24h', '.']
+['quarto']
+Quartos simples e bem pequenos com banheiro meia boca, ar condicionado algumas vezes barulhento, café da manha bem basico, e a internet, pasmem, 12 reais por 24h.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'sao', 'lindos', ',', 'muito', 'confortaveis', 'e', 'espaçosos', '.']
+['quarto']
+ Os quartos sao lindos,muito confortaveis e espaçosos.
+Aspect 'quarto' not found in tokens.
+['nos', 'quartos', ',', 'mal', 'há', 'espaço', 'para', 'acomodar', 'malas', 'e', 'objetos', 'pessoais', '.']
+['quarto']
+ Nos quartos, mal há espaço para acomodar malas e objetos pessoais.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'e', 'bom', ',', 'porém', 'tem', 'um', 'inconveniente', 'grave', ',', 'poucos', 'elevadores', 'para', 'muitos', 'apartamentos', '.']
+['elevador']
+O hotel e bom, porém tem um inconveniente grave, poucos elevadores para muitos apartamentos.
+Aspect 'elevador' not found in tokens.
+['toalhas', 'e', 'lençóis', 'brancos', ',', 'frigobar', 'e', 'ar', 'condicionado', 'nos', 'quartos', '.']
+['toalha']
+ Toalhas e lençóis brancos, frigobar e ar condicionado nos quartos.
+Aspect 'toalha' not found in tokens.
+['os', 'funcionários', 'da', 'portaria', 'e', 'todos', 'os', 'serviços', 'em', 'geral', 'nos', 'atenderam', 'muito', 'bem', '.']
+['serviço']
+ Os funcionários da portaria e todos os serviços em geral nos atenderam muito bem .
+Aspect 'serviço' not found in tokens.
+['os', 'quartos', 'são', 'excelentes', 'e', 'grandes', ',', 'o', 'serviço', 'é', 'top', 'e', 'a', 'comida', 'muito', 'boa', '.']
+['quarto']
+ Os quartos são excelentes e grandes, o serviço é top e a comida muito boa.
+Aspect 'quarto' not found in tokens.
+['inclusive', 'restaurante', 'franceses', ',', 'sem', 'turistas', 'e', 'com', 'atendente', 'bem', 'simpáticos', ',', 'mesmo', 'sem', 'falarmos', 'francês', '.']
+['turista']
+ Inclusive restaurante franceses, sem turistas e com atendente bem simpáticos, mesmo sem falarmos francês.
+Aspect 'turista' not found in tokens.
+['os', 'quartos', 'são', 'limpos', ',', 'os', 'banheiros', 'também', 'e', 'tanto', 'a', 'tv', 'quanto', 'as', 'outras', 'partes', 'pareciam', 'ser', 'novos', '.']
+['quarto']
+   Os quartos são limpos, os banheiros também e tanto a tv quanto as outras partes pareciam ser novos.
+Aspect 'quarto' not found in tokens.
+['já', 'no', 'check', '-', 'in', 'fui', 'informado', 'que', 'a', 'lavanderia', 'atrasou', 'na', 'entrega', 'de', 'toalhas', '!', '!', 'última', 'opção', '.']
+['toalha']
+ Já no check-in fui informado que a lavanderia atrasou na entrega de toalhas!! Última opção.
+Aspect 'toalha' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', 'e', 'quase', 'não', 'tem', 'espaço', 'para', 'as', 'malas', '.']
+['quarto']
+ Os quartos são pequenos e quase não tem espaço para as malas.
+Aspect 'quarto' not found in tokens.
+['não', 'possui', 'elevador', 'e', 'os', 'quartos', 'são', 'virados', 'para', 'uma', 'avenida', 'supermovimentado', 'e', 'também', 'para', 'a', 'linha', 'de', 'metrô', '.']
+['quarto']
+Não possui elevador e os quartos são virados para uma avenida supermovimentado e também para a linha de metrô.
+Aspect 'quarto' not found in tokens.
+['a', 'única', 'parte', 'ruim', 'é', 'que', 'o', 'hotel', 'não', 'dispõe', 'de', 'frigobar', 'nos', 'quartos', 'e', 'também', 'há', 'café', 'da', 'manhã', ',', 'mas', 'isso', 'é', 'comum', 'para', 'ny', '.']
+['quarto']
+ A única parte ruim é que o hotel não dispõe de frigobar nos quartos e também ão há café da manhã, mas isso é comum para NY.
+Aspect 'quarto' not found in tokens.
+['hotel', 'com', 'localização', 'excelente', ',', 'entre', 'as', 'praças', 'vendome', 'e', 'concorde', ',', 'ao', 'lado', 'do', 'hotel', 'ritz', '.']
+['praça']
+Hotel com localização excelente, entre as praças Vendome e Concorde, ao lado do Hotel Ritz.
+Aspect 'praça' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', ',', 'o', 'local', 'para', 'guardar', 'roupas', 'é', 'ruim', ',', 'o', 'café', '-', 'da', '-', 'manhã', 'até', 'que', 'é', 'bom', ',', 'e', 'não', 'tem', 'acesso', 'wi', '-', 'fi', 'para', 'os', 'hóspedes', '.']
+['quarto']
+Os quartos são pequenos, o local para guardar roupas é ruim, o café-da-manhã até que é bom, e não tem acesso wi-fi para os hóspedes.
+Aspect 'quarto' not found in tokens.
+['funcionários', 'gentis', ',', 'quartos', 'novos', 'e', 'limpos', '(', 'não', 'são', 'enormes', ',', 'mas', 'coube', 'nossas', '4', 'malas', '!', ')', ',', 'internet', 'wi', 'fi', 'de', 'graça', ',', 'na', 'esquina', 'da', 'rua', 'tem', 'uma', 'estação', 'de', 'metrô', 'e', 'um', 'starbucks', '.']
+['quarto']
+Funcionários gentis, quartos novos e limpos (não são enormes, mas coube nossas 4 malas!), internet wi fi de graça, na esquina da rua tem uma estação de metrô e um Starbucks.
+Aspect 'quarto' not found in tokens.
+['quartos', 'bons', ',', 'duas', 'camas', 'queen', '.']
+['quarto']
+ Quartos bons, duas camas queen.
+Aspect 'quarto' not found in tokens.
+['televisao', '14', 'em', 'todos', 'os', 'quartos', 'as', 'fotos', 'realmente', 'enganam', '.']
+['quarto']
+televisao 14 em todos os quartos as fotos realmente enganam.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'espaçosos', 'apesar', 'de', 'não', 'gostar', 'muito', 'da', 'decoração', 'mas', 'tudo', 'muito', 'limpo', 'e', 'organizado', 'e', 'sempre', 'que', 'saíamos', 'quando', 'voltavamos', 'tudo', 'já', 'estava', 'arrumado', '.']
+['quarto']
+ Os quartos são espaçosos apesar de não gostar muito da decoração mas tudo muito limpo e organizado e sempre que saíamos quando voltavamos tudo já estava arrumado.
+Aspect 'quarto' not found in tokens.
+['no', 'entanto', ',', 'o', 'básico', 'está', 'considerado', ':', 'os', 'quartos', 'são', 'espaçosos', ',', 'há', 'aquecimento', ',', 'água', 'quante', ',', 'e', 'o', 'café', 'da', 'manhã', 'é', 'farto', 'e', 'variado', '.']
+['quarto']
+ No entanto, o básico está considerado: os quartos são espaçosos, há aquecimento, água quante, e o café da manhã é farto e variado.
+Aspect 'quarto' not found in tokens.
+['quartos', 'amplos', 'e', 'super', 'limpos', ',', 'pessoal', 'muito', 'amigável', ',', 'cassino', 'gostoso', 'com', 'dealers', 'simpáticos', 'e', 'engraçados', '.']
+['quarto']
+Quartos amplos e super limpos, pessoal muito amigável, Cassino gostoso com dealers simpáticos e engraçados.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'do', 'lado', 'sul', 'são', 'mais', 'silenciosos', '.']
+['apartamento']
+  Room Tip: Os apartamentos do lado sul são mais silenciosos.
+Aspect 'apartamento' not found in tokens.
+['o', 'ponto', 'negativo', 'são', 'os', 'elevadores', ',', 'dois', 'estragaram', 'no', 'dia', 'de', 'ir', 'embora', 'e', 'tivemos', 'que', 'esperar', 'por', 'mais', 'de', 'uma', 'hora', 'para', 'descer', 'com', 'as', 'malas', '.']
+['elevador']
+  o ponto negativo são os elevadores, dois estragaram no dia de ir embora e tivemos que esperar por mais de uma hora para descer com as malas.
+Aspect 'elevador' not found in tokens.
+['os', 'quartos', 'não', 'são', 'dos', 'melhores', ',', 'mas', 'dá', 'para', 'ter', 'uma', 'razoável', 'noite', 'de', 'sono', ',', 'ainda', 'mais', 'para', 'quem', ',', 'como', 'eu', ',', 'ficou', 'somente', 'uma', 'diária', '.']
+['quarto']
+ Os quartos não são dos melhores, mas dá para ter uma razoável noite de sono, ainda mais para quem, como eu, ficou somente uma diária.
+Aspect 'quarto' not found in tokens.
+['ar', 'condicionado', 'caído', 'aos', 'pedaços', ',', 'banheiro', 'com', 'porta', 'de', 'pvc', 'sem', 'ducha', 'higiênica', ',', 'toalhas', 'velhas', 'e', 'utensílios', 'de', 'banho', 'horríveis', '.']
+['toalha']
+ Ar condicionado caído aos pedaços, banheiro com porta de PVC sem ducha higiênica, toalhas velhas e utensílios de banho horríveis.
+Aspect 'toalha' not found in tokens.
+['room', 'tip', ':', 'apartamentos', 'da', 'dezena', '30', '.']
+['apartamento']
+  Room Tip: Apartamentos da dezena 30.
+Aspect 'apartamento' not found in tokens.
+['hotel', 'com', 'fornecimento', 'honesto', ',', 'bom', 'serviço', 'e', 'excelente', 'cama', 'e', 'travesseiros', 'e', 'limpeza', 'da', 'roupa', 'de', 'cama', '.']
+['travesseiro']
+Hotel com fornecimento honesto,bom serviço e excelente cama e travesseiros e limpeza da roupa de cama.
+Aspect 'travesseiro' not found in tokens.
+['o', 'único', 'inconveniente', 'foi', 'termos', 'encontrado', 'uma', 'meia', 'debaixo', 'das', 'cortinas', 'quando', 'chegamos', '.']
+['cortina']
+ O único inconveniente foi termos encontrado uma meia debaixo das cortinas quando chegamos.
+Aspect 'cortina' not found in tokens.
+['há', 'carpete', 'nos', 'corredores', ',', 'mas', ',', 'após', 'a', 'reforma', 'os', 'quartos', 'estão', 'livres', '.']
+['corredor']
+ Há carpete nos corredores, mas, após a reforma os quartos estão livres.
+Aspect 'corredor' not found in tokens.
+['apartamentos', 'novos', ',', 'sem', 'carpete', '(', 'piso', 'madeira', 'laminada', ')', 'e', 'equipamentos', 'do', 'banheiro', 'funcionam', 'bem', ',', 'porém', 'banheiro', 'extremamente', 'pequeno', '.']
+['apartamento']
+ Apartamentos novos, sem carpete (piso madeira laminada) e equipamentos do banheiro funcionam bem, porém banheiro extremamente pequeno.
+Aspect 'apartamento' not found in tokens.
+['é', ',', 'como', 'os', 'bons', 'hotéis', 'de', 'new', 'york', ',', 'soberbo', ',', 'elegante', ',', 'excelentes', 'serviços', ',', 'agradável', 'café', 'da', 'manhã', 'em', 'uma', 'ambiente', 'lindo', '.']
+['serviço']
+É, como os bons hotéis de New York, soberbo, elegante, excelentes serviços, agradável café da   manhã em uma ambiente lindo.
+Aspect 'serviço' not found in tokens.
+['ótima', 'localização', ',', 'ao', 'lado', 'da', 'times', 'square', ',', 'dos', 'pricipais', 'teatros', ',', 'lojas', 'e', 'restaurantes', ',', 'íamos', 'andando', 'para', 'todos', 'os', 'lugares', '.']
+['teatro']
+  Ótima localização, ao lado da times square, dos pricipais teatros, lojas e restaurantes, íamos andando para todos os lugares.
+Aspect 'teatro' not found in tokens.
+['entretanto', ',', 'mostra', 'sinais', 'da', 'idade', 'e', 'necessita', 'de', 'uma', 'atualização', '(', 'piso', 'de', 'carpete', 'nos', 'quartos', 'e', 'corredores', ',', 'por', 'exemplo', ')', ',', 'mas', 'não', 'chega', 'a', 'ser', 'ruim', '.']
+['corredor']
+ Entretanto, mostra sinais da idade e necessita de uma atualização (piso de carpete nos quartos e corredores, por exemplo), mas não chega a ser ruim.
+Aspect 'corredor' not found in tokens.
+['hotel', 'com', 'péssimo', 'serviço', 'de', 'limpeza', 'e', 'arrumação', 'dos', 'quartos', '.']
+['quarto']
+Hotel com péssimo serviço de limpeza e arrumação dos quartos.
+Aspect 'quarto' not found in tokens.
+['hotel', 'com', 'excelente', 'localização', ',', 'quartos', 'confortáveis', 'com', 'ar', 'condicionado', 'e', 'tv', 'a', 'cabo', ',', 'próximo', 'a', 'shoppings', ',', 'centros', 'comerciais', 'e', 'lojas', 'de', 'departamento', '.']
+['shopping']
+Hotel com excelente localização, quartos confortáveis com ar condicionado e TV a cabo, próximo a shoppings, centros comerciais e lojas de departamento.
+Aspect 'shopping' not found in tokens.
+['hotel', 'limpo', 'e', 'quartos', 'de', 'bom', 'tamanho', 'pelos', 'padrões', 'de', 'paris', '.']
+['quarto']
+ Hotel limpo e quartos de bom tamanho pelos padrões de Paris.
+Aspect 'quarto' not found in tokens.
+['quartos', 'grandes', 'e', 'banheiros', 'enormes', '.']
+['quarto']
+ Quartos grandes e banheiros enormes.
+Aspect 'quarto' not found in tokens.
+['quartos', 'muito', 'amplos', 'com', 'colchões', 'e', 'lençóis', 'de', 'qualidade', 'e', 'banheiros', 'limpos', '.']
+['quarto']
+ Quartos muito amplos com colchões e lençóis de qualidade e banheiros limpos.
+Aspect 'quarto' not found in tokens.
+['este', 'hotel', 'é', 'perfeito', 'e', 'tudo', 'funciona', '!', 'internet', 'super', 'rápida', ',', 'funcionários', 'atenciosos', 'e', 'elevadores', 'rápidos', '.']
+['elevador']
+Este hotel é perfeito e tudo funciona! Internet super rápida, funcionários atenciosos e elevadores rápidos.
+Aspect 'elevador' not found in tokens.
+['muito', 'legal', ',', 'quartos', 'grandes', 'e', 'sempre', 'estavam', 'organizados', 'voltavamos', '.']
+['quarto']
+Muito legal, quartos grandes e sempre estavam organizados qdo voltavamos.
+Aspect 'quarto' not found in tokens.
+['hotel', 'bem', 'situado', ',', 'quartos', 'razoáveis', 'muito', 'simples', ',', 'a', 'área', 'do', 'pequeno', 'almoço', 'bastante', 'pequena', 'tinha', 'no', 'total', 'umas', '6', 'mesas', 'para', 'os', 'clientes', 'do', 'referido', 'hotel', ',', 'bem', 'como', 'um', 'menu', 'muito', 'simples', '.']
+['quarto']
+Hotel bem situado, quartos razoáveis muito simples, a área do pequeno almoço bastante pequena tinha no total umas 6 mesas para os clientes do referido hotel, bem como um menu muito simples.
+Aspect 'quarto' not found in tokens.
+['apesar', 'de', 'os', 'preços', 'de', 'hotéis', 'em', 'nyc', 'serem', 'bem', 'mais', 'salgados', 'que', 'em', 'algum', 'outro', 'lugares', 'do', 'país', ',', 'e', 'a', 'minha', 'visita', 'á', 'cidade', 'aconteceu', 'no', 'meio', 'de', 'semana', 'de', 'moda', ',', 'e', 'vários', 'outros', 'congressos', ',', 'o', 'hotel', 'atendeu', 'todas', 'as', 'minhas', 'necessidades', '.']
+['preço']
+Apesar de os preços de hotéis em NYC serem bem mais salgados que em algum outro lugares do país, e a minha visita á cidade aconteceu no meio de semana de moda, e vários outros congressos, o hotel atendeu todas as minhas necessidades.
+Aspect 'preço' not found in tokens.
+['belo', 'hotel', ',', 'bem', 'localizado', ',', 'novo', ',', 'limpo', ',', 'muita', 'tecnologia', 'nos', 'quartos', 'apartmento', 'amplo', '(', 'o', 'corredor', 'é', 'um', 'pouco', 'estreito', 'e', 'longo', ')', 'mais', 'em', 'las', 'vegas', 'é', 'tudo', 'asim', 'grande', 'arquitetura', 'linda', 'cassino', 'limpo', 'amplo', 'e', 'pessoal', 'cortez', 'buffet', 'muito', 'bom', 'gostei', 'voltaria', 'room', 'tip', ':', 'nao', 'pegue', 'andares', 'baixos', 'pois', 'ha', 'uma', 'piramide', 'no', 'edificio', 'ai', 'tapa', 'toda', 'a', 'vista', 'creio', 'ter', 'que', 'ser', 'a', '.']
+['quarto']
+Belo hotel , bem localizado, novo, limpo, muita tecnologia nos quartos   apartmento amplo (o corredor é um pouco estreito e longo) mais em las vegas é tudo asim grande  arquitetura linda  cassino limpo amplo e pessoal cortez   buffet muito bom   gostei voltaria  Room Tip: nao pegue andares baixos pois ha uma piramide no edificio ai tapa toda a vista creio ter que ser a.
+Aspect 'quarto' not found in tokens.
+['quartos', 'amplos', 'e', 'confortáveis', '.']
+['quarto']
+ Quartos amplos e confortáveis.
+Aspect 'quarto' not found in tokens.
+['mas', 'mantém', 'a', 'mesma', 'qualidade', 'em', 'termos', 'de', 'roupagem', ',', 'camas', ',', 'café', 'da', 'manhã', ',', 'atendimento', 'dos', 'funcionários', 'etc', '.']
+['cama']
+ Mas mantém a mesma qualidade em termos de roupagem, camas, café da manhã, atendimento dos funcionários etc.
+Aspect 'cama' not found in tokens.
+['os', 'quartos', 'e', 'as', 'escadas', 'do', 'hotel', 'estavam', 'sempre', 'cheirosos', ',', 'tudo', 'muito', 'limpo', 'e', 'arrumado', ',', 'staff', 'educado', 'e', 'gentil', ',', 'absolutamente', 'nada', 'a', 'reclamar', '.']
+['escada']
+ Os quartos e as escadas do hotel estavam sempre cheirosos, tudo muito limpo e arrumado, staff educado e gentil, absolutamente nada a reclamar.
+Aspect 'escada' not found in tokens.
+['ótimo', 'hotel', 'com', 'quartos', 'impecáveis', '.']
+['quarto']
+Ótimo Hotel com quartos impecáveis.
+Aspect 'quarto' not found in tokens.
+['as', 'toalhas', 'são', 'ásperas', 'e', 'a', 'limpeza', 'deixa', 'a', 'desejar', '.']
+['toalha']
+ As toalhas são ásperas e a limpeza deixa a desejar.
+Aspect 'toalha' not found in tokens.
+['quartos', ',', 'serviços', 'e', 'pessoal', 'de', 'primeira', 'qualidaade', 'e', 'profissionalismo', '.']
+['serviço']
+Quartos , serviços e pessoal de primeira qualidaade e profissionalismo.
+Aspect 'serviço' not found in tokens.
+['qualidade', 'do', 'serviço', 'excelente', ',', 'recepcionistas', 'muito', 'atenciosos', 'e', 'os', 'quartos', 'são', 'bons', 'e', 'bem', 'equipados', 'porem', 'o', 'banheiro', 'é', 'um', 'pouco', 'apertado', 'o', 'que', 'pode', 'ser', 'desagradável', 'para', 'quem', 'é', 'grande', 'e', 'gosta', 'de', 'espaço', '.']
+['quarto']
+ Qualidade do serviço excelente, recepcionistas muito atenciosos e os quartos são bons e bem equipados porem o banheiro é um pouco apertado o que pode ser desagradável para quem é grande e gosta de espaço.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'não', 'decepciona', ',', 'pois', 'seu', 'conceito', 'é', 'de', 'praticidade', '.']
+['cidade']
+O hotel não decepciona, pois seu conceito é de praticidade.
+Aspect 'cidade' not found in tokens.
+['quartos', 'gigantes', 'e', 'muito', 'confortáveis', ',', 'área', 'da', 'piscina', 'extremamente', 'tranqüila', ',', 'apesar', 'da', 'excelente', 'localização', 'do', 'hotel', 'em', 'meio', 'a', 'strip', '.']
+['quarto']
+ Quartos gigantes e muito confortáveis, área da piscina extremamente tranqüila, apesar da excelente localização do hotel em meio a Strip.
+Aspect 'quarto' not found in tokens.
+['toalhas', 'e', 'lençóis', 'brancos', ',', 'frigobar', 'e', 'ar', 'condicionado', 'nos', 'quartos', '.']
+['quarto']
+ Toalhas e lençóis brancos, frigobar e ar condicionado nos quartos.
+Aspect 'quarto' not found in tokens.
+['preços', 'incríveis', 'para', 'um', 'hotel', 'de', '5', 'estrelas', '!', 'minhas', 'únicas', 'queixas', 'se', 'referem', 'as', 'diárias', 'não', 'incluírem', 'café', 'da', 'manhã', ',', 'a', 'internet', 'custa', 'caro', 'e', 'o', 'staff', 'não', 'é', 'dos', 'mais', 'atenciosos', '.']
+['preço']
+  Preços incríveis para um hotel de 5 estrelas!  Minhas únicas queixas se referem as diárias não incluírem café da manhã, a internet custa caro e o Staff não é dos mais atenciosos.
+Aspect 'preço' not found in tokens.
+['quartos', 'pequenos', ',', 'limpos', ',', 'mas', 'com', 'conforto', 'minimo', 'para', 'um', 'hotel', 'de', '4', 'estrelas', '.']
+['quarto']
+Quartos pequenos, limpos, mas com conforto minimo para um hotel de 4 estrelas.
+Aspect 'quarto' not found in tokens.
+['faltou', 'água', 'por', 'duas', 'vezes', 'durante', 'a', 'estadia', 'e', 'demora', 'muito', 'a', 'sair', 'agua', 'quente', 'nas', 'torneiras', 'e', 'chuveiro', '.']
+['torneira']
+ Faltou água por duas vezes durante a estadia e demora muito a sair agua quente nas torneiras e chuveiro.
+Aspect 'torneira' not found in tokens.
+['reservas', 'iguais', 'resultam', 'em', 'quartos', 'com', 'camas', 'de', 'solteiros', 'ou', 'de', 'casal', ',', 'vai', 'na', 'sorte', '.']
+['quarto']
+Reservas iguais resultam em quartos com camas de solteiros ou de casal, vai na sorte.
+Aspect 'quarto' not found in tokens.
+['os', 'corredores', 'são', 'horríveis', ',', 'verdadeiramente', 'fúnebres', ',', 'sendo', 'mal', 'iluminados', ',', 'com', 'carpetes', 'sujos', 'e', 'manchados', ',', 'além', 'de', 'falta', 'pintura', 'nas', 'paredes', '.']
+['corredor']
+ Os corredores são horríveis, verdadeiramente fúnebres, sendo mal iluminados, com carpetes sujos e manchados, além de falta pintura nas paredes.
+Aspect 'corredor' not found in tokens.
+['os', 'quartos', 'são', 'muito', 'pequenos', '-', 'como', 'quase', 'todos', 'em', 'ny', '-', ',', 'o', 'banheiro', 'também', 'é', 'muito', 'pequeno', '.']
+['quarto']
+ Os quartos são muito pequenos - como quase todos em NY -, o banheiro também é muito pequeno.
+Aspect 'quarto' not found in tokens.
+['tirando', 'o', 'cheiro', 'dos', 'carpetes', 'do', 'corredor', ',', 'um', 'bom', 'hotel', 'fica', 'próximo', 'do', 'centro', 'e', 'suas', 'acomodações', 'são', 'ótimas', ',', 'se', 'puder', 'alugue', 'um', 'carro', 'pois', 'como', 'o', 'ar', 'é', 'muito', 'seco', 'e', 'o', 'hotel', 'é', 'muito', 'grande', 'demora', 'uns', '10', 'min', 'ate', 'o', 'ponto', 'de', 'onibus', 'e', 'se', 'vc', 'sair', 'duas', 'x', 'por', 'dia', 'já', 'vai', 'perde', '40', 'min', 'só', 'pra', 'ir', 'ate', 'o', 'ponto', 'de', 'onibus', 'sem', 'contar', 'a', 'espera', 'do', 'onibus', 'também', '.']
+['carpete']
+Tirando o cheiro dos carpetes do corredor , um bom hotel fica próximo do centro e suas acomodações são ótimas, se puder alugue um carro pois como o ar é muito seco e o hotel é muito grande demora uns 10 min ate o ponto de onibus e se vc sair duas x por dia já vai perde 40 min só pra ir ate o ponto de onibus sem contar a espera do onibus também.
+Aspect 'carpete' not found in tokens.
+['além', 'disso', 'é', 'um', 'bairro', 'bem', 'residencial', ',', 'tranquilo', ',', 'com', 'preços', 'mais', 'amenos', ',', 'já', 'que', 'não', 'tem', 'muitos', 'turistas', 'por', 'lá', '.']
+['preço']
+ Além disso é um bairro bem residencial, tranquilo, com preços mais amenos, já que não tem muitos turistas por lá.
+Aspect 'preço' not found in tokens.
+['os', 'quartos', 'do', 'quinto', 'andar', 'tem', 'varanda', 'com', 'uma', 'vista', 'maravilhosa', 'para', 'a', 'torre', '!', 'quando', 'fizer', 'sua', 'reserva', ',', 'avise', 'se', 'você', 'deseja', 'ficar', 'em', 'um', 'desse', 'quartos', 'com', 'a', 'varanda', '.']
+['quarto']
+ Os quartos do quinto andar tem varanda com uma vista maravilhosa para a Torre! Quando fizer sua reserva, avise se você deseja ficar em um desse quartos com a varanda.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'decorados', 'com', 'bom', 'gosto', ',', 'muito', 'limpos', 'e', 'confortáveis', '.']
+['quarto']
+ Os quartos são decorados com bom gosto, muito limpos e confortáveis.
+Aspect 'quarto' not found in tokens.
+['as', 'toalhas', 'são', 'boas', ',', 'o', 'colchão', 'é', 'confortável', 'e', 'o', 'edredon', 'é', 'macio', '.']
+['toalha']
+ As toalhas são boas, o colchão é confortável e o edredon é macio.
+Aspect 'toalha' not found in tokens.
+['todos', 'sempre', 'dispostos', 'a', 'orientar', 'os', 'turistas', 'dando', 'boas', 'dicas', 'e', 'os', 'quartos', 'sempre', 'limpos', 'e', 'o', 'ambiente', 'muito', 'agradavél', 'todos', 'os', 'funcionários', 'falam', 'inglês', ',', 'não', 'é', 'um', 'hotel', 'típico', 'frances', ',', 'pois', 'é', 'novo', ',', 'e', 'fica', 'a', '5', 'minutos', 'do', 'metro', ',', 'e', 'dá', 'para', 'andar', 'até', 'o', 'centro', 'de', 'paris', '.']
+['quarto']
+ todos sempre dispostos a orientar os turistas dando boas dicas e os quartos sempre limpos e o ambiente muito agradavél todos os funcionários falam inglês, não é um hotel típico frances, pois é novo, e fica a 5 minutos do metro, e dá para andar até o centro de PARIS.
+Aspect 'quarto' not found in tokens.
+['o', 'preço', 'indica', 'o', 'que', 'receberá', 'como', 'serviço', ':', 'um', 'hotel', 'simples', ',', 'algo', 'desgastado', ',', 'com', 'corredores', 'escuros', 'e', 'banheiros', 'simples', 'e', 'mal', 'conservados', '.']
+['corredor']
+O preço indica o que receberá como serviço: um hotel simples, algo desgastado, com corredores escuros e banheiros simples e mal conservados.
+Aspect 'corredor' not found in tokens.
+['hotel', 'pequeno', ',', 'quarto', 'pequeno', '(', 'mas', 'muito', 'ajeitado', ')', ',', 'mas', 'muuuuito', 'charmoso', ',', 'quartos', 'limpíssimos', ',', 'camas', 'super', 'confortáveis', ',', 'uma', 'ducha', 'maravilhosa', 'para', 'tomar', 'banho', ',', 'piscina', 'aquecida', ',', 'academia', ',', 'sauna', '.']
+['cama']
+Hotel pequeno, quarto pequeno (mas muito ajeitado)  , mas muuuuito charmoso, quartos limpíssimos, camas super confortáveis, Uma Ducha maravilhosa para tomar banho, piscina aquecida, academia, sauna.
+Aspect 'cama' not found in tokens.
+['os', 'apartamentos', 'amplos', 'e', 'confortáveis', 'são', 'equipados', 'com', 'ar', '-', 'condicionado', ',', 'frigobar', ',', 'telefone', ',', 'cama', 'box', 'spring', ',', 'mesa', 'de', 'trabalho', ',', 'wi', '-', 'fi', 'grátis', ',', 'recepção', '24', 'horas', 'e', 'estacionamento', '.']
+['apartamento']
+ Os apartamentos amplos e confortáveis são equipados com ar-condicionado, frigobar, telefone, cama box spring, mesa de trabalho, wi-fi grátis, recepção 24 horas e estacionamento.
+Aspect 'apartamento' not found in tokens.
+['quartos', 'reformados', 'sem', 'carpete', 'mas', 'minusculo', ',', 'somente', 'cabe', 'uma', 'pessoa', '.']
+['quarto']
+ Quartos reformados sem carpete mas minusculo, somente cabe uma pessoa.
+Aspect 'quarto' not found in tokens.
+['mas', 'eles', 'podiam', 'fazer', 'uma', 'renovação', '!', 'os', 'quartos', 'continuam', ',', 'em', 'sua', 'maioria', ',', 'muito', 'antigos', ',', 'com', 'pouco', 'espaço', ',', 'banheiros', 'estreitos', 'e', 'com', 'duchas', 'fracas', '.']
+['ducha']
+ Mas eles podiam fazer uma renovação! Os quartos continuam, em sua maioria, muito antigos, com pouco espaço, banheiros estreitos e com duchas fracas.
+Aspect 'ducha' not found in tokens.
+['gostei', 'muito', 'do', 'quarto', 'e', 'banheiros', 'espaçosos', ',', 'a', 'cozinha', 'equipada', 'e', 'as', 'camas', 'e', 'roupas', 'de', 'camas', 'maravilhosas', '-', 'limpas', 'e', 'macias', '.']
+['cama']
+ Gostei muito do quarto e banheiros espaçosos, a cozinha equipada e as camas e roupas de camas maravilhosas - limpas e macias.
+Aspect 'cama' not found in tokens.
+['mas', 'o', 'hotel', 'é', 'limpo', 'só', 'que', 'o', 'bom', 'é', 'ficar', 'nos', 'quartos', 'para', 'os', 'fundos', 'os', 'da', 'frente', 'sao', 'barulhentos', 'devido', 'ao', 'movimentosdos', 'carros', 'e', 'do', 'trem', 'na', 'rua', '.']
+['quarto']
+ Mas o hotel é limpo só que o bom é ficar nos quartos para os fundos os da frente sao barulhentos devido ao movimentosdos carros e do trem na rua.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'simples', ',', 'mas', 'o', 'quarto', 'e', 'as', 'camas', 'são', 'grandes', '.']
+['cama']
+O hotel é simples, mas o quarto e as camas são grandes.
+Aspect 'cama' not found in tokens.
+['o', 'quarto', 'é', 'minúsculo', '!', 'as', 'camas', 'de', 'solteiro', 'formam', 'praticamente', 'uma', 'de', 'casal', ',', 'são', 'quase', 'unidas', '.']
+['cama']
+O quarto é minúsculo! As camas de solteiro formam praticamente uma de casal, são quase unidas.
+Aspect 'cama' not found in tokens.
+['em', 'primeiro', 'lugar', 'dizer', 'que', 'é', 'um', 'hotel', '4', 'estrelas', 'com', 'serviço', 'de', '5', 'estrelas', '!', 'ótima', 'localização', ',', '2', 'minutos', 'a', 'pé', 'do', 'metro', 'st', '-', 'agustin', ',', 'próximo', 'das', 'ruas', 'mais', 'baladas', 'de', 'paris', '.']
+['rua']
+Em primeiro lugar dizer que é um hotel 4 estrelas com serviço de 5 estrelas! Ótima localização, 2 minutos a pé do metro St-Agustin, próximo das ruas mais baladas de Paris.
+Aspect 'rua' not found in tokens.
+['o', 'café', 'do', 'grand', 'luxor', 'é', 'uma', 'delícia', 'com', 'preços', 'justos', '.']
+['preço']
+ O café do Grand Luxor é uma delícia com preços justos.
+Aspect 'preço' not found in tokens.
+['quartos', 'com', 'um', 'bom', 'tamanho', ',', 'recepcionistas', 'muito', 'ágeis', '.']
+['quarto']
+ quartos com um bom tamanho, recepcionistas muito ágeis.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'voltados', 'à', 'av', '.']
+['quarto']
+ Os quartos voltados à Av.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'escolher', 'os', 'quartos', 'mais', 'longe', 'do', 'elevador', ',', 'pois', 'evita', 'ouvir', 'as', 'pessoas', 'conversando', 'enquanto', 'aguarda', '.']
+['quarto']
+  Room Tip: Escolher os quartos mais longe do elevador, pois evita ouvir as pessoas conversando enquanto aguarda.
+Aspect 'quarto' not found in tokens.
+['adoramos', 'o', 'hotel', '!', 'preço', 'bom', ',', 'café', 'da', 'manhã', 'deliciosoooo', ',', 'atendimento', 'de', 'primeiraaaa', ',', 'quartos', 'perfeitamente', 'limpos', ',', 'decoração', 'impecavel', ',', 'camas', 'deliciosasss', ',', 'localização', 'fantastica', 'com', '2', 'estações', 'de', 'metro', 'pertinho', ',', 'monoprix', 'na', 'esquina', ',', 'mercadinhos', ',', 'restaurante', 'italiano', ',', 'padarias', 'maravilhosas', ',', 'ameiiiiiii', '.']
+['cama']
+Adoramos o hotel! Preço bom, café da manhã deliciosoooo, atendimento de primeiraaaa, quartos perfeitamente limpos, decoração impecavel, camas deliciosasss, localização fantastica com 2 estações de metro pertinho, monoprix na esquina, mercadinhos, restaurante italiano, padarias maravilhosas, AMEIIIIIII.
+Aspect 'cama' not found in tokens.
+['os', 'quartos', 'dos', 'fundos', 'são', 'silenciosos', '.']
+['quarto']
+ Os quartos dos fundos são silenciosos.
+Aspect 'quarto' not found in tokens.
+['o', 'quarto', 'normalmente', 'possui', 'duas', 'camas', 'grandes', ',', 'padrão', 'americano', '.']
+['cama']
+ O quarto normalmente possui duas camas grandes, padrão americano.
+Aspect 'cama' not found in tokens.
+['porém', 'não', 'tem', 'conforto', ',', 'bem', 'apertado', 'e', 'como', 'os', 'comentário', 'que', 'verifiquei', 'o', 'chuveiro', 'em', 'alguns', 'quartos', 'fica', 'em', 'cima', 'do', 'vaso', 'sanitário', '.']
+['quarto']
+ Porém não tem conforto, bem apertado e como os comentário que verifiquei o chuveiro em alguns quartos fica em cima do vaso sanitário.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'esta', 'muito', 'bem', 'localizado', 'os', 'apartamentos', 'da', 'cobertura', 'acomodam', 'famílias', 'grandes', ',', 'a', 'equipe', 'é', 'muito', 'simpática', 'e', 'prestativa', ',', 'achei', 'apenas', 'que', 'a', 'limpeza', 'nos', 'quartos', 'não', 'é', 'muio', 'boa', ',', 'porém', 'acredito', 'ser', 'geral', 'nos', 'eua', 'principalmente', 'por', 'eles', 'usarem', 'carpetes', 'a', 'limpeza', 'deveria', 'ser', 'mais', 'bem', 'feita', '.']
+['carpete']
+O Hotel esta muito bem localizado os apartamentos da cobertura acomodam famílias grandes, a equipe é muito simpática e prestativa, achei apenas que a limpeza nos quartos não é muio boa, porém acredito ser geral nos EUA principalmente por eles usarem carpetes a limpeza deveria ser mais bem feita.
+Aspect 'carpete' not found in tokens.
+['e', 'a', 'localização', 'é', 'excelente', '!', 'a', 'única', 'crítica', ',', 'é', 'que', 'acredito', 'que', 'a', 'internet', 'deveria', 'ser', 'gratuita', 'nos', 'quartos', '.']
+['quarto']
+ E a localização é excelente!  A única crítica, é que acredito que a internet deveria ser gratuita nos quartos.
+Aspect 'quarto' not found in tokens.
+['fica', 'cerca', 'de', '5', 'quadras', 'da', 'torre', 'eiffel', 'e', 'possui', 'um', 'carrefour', 'city', 'em', 'uma', 'rua', 'próxima', ',', 'além', 'de', 'bistrôs', 'e', 'farmácias', '.']
+['farmácia']
+ Fica cerca de 5 quadras da Torre Eiffel e possui um carrefour city em uma rua próxima, além de bistrôs e farmácias.
+Aspect 'farmácia' not found in tokens.
+['limpeza', 'ruim', 'e', 'tardia', '(', 'os', 'quartos', 'não', 'eram', 'limpos', 'antes', 'as', '15', ':', '00', ')', 'e', 'alimentação', 'muito', 'cara', '.']
+['quarto']
+Limpeza ruim e tardia (os quartos não eram limpos antes as 15:00) e alimentação muito cara.
+Aspect 'quarto' not found in tokens.
+['quartos', 'confortáveis', '.']
+['quarto']
+ Quartos confortáveis.
+Aspect 'quarto' not found in tokens.
+['café', 'da', 'manhã', 'okatendimento', 'sem', 'reclamações', ',', 'exceto', 'de', 'um', 'dia', 'que', 'não', 'foi', 'reposto', 'água', 'no', 'frigobar', 'porque', 'eles', 'não', 'tinham', 'em', 'estoque', '.']
+['atendimento']
+Café da manhã okAtendimento sem reclamações, exceto de um dia que não foi reposto água no frigobar porque eles não tinham em estoque.
+Aspect 'atendimento' not found in tokens.
+['os', 'quartos', 'são', 'novos', 'e', 'a', 'limpeza', 'é', 'impecável', '.']
+['quarto']
+Os quartos são novos e a limpeza é impecável.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'bem', 'pequenos', 'e', 'não', 'tem', 'frigobar', ',', 'o', 'elevador', 'mau', 'cabe', '2', 'pessoas', '.']
+['quarto']
+ Os quartos são bem pequenos e não tem frigobar, o elevador mau cabe 2 pessoas.
+Aspect 'quarto' not found in tokens.
+['hotel', 'maravilhoso', ',', 'atendimento', 'impecável', ',', 'localização', 'incrível', ',', 'quartos', 'aconchegantes', 'de', 'primeira', 'categoria', '.']
+['quarto']
+Hotel maravilhoso, atendimento impecável, localização incrível, quartos aconchegantes de primeira categoria.
+Aspect 'quarto' not found in tokens.
+['para', 'quem', 'precisar', 'de', 'pegar', 'avião', 'bem', 'cedo', 'como', 'eu', 'tive', 'que', 'fazer', ',', 'este', 'é', 'o', 'melhor', 'hotel', 'de', 'porto', 'alegre', ',', 'bem', 'baratinho', 'e', 'muito', 'perto', 'do', 'aeroporto', ',', 'os', 'quartos', 'são', 'equipados', 'com', 'ar', '-', 'condicionado', 'e', 'tv', ',', 'de', 'manhã', 'é', 'oferecido', 'um', 'café', 'da', 'manhã', 'reforçado', ',', 'fica', 'a', 'dica', '.']
+['quarto']
+Para quem precisar de pegar avião bem cedo como eu tive que fazer, este é o melhor hotel de Porto Alegre, bem baratinho e muito perto do aeroporto, os quartos são equipados com ar-condicionado e tv, de manhã é oferecido um café da manhã reforçado, fica a dica.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'bem', 'grandes', 'e', 'confortáveis', '.']
+['quarto']
+Os quartos são bem grandes e confortáveis.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'bem', 'ruim', ',', 'os', 'quartos', 'são', 'muito', 'apertados', 'e', 'o', 'banheiro', 'mais', 'ainda', '.']
+['quarto']
+O hotel é bem ruim, os quartos são muito apertados e o banheiro mais ainda.
+Aspect 'quarto' not found in tokens.
+['mas', 'o', 'hotel', 'é', 'lindo', ',', 'limpo', ',', 'os', 'quartos', 'sao', 'grandes', ',', 'as', 'camas', 'confortaveis', '.']
+['cama']
+  Mas o hotel é lindo, limpo, os quartos sao grandes, as camas confortaveis.
+Aspect 'cama' not found in tokens.
+['o', 'pullman', 'montparnasse', 'teve', 'seus', 'apartamentos', 'renovados', 'recentemente', '.']
+['apartamento']
+O Pullman Montparnasse teve seus apartamentos renovados recentemente.
+Aspect 'apartamento' not found in tokens.
+['hotel', 'antigo', 'com', 'quartos', 'amplos', 'e', 'super', 'bem', 'localizado', '.']
+['quarto']
+Hotel antigo com quartos amplos e super bem localizado.
+Aspect 'quarto' not found in tokens.
+['apartamentos', 'pequenos', ',', 'mas', 'camas', 'super', 'confortáveis', 'e', 'chuveiro', 'muito', 'bom', '!', 'café', 'da', 'manhã', 'com', 'boa', 'variedade', '.']
+['cama']
+  Apartamentos pequenos, mas camas super confortáveis e chuveiro muito bom!  Café da manhã com boa variedade.
+Aspect 'cama' not found in tokens.
+['mas', 'o', 'hotel', 'é', 'lindo', ',', 'limpo', ',', 'os', 'quartos', 'sao', 'grandes', ',', 'as', 'camas', 'confortaveis', '.']
+['quarto']
+  Mas o hotel é lindo, limpo, os quartos sao grandes, as camas confortaveis.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'os', 'apartamentos', 'centrais', 'são', 'mais', 'silenciosos', '.']
+['apartamento']
+  Room Tip: Os apartamentos centrais são mais silenciosos.
+Aspect 'apartamento' not found in tokens.
+['chegamos', 'neste', 'hotel', 'por', 'volta', 'das', '23', 'hs', 'e', 'apesar', 'de', 'termos', 'avisado', 'da', 'chegada', 'neste', 'horario', ',', 'disseram', 'que', 'não', 'havia', 'mais', 'quartos', '.']
+['quarto']
+Chegamos neste hotel por volta das 23 hs e apesar de termos avisado da chegada neste horario, disseram que não havia mais quartos.
+Aspect 'quarto' not found in tokens.
+['péssimo', 'colchão', ',', 'péssimos', 'lençois', 'e', 'toalhas', ',', 'não', 'foi', 'realizado', 'nenhuma', 'limpeza', 'no', 'quarto', 'durante', 'os', '5', 'dias', 'que', 'nos', 'hospedamos', '.']
+['toalha']
+ Péssimo colchão, péssimos lençois e toalhas, não foi realizado nenhuma limpeza no quarto durante os 5 dias que nos hospedamos.
+Aspect 'toalha' not found in tokens.
+['a', 'localização', 'é', 'na', 'parte', 'antiga', 'de', 'porto', 'alegre', ',', 'com', 'interessantes', 'ruas', 'sinuosas', 'e', 'uma', 'variedade', 'de', 'locais', 'simples', 'para', 'comer', '.']
+['rua']
+ A localização é na parte antiga de Porto Alegre, com interessantes ruas sinuosas e uma variedade de locais simples para comer.
+Aspect 'rua' not found in tokens.
+['as', 'camareiras', 'trocam', 'as', 'toalhas', 'duas', 'vezes', 'ao', 'dia', 'e', 'dã£o', 'muiiitos', 'chocolates', '.']
+['toalha']
+ As camareiras trocam as toalhas duas vezes ao dia e dÃ£o muiiitos chocolates.
+Aspect 'toalha' not found in tokens.
+['ótima', 'localização', ',', 'transporte', 'público', 'muito', 'acessível', ',', 'quartos', 'amplos', ',', 'funcionários', 'atenciosos', ',', 'solicitações', 'atendidas', 'em', '5', 'minutos', '(', 'coisa', 'rara', 'em', 'hotéis', 'de', 'grandes', 'cidades', ')', 'e', 'muito', 'limpo', '.']
+['cidade']
+Ótima localização, transporte público muito acessível, quartos amplos, funcionários atenciosos, solicitações atendidas em 5 minutos (coisa rara em hotéis de grandes cidades) e muito limpo.
+Aspect 'cidade' not found in tokens.
+['os', 'quartos', 'e', 'banheiro', 'eram', 'de', 'tamanho', 'razoável', ',', 'com', 'a', 'cama', 'bem', 'confortável', '.']
+['quarto']
+ Os quartos e banheiro eram de tamanho razoável, com a cama bem confortável.
+Aspect 'quarto' not found in tokens.
+['elevadores', 'muito', 'eficientes', ',', 'limpeza', 'muito', 'boa', '.']
+['elevador']
+Elevadores muito eficientes,limpeza muito boa.
+Aspect 'elevador' not found in tokens.
+['hotel', 'muito', 'limpo', ',', 'camas', 'ótimas', '.']
+['cama']
+ Hotel muito limpo, camas ótimas.
+Aspect 'cama' not found in tokens.
+['andando', 'até', 'o', 'louvre', ',', 'bons', 'quartos', '(', 'nas', 'fotos', 'do', 'site', 'eles', 'parecem', 'melhores', ')', ',', 'piso', 'de', 'madeira', ',', 'ao', 'lado', 'do', 'metrô', 'que', 'tem', 'linha', 'direta', 'com', 'a', 'estação', 'de', 'trem', 'gare', 'du', 'nord', ',', 'ao', 'lado', 'do', 'rer', 'c', 'que', 'vai', 'para', 'versailles', ',', 'recepcionistas', 'são', 'bons', '(', 'menos', 'uma', 'com', 'cara', 'de', 'nojenta', 'que', 'ficava', 'com', 'má', 'vontade', 'quando', 'pedíamos', 'algo', ')', ',', 'tem', 'que', 'pagar', 'o', 'café', 'da', 'manhã', 'por', 'fora', ',', 'foi', 'até', 'melhor', 'porque', 'todos', 'os', 'dias', 'tomá']
+['quarto']
+ andando até o Louvre, bons quartos (nas fotos do site eles parecem melhores), piso de madeira, ao lado do metrô que tem linha direta com a estação de trem Gare du Nord, ao lado do RER C que vai para Versailles, recepcionistas são bons (menos uma com cara de nojenta que ficava com má vontade quando pedíamos algo), tem que pagar o café da manhã por fora, foi até melhor porque todos os dias tomávamos café em lugares diferentes :).
+Aspect 'quarto' not found in tokens.
+['bem', 'localizado', ',', 'acesso', 'fácil', 'a', 'broadway', ',', 'rockefeller', 'center', 'e', 'a', 'times', 'square', ',', 'quartos', 'limpos', ',', 'café', 'da', 'manhã', 'excelente', 'com', 'muita', 'variedade', 'e', 'boas', 'opções', ',', 'os', 'cookies', 'disponibilizados', 'no', 'fim', 'da', 'tarde', 'faziam', 'a', 'diferença', ',', 'senti', 'falta', 'de', 'uma', 'lavanderia', 'como', 'existem', 'em', 'outros', 'hampton', 'inn', '.']
+['quarto']
+Bem localizado, acesso fácil a Broadway, Rockefeller Center e a Times Square, quartos limpos, café da manhã excelente com muita variedade e boas opções, os cookies disponibilizados no fim da tarde faziam a diferença, senti falta de uma lavanderia como existem em outros Hampton Inn.
+Aspect 'quarto' not found in tokens.
+['o', 'único', 'aspecto', 'negativo', ',', 'é', 'que', 'para', 'acessar', 'os', 'elevadores', ',', 'têm', 'que', 'percorrer', 'todo', 'o', 'cassino', ',', 'é', 'um', 'longo', 'caminho', 'e', 'com', 'muito', 'cheiro', 'de', 'cigarro', '.']
+['elevador']
+ O único aspecto negativo, é que para acessar os elevadores, têm que percorrer todo o cassino, é um longo caminho e com muito cheiro de cigarro.
+Aspect 'elevador' not found in tokens.
+['hotel', 'bem', 'localizado', ',', 'com', 'bom', 'preço', 'mas', 'não', 'indicaria', 'para', 'ninguém', '-', 'sem', 'limpeza', 'no', 'geral', '(', 'roupa', 'de', 'cama', 'cheirando', 'a', 'cigarro', ',', 'limites', 'de', 'toalhas', ')', ',', 'banheiro', 'é', 'tão', 'pequeno', 'uma', 'pessoa', 'obesa', 'não', 'consegue', 'usar', 'o', 'vaso', 'sanitário', ',', 'box', 'apenas', 'com', 'opção', 'de', 'chuveirinho', 'e', 'ralo', 'entupido', '.']
+['toalha']
+hotel bem localizado, com bom preço mas não indicaria para ninguém - sem limpeza no geral (roupa de cama cheirando a cigarro, limites de toalhas), banheiro é tão pequeno q uma pessoa obesa não consegue usar o vaso sanitário, box apenas com opção de chuveirinho e ralo entupido.
+Aspect 'toalha' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', ',', 'mas', 'limpos', ',', 'e', 'muitos', 'não', 'têm', 'ducha', ',', 'apenas', 'um', 'lavabo', '.']
+['quarto']
+ Os quartos são pequenos, mas limpos, e muitos não têm ducha, apenas um lavabo.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'muito', 'limpo', ',', 'os', 'quartos', 'são', 'confortáveis', ',', 'o', 'café', 'da', 'manhã', 'é', 'bem', 'servido', 'e', 'o', 'principal', ':', 'os', 'funcionários', 'são', 'todos', 'muito', 'simpáticos', 'e', 'atenciosos', '.']
+['quarto']
+ O hotel é muito limpo, os quartos são confortáveis, o café da manhã é bem servido e o principal: os funcionários são todos muito simpáticos e atenciosos.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'prefira', 'os', 'quartos', 'do', 'primeiro', 'andar', ',', 'assim', 'não', 'precisarão', 'usar', 'o', 'elevador', '.']
+['quarto']
+  Room Tip: Prefira os quartos do primeiro andar, assim não precisarão usar o elevador.
+Aspect 'quarto' not found in tokens.
+['os', 'corredores', 'são', 'horríveis', ',', 'verdadeiramente', 'fúnebres', ',', 'sendo', 'mal', 'iluminados', ',', 'com', 'carpetes', 'sujos', 'e', 'manchados', ',', 'além', 'de', 'falta', 'pintura', 'nas', 'paredes', '.']
+['carpete']
+ Os corredores são horríveis, verdadeiramente fúnebres, sendo mal iluminados, com carpetes sujos e manchados, além de falta pintura nas paredes.
+Aspect 'carpete' not found in tokens.
+['o', 'hotel', 'é', 'simplesmente', 'incrível', 'e', 'os', 'quartos', 'são', 'confortáveis', '.']
+['quarto']
+ O HOTEL é simplesmente incrível e os quartos são confortáveis.
+Aspect 'quarto' not found in tokens.
+['sobre', 'os', 'quartos', 'do', 'hotel', 'não', 'poderei', 'opinar', ',', 'já', 'que', ',', 'chegando', 'lá', ',', 'nos', 'foi', 'oferecida', 'a', 'opção', 'de', 'ficar', 'em', 'um', 'apto', 'em', 'frente', 'ao', 'hotel', ',', 'o', 'que', 'ótimos', '.']
+['quarto']
+ Sobre os quartos do hotel não poderei opinar, já que, chegando lá, nos foi oferecida a opção de ficar em um apto em frente ao hotel, o que ótimos.
+Aspect 'quarto' not found in tokens.
+['recomendo', 'fortemente', '!', '!', '!', 'hotel', 'muito', 'bem', 'localizado', 'no', 'centro', 'da', 'strip', ',', 'com', 'quartos', 'perfeitos', 'e', 'sempre', 'muito', 'limpos', '.']
+['quarto']
+Recomendo fortemente!!!Hotel muito bem localizado no centro da Strip, com quartos perfeitos e sempre muito limpos.
+Aspect 'quarto' not found in tokens.
+['quartos', 'e', 'banheiros', 'tamanho', 'pp', ',', 'mas', 'limpeza', 'e', 'atenciosidade', 'dos', 'funcionários', 'tamanho', 'g', '!', '.']
+['quarto']
+ Quartos e banheiros tamanho PP, mas limpeza e atenciosidade dos funcionários tamanho G!.
+Aspect 'quarto' not found in tokens.
+['a', 'localização', 'é', 'boa', ',', 'perto', 'das', 'coisas', 'e', 'sem', 'aquela', 'multidão', 'de', 'turistas', '.']
+['turista']
+  A localização é boa, perto das coisas e sem aquela multidão de turistas.
+Aspect 'turista' not found in tokens.
+['os', 'quartos', ',', 'apesar', 'de', 'pequenos', '(', 'como', 'na', 'maioria', 'dos', 'hotéis', 'em', 'paris', ')', 'estão', 'renovados', 'e', 'limpos', '.']
+['quarto']
+  Os quartos, apesar de pequenos (como na maioria dos hotéis em Paris) estão renovados e limpos.
+Aspect 'quarto' not found in tokens.
+['quartos', 'amplos', ',', 'boa', 'limpeza', ',', 'bom', 'atendimento', '.']
+['quarto']
+ Quartos amplos, boa limpeza, bom atendimento.
+Aspect 'quarto' not found in tokens.
+['hotel', 'de', 'faixada', ',', 'ou', 'seja', ',', 'linda', 'faixada', 'e', 'entrada', ',', 'porém', 'os', 'apartamentos', 'são', 'muito', 'ruins', '.']
+['apartamento']
+ Hotel de faixada, ou seja, linda faixada e entrada, porém os apartamentos são muito ruins.
+Aspect 'apartamento' not found in tokens.
+['está', 'próximo', 'de', 'tudo', 'principalmente', 'do', 'famoso', 'mercado', 'municipal', 'de', 'porto', 'alegre', ',', 'onde', 'continuam', 'as', 'bancas', 'que', 'tanto', 'encantam', 'moradores', 'e', 'turistas', ',', 'e', 'mesmo', 'executivos', 'em', 'transito', 'ou', 'trabalho', '.']
+['turista']
+ Está próximo de tudo principalmente do FAMOSO mercado Municipal de Porto Alegre, onde continuam as bancas que tanto encantam moradores e turistas, e mesmo executivos em transito ou trabalho.
+Aspect 'turista' not found in tokens.
+['o', 'hotel', 'está', 'muito', 'novo', ',', 'quartos', 'amplos', 'e', 'limpos', '.']
+['quarto']
+O Hotel está muito novo, quartos amplos e limpos.
+Aspect 'quarto' not found in tokens.
+['o', 'café', 'da', 'manhã', 'é', 'ótimo', ',', 'os', 'quartos', 'são', 'limpos', ',', 'as', 'camas', 'são', 'boas', 'e', 'é', 'bastante', 'silencioso', '.']
+['cama']
+ O café da manhã é ótimo, os quartos são limpos, as camas são boas e é bastante silencioso.
+Aspect 'cama' not found in tokens.
+['este', 'hotel', 'é', 'um', 'daqueles', 'que', 'cobre', 'um', 'santo', 'e', 'acaba', 'descobrindo', 'o', 'outro', ',', 'ou', 'seja', ',', 'ele', 'não', 'é', 'muito', 'bom', '(', 'apesar', 'de', 'eles', 'terem', 'reformado', 'a', 'maioria', 'dos', 'quartos', 'agora', ')', ',', 'mas', 'tem', 'uma', 'localização', 'ótimo', ':', 'bem', 'no', 'centro', 'velho', '.']
+['quarto']
+Este hotel é um daqueles que cobre um santo e acaba descobrindo o outro, ou seja, ele não é muito bom (apesar de eles terem reformado a maioria dos quartos agora), mas tem uma localização ótimo: bem no centro velho.
+Aspect 'quarto' not found in tokens.
+['quartos', 'limpos', ',', 'renovados', ',', 'bom', 'atendimento', 'e', 'localização', 'imbatível', '.']
+['quarto']
+ Quartos limpos, renovados, bom atendimento e localização imbatível.
+Aspect 'quarto' not found in tokens.
+['as', 'camas', 'sao', 'fantásticas', '!', 'só', 'achei', 'um', 'pouco', 'caro', ',', 'mas', 'a', 'localização', 'e', 'a', 'vista', 'do', 'quarto', 'valeram', 'a', 'pena', '.']
+['cama']
+ As camas sao fantásticas! Só achei um pouco caro, mas a localização e a vista do quarto valeram a pena.
+Aspect 'cama' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', ',', 'mas', 'atendem', 'a', 'um', 'casal', 'sem', 'problema', '.']
+['quarto']
+ Os quartos são pequenos, mas atendem a um casal sem problema.
+Aspect 'quarto' not found in tokens.
+['excelente', 'localização', ',', 'fizemos', 'quase', 'todos', 'os', 'passeios', 'a', 'pé', '(', 'perto', 'de', 'todos', 'os', 'teatros', ')', '.']
+['teatro']
+Excelente localização, fizemos quase todos os passeios a pé (perto de todos os Teatros).
+Aspect 'teatro' not found in tokens.
+['estive', 'no', 'hotel', 'le', 'meridien', 'etoile', 'e', 'simplesmente', 'adorei', 'a', 'estadia', ',', 'a', 'comida', ',', 'a', 'recepção', ',', 'entre', 'outros', 'serviços', '.']
+['serviço']
+Estive no Hotel Le Meridien Etoile e simplesmente adorei a estadia, a comida, a recepção, entre outros serviços.
+Aspect 'serviço' not found in tokens.
+['ficamos', 'em', 'um', 'quarto', 'com', 'duas', 'camas', 'queen', 'bem', 'confortáveis', 'e', 'o', 'banheiro', 'era', 'ótimo', '.']
+['cama']
+  Ficamos em um quarto com duas camas queen bem confortáveis e o banheiro era ótimo.
+Aspect 'cama' not found in tokens.
+['o', 'mesmo', 'está', 'localizado', 'bem', 'no', 'centro', 'de', 'uma', 'intensa', 'movimentação', 'comercial', ',', 'diante', 'de', 'ladeiras', 'e', 'ruas', 'estreitas', 'e', 'com', 'mão', 'única', ',', 'o', 'que', 'dificulta', 'o', 'percusso', 'de', 'táxis', '.']
+['rua']
+ O mesmo está localizado bem no centro de uma intensa movimentação comercial, diante de ladeiras e ruas estreitas e com mão única, o que dificulta o percusso de Táxis.
+Aspect 'rua' not found in tokens.
+['quartos', 'de', 'bom', 'tamanho', 'com', 'cozinha', 'equipada', '.']
+['quarto']
+Quartos de bom tamanho com cozinha equipada.
+Aspect 'quarto' not found in tokens.
+['ótima', 'localização', 'em', 'frente', 'a', 'uma', 'estação', 'do', 'metro', 'e', 'a', 'uma', 'praça', 'com', 'feira', 'livre', ',', 'muito', 'próximo', 'de', 'uma', 'das', 'ruas', 'de', 'feiras', 'mais', 'famosas', 'do', 'mundo', '.']
+['rua']
+Ótima localização em frente a uma estação do metro e a uma praça com feira livre, muito próximo de uma das ruas de feiras mais famosas do mundo.
+Aspect 'rua' not found in tokens.
+['moderno', ',', 'com', 'quartos', 'equipados', 'com', 'cozinha', 'completa', ',', 'jacuzzi', ',', 'projetor', 'com', 'telão', 'e', 'até', 'máquina', 'de', 'lavar', 'roupa', 'e', 'tv', 'no', 'banheiro', '.']
+['quarto']
+ Moderno, com quartos equipados com cozinha completa, jacuzzi, projetor com telão e até máquina de lavar roupa e TV no banheiro.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'fica', 'bem', 'localizado', 'proximo', 'a', 'museu', 'do', 'louvre', ',', 'quartos', 'limpos', ',', 'infra', 'estrutura', 'excelente', 'e', 'com', 'um', 'restaurante', 'muito', 'bom', 'o', 'café', 'da', 'manhã', 'é', 'excelente', '.']
+['quarto']
+  O hotel fica bem localizado proximo a Museu do Louvre, quartos limpos, infra estrutura excelente e com um restaurante muito bom  O café da manhã é excelente.
+Aspect 'quarto' not found in tokens.
+['as', 'camas', 'eram', 'ótimas', ',', 'com', 'ótimos', 'cobertores', ',', 'as', 'toalhas', 'limpas', '.']
+['toalha']
+ As camas eram ótimas, com ótimos cobertores, as toalhas limpas.
+Aspect 'toalha' not found in tokens.
+['os', 'quartos', 'são', 'confortáveis', ',', 'o', 'banheiro', 'é', 'grande', ',', 'talvez', 'um', 'pouco', 'escuro', 'devido', 'a', 'cerâmica', 'petra', ',', 'mas', 'muito', 'elegante', '.']
+['quarto']
+ Os quartos são confortáveis, o banheiro é grande, talvez um pouco escuro devido a cerâmica petra, mas muito elegante.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'ótimos', ',', 'grandes', ',', 'arejados', ',', 'limpíssimos', '.']
+['quarto']
+Os quartos são ótimos, grandes, arejados, limpíssimos.
+Aspect 'quarto' not found in tokens.
+['nas', 'três', 'vezes', 'encontrei', 'os', 'quartos', 'limpos', 'e', 'organizados', ',', 'chuveiro', 'também', 'funcionando', 'mto', 'bem', '.']
+['quarto']
+ Nas três vezes encontrei os quartos limpos e organizados, chuveiro também funcionando mto bem.
+Aspect 'quarto' not found in tokens.
+['nível', 'de', 'serviços', 'médio', 'com', 'wi', '-', 'fi', 'grátis', 'no', 'hall', '.']
+['serviço']
+ Nível de serviços médio com wi-fi grátis no hall.
+Aspect 'serviço' not found in tokens.
+['era', 'tudo', 'limpo', ',', 'os', 'corredores', 'do', 'hotel', 'e', 'elevadores', 'eram', 'novos', 'e', 'arrumados', '.']
+['corredor']
+ Era tudo limpo, os corredores do hotel e elevadores eram novos e arrumados.
+Aspect 'corredor' not found in tokens.
+['os', 'preços', 'como', 'café', 'da', 'manhã', 'é', 'muito', 'vantajoso', 'e', 'tem', 'variedade', '.']
+['preço']
+ Os preços como café da manhã é muito vantajoso e tem variedade.
+Aspect 'preço' not found in tokens.
+['este', 'hotel', 'nos', 'proporciona', 'ótima', 'hospedagem', ',', 'com', 'quartos', 'limpos', 'e', 'ótimo', 'tamanho', ',', 'decoração', 'de', 'bom', 'gosto', 'e', 'diversão', 'garantida', '(', 'cassino', ',', 'bares', 'e', 'restaurantes', ')', '.']
+['quarto']
+ Este hotel nos proporciona ótima hospedagem, com quartos limpos e ótimo tamanho, decoração de bom gosto e diversão garantida (cassino, bares e restaurantes).
+Aspect 'quarto' not found in tokens.
+['ótimos', 'quartos', '.']
+['quarto']
+ Ótimos quartos.
+Aspect 'quarto' not found in tokens.
+['não', 'trocaram', 'as', 'toalhas', 'e', 'tinha', 'um', 'barata', 'no', 'banheiro', '.']
+['toalha']
+   Não trocaram as toalhas e tinha um barata no banheiro.
+Aspect 'toalha' not found in tokens.
+['quartos', 'muito', 'aconchegantes', ',', 'espaçosos', ',', 'camas', 'confortáveis', 'e', 'localização', 'impar', '.']
+['quarto']
+ Quartos muito aconchegantes, espaçosos, camas confortáveis e localização impar.
+Aspect 'quarto' not found in tokens.
+['excelente', 'localização', '!', 'pertissimo', 'da', 'times', 'square', 'e', 'dos', 'teatros', ',', 'sem', 'ficar', 'no', 'meio', 'do', 'movimento', '.']
+['teatro']
+Excelente localização! Pertissimo da times square e dos teatros, sem ficar no meio do movimento.
+Aspect 'teatro' not found in tokens.
+['os', 'quartos', 'nao', 'sao', 'amplos', ',', 'porem', 'para', 'quem', 'vai', 'com', 'o', 'objetico', 'unico', 'de', 'utiliza', '-', 'lo', 'para', 'dormir', ',', 'esta', 'ok', '.']
+['quarto']
+ Os quartos nao sao amplos, porem para quem vai com o objetico unico de utiliza-lo para dormir, esta ok.
+Aspect 'quarto' not found in tokens.
+['corredores', 'do', 'hotel', 'sao', 'extremamente', 'apertados', 'pessoal', 'da', 'recepcao', 'muito', 'atencioso', ',', 'educados', 'e', 'prestativos', 'nao', 'usaria', 'novamente', '.']
+['corredor']
+  Corredores do hotel sao extremamente apertados  Pessoal da recepcao muito atencioso,educados e prestativos   Nao usaria novamente.
+Aspect 'corredor' not found in tokens.
+['para', 'quem', 'tem', 'rinite', ',', 'aquele', 'carpete', 'é', 'horrível', '!', 'demora', 'para', 'esquentar', 'a', 'água', 'do', 'chuveiro', 'e', 'torneiras', '.']
+['torneira']
+ Para quem tem rinite, aquele carpete é horrível! Demora para esquentar a água do chuveiro e torneiras.
+Aspect 'torneira' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', ',', 'porém', 'muito', 'limpos', '.']
+['quarto']
+Os quartos são pequenos, porém muito limpos.
+Aspect 'quarto' not found in tokens.
+['excelente', 'localização', 'há', 'duas', 'quadras', 'do', 'rockfeller', ',', 'quarto', 'limpo', ',', 'ótimas', 'camas', '.']
+['cama']
+Excelente localização há duas quadras do rockfeller , quarto limpo, ótimas camas.
+Aspect 'cama' not found in tokens.
+['quartos', 'amplos', 'e', 'limpos', '.']
+['quarto']
+ Quartos amplos e limpos.
+Aspect 'quarto' not found in tokens.
+['ao', 'chegarmos', 'ao', 'hotel', ',', 'não', 'havia', 'o', 'quarto', 'previamente', 'reservado', ',', 'então', 'fomos', 'acomodados', 'em', 'uma', 'suite', 'equivalente', 'c', '/', '2', 'camas', 'queen', ',', 'mas', 'totalmente', 'aceitável', '.']
+['cama']
+ Ao chegarmos ao hotel, não havia o quarto previamente reservado, então fomos acomodados em uma suite equivalente c/ 2 camas queen, mas totalmente aceitável.
+Aspect 'cama' not found in tokens.
+['o', 'hotel', ',', 'bem', 'como', 'suas', 'comodidades', 'fizeram', 'jus', 'ao', 'preço', 'praticado', ',', 'mas', ',', 'os', 'quartos', 'são', 'minúsculos', '.']
+['quarto']
+O hotel, bem como suas comodidades fizeram jus ao preço praticado, mas, os quartos são minúsculos.
+Aspect 'quarto' not found in tokens.
+['tem', 'um', 'bom', 'café', 'da', 'manhã', ',', 'com', 'preços', 'bem', 'baratos', 'para', 'o', 'padrão', 'de', 'paris', '(', 'vale', 'a', 'pena', 'reservar', 'a', 'diária', 'com', 'café', 'incluso', ')', '.']
+['preço']
+  Tem um bom café da manhã, com preços bem baratos para o padrão de Paris (vale a pena reservar a diária com café incluso).
+Aspect 'preço' not found in tokens.
+['maiores', 'nos', 'quartos', 'seriam', 'bem', 'vindas', '.']
+['quarto']
+TV´s maiores nos quartos seriam bem vindas.
+Aspect 'quarto' not found in tokens.
+['o', 'quarto', 'era', 'minúsculo', ',', 'as', 'toalhas', 'surradas', ',', 'no', 'banheiro', 'havia', 'barata', ',', 'o', 'sabonete', 'tinha', 'cheiro', 'de', 'sabão', 'e', 'passamos', 'a', 'noite', 'com', 'medo', 'pois', 'havia', 'transitado', 'de', 'pessoas', 'durante', 'a', 'madrugada', 'e', 'de', 'manhã', 'fomos', 'acordados', 'com', 'um', 'som', 'desagradável', 'de', 'uma', 'boate', '.']
+['toalha']
+ O quarto era minúsculo, as toalhas surradas, no banheiro havia barata, o sabonete tinha cheiro de sabão e passamos a noite com medo pois havia transitado de pessoas durante a madrugada e de manhã fomos acordados com um som desagradável de uma boate.
+Aspect 'toalha' not found in tokens.
+['quartos', 'amplos', 'com', 'mini', 'cozinha', 'e', 'ante', 'sala', 'além', 'da', 'suíte', ',', 'da', 'esquina', 'se', 'vê', 'o', 'time', 'saquare', 'que', 'fica', 'a', 'umas', '10', 'quadras', ',', 'dá', 'para', 'conecer', 'muita', 'coisa', 'so', 'na', 'caminhada', 'como', 'os', 'teartos', 'da', 'broadway', '.']
+['quarto']
+ quartos amplos com mini cozinha e ante sala além da suíte , da esquina se vê o time saquare que fica a umas 10 quadras , dá para conecer muita coisa so na caminhada como os teartos da broadway .
+Aspect 'quarto' not found in tokens.
+['realmente', 'bem', 'pequenininho', '!', '!', '!', 'room', 'tip', ':', 'alguns', 'apartamentos', 'nos', 'andares', 'mais', 'altos', 'tem', 'vista', 'para', 'a', 'torre', 'eiffel', '.']
+['apartamento']
+ Realmente bem pequenininho!!!  Room Tip: Alguns apartamentos nos andares mais altos tem vista para a torre eiffel.
+Aspect 'apartamento' not found in tokens.
+['hotel', 'com', 'atendimento', ',', 'serviços', 'e', 'acomodações', 'ruins', '.']
+['serviço']
+Hotel com atendimento, serviços e acomodações ruins.
+Aspect 'serviço' not found in tokens.
+['os', 'únicos', 'poréns', 'são', 'o', 'número', 'de', 'elevadores', '(', '2', 'é', 'muito', 'pouco', 'na', 'hora', 'do', 'rush', ')', 'e', 'o', 'tamanho', 'da', 'área', 'do', 'café', 'da', 'manhã', 'que', 'obriga', 'a', 'esperar', 'em', 'pé', '.']
+['elevador']
+  Os únicos poréns são o número de elevadores (2 é muito pouco na hora do rush) e o tamanho da área do café da manhã que obriga a esperar em pé.
+Aspect 'elevador' not found in tokens.
+['café', 'da', 'manha', 'muito', 'bem', 'servido', 'e', 'os', 'quartos', 'sao', 'limpos', 'e', 'aconchegantes', '.']
+['quarto']
+Café da manha muito bem servido e os quartos sao limpos e aconchegantes.
+Aspect 'quarto' not found in tokens.
+['camas', 'confortáveis', ',', 'boa', 'limpeza', ',', 'bem', 'silencioso', '.']
+['cama']
+ Camas confortáveis, boa limpeza, bem silencioso.
+Aspect 'cama' not found in tokens.
+['é', 'relativamente', 'bem', 'localizado', ',', 'porem', 'com', 'quartos', 'bem', 'simples', 'e', 'antigos', '.']
+['quarto']
+ É relativamente bem localizado, porem com quartos bem simples e antigos.
+Aspect 'quarto' not found in tokens.
+['não', 'recomendo', 'para', 'famílias', '.']
+['família']
+ Não recomendo para famílias.
+Aspect 'família' not found in tokens.
+['o', 'hotel', 'fica', 'bem', 'no', 'centro', 'é', 'ótimo', 'de', 'dia', 'pois', 'está', 'próximo', 'de', 'lojas', ',', 'restaurantes', ',', 'farmácias', ',', 'mercado', 'municipal', ',', 'camelodromo', '.']
+['farmácia']
+O hotel fica bem no centro é ótimo de dia pois está próximo de lojas, restaurantes, farmácias, mercado municipal, camelodromo.
+Aspect 'farmácia' not found in tokens.
+['acomodacao', 'boa', ',', 'moveis', 'novos', 'tudo', 'bem', 'conservado', 'so', 'deixou', 'a', 'desejar', 'a', 'internet', 'e', 'cabo', 'nos', 'quartos', 'e', 'no', 'final', 'de', 'semana', 'nao', 'funciona', ',', 'para', 'acessar', 'tem', 'que', 'ir', 'para', 'a', 'recepcao', '.']
+['quarto']
+acomodacao boa, moveis novos tudo bem conservado so deixou a desejar a internet e cabo nos quartos e no final de semana nao funciona, para acessar tem que ir para a recepcao.
+Aspect 'quarto' not found in tokens.
+['você', 'vai', 'a', 'pé', 'para', 'os', 'teatros', ',', 'restaurantes', ',', 'lojas', 'e', 'tudo', 'o', 'mais', '.']
+['teatro']
+ Você vai a pé para os teatros, restaurantes, lojas e tudo o mais.
+Aspect 'teatro' not found in tokens.
+['não', 'se', 'deixe', 'enganar', 'pelas', 'fotos', 'dos', 'sites', ',', 'os', 'quartos', 'são', 'tão', 'pequenos', 'a', 'ponto', 'de', 'estragar', 'sua', 'viagem', '.']
+['quarto']
+Não se deixe enganar pelas fotos dos sites, os quartos são tão pequenos a ponto de estragar sua viagem.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'seria', 'um', 'hotel', 'de', 'negócios', '3', 'estrelas', 'muito', 'bom', ',', 'porém', 'está', 'classificado', 'como', '4', 'estrelas', ',', 'para', 'esta', 'categoria', 'ficaram', 'faltando', ':', 'espaço', 'no', 'quarto', ',', 'decoração', 'mais', 'personalizada', ',', 'mais', 'elevadores', '(', 'só', 'tem', '1', ')', ',', 'sala', 'de', 'espera', 'e', 'sala', 'de', 'trabalho', 'na', 'recepção', ',', 'serviços', 'melhores', ',', 'restaurante', ',', 'academia', ',', 'dentre', 'outras', '.']
+['elevador']
+O hotel seria um hotel de negócios 3 estrelas muito bom, porém está classificado como 4 estrelas, para esta categoria ficaram faltando: espaço no quarto, decoração mais personalizada, mais elevadores (só tem 1), sala de espera e sala de trabalho na recepção, serviços melhores, restaurante, academia, dentre outras.
+Aspect 'elevador' not found in tokens.
+['o', 'hotel', 'é', 'lindo', ',', 'com', 'ótimos', 'restaurantes', 'no', 'forum', 'shop', '(', 'o', 'shopping', 'do', 'hotel', ')', 'o', 'hotel', 'possui', 'várias', 'torres', ',', 'eu', 'fiquei', 'na', 'palace', 'que', 'tem', 'os', 'apartamentos', 'reformados', '.']
+['apartamento']
+O hotel é lindo, com ótimos restaurantes no Forum Shop (o shopping do hotel)  O hotel possui várias torres, eu fiquei na Palace que tem os apartamentos reformados.
+Aspect 'apartamento' not found in tokens.
+['o', 'café', 'da', 'manhã', 'é', 'ótimo', ',', 'os', 'quartos', 'são', 'limpos', ',', 'as', 'camas', 'são', 'boas', 'e', 'é', 'bastante', 'silencioso', '.']
+['quarto']
+ O café da manhã é ótimo, os quartos são limpos, as camas são boas e é bastante silencioso.
+Aspect 'quarto' not found in tokens.
+['muito', 'bom', ',', 'se', 'você', 'gosta', 'de', 'andar', 'é', 'possível', 'conhecer', 'os', '3', 'principais', 'pontos', 'turísticos', 'a', 'pé', ',', 'quartos', 'bons', 'e', 'limpos', ',', 'escolha', 'o', 'cafê', 'da', 'manhã', 'no', 'próprio', 'hotel', 'custa', '5', 'euros', 'por', 'pessoa', 'e', 'vale', 'a', 'pena', ',', 'tem', 'requinte', 'e', 'estilo', ',', 'o', 'preço', 'das', 'diárias', 'também', 'é', 'justo', ',', 'não', 'deixe', 'de', 'ir', 'ao', 'canal', 'de', 'saint', 'martin', 'fica', 'do', 'lado', '.']
+['quarto']
+Muito bom, se você gosta de andar é possível conhecer os 3 principais pontos turísticos a pé, quartos bons e limpos, escolha o cafê da manhã no próprio hotel custa 5 euros por pessoa e vale a pena, tem requinte e estilo, o preço das diárias também é justo, não deixe de ir ao canal de Saint Martin fica do lado.
+Aspect 'quarto' not found in tokens.
+['quartos', 'de', 'tamanho', 'bom', 'em', 'se', 'tratando', 'de', 'paris', '(', 'dentro', 'deste', 'tipo', 'de', 'hotel', ')', ',', 'limpo', ',', 'café', 'da', 'manhã', 'igual', 'a', 'todos', '(', 'pão', ',', 'café', ',', 'geléia', 'e', 'manteiga', ')', 'gostei', 'recomendo', '.']
+['quarto']
+  Quartos de tamanho bom em se tratando de Paris ( dentro deste tipo de hotel), limpo, café da manhã igual a todos ( pão, café, geléia e manteiga)  Gostei recomendo.
+Aspect 'quarto' not found in tokens.
+['excelente', 'relação', 'custo', 'benefício', ',', 'luxo', ',', 'mas', 'limpo', 'e', 'muito', 'bem', 'localizado', ',', 'no', 'meio', 'da', 'strip', ',', 'quartos', 'espaçosos', ',', 'ligação', 'interna', 'com', 'o', 'paris', ',', 'amplo', 'estacionamento', 'gratuito', '(', 'como', 'todos', 'os', 'hotéis', 'em', 'vegas', ')', ',', 'boa', 'piscina', ',', 'estação', 'do', 'monorail', ',', 'wifi', 'paga', '(', 'e', 'cara', ')', '.']
+['quarto']
+Excelente relação custo benefício,´sem luxo, mas limpo e muito bem localizado, no meio da Strip, quartos espaçosos, ligação interna com o Paris, amplo estacionamento gratuito ( como todos os hotéis em Vegas), boa piscina, estação do Monorail,Wifi paga (e cara).
+Aspect 'quarto' not found in tokens.
+['camas', 'confortaveis', 'e', 'quarto', 'com', 'tamanho', 'razoavel', 'em', 'comparacao', 'aos', 'quartos', 'dos', 'hoteis', 'de', 'nyc', '.']
+['cama']
+ Camas confortaveis e quarto com tamanho razoavel em comparacao aos quartos dos hoteis de NYC.
+Aspect 'cama' not found in tokens.
+['com', 'nova', 'gerência', 'o', 'empreendimento', 'prima', 'pelo', 'melhoramento', 'em', 'serviço', 'e', 'a', 'prova', 'disso', 'foi', 'a', 'minha', 'descoberta', 'de', 'que', 'estava', 'num', 'hotel', 'como', 'eu', 'gosto', 'quase', 'lotado', ',', 'apartamentos', 'de', 'ótimo', 'padrão', 'embora', 'pequenos', ',', 'mas', 'para', 'o', 'executivo', 'a', 'trabalho', 'não', 'há', 'necessidade', 'de', 'mais', ',', 'arrumação', 'e', 'limpeza', 'boa', 'e', 'a', 'tempo', 'e', 'horas', 'o', 'que', 'nem', 'sempre', 'se', 'encontra', '.']
+['apartamento']
+ Com nova gerência o empreendimento prima pelo melhoramento em serviço e a prova disso foi a minha descoberta de que estava num hotel como eu gosto quase lotado, apartamentos de ótimo padrão embora pequenos, mas para o executivo a trabalho não há necessidade de mais, Arrumação e Limpeza BOA e a tempo e Horas o que nem sempre se encontra.
+Aspect 'apartamento' not found in tokens.
+['alem', 'de', 'tudo', 'isso', ',', 'os', 'pontos', 'fortes', 'são', 'simpatia', ',', 'presteza', 'e', 'disponibilidade', 'dos', 'funcionários', 'desde', 'a', 'recepção', ',', 'passando', 'pelos', 'porteiros', 'e', 'arrumadeiras', ',', 'com', 'especial', 'menção', 'ao', 'antony', ',', 'concierge', 'brasileiro', 'muito', 'prestativo', '.']
+['porteiro']
+ Alem de tudo isso, os pontos fortes são simpatia, presteza e disponibilidade dos funcionários desde a recepção, passando pelos porteiros e arrumadeiras, com especial menção ao Antony, concierge brasileiro muito prestativo.
+Aspect 'porteiro' not found in tokens.
+['após', 'muito', 'aborrecimento', ',', 'ligações', 'interurbanas', 'e', 'várias', 'trocas', 'de', 'e', '-', 'mails', 'com', 'um', 'dos', 'gerentes', ',', 'resolveram', 'esse', 'problema', '.']
+['gerente']
+ Após muito aborrecimento, ligações interurbanas e várias trocas de e-mails com um dos gerentes, resolveram esse problema.
+Aspect 'gerente' not found in tokens.
+['péssimo', 'atendimento', ',', 'sem', 'wifi', ',', 'quartos', 'sujos', ',', 'cobranças', 'indevidas', 'e', 'muito', 'mais', '!', '!', 'nunca', 'fiquem', 'nesse', 'hotel', '!', '!', 'mesmo', 'sendo', 'um', 'hotel', 'barato', ',', 'não', 'vale', 'nem', '10', 'dólares', '.']
+['quarto']
+  Péssimo atendimento, sem wifi, quartos sujos, cobranças indevidas e muito mais!! NUNCA FIQUEM NESSE HOTEL!! Mesmo sendo um hotel barato, não vale nem 10 dólares.
+Aspect 'quarto' not found in tokens.
+['maiores', 'nos', 'quartos', 'seriam', 'bem', 'vindas', '.']
+['tv']
+TV´s maiores nos quartos seriam bem vindas.
+Aspect 'tv' not found in tokens.
+['os', 'quartos', 'são', 'bons', 'e', 'limpos', '.']
+['quarto']
+ Os quartos são bons e limpos.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'seria', 'um', 'hotel', 'de', 'negócios', '3', 'estrelas', 'muito', 'bom', ',', 'porém', 'está', 'classificado', 'como', '4', 'estrelas', ',', 'para', 'esta', 'categoria', 'ficaram', 'faltando', ':', 'espaço', 'no', 'quarto', ',', 'decoração', 'mais', 'personalizada', ',', 'mais', 'elevadores', '(', 'só', 'tem', '1', ')', ',', 'sala', 'de', 'espera', 'e', 'sala', 'de', 'trabalho', 'na', 'recepção', ',', 'serviços', 'melhores', ',', 'restaurante', ',', 'academia', ',', 'dentre', 'outras', '.']
+['serviço']
+O hotel seria um hotel de negócios 3 estrelas muito bom, porém está classificado como 4 estrelas, para esta categoria ficaram faltando: espaço no quarto, decoração mais personalizada, mais elevadores (só tem 1), sala de espera e sala de trabalho na recepção, serviços melhores, restaurante, academia, dentre outras.
+Aspect 'serviço' not found in tokens.
+['serviços', 'simples', 'e', 'eficientes', ':', 'cafeteira', 'com', 'sachê', 'de', 'café', ',', 'internet', 'gratuita', 'nos', 'quartos', ',', 'água', 'disponível', 'nos', 'corredores', 'para', 'os', 'hóspedes', ',', 'office', 'para', 'uso', 'em', 'caso', 'de', 'emergência', '(', 'computadores', 'e', 'impressora', ')', '.']
+['serviço']
+  Serviços simples e eficientes: cafeteira com sachê de café, internet gratuita nos quartos, água disponível nos corredores para os hóspedes, office para uso em caso de emergência (computadores e impressora).
+Aspect 'serviço' not found in tokens.
+['vantagem', ':', 'localizacao', 'para', 'que', 'precisa', 'ficar', 'no', 'centro', 'da', 'cidadedesvantagem', ':', 'quartos', 'pequenos', ',', 'cafe', 'de', 'manha', 'pobre', 'e', 'mal', 'localizado', '(', 'voce', 'come', 'no', 'proprio', 'lobby', 'do', 'hotel', ',', 'frente', 'as', 'pessoas', 'que', 'fazem', 'checkin', 'e', 'checkou', '!', ')', 'nao', 'tem', 'academia', 'de', 'ginastica', ',', 'nem', 'piscina', ',', 'nem', 'saunapreco', 'alto', 'para', 'o', 'que', 'oferece', '.']
+['centro', 'da', 'cidade']
+Vantagem:Localizacao para que precisa ficar no centro da cidadeDesvantagem: Quartos pequenos, Cafe de manha pobre e mal localizado(Voce come no proprio lobby do hotel, frente as pessoas que fazem checkin e checkou!)Nao tem academia de ginastica, nem piscina, nem saunaPreco alto para o que oferece.
+Aspect 'centro da cidade' not found in tokens.
+['a', 'comodidade', 'dos', 'quartos', 'do', 'hotel', 'e', 'a', 'facilidade', 'de', 'deslocamento', 'até', 'um', 'metrô', 'charlie', 'de', 'gaule', '-', 'étolie', 'ou', 'a', 'própria', 'champs', 'elisée', 'realmente', 'fazem', 'a', 'diferença', 'neste', 'hotel', '.']
+['quarto']
+A comodidade dos quartos do hotel e a facilidade de deslocamento até um metrô Charlie de Gaule - étolie ou a própria Champs Elisée realmente fazem a diferença neste hotel.
+Aspect 'quarto' not found in tokens.
+['bons', 'serviços', '(', 'secador', 'disponível', 'mediante', 'uma', 'caução', 'de', '10', 'euros', 'que', 'é', 'devolvida', 'no', 'fim', ')', '.']
+['serviço']
+ Bons serviços (secador disponível mediante uma caução de 10 euros que é devolvida no fim).
+Aspect 'serviço' not found in tokens.
+['o', 'hotel', 'peca', 'por', 'insistir', 'em', 'não', 'arrumar', 'os', 'quartos', 'todos', 'os', 'dias', '[', 'tem', 'que', 'cobrar', ']', ',', 'internet', 'paga', 'e', 'muito', 'cara', ',', 'café', 'da', 'manhã', 'não', 'incluído', 'no', 'preço', 'das', 'diárias', '.']
+['quarto']
+ O hotel peca por insistir em não arrumar os quartos todos os dias [tem que cobrar], internet paga e muito cara, café da manhã não incluído no preço das diárias.
+Aspect 'quarto' not found in tokens.
+['boa', 'relação', 'custo', '-', 'benefício', ',', 'fica', 'muito', 'perto', 'do', 'times', 'square', ',', 'os', 'quartos', 'são', 'bem', 'limpos', 'e', 'aconchegantes', ',', 'a', 'cama', 'é', 'ótima', ',', 'não', 'tem', 'café', 'da', 'manhã', ',', 'mas', 'são', 'fornecidos', 'café', ',', 'chá', 'e', 'açúcar', 'diariamente', ',', 'e', 'tem', 'muitos', 'mercadinhos', 'e', 'starbucks', 'há', 'uma', 'quadra', 'de', 'distância', '.']
+['quarto']
+Boa relação custo-benefício, fica muito perto do Times Square, os quartos são bem limpos e aconchegantes, a cama é ótima, não tem café da manhã, mas são fornecidos café, chá e açúcar diariamente, e tem muitos mercadinhos e starbucks há uma quadra de distância.
+Aspect 'quarto' not found in tokens.
+['pelo', 'preço', 'e', 'a', 'localização', ',', 'que', 'se', 'importa', 'que', 'o', 'quarto', 'seja', 'um', 'pouco', 'pequeno', '!', 'afinal', 'que', 'quer', 'ficar', 'no', 'hotel', 'estando', 'em', 'nyc', '?', 'o', 'hotel', 'é', 'perfeito', 'para', 'quem', 'viaja', 'a', 'negócios', ',', 'trabalho', 'ou', 'turismo', ',', 'é', 'muito', 'fácil', 'ir', 'a', 'pé', 'a', 'todos', 'os', 'lugares', 'ou', 'mesmo', 'pegar', 'o', 'metrô', ',', 'bem', 'pertinho', 'da', 'grand', 'central', ',', 'de', 'onde', 'partem', 'ônibus', 'para', 'todos', 'os', 'aeroportos', 'a', 'preços', 'bem', 'camaradas', '.']
+['aeroporto']
+Pelo preço e a localização, que se importa que o quarto seja um pouco pequeno!  Afinal que quer ficar no hotel estando em NYC?  O hotel é perfeito para quem viaja a negócios, trabalho ou turismo, é muito fácil ir a pé a todos os lugares ou mesmo pegar o metrô, bem pertinho da Grand central, de onde partem ônibus para todos os aeroportos a preços bem camaradas.
+Aspect 'aeroporto' not found in tokens.
+['excelente', 'quartos', ',', 'bem', 'limpo', ',', 'bom', 'banheiro', ',', 'bom', 'ar', 'condicionado', ',', 'boa', 'cama', ',', 'boa', 'tv', '.']
+['quarto']
+ Excelente quartos, bem limpo, bom banheiro, bom ar condicionado, boa cama, boa TV.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'horríveis', ',', 'assim', 'como', 'todo', 'o', 'ambiente', '.']
+['quarto']
+ Os quartos são horríveis, assim como todo o ambiente.
+Aspect 'quarto' not found in tokens.
+['este', 'foi', 'o', 'pior', 'hotel', 'que', 'já', 'fiquei', 'em', 'minha', 'vida', ',', 'tem', 'mofos', 'nas', 'paredes', ',', 'tentaram', 'me', 'por', 'num', 'apartamento', 'abafado', 'no', 'subsolo', 'que', 'fedia', 'a', 'cigarro', 'e', 'é', 'os', 'corredores', 'do', 'hotel', 'são', 'um', 'labirinto', ',', 'pondo', 'em', 'risco', 'os', 'hóspedes', 'em', 'caso', 'de', 'incêndio', '.']
+['corredor']
+Este foi o pior hotel que já fiquei em minha vida, tem mofos nas paredes, tentaram me por num apartamento abafado no subsolo que fedia a cigarro e é os corredores do hotel são um labirinto, pondo em risco os hóspedes em caso de incêndio.
+Aspect 'corredor' not found in tokens.
+['os', 'quartos', 'são', 'limpos', 'e', 'silenciosos', ',', 'com', 'uma', 'cama', 'super', 'confortável', '.']
+['quarto']
+  Os quartos são limpos e silenciosos, com uma cama super confortável.
+Aspect 'quarto' not found in tokens.
+['hotel', 'com', 'muitas', 'piscinas', ',', 'mas', 'não', 'utilizamos', 'nenhuma', 'devido', 'ao', 'frio', '.']
+['piscina']
+  Hotel com muitas piscinas, mas não utilizamos nenhuma devido ao frio.
+Aspect 'piscina' not found in tokens.
+['os', 'quartos', 'deste', 'hotel', 'são', 'bem', 'pequenos', ',', 'banheiro', 'apertadíssimo', '.']
+['quarto']
+ Os quartos deste hotel são bem pequenos, banheiro apertadíssimo.
+Aspect 'quarto' not found in tokens.
+['tivemos', 'problemas', 'com', 'chuveiro', ',', 'falta', 'de', 'telefone', 'em', 'um', 'dos', 'quartos', 'ear', 'condicionado', 'quebrado', ',', '.']
+['quarto']
+tivemos problemas com chuveiro, falta de telefone em um dos quartos ear condicionado quebrado,.
+Aspect 'quarto' not found in tokens.
+['como', 'a', 'proposta', 'é', 'a', 'simplicidade', 'ele', 'não', 'possui', 'elevador', ',', 'somente', 'escada', 'para', 'acesso', 'aos', 'quartos', ',', 'que', 'são', 'limpos', 'e', 'organizados', '.']
+['quarto']
+ Como a proposta é a simplicidade ele não possui elevador, somente escada para acesso aos quartos, que são limpos e organizados.
+Aspect 'quarto' not found in tokens.
+['a', 'localizacao', 'eh', 'otima', ',', 'perto', 'de', 'tudo', '!', 'o', 'concierge', 'nao', 'eh', 'la', 'muito', 'amistoso', ',', 'entao', 'o', 'melhor', 'eh', 'contar', 'com', 'a', 'ajuda', 'dos', 'funcionarios', 'do', 'hotel', ',', 'principalmente', 'dos', 'porteiros', ',', 'que', 'dao', 'otimas', 'dicas', '.']
+['porteiro']
+   A localizacao eh otima, perto de tudo!  O concierge nao eh la muito amistoso, entao o melhor eh contar com a ajuda dos funcionarios do hotel, principalmente dos porteiros, que dao otimas dicas.
+Aspect 'porteiro' not found in tokens.
+['seus', 'quartos', 'são', 'de', 'bom', 'tamanho', 'e', 'principalmente', 'são', 'limpos', '!', '!', '!', '!', '!', 'sinal', 'de', 'uma', 'estadia', 'feliz', '!', '!', '!', '!', '!', '.']
+['quarto']
+ Seus quartos são de bom tamanho e principalmente são LIMPOS!!!!! Sinal de uma estadia feliz!!!!!.
+Aspect 'quarto' not found in tokens.
+['ficar', 'em', 'cambrone', 'te', 'dá', 'a', 'oportunidade', 'de', 'ficar', 'perto', 'da', 'torre', 'eiffel', 'e', 'de', 'museus', 'importantes', '.']
+['museu']
+  Ficar em Cambrone te dá a oportunidade de ficar perto da Torre Eiffel e de museus importantes.
+Aspect 'museu' not found in tokens.
+['os', 'quartos', 'são', 'antigos', ',', 'os', 'corredores', 'abertos', ',', 'não', 'há', 'restaurante', ',', 'apenas', 'uma', 'pizza', 'hut', 'express', 'minúscula', 'para', 'um', 'hotel', 'enorme', '.']
+['corredor']
+ Os quartos são antigos, os corredores abertos, não há restaurante, apenas uma Pizza Hut Express minúscula para um hotel enorme.
+Aspect 'corredor' not found in tokens.
+['vantagem', ':', 'localizacao', 'para', 'que', 'precisa', 'ficar', 'no', 'centro', 'da', 'cidadedesvantagem', ':', 'quartos', 'pequenos', ',', 'cafe', 'de', 'manha', 'pobre', 'e', 'mal', 'localizado', '(', 'voce', 'come', 'no', 'proprio', 'lobby', 'do', 'hotel', ',', 'frente', 'as', 'pessoas', 'que', 'fazem', 'checkin', 'e', 'checkou', '!', ')', 'nao', 'tem', 'academia', 'de', 'ginastica', ',', 'nem', 'piscina', ',', 'nem', 'saunapreco', 'alto', 'para', 'o', 'que', 'oferece', '.']
+['quarto']
+Vantagem:Localizacao para que precisa ficar no centro da cidadeDesvantagem: Quartos pequenos, Cafe de manha pobre e mal localizado(Voce come no proprio lobby do hotel, frente as pessoas que fazem checkin e checkou!)Nao tem academia de ginastica, nem piscina, nem saunaPreco alto para o que oferece.
+Aspect 'quarto' not found in tokens.
+['faltou', 'colocarem', 'tomadas', 'para', 'alimentar', 'o', 'computador', 'e', 'o', 'celular', '.']
+['tomada']
+ Faltou colocarem tomadas para alimentar o computador e o celular.
+Aspect 'tomada' not found in tokens.
+['os', 'quartos', 'são', 'antigos', ',', 'os', 'corredores', 'abertos', ',', 'não', 'há', 'restaurante', ',', 'apenas', 'uma', 'pizza', 'hut', 'express', 'minúscula', 'para', 'um', 'hotel', 'enorme', '.']
+['quarto']
+ Os quartos são antigos, os corredores abertos, não há restaurante, apenas uma Pizza Hut Express minúscula para um hotel enorme.
+Aspect 'quarto' not found in tokens.
+['no', 'mais', 'serviços', 'ok', ',', 'cardapio', 'poderia', 'melhorar', 'e', 'cafe', 'da', 'manha', 'basico', '.']
+['serviço']
+ No mais serviços ok, cardapio poderia melhorar e cafe da manha basico.
+Aspect 'serviço' not found in tokens.
+['excelente', 'cafe', 'da', 'manha', ',', 'muito', 'limpo', ',', 'otimo', 'atendimento', ',', 'quartos', 'arejados', 'e', 'bem', 'decorados', ',', 'cama', 'confortabilissima', '.']
+['quarto']
+excelente cafe da manha,muito limpo,otimo atendimento,quartos arejados e bem decorados,cama confortabilissima.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'todo', 'novo', ',', 'com', 'camas', 'confortáveis', ',', 'banheiros', 'modernos', ',', 'quartos', 'bem', 'arejados', '.']
+['cama']
+ O hotel é todo novo, com camas confortáveis, banheiros modernos, quartos bem arejados.
+Aspect 'cama' not found in tokens.
+['tem', 'elevadores', 'separados', 'por', 'andares', ',', 'desta', 'forma', ',', 'quase', 'nunca', 'há', 'fila', '.']
+['elevador']
+ Tem elevadores separados por andares, desta forma, quase nunca há fila.
+Aspect 'elevador' not found in tokens.
+['o', 'hotel', ',', 'bem', 'recomendado', 'pela', 'minha', 'gente', 'de', 'viagens', ',', 'nao', 'agradou', 'muto', ',', 'antigo', ',', 'corredores', 'estreitos', ',', 'café', 'da', 'manhã', 'limitado', 'em', 'oferta', 'mas', 'com', 'produtos', 'de', 'qualidade', '.']
+['corredor']
+ O hotel, bem recomendado pela minha gente de viagens, nao agradou muto, antigo, corredores estreitos, café da manhã limitado em oferta mas com produtos de qualidade.
+Aspect 'corredor' not found in tokens.
+['era', 'tudo', 'limpo', ',', 'os', 'corredores', 'do', 'hotel', 'e', 'elevadores', 'eram', 'novos', 'e', 'arrumados', '.']
+['elevador']
+ Era tudo limpo, os corredores do hotel e elevadores eram novos e arrumados.
+Aspect 'elevador' not found in tokens.
+['os', 'quartos', 'são', 'bons', 'e', 'amplos', '.']
+['quarto']
+ Os quartos são bons e amplos.
+Aspect 'quarto' not found in tokens.
+['travesseiros', 'extras', 'se', 'pedir', '.']
+['travesseiro']
+ Travesseiros extras se pedir.
+Aspect 'travesseiro' not found in tokens.
+['fiquei', 'com', 'muito', 'receio', 'do', 'newton', ',', 'já', 'que', 'era', 'uma', 'opção', 'mais', 'barata', 'e', 'no', 'outro', 'ponto', 'de', 'ny', ',', 'porém', ',', 'foi', 'uma', 'grande', 'surpresa', 'quando', 'chegamos', '!', '!', '!', 'fica', 'em', 'frente', 'ao', 'metrô', 'e', 'bem', 'próximo', 'ao', 'central', 'park', ',', 'os', 'quartos', 'são', 'grandes', 'e', 'limpos', ',', 'além', 'de', 'terem', 'microondas', 'e', 'cafeteiras', '.']
+['cafeteira']
+ Fiquei com muito receio do Newton, já que era uma opção mais barata e no outro ponto de NY, porém, foi uma grande surpresa quando chegamos!!! Fica em frente ao metrô e bem próximo ao Central Park, os quartos são grandes e limpos, além de terem microondas e cafeteiras.
+Aspect 'cafeteira' not found in tokens.
+['o', 'segundo', 'andar', 'estava', 'em', 'reforma', ',', 'com', 'corredores', 'escuros', ',', 'tudo', 'meio', 'bizarro', '.']
+['corredor']
+ O segundo andar estava em reforma, com corredores escuros, tudo meio bizarro.
+Aspect 'corredor' not found in tokens.
+['hotel', 'sem', 'nada', 'que', 'o', 'desabone', ',', 'amplo', ',', 'quartos', 'bons', ',', 'bem', 'localizado', ',', 'comida', 'boa', ',', 'e', 'em', 'paris', 'quem', 'quer', 'ficar', 'no', 'hotel', '.']
+['quarto']
+Hotel sem nada que o desabone, amplo, quartos bons, bem localizado, comida boa, e em Paris quem quer ficar no hotel.
+Aspect 'quarto' not found in tokens.
+['excelente', 'localização', ',', 'funcionários', 'extremamente', 'atenciosos', ',', 'quartos', 'limpos', 'e', 'confortáveis', ',', 'banheiro', 'bom', '.']
+['quarto']
+Excelente localização, funcionários extremamente atenciosos, quartos limpos e confortáveis, banheiro bom.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'simpático', 'e', 'os', 'quartos', 'são', 'silenciosos', '.']
+['quarto']
+   O hotel é simpático e os quartos são silenciosos.
+Aspect 'quarto' not found in tokens.
+['neste', 'mercure', 'os', 'apartamentos', 'são', 'bons', 'sem', 'muita', 'sofisticação', 'mas', 'tudo', 'funciona', 'e', 'é', 'muito', 'limpo', '.']
+['apartamento']
+ Neste Mercure os apartamentos são bons sem muita sofisticação mas tudo funciona e é muito limpo.
+Aspect 'apartamento' not found in tokens.
+['super', 'recomendo', 'pra', 'quem', 'vai', 'sozinho', ',', 'pra', 'quem', 'não', 'é', 'enorme', ',', 'pois', 'banheiro', 'e', 'toalhas', 'são', 'pequenos', ',', 'esses', 'são', 'os', 'únicos', 'pontos', 'negativos', 'alias', '.']
+['toalha']
+  Super recomendo pra quem vai sozinho, pra quem não é enorme, pois banheiro e toalhas são pequenos, esses são os únicos pontos negativos alias.
+Aspect 'toalha' not found in tokens.
+['o', 'hotel', 'não', 'é', 'tão', 'iluminado', ',', ',', 'mas', 'não', 'senti', 'nenhum', 'cheiro', 'de', 'cigarro', ',', 'o', 'tapete', 'dos', 'corredores', 'e', 'do', 'elevador', 'são', 'sempre', 'aspirados', '.']
+['corredor']
+O hotel não é tão iluminado,, mas não senti nenhum cheiro de cigarro ,o tapete dos corredores e do elevador são sempre aspirados.
+Aspect 'corredor' not found in tokens.
+['as', 'camas', 'eram', 'ótimas', ',', 'com', 'ótimos', 'cobertores', ',', 'as', 'toalhas', 'limpas', '.']
+['cama']
+ As camas eram ótimas, com ótimos cobertores, as toalhas limpas.
+Aspect 'cama' not found in tokens.
+['como', 'a', 'proposta', 'é', 'a', 'simplicidade', 'ele', 'não', 'possui', 'elevador', ',', 'somente', 'escada', 'para', 'acesso', 'aos', 'quartos', ',', 'que', 'são', 'limpos', 'e', 'organizados', '.']
+['quarto']
+ Como a proposta é a simplicidade ele não possui elevador, somente escada para acesso aos quartos, que são limpos e organizados.
+Aspect 'quarto' not found in tokens.
+['ótima', 'localização', ',', 'prédio', 'moderno', 'com', 'todas', 'as', 'facilidade', 'e', 'serviços', 'necessários', 'e', 'com', 'um', 'certo', 'mimo', '.']
+['serviço']
+Ótima localização, prédio moderno com todas as facilidade e serviços necessários e com um certo mimo.
+Aspect 'serviço' not found in tokens.
+['quartos', 'espaçosos', 'e', 'confortáveis', '.']
+['quarto']
+ Quartos espaçosos e confortáveis.
+Aspect 'quarto' not found in tokens.
+['não', 'há', 'elevador', 'e', 'o', 'hotel', 'começa', 'a', 'partir', 'do', 'pavimento', 'do', 'prédio', ',', 'logo', 'escadas', '.']
+['escada']
+ Não há elevador e o Hotel começa a partir do 2º pavimento do prédio, logo escadas.
+Aspect 'escada' not found in tokens.
+['os', 'quartos', 'são', 'pequenos', '.']
+['quarto']
+Os quartos são pequenos.
+Aspect 'quarto' not found in tokens.
+['os', 'melhores', 'quartos', 'estão', 'na', 'torre', '2', 'que', 'foi', 'reformada', ',', 'mas', 'ainda', 'continua', 'com', 'móveis', 'pesados', '.']
+['quarto']
+Os melhores quartos estão na torre 2 que foi reformada, mas ainda continua com móveis pesados.
+Aspect 'quarto' not found in tokens.
+['quartos', 'amplos', ',', 'com', 'ar', 'e', 'frigobar', '.']
+['quarto']
+Quartos amplos, com ar e frigobar.
+Aspect 'quarto' not found in tokens.
+['e', 'a', '2', 'vez', 'que', 'retorno', 'a', 'este', 'hotel', ',', 'continua', 'muito', 'bom', 'com', 'uma', 'localizacao', 'incrivel', ',', 'quartos', 'muito', 'grandes', 'com', 'area', 'de', 'estar', 'porem', 'atendimento', 'mediano', 'e', 'nescessario', 'subir', 'com', 'suas', 'malas', 'ao', 'menos', 'que', 'pague', '5', 'dolares', 'para', 'o', 'bellmen', 'ou', 'e', 'nescessario', 'esperar', 'bastante', 'pelas', 'toalhas', '.']
+['quarto']
+E a 2 vez que retorno a este hotel,continua muito bom com uma localizacao incrivel,quartos muito grandes com area de estar porem atendimento mediano e nescessario subir com suas malas ao menos que pague 5 dolares para o bellmen ou e nescessario esperar bastante pelas toalhas.
+Aspect 'quarto' not found in tokens.
+['hotel', 'é', 'bem', 'localizado', ',', 'estrutura', 'física', 'boa', ',', 'porém', 'os', 'preços', 'são', 'acima', 'do', 'merecido', ',', 'as', 'taxas', 'não', 'coincidiram', 'com', 'as', 'da', 'reserva', '.']
+['preço']
+Hotel é bem localizado, estrutura física boa, porém os preços são acima do merecido, as taxas não coincidiram com as da reserva.
+Aspect 'preço' not found in tokens.
+['camareiras', 'arrumam', 'o', 'quarto', 'por', 'volta', 'das', '16', 'hs', 'da', 'tarde', '!', 'esquecem', 'de', 'trocar', 'toalhas', ',', 'deixam', 'lixo', '.']
+['toalha']
+ Camareiras arrumam o quarto por volta das 16 hs da tarde! Esquecem de trocar toalhas, deixam lixo.
+Aspect 'toalha' not found in tokens.
+['é', 'um', 'hotel', 'antigo', 'e', 'razoável', 'nos', 'quartos', ',', 'banheiro', 'e', 'no', 'café', 'da', 'manhã', '.']
+['quarto']
+É um hotel antigo e razoável nos quartos, banheiro e no café da manhã.
+Aspect 'quarto' not found in tokens.
+['ficamos', 'por', '5', 'noites', ',', 'as', 'arrumadeiras', 'vinham', '2x', 'ao', 'dia', 'e', 'deixavam', 'toalhas', 'limpas', 'e', 'chocolates', '.']
+['toalha']
+Ficamos por 5 noites, as arrumadeiras vinham 2x ao dia e deixavam toalhas limpas e chocolates.
+Aspect 'toalha' not found in tokens.
+['os', 'quartos', 'são', 'antigos', 'e', 'pequenos', 'e', 'o', 'banheiro', 'é', 'de', 'fazer', 'você', 'rir', '.']
+['quarto']
+ Os quartos são antigos e pequenos e o banheiro é de fazer você rir .
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'oferecem', 'o', 'que', 'tem', 'que', 'oferecer', 'e', 'o', 'banheiro', 'era', 'sempre', 'bem', 'limpo', '.']
+['quarto']
+ Os quartos oferecem o que tem que oferecer e o banheiro era sempre bem limpo.
+Aspect 'quarto' not found in tokens.
+['fiquei', 'com', 'muito', 'receio', 'do', 'newton', ',', 'já', 'que', 'era', 'uma', 'opção', 'mais', 'barata', 'e', 'no', 'outro', 'ponto', 'de', 'ny', ',', 'porém', ',', 'foi', 'uma', 'grande', 'surpresa', 'quando', 'chegamos', '!', '!', '!', 'fica', 'em', 'frente', 'ao', 'metrô', 'e', 'bem', 'próximo', 'ao', 'central', 'park', ',', 'os', 'quartos', 'são', 'grandes', 'e', 'limpos', ',', 'além', 'de', 'terem', 'microondas', 'e', 'cafeteiras', '.']
+['quarto']
+ Fiquei com muito receio do Newton, já que era uma opção mais barata e no outro ponto de NY, porém, foi uma grande surpresa quando chegamos!!! Fica em frente ao metrô e bem próximo ao Central Park, os quartos são grandes e limpos, além de terem microondas e cafeteiras.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'um', 'pouco', 'antigo', ',', 'mas', 'bem', 'aconchegante', '!', 'café', 'da', 'manhã', 'muito', 'bem', 'variado', ',', 'com', 'frios', 'e', 'ovos', 'mexidos', 'por', 'exemplo', '!', 'localizado', 'no', 'centro', 'de', 'porto', 'alegre', ',', 'ele', 'fica', 'próximo', 'à', 'um', 'dos', 'principais', 'ponto', 'turístico', ',', 'casa', 'de', 'cultura', 'mário', 'quintana', ',', 'assim', 'como', 'próximo', 'de', 'shoppings', 'como', 'o', 'rua', 'da', 'praia', '!', 'além', 'de', 'estar', 'localizado', 'à', 'algumas', 'quadras', 'do', 'do', 'mercado', 'municipal', 'da', 'cidade', '!', '.']
+['shopping']
+O hotel é um pouco antigo, mas bem aconchegante! Café da manhã muito bem variado, com frios e ovos mexidos por exemplo!Localizado no Centro de Porto Alegre, ele fica próximo à um dos principais ponto turístico, Casa de Cultura Mário Quintana, assim como próximo de shoppings como o Rua da Praia! Além de estar localizado à algumas quadras do do Mercado Municipal da cidade!.
+Aspect 'shopping' not found in tokens.
+['os', 'quartos', 'são', 'grandes', 'e', 'confortáveis', ',', 'ficamos', 'num', 'quarto', 'com', 'duas', 'camas', 'de', 'casal', '.']
+['cama']
+ Os quartos são grandes e confortáveis, ficamos num quarto com duas camas de casal.
+Aspect 'cama' not found in tokens.
+['os', 'quartos', 'tem', 'bichos', '.']
+['quarto']
+ Os quartos tem bichos.
+Aspect 'quarto' not found in tokens.
+['muito', 'boa', 'a', 'estadia', ',', 'quartos', 'bons', ',', 'amplos', ',', 'totalmente', 'reformados', '.']
+['quarto']
+Muito boa a estadia, quartos bons, amplos, totalmente reformados.
+Aspect 'quarto' not found in tokens.
+['otimo', 'atendimento', ',', 'bons', 'quartos', ',', 'bom', 'preço', ',', 'otimo', 'cafe', 'da', 'manha', '.']
+['quarto']
+ Otimo atendimento, bons quartos, bom preço, otimo cafe da manha.
+Aspect 'quarto' not found in tokens.
+['roupa', 'de', 'cama', 'e', 'toalhas', 'sujas', ',', 'não', 'tem', 'limpeza', 'de', 'quarto', ',', 'cheiro', 'de', 'cigarro', 'em', 'todo', 'o', 'hotel', ',', 'sem', 'internet', '.']
+['toalha']
+Roupa de cama e toalhas sujas, não tem limpeza de quarto, cheiro de cigarro em todo o hotel, sem internet.
+Aspect 'toalha' not found in tokens.
+['amplo', 'quarto', ',', 'excelentes', 'camas', 'e', 'uma', 'enorme', 'televisão', 'de', 'plasma', ',', 'muito', 'limpo', 'e', 'organizado', '.']
+['cama']
+Amplo quarto, excelentes camas e uma enorme televisão de plasma, muito limpo e organizado.
+Aspect 'cama' not found in tokens.
+['banheiro', 'reformado', ',', 'acima', 'da', 'media', 'para', 'a', 'cidade', '(', 'sem', 'as', 'abomináveis', 'cortinas', 'de', 'plástico', ')', '.']
+['cortina']
+ Banheiro reformado, acima da media para a cidade (sem as abomináveis cortinas de plástico).
+Aspect 'cortina' not found in tokens.
+['vale', 'a', 'pena', 'a', 'hospedagem', ',', 'mesmo', 'com', 'os', 'preços', 'que', 'são', 'um', 'pouco', 'salgados', '.']
+['preço']
+ Vale a pena a hospedagem, mesmo com os preços que são um pouco salgados.
+Aspect 'preço' not found in tokens.
+['o', 'único', 'ponto', 'contra', 'é', 'a', 'distância', 'entre', 'os', 'elevadores', 'e', 'os', 'apartamentos', '.']
+['apartamento']
+   O único ponto contra é a distância entre os elevadores e os apartamentos.
+Aspect 'apartamento' not found in tokens.
+['um', 'hotel', 'muito', 'bonito', ',', 'com', 'quartos', 'extremamente', 'confortáveis', '.']
+['quarto']
+ Um hotel muito bonito, com quartos extremamente confortáveis.
+Aspect 'quarto' not found in tokens.
+['ótima', 'localização', ',', 'custo', 'beneficio', 'excelente', ',', 'funcionários', 'atenciosos', ',', 'hotel', 'novo', ',', 'quartos', 'limpos', ',', 'boas', 'instalações', ',', 'elevador', 'mto', 'rápido', ',', 'bom', 'café', 'da', 'manhã', ',', 'wifi', 'grátis', 'e', 'muito', 'boa', '.']
+['quarto']
+Ótima localização, custo beneficio excelente, funcionários atenciosos, hotel novo, quartos limpos, boas instalações, elevador mto rápido, bom café da manhã, Wifi grátis e muito boa.
+Aspect 'quarto' not found in tokens.
+['o', 'hotel', 'é', 'muito', 'bom', '!', 'os', 'quartos', 'não', 'sao', 'grandes', 'mas', 'sao', 'completos', 'e', 'muito', 'limpos', '.']
+['quarto']
+O hotel é muito bom! Os quartos não sao grandes mas sao completos e muito limpos.
+Aspect 'quarto' not found in tokens.
+['recomendo', 'o', 'ameritania', 'hotel', 'para', 'que', 'vai', 'visitar', 'nova', 'york', 'e', 'quer', 'ficar', 'bem', 'localizado', '!', '!', 'além', 'de', 'ter', 'uma', 'decoração', 'inovadora', 'e', 'moderna', ',', 'as', 'cores', 'são', 'quentes', 'e', 'os', 'quartos', 'são', 'lindos', '.']
+['quarto']
+Recomendo o Ameritania Hotel para que vai visitar Nova York e quer ficar bem localizado!! Além de ter uma decoração inovadora e moderna, as cores são quentes e os quartos são lindos.
+Aspect 'quarto' not found in tokens.
+['ao', 'lado', 'de', 'todos', 'os', 'museus', ',', 'parques', ',', 'farta', 'oferta', 'de', 'condução', 'no', 'entorno', '.']
+['parque']
+     Ao lado de todos os museus, parques, farta oferta de condução no entorno.
+Aspect 'parque' not found in tokens.
+['hotel', 'muito', 'bom', 'pelo', 'preço', 'cobrado', ',', 'com', 'excelentes', 'apartamentos', 'novos', '.']
+['apartamento']
+Hotel muito bom pelo preço cobrado, com excelentes apartamentos novos.
+Aspect 'apartamento' not found in tokens.
+['ótimo', 'custo', 'benefício', ',', 'quartos', 'confortáveis', 'e', 'limpos', '.']
+['quarto']
+Ótimo custo benefício, quartos confortáveis e limpos.
+Aspect 'quarto' not found in tokens.
+['estção', 'de', 'metro', 'a', '5', 'minutos', 'com', 'linha', 'directa', 'para', 'o', 'centro', 'dos', 'principais', 'museus', 'e', 'locais', 'de', 'visita', '.']
+['museu']
+    Estção de metro a 5 minutos com linha directa para o centro dos principais museus e locais de visita.
+Aspect 'museu' not found in tokens.
+['o', 'que', 'poderia', 'melhorar', 'são', 'as', 'camas', 'são', 'confortavéis', 'mas', 'fazem', 'barulho', ',', 'talvez', 'sejam', 'as', 'molas', 'dos', 'colchões', '.']
+['cama']
+  O que poderia melhorar são as camas são confortavéis mas fazem barulho, talvez sejam as molas dos colchões.
+Aspect 'cama' not found in tokens.
+['ao', 'lado', 'de', 'todos', 'os', 'museus', ',', 'parques', ',', 'farta', 'oferta', 'de', 'condução', 'no', 'entorno', '.']
+['museu']
+     Ao lado de todos os museus, parques, farta oferta de condução no entorno.
+Aspect 'museu' not found in tokens.
+['hotel', 'super', 'bem', 'localizado', ',', 'otimos', 'quartos', ',', 'simplismente', 'nao', 'temos', 'oque', 'reclamar', '.']
+['quarto']
+ Hotel super bem localizado, otimos quartos, simplismente nao temos oque reclamar.
+Aspect 'quarto' not found in tokens.
+['quartos', 'muito', 'aconchegantes', ',', 'espaçosos', ',', 'camas', 'confortáveis', 'e', 'localização', 'impar', '.']
+['cama']
+ Quartos muito aconchegantes, espaçosos, camas confortáveis e localização impar.
+Aspect 'cama' not found in tokens.
+['bem', 'na', 'times', 'square', 'ele', 'fica', 'quase', 'em', 'frente', 'a', 'escada', 'vermelha', ',', 'os', 'quartos', 'sao', 'enormes', 'e', 'muito', 'confortável', ',', 'nao', 'contratei', 'café', 'da', 'manha', ',', 'mas', 'em', 'volta', 'do', 'hotel', 'tem', 'varias', 'opções', 'muito', 'charmosas', 'de', 'breakfast', '.']
+['quarto']
+ Bem na times square ele fica quase em frente a escada vermelha, os quartos sao enormes e muito confortável, nao contratei café da manha, mas em volta do hotel tem varias opções muito charmosas de breakfast.
+Aspect 'quarto' not found in tokens.
+['isso', 'porque', 'tivemos', 'que', 'leva', '-', 'las', 'pelas', 'escadas', '!', 'péssimo', 'atendimento', ',', 'apenas', 'a', 'localização', 'é', 'ponto', 'positivo', ',', 'dá', 'pra', 'ir', 'a', 'pé', 'aos', 'principais', 'pontos', 'de', 'paris', '.']
+['escada']
+ Isso porque tivemos que leva-las pelas escadas! Péssimo atendimento, apenas a localização é ponto positivo, dá pra ir a pé aos principais pontos de Paris.
+Aspect 'escada' not found in tokens.
+['os', 'apartamentos', 'possuem', 'cama', ',', 'cozinha', 'e', 'banheiro', '.']
+['apartamento']
+ Os apartamentos possuem cama, cozinha e banheiro.
+Aspect 'apartamento' not found in tokens.
+['hotel', 'boutique', ',', 'com', 'excelente', 'localização', ',', 'serviço', 'super', 'prestativo', 'e', 'ultra', 'atencioso', '(', 'pasmem', '!', 'lieberaram', 'generosos', 'early', 'check', '-', 'in', 'e', 'late', 'chek', '-', 'out', ')', ',', 'quartos', 'e', 'banheiro', 'muito', 'confortáveis', 'e', 'espaçosos', '(', 'raro', 'em', 'ny', ')', ',', 'interessante', 'sistema', 'de', 'buffet', 'de', 'café', 'da', 'manha', 'e', 'happy', 'hour', 'inclluidos', '.']
+['quarto']
+Hotel boutique, com excelente localização, serviço super prestativo e ultra atencioso (pasmem! lieberaram generosos early check-in e late chek-out), quartos e banheiro muito confortáveis e espaçosos (raro em NY), interessante sistema de buffet de café da manha e happy hour inclluidos.
+Aspect 'quarto' not found in tokens.
+['staff', 'muito', 'atencioso', ',', 'tente', 'reservar', 'um', 'quarto', 'longe', 'dos', 'elevadores', ',', 'fazem', 'barulho', 'a', 'noite', '.']
+['elevador']
+ Staff muito atencioso, tente reservar um quarto longe dos elevadores, fazem barulho a noite.
+Aspect 'elevador' not found in tokens.
+['ótima', 'localização', ',', 'quartos', 'limpos', 'e', 'reformados', '.']
+['quarto']
+ Ótima localização, quartos limpos e reformados.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'de', 'carpete', 'de', 'madeira', ',', 'muito', 'pequenos', ',', 'alguns', 'ou', 'entra', 'você', 'primeiro', 'ou', 'a', 'sua', 'mala', ',', 'o', 'box', 'minúsculo', 'também', '.']
+['quarto']
+ Os quartos são de carpete de Madeira, muito pequenos, alguns ou entra você primeiro ou a sua mala, o box minúsculo também.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'são', 'bons', 'e', 'baratos', '.']
+['quarto']
+Os quartos são bons e baratos.
+Aspect 'quarto' not found in tokens.
+['room', 'tip', ':', 'escolha', 'os', 'apartamentos', 'com', 'a', 'terminação', '19', '/', '20', 'são', 'maiores', '.']
+['apartamento']
+  Room Tip: escolha os apartamentos com a terminação 19/20 são maiores.
+Aspect 'apartamento' not found in tokens.
+['recomendo', 'muito', '!', 'room', 'tip', ':', 'mesmo', 'ficando', 'nos', 'apartamentos', 'mais', 'simples', 'vc', 'estará', 'super', 'bem', 'instalado', 'pois', 'os', 'aptos', 'são', 'bem', 'deco', '.']
+['apartamento']
+ Recomendo MUITO !  Room Tip: Mesmo ficando nos apartamentos mais simples vc estará super bem instalado pois os aptos são bem deco.
+Aspect 'apartamento' not found in tokens.
+['quartos', 'razoáveis', 'com', 'ar', 'condicionado', 'de', 'janela', '.']
+['quarto']
+Quartos razoáveis com ar condicionado de janela.
+Aspect 'quarto' not found in tokens.
+['e', 'a', '2', 'vez', 'que', 'retorno', 'a', 'este', 'hotel', ',', 'continua', 'muito', 'bom', 'com', 'uma', 'localizacao', 'incrivel', ',', 'quartos', 'muito', 'grandes', 'com', 'area', 'de', 'estar', 'porem', 'atendimento', 'mediano', 'e', 'nescessario', 'subir', 'com', 'suas', 'malas', 'ao', 'menos', 'que', 'pague', '5', 'dolares', 'para', 'o', 'bellmen', 'ou', 'e', 'nescessario', 'esperar', 'bastante', 'pelas', 'toalhas', '.']
+['toalha']
+E a 2 vez que retorno a este hotel,continua muito bom com uma localizacao incrivel,quartos muito grandes com area de estar porem atendimento mediano e nescessario subir com suas malas ao menos que pague 5 dolares para o bellmen ou e nescessario esperar bastante pelas toalhas.
+Aspect 'toalha' not found in tokens.
+['porém', ',', 'seu', 'grande', 'diferencial', 'está', 'no', 'atendimento', 'simpatico', 'e', 'eficiente', ',', 'os', 'quartos', 'são', 'pequenos', ',', 'mas', 'suficiente', 'a', 'um', 'casal', '.']
+['quarto']
+ Porém, seu grande diferencial está no atendimento simpatico e eficiente, Os quartos são pequenos, mas suficiente a um casal.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'sao', 'basicos', '.']
+['quarto']
+ Os quartos sao basicos.
+Aspect 'quarto' not found in tokens.
+['só', 'achamos', 'inconveniente', 'o', 'tamanho', 'dos', 'quartos', '.']
+['quarto']
+Só achamos inconveniente o tamanho dos quartos.
+Aspect 'quarto' not found in tokens.
+['quartos', 'confortáveis', ',', 'limpos', 'e', 'café', 'da', 'manhã', 'razoável', '.']
+['quarto']
+ Quartos confortáveis, limpos e café da manhã razoável.
+Aspect 'quarto' not found in tokens.
+['porém', ',', 'não', 'tem', 'os', 'serviços', 'adequados', 'para', 'ser', 'considerado', 'um', '4', 'estrelas', '.']
+['serviço']
+  Porém, não tem os serviços adequados para ser considerado um 4 estrelas.
+Aspect 'serviço' not found in tokens.
+['hotel', 'de', 'médio', 'porte', ',', 'bom', 'atendimento', 'em', 'inglês', ',', 'quartos', 'pequenos', 'porém', 'sempre', 'limpos', 'e', 'com', 'tudo', 'que', 'se', 'necessita', 'para', 'uma', 'boa', 'estadia', '.']
+['quarto']
+Hotel de médio porte , bom atendimento em inglês, quartos pequenos porém sempre limpos e com tudo que se necessita para uma boa estadia.
+Aspect 'quarto' not found in tokens.
+['os', 'quartos', 'bem', 'limpos', 'e', 'confortaveis', '.']
+['quarto']
+  Os quartos bem limpos e confortaveis.
+Aspect 'quarto' not found in tokens.
+	 Epoch: 1
+Iniciando treinamento da epoca 1
+Treino levou: 55.68480372428894 segundos...
+Iniciando avaliação da epoca 1
+	Train Loss: 10.026 | Train Acc: 0.00 | Train f1: 0.00%
+	 Val. Loss: 10.049 |  Val. Acc: 0.00 |  val. f1: 0.00%
+
+	 Epoch: 2
+Iniciando treinamento da epoca 2
+Treino levou: 56.30325675010681 segundos...
+Iniciando avaliação da epoca 2
+	Train Loss: 10.024 | Train Acc: 0.00 | Train f1: 0.00%
+	 Val. Loss: 10.049 |  Val. Acc: 0.00 |  val. f1: 0.00%
+
+	 Epoch: 3
+Iniciando treinamento da epoca 3
+Treino levou: 55.89020276069641 segundos...
+Iniciando avaliação da epoca 3
+	Train Loss: 10.025 | Train Acc: 0.00 | Train f1: 0.00%
+	 Val. Loss: 10.049 |  Val. Acc: 0.00 |  val. f1: 0.00%
+
+Iniciando teste
+"input id number";"list of aspects"
+2;"Não encontrado"
+6;"Não encontrado"
+21;"##ma"
+9;"cas"
+18;"##ma"
+20;"Não encontrado"
+28;"Não encontrado"
+39;"##ma"
+42;"Não encontrado"
+65;"Não encontrado"
+94;"##ma"
+110;"##ma"
+123;"Não encontrado"
+144;"Não encontrado"
+145;"Não encontrado"
+154;"##ma"
+172;"##ma"
+186;"Não encontrado"
+187;"Não encontrado"
+198;"Não encontrado"
+200;"##ma"
+205;"Não encontrado"
+209;"Não encontrado"
+240;"##ma"
+258;"Não encontrado"
+266;"Não encontrado"
+288;"##ma"
+303;"Não encontrado"
+313;"Não encontrado"
+317;"Não encontrado"
+328;"Não encontrado"
+337;"##ma"
+353;"##ma"
+372;"Não encontrado"
+380;"Não encontrado"
+381;"Não encontrado"
+382;"Não encontrado"
+414;"##ma"
+415;"##ma"
+423;"##ma"
+426;"##ma"
+434;"Santa"
+440;"Não encontrado"
+464;"Não encontrado"
+441;"Santa"
+470;"Não encontrado"
+491;"Não encontrado"
+506;"Não encontrado"
+500;"promete"
+513;"Santa"
+520;"Não encontrado"
+530;"Não encontrado"
+531;"Não encontrado"
+561;"##ma"
+564;"##ma"
+576;"##ma"
+579;"Santa"
+589;"Não encontrado"
+604;"Não encontrado"
+624;"Santa"
+625;"##ma"
+637;"Não encontrado"
+642;"Não encontrado"
+652;"Não encontrado"
+644;"##ma"
+660;"##ma"
+680;"Não encontrado"
+677;"##ma"
+681;"Não encontrado"
+685;"Não encontrado"
+690;"##ma"
+693;"Não encontrado"
+695;"Não encontrado"
+699;"Las"
+731;"Não encontrado"
+730;"##ma"
+741;"##ma"
+757;"##ma"
+766;"Não encontrado"
+773;"##ma"
+786;"##ma"
+792;"##ma"
+801;"##ma"
+804;"##ma"
+806;"Santa"
+807;"##ma"
+814;"##ma"
+821;"Não encontrado"
+828;"Não encontrado"
+831;"Não encontrado"
+836;"Não encontrado"
+839;"##ma"
+843;"##ma"
+848;"Não encontrado"
+851;"Santa"
+858;"##ma"
+862;"##ma"
+866;"##ma"
+877;"Não encontrado"
+896;"Não encontrado"
+902;"##ma"
+906;"Não encontrado"
+907;"Santa"
+935;"##ma"
+940;"##ma"
+942;"Não encontrado"
+943;"Não encontrado"
+947;"##ma"
+949;"Não encontrado"
+954;"Não encontrado"
+966;"Não encontrado"
+993;"Não encontrado"
+1005;"##ma"
+1007;"##ma"
+1021;"##ma"
+1028;"Santa"
+1152;"##ma"
+1257;"##ma"
+1033;"##ma"
+1036;"##ma"
+1044;"##ma"
+1051;"##ma"
+1068;"##ma"
+1092;"Las"
+1095;"Não encontrado"
+1125;"##ma"
+1143;"Não encontrado"
+1146;"##ma"
+1162;"##ma"
+1196;"Não encontrado"
+1203;"##ma"
+1206;"Não encontrado"
+1212;"##ma"
+1214;"##ma"
+1220;"Não encontrado"
+1236;"##ma"
+1255;"Não encontrado"
+1260;"Não encontrado"
+1267;"Não encontrado"
+1294;"##ma"
+1303;"Não encontrado"
+1286;"##ma"
+1320;"##ma"
+1321;"Não encontrado"
+1327;"Não encontrado"
+1330;"Não encontrado"
+1333;"Não encontrado"
+1335;"Santa"
+1356;"##ma"
+1363;"##ma"
+1378;"##ma"
+1385;"Não encontrado"
+1417;"##ma"
+1419;"Não encontrado"
+1420;"Santa"
+1426;"Santa"
+1428;"Não encontrado"
+1452;"Não encontrado"
+1432;"##ma"
+1466;"Não encontrado"
+1475;"##ma"
+1481;"##ma"
+1488;"##ma"
+1503;"##ma"
+1506;"##ma"
+1515;"Não encontrado"
+1529;"Não encontrado"
+1531;"Não encontrado"
+1538;"##ma"
+1555;"Não encontrado"
+1557;"##ma"
+1558;"Não encontrado"
+1566;"##ma"
+1578;"Não encontrado"
+1599;"Não encontrado"
+1604;"Não encontrado"
+1609;"Não encontrado"
+1613;"Não encontrado"
+1665;"Não encontrado"
+1674;"Santa"
+1685;"##ma"
+1698;"Não encontrado"
+1700;"Não encontrado"
+1614;"Não encontrado"
+1619;"Não encontrado"
+1624;"Não encontrado"
+1625;"##ma"
+1627;"Não encontrado"
+1631;"Santa"
+1633;"Não encontrado"
+1637;"##ma"
+1642;"Não encontrado"
+1648;"Não encontrado"
+1657;"Não encontrado"
+1692;"##ma"
+1723;"##ma"
+1742;"Não encontrado"
+1753;"Santa"
+2033;"Não encontrado"
+2143;"Não encontrado"
+1829;"Não encontrado"
+1898;"##ma"
+1939;"##ma"
+1947;"Não encontrado"
+1992;"##ma"
+1707;"Não encontrado"
+1710;"Não encontrado"
+1725;"Não encontrado"
+1739;"Não encontrado"
+2142;"##ma"
+1878;"Não encontrado"
+1907;"Não encontrado"
+2023;"Não encontrado"
+2069;"##ma"
+2043;"Não encontrado"
+2077;"Não encontrado"
+2099;"Não encontrado"
+2118;"##ma"
+2120;"##ma"
+2139;"Não encontrado"
+2147;"##ma"
+1834;"Santa"
+1861;"Não encontrado"
+1868;"Não encontrado"
+1880;"Não encontrado"
+1888;"Não encontrado"
+1900;"Não encontrado"
+1918;"##ma"
+1919;"Não encontrado"
+1923;"Não encontrado"
+1926;"##ma"
+1954;"Não encontrado"
+1956;"##ma"
+1968;"Não encontrado"
+1969;"##ma"
+1986;"Não encontrado"
+2011;"##ma"
+2015;"##ma"
+2156;"##ma"
+2171;"Não encontrado"
+2176;"Não encontrado"
+2188;"##ina"
+2194;"Não encontrado"
+2196;"Santa"
+2203;"Não encontrado"
+2211;"duro"
+2229;"Não encontrado"
+2230;"##ma"
+2232;"Não encontrado"
+2241;"##ma"
+2245;"Não encontrado"
+2257;"##ma"
+2258;"##ma"
+2277;"Santa"
+2244;"##ma"
+2284;"Não encontrado"
+2293;"Não encontrado"
+2301;"Não encontrado"
+2302;"Não encontrado"
+2304;"Não encontrado"
+2307;"Não encontrado"
+2317;"##ma"
+2319;"Não encontrado"
+2320;"##ma"
+2355;"Não encontrado"
+2362;"Não encontrado"
+2371;"Não encontrado"
+2373;"Não encontrado"
+2370;"Não encontrado"
+2383;"##ma"
+2397;"Não encontrado"
+2401;"##ma"
+135;"Não encontrado"
+1141;"##ma"
+1164;"Santa"
+1312;"Não encontrado"
+1350;"Não encontrado"
+1544;"Não encontrado"
+1545;"Não encontrado"
+1757;"##ma"
+2235;"Não encontrado"
+2256;"Não encontrado"
+469;"##ma"
